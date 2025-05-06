@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Configuration at Each End &#8212; Cambium LINKPlanner Online Help (6.3.3)</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/default.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Performance Summary" href="performance_summary.html" />
+    <link rel="prev" title="Profile" href="profile.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="performance_summary.html" title="Performance Summary"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="profile.html" title="Profile"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="planning_ptp_links.html" >Planning PTP links</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="link_page.html" accesskey="U">Link Page</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Configuration at Each End</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="configuration-at-each-end">
+<span id="index-0"></span><h1>Configuration at Each End<a class="headerlink" href="#configuration-at-each-end" title="Permalink to this headline">¶</a></h1>
+<p>Use this section to evaluate different antenna configurations at each end of the link. Enter data about the antenna, transmission power and interference density (at both ends). When parameters are changed the <img alt="save" src="_images/icon_save.png" /> icon is enabled and parameters affected are shown in blue. Select <img alt="save" src="_images/icon_save.png" /> and any dependent parameters and the Performance Summary section is updated automatically to show the effect upon the Mean Throughput, Minimum Throughput and Availability. The two ends are each divided into three parts:</p>
+<ul class="simple">
+<li><p>Data that affects both transmission and reception: Antenna, Antenna Height and Cable Loss. These parameters are common for 2+0 links</p></li>
+<li><p>Data that affects transmission only: Maximum EIRP, Maximum Power. These parameters are set independently for 2+0 links</p></li>
+<li><p>Data that affects reception only: Interference Density. These parameters are set independently for 2+0 links</p></li>
+</ul>
+<figure class="align-default" id="id1">
+<span id="configuration-at-one-end"></span><img alt="_images/configuration_at_one_end.png" src="_images/configuration_at_one_end.png" />
+<figcaption>
+<p><span class="caption-text">Configuration at Each End (one end shown)</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p><strong>Antenna</strong>: Select the required antenna from the drop-down list. If operating in the unlicensed band and the required antenna is not in the list, click <strong>Other…</strong> and enter the details in the User Defined Antenna page. Antennas may also be viewed, created, edited and deleted from the <a class="reference internal" href="project_navigation_tree.html#antennas"><span class="std std-ref">Antennas</span></a> page. Licensed band antennas may only be viewed, at present only Cambium supplied antennas are supported at these frequencies.</p>
+<p><strong>Antenna Height (meters)</strong>: This is the height of the antenna AGL, not the height above the building on which it is mounted. The Profile visualization is automatically updated in response to changes in Antenna Height.</p>
+<p><strong>Positioner</strong>: (PTP 450i and PTP 670 Only) Tick this box to add the positioner equipment to the BOM. Select for each end of the link which requires a positioner. This is only available for integrated antennas.</p>
+<p><strong>Spatial Diversity</strong>: (PTP 670 Only) Tick this box to enable spatial diversity. Not available for Integrated antennas.</p>
+<p><strong>Diversity Spacing</strong>: (PTP 670 Only) Set the Diversity Spacing required between the two antennas</p>
+<p><strong>Reflection Mitigation</strong>: (PTP 670 Only) Tick this box to enable the diversity spacing to be used for Reflection Mitigation. Note that this will reduce the performance prediction to only use the single payload modulation modes, as dual payload cannot be guaranteed during periods of reflections</p>
+<p><strong>Cable Loss (dB)</strong>: This field is not displayed for INTEGRATED antennas. If a non-integrated antenna is used, power may be lost in the cable connection between the radio and the antenna, therefore the Cable Loss must be estimated. To set Cable Loss enter the estimated loss in the dB field.</p>
+<p><strong>Maximum EIRP (dBm)</strong>: The maximum available Equivalent Isotropic Radiated Power. The default value is determined by the Band, License, Product and Antenna. If a lower user-defined limit is required, tick the User Limit box and enter the value. In response, the default Maximum EIRP is automatically reset to the User Limit.</p>
+<p><strong>Maximum Power (dBm)</strong>: The maximum available transmission power. The default value is determined by the Band, License, Product and Antenna. If a lower user-defined limit is required, tick the User Limit box and enter the value. In response, the default Maximum Power is automatically reset to the User Limit.</p>
+<p><strong>Tx Frequency</strong>: (60 GHz cnWave Only) To change transmit frequency for the link, select the channel from the drop down list. The same channel is used for both transmit and receive.</p>
+<p><strong>Tx Golay</strong>: (60 GHz cnWave Only) Set the Golay code. This parameter is the same for both ends of the link.</p>
+<p><strong>Polarity</strong>: (60 GHz cnWave Only) Set the Polarity of the link. If set to Auto both ends of the link will be Auto. For Odd and Even each end of the link will be opposite.</p>
+<p><strong>Interference (dBm)</strong>: This is the amount of site noise in the selected channel bandwidth, expected at the antenna connector. This noise is assumed to be a constant power added to the thermal noise of the front end of the wireless. The bandwidth displayed depends on the bandwidth selected in the Equipment Settings box (in this example it is 40 MHz). To enter Interference, tick the box and update the default value. If the link has been set up and mean power measurements from DFS are available, then use these measurements.</p>
+<p><strong>MAC Address</strong>: This is an optional field where the MAC Address can be recorded.</p>
+<section id="licensed-bands">
+<h2>Licensed bands<a class="headerlink" href="#licensed-bands" title="Permalink to this headline">¶</a></h2>
+<p>For links operating in licensed bands, the following additional attributes are displayed:</p>
+<p><strong>Feeder Loss</strong>: This replaces the Cable Loss field in the unlicensed band. The licensed band equipment uses a flexible waveguide, which is of a fixed length and the feeder loss is automatically entered when a non-integrated antenna is used.</p>
+<p>To change the automatic feeder loss click <strong>Edit</strong> and enter any additional loss in the <strong>Other Losses</strong> field. The Flexible Waveguide Loss can be deselected, which will remove it from the loss calculation and will also remove the associated Flex Waveguide equipment item from the BOM. Once any changes are made to the Losses panel, <strong>Feeder Loss</strong> will change to <strong>Maximum Feeder Loss</strong> and will show the maximum loss for either transmit or receive. The loss on transmit is incorporated into the Maximum EIRP value.</p>
+<figure class="align-default" id="id2">
+<span id="losses-licensed"></span><img alt="_images/losses_licensed.png" src="_images/losses_licensed.png" />
+<figcaption>
+<p><span class="caption-text">Additional Feeder Losses in Licensed Band</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p><strong>Power</strong>: (PTP 850 Only and PTP 820A Only) Choose whether to use PoE or DC power</p>
+<p><strong>Ethernet Cable</strong>: (PTP 850 Only) Choose the data drop cable type from Cat 6A and Fiber options.</p>
+<p><strong>IDU-RFU</strong>: (PTP 820A Only) Read only. Shows the TCC or RIC-D card RFU interface used and the drop cable type between the radio and the modem unit from Cat 6A and Fiber options.</p>
+<p><strong>Tx Frequency</strong>: To change transmit frequencies at either end of the link, click on <strong>Select…</strong>. The <a class="reference internal" href="#select-transmit-frequencies"><span class="std std-ref">Select Transmit Frequencies</span></a>
+dialog is displayed. The end of the link which has been selected as <strong>Hi</strong> will show the higher frequencies in the band.</p>
+<figure class="align-default" id="id3">
+<span id="select-transmit-frequencies"></span><img alt="_images/select_transmit_frequencies.png" src="_images/select_transmit_frequencies.png" />
+<figcaption>
+<p><span class="caption-text">Select Transmit Frequencies</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>For 2+0 Co Polar and 2+0 Cross Polar Link Types, the Tx Frequency pairs for each path is displayed. Select the frequency pair for one path and the available frequencies for the other path are filtered to show only valid Tx frequency pairs, select the second frequency pair from the modified list.</p>
+<figure class="align-default" id="id4">
+<span id="select-transmit-frequencies-2-0"></span><img alt="_images/select_transmit_frequencies_2+0.png" src="_images/select_transmit_frequencies_2+0.png" />
+<figcaption>
+<p><span class="caption-text">Select Transmit Frequencies 2+0 configuration</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Click <strong>Clear Selection</strong> to remove selected frequencies from the list.</p>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<blockquote>
+<div><blockquote>
+<div><p>The BOM will not include any ODU part numbers - before ordering make sure that the correct ODU part numbers are included by choosing the appropriate frequencies.</p>
+</div></blockquote>
+</div></blockquote>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="list_of_figures.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_this_user_guide.html">About This User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_linkplanner.html">Using LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_ptp_links.html">Planning PTP links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_pmp_links.html">Planning PMP networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background_information.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notices.html">Legal Notices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes_to_linkplanner.html">Changes to LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="performance_summary.html" title="Performance Summary"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="profile.html" title="Profile"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="planning_ptp_links.html" >Planning PTP links</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="link_page.html" >Link Page</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Configuration at Each End</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2025, Cambium Networks.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

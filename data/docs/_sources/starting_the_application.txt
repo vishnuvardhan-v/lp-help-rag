@@ -1,0 +1,58 @@
+.. index::
+   single: GUI
+   single: Main Screen
+   single: Opening the Application
+   single: LINKPlanner
+   single: Starting the Application
+   single: Terms & Conditions
+
+Starting the Application
+========================
+
+To start LINKPlanner go to |LP_URL|
+
+   .. _sign_in_page:
+   .. figure:: sign_in_page.png
+
+      LINKPlanner Sign In page
+      
+To access the Terms & Conditions at any time, click on **Terms & Conditions** at the bottom of this page.
+
+Click on **Sign In** to access the Cambium Single Sign In page, this uses the same Cambium Single Sign On (SSO) process as cnMaestro and our Learning Management System. For more information on the Multi-Factor Authentication (MFA), see |MFA|.
+
+On first login you will see the Terms and Conditions screen and must accept the Terms and Conditions before using LINKPlanner
+
+   .. _terms_and_conditions:
+   .. figure:: terms_and_conditions.png
+
+      Terms and Conditions Acceptance
+
+
+When signed in the Getting started screen for new users is displayed.
+
+   .. _main_screen_new:
+   .. figure:: main_screen_new.png
+
+      Getting started with LINKPlanner
+
+|note|
+
+        Before using the application, set preferences. See :doc:`preferences`.
+        
+To start using LINKPlanner, see :doc:`projects`
+
+
+
+.. toctree::
+
+   main_screen
+   project_toolbar
+   top_menu
+   project_navigation_tree
+
+
+.. |note| image:: note.jpg
+.. |sso| image:: icon_sso.png
+.. |LP_URL| replace:: https://lp.cambiumnetworks.com
+.. |MFA| replace:: https://community.cambiumnetworks.com/t/multi-factor-authentication/77747
+

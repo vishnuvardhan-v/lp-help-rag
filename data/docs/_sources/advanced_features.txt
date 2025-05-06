@@ -1,0 +1,30 @@
+.. index::
+   single: Advanced Features
+
+
+Advanced Features
+=====================
+
+To improve the performance of links additional features are available in certain PTP products. 
+
+For PTP 670
+
+* Optimize E1 or T1 latency, see :doc:`optimizing_e1_or_t1_latency`
+* Use Diversity, see :doc:`setting_diversity`
+
+For PTP 820 or 850
+
+* Use 2+0 Single Antenna, see :doc:`setting_single_antenna`
+
+
+.. toctree::
+
+   optimizing_e1_or_t1_latency
+   setting_diversity
+   setting_single_antenna
+   setting_hot_standby_protection
+
+
+
+
+

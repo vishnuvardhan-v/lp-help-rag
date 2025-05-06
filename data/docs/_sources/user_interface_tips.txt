@@ -1,0 +1,99 @@
+.. index::
+   single: Bulk Editing
+   single: Customizing Table views
+
+
+User Interface Tips
+===================
+
+Managing Table Views
+-----------------------------
+
+LINKPlanner uses table views in several places to summarize information and allow the user to manage the data in a single location. These include:
+
+* Sites Table, see :ref:`Sites Table<sites_table_view>`
+* PTP Links Table, see :ref:`PTP Links Table<ptp_links_table_view>` 
+* PMP Network Devices Table, see :ref:`Network Devices Table<nd_table_view>`
+* Mesh Links Table, see :ref:`Mesh Links Table<mesh_table_view>`
+* PMP Links Table, see :ref:`PMP Links Table<pmp_links_table_view>`
+* Subscriber Modules, see :ref:`Subscriber Modules Table<SM_table_view>`
+
+All of these tables can be managed in very similar ways, using the following features:
+
+  .. _example_table_view:
+  .. figure:: example_table_view.png
+
+     Example Table View
+    
+To delete one or more rows, select the row or rows by ticking the box at the left hand side of each row and click |table_delete|.
+
+To export the data in the table to a csv file, click |table_download_csv|
+
+Customizing the Table view
+-------------------------------
+
+The table display can be customized in the following ways:
+
+* To sort the list by any column, click in the column header.
+* To filter any column, enter the required entry in the **Filter** field below the column headers.
+
+The |choose_columns| dialog box shows the items already displayed in the table on the right hand side and any additional items that can be displayed on the left hand side. 
+
+* To move items between the two sides use the highlighted buttons in the centre. 
+* To move some selected items, highlight the ones required and then use the top two buttons (> to add items to the table or < to remove from items from the table). 
+* To move all items from one side to the other select >> or <<.
+
+.. _select_columns:
+.. figure:: select_columns.png
+
+   Select Columns dialog window
+
+To change the column order reorder the items on the right hand side. To reorder the items select the items to be moved and use the up and down arrow buttons at the side of the window. The items will appear in the table in the same order as in the list.
+
+There is a filter option on both sides of the table, which work the same as other filters in LINKPlanner. When you use the filter the reduced list is indicated. Within the filtered list you can continue to select and move using the single move buttons, however using the move all buttons (double arrow) will only move across what has been filtered.
+
+.. _select_columns_filter:
+.. figure:: select_columns_filter.png
+
+   Select Columns dialog filtered list
+
+Table Editing
+-------------------
+
+Some of the columns support editing, where the values can be changed in the table view. To change a value in the table view, move the cursor over the cell and click |icon_table_edit|. Select from a pre-defined list (for example when changing the band), for numeric values either use the up and down arrow keys or type a new value into the cell.
+
+Values that are editable can also be changed for multiple rows simultaneously by first selecting the required rows and then selecting a cell that needs to be changed. If the new value is not valid for the other item settings (e.g., choosing a PTP 670 product while the band is set to 38 GHz), the product value will not update.
+
+To quickly select multiple rows in a table, use CTRL + click to select individual rows and SHIFT + click for continuous selection in the Windows operating system.
+
+|note|
+
+Applying a change to a large table may take some time to complete, particularly if it requires displayed results to be recalculated.
+
+.. _multiple_edit:
+.. figure:: multiple_edit.png
+
+   Editing a Property for Multiple Links
+
+Using a PTP Link, PMP Network Device or PMP Link as a template
+------------------------------------------------------------------------
+
+The PTP Links, PMP Network Device, PMP Links and Susbcriber Modules tables allow one device (row) to be used as an equipment template and applied to other rows in the table to quickly update other PTP Links, Network Devices or Subscriber Modules to the same configuration.
+
+Select the rows to be updated,  then select **Copy from existing** and choose the device to be used as the template
+
+  .. _copy_from_existing:
+  .. figure:: copy_from_existing.png
+
+     Copy from Existing as Template
+
+|note|
+
+    In the PMP Links view the susbcribers will only be updated if the equipment template is valid on the Network Device the subscriber is connected to.
+
+
+.. |note| image:: note.jpg  
+.. |icon_table_edit| image:: icon_table_edit.png 
+.. |table_delete| image:: table_delete.png
+.. |choose_columns| image:: icon_choose_columns.png
+.. |table_download_csv| image:: table_download_csv.png

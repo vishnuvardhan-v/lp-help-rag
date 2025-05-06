@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Performance Summary &#8212; Cambium LINKPlanner Online Help (6.3.3)</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/default.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Performance Details" href="sm_performance_details.html" />
+    <link rel="prev" title="Profile" href="sm_profile.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="sm_performance_details.html" title="Performance Details"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="sm_profile.html" title="Profile"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="planning_pmp_links.html" >Planning PMP networks</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="subscriber_modules.html" accesskey="U">Subscriber Modules</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Performance Summary</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="performance-summary">
+<span id="index-0"></span><h1>Performance Summary<a class="headerlink" href="#performance-summary" title="Permalink to this headline">¶</a></h1>
+<p>This section shows how well the link is predicted to perform in response to the selected combination of the variables, such as band, region, equipment, antenna and height. It shows performance at each end of the link.</p>
+<figure class="align-default" id="id1">
+<span id="sm-performance-summary"></span><img alt="_images/sm_performance_summary.png" src="_images/sm_performance_summary.png" />
+<figcaption>
+<p><span class="caption-text">PMP Link Performance Summary</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<section id="performance-to-network-device-and-subscriber-module">
+<span id="index-1"></span><h2>Performance to Network Device and Subscriber Module<a class="headerlink" href="#performance-to-network-device-and-subscriber-module" title="Permalink to this headline">¶</a></h2>
+<p>This summary is a prediction of the Receive Power, Max Usable Mode and Availability at each end of the link, based on the equipment parameters entered.</p>
+<blockquote>
+<div><p><strong>Predicted Receive Power</strong>: The predicted receive power and associated tolerance level at this end of the link. The tolerance is the sum of two components, a fixed value which is dependent on the equipment performance over temperature and a variable value which is proportional to the amount of Excess Path Loss. When using adaptive modulation the receive power shown is the maximum for the link, which corresponds to the lowest selected modulation mode and Maximum Power.</p>
+<p><strong>Min Mod Mode Required</strong>:  Select the minimum modulation mode which provides the required throughput performance. If the Max Usable Mode is below Min Mod Mode Required, at either end of the link, the link will turn red.</p>
+<p><strong>Min Availability Required</strong>: Set the minimum availability the <strong>Min Mod Mode Required</strong> must meet for acceptable performance.</p>
+<p><strong>Max Usable Mode</strong>: The maximum modulation mode which is above the sensitivity threshold and can meets the active required performance metric. This parameter will be shown in red if it is below the <strong>Min Mod Mode Required</strong>.</p>
+<p><strong>Predicted Availability</strong>: The predicted availability of the selected <strong>Min Mod Mode Required</strong>. This parameter will turn red if the value is less than <strong>Min Availability Required</strong>.</p>
+<p><img alt="note" src="_images/note.jpg" /> If any of the parameters fail to meet the configured requirements this will turn the link red and the SM will not be included in the Performance Summary of the Network Device.</p>
+</div></blockquote>
+</section>
+<section id="link-summary">
+<h2>Link Summary<a class="headerlink" href="#link-summary" title="Permalink to this headline">¶</a></h2>
+<p>This summary highlights the Free Space Path Loss component and the Excess Path Loss based upon the diffraction loss over the obstacles that cut the Fresnel zone number 0.6. The Total Path Loss and System Gain Margin are also given.</p>
+<blockquote>
+<div><blockquote>
+<div><p><strong>Lowest Mode Availability (%)</strong>: This is the availability of basic link operation. This is equivalent to the availability of the most robust modulation in both directions.</p>
+<p><strong>System Gain Margin (dB)</strong>: This is the margin in dB above which the ratio of (mean wanted receive level) to (mean interference plus thermal noise), or “C to (I+N)”, for the worst link direction is above the level required for basic link operation for the most robust modulation.</p>
+<p><strong>Free Space Path Loss (dB)</strong>: The amount that the signal would be attenuated if travelling through a vaccuum.</p>
+<p><strong>Gaseous Absorption Loss (dB)</strong>: The amount of attenuation due to oxygen and water in the atmosphere.</p>
+<p><strong>Excess Path Loss (dB)</strong>: The amount of attenuation due to obstructions in the path. If the path is completely line-of-sight, this will be zero.</p>
+<p><strong>Total Path Loss (dB)</strong>: The sum of Free Space, Gaseous Absorption and Excess Path Loss.</p>
+</div></blockquote>
+</div></blockquote>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="list_of_figures.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_this_user_guide.html">About This User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_linkplanner.html">Using LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_ptp_links.html">Planning PTP links</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="planning_pmp_links.html">Planning PMP networks</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="network_devices.html">PMP Network Devices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mesh_links.html">Mesh Links</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="subscriber_modules.html">Subscriber Modules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="sm_creating_and_deleting.html">Creating and Deleting Subscriber Modules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sm_description_and_equipment.html">Subscriber Module Description and Equipment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sm_profile.html">Profile</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Performance Summary</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#performance-to-network-device-and-subscriber-module">Performance to Network Device and Subscriber Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#link-summary">Link Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sm_performance_details.html">Performance Details</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sm_bill_of_materials_for_link.html">Bill of Materials for Subscriber Module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="background_information.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notices.html">Legal Notices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes_to_linkplanner.html">Changes to LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="sm_performance_details.html" title="Performance Details"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="sm_profile.html" title="Profile"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="planning_pmp_links.html" >Planning PMP networks</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="subscriber_modules.html" >Subscriber Modules</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Performance Summary</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2025, Cambium Networks.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

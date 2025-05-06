@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Updating Link Profiles &#8212; Cambium LINKPlanner Online Help (6.3.3)</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/default.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Link Profile Adjustment Examples" href="link_profile_adjustment_examples.html" />
+    <link rel="prev" title="Verifying High Points" href="verifying_high_points.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="link_profile_adjustment_examples.html" title="Link Profile Adjustment Examples"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="verifying_high_points.html" title="Verifying High Points"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="using_linkplanner.html" >Using LINKPlanner</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="profiles.html" >Profiles</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="adjusting_link_profiles.html" accesskey="U">Adjusting Link Profiles</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Updating Link Profiles</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="updating-link-profiles">
+<span id="index-0"></span><h1>Updating Link Profiles<a class="headerlink" href="#updating-link-profiles" title="Permalink to this headline">¶</a></h1>
+<p>When link profiles have been verified, they must be updated. To update a profile, select the link in the navigation tree to view the Link Page. The <a class="reference internal" href="#profile-with-clutter"><span class="std std-ref">Profile Visualization Chart with Clutter</span></a> or <a class="reference internal" href="#profile-without-clutter"><span class="std std-ref">Profile Visualization Chart without Clutter</span></a> must be updated to include obstructions.</p>
+<figure class="align-default" id="id1">
+<span id="profile-with-clutter"></span><img alt="_images/profile_with_clutter.png" src="_images/profile_with_clutter.png" />
+<figcaption>
+<p><span class="caption-text">Profile Visualization Chart with Clutter</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id2">
+<span id="profile-without-clutter"></span><img alt="_images/profile_without_clutter.png" src="_images/profile_without_clutter.png" />
+<figcaption>
+<p><span class="caption-text">Profile Visualization Chart without Clutter</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<section id="obstructions-with-clutter">
+<span id="index-1"></span><h2>Obstructions with Clutter<a class="headerlink" href="#obstructions-with-clutter" title="Permalink to this headline">¶</a></h2>
+<p>Double-click on the Profile visualization chart or click on the <img alt="edit_profile" src="_images/icon_edit_button_ProfileEditor.png" /> button. The <a class="reference internal" href="#profile-editor-updated-with-clutter-and-obstructions"><span class="std std-ref">Profile Editor and updated Profile with Clutter and Obstructions (in yellow)</span></a> page is displayed. Enter or update the Range or Obstruction height as required. For example, enter a 9 meter high Obstruction at Range 1.091 km and a 7 meter high Obstruction at Range 1.386 km.</p>
+<p>If necessary, make allowances for changes to clutter type and extended additional obstructions:</p>
+<ul class="simple">
+<li><p>An obstruction of roughly constant height (for example a forest) may extend over two or more points. If the default clutter height is not correct for this local area then additional height can be added using the obstruction option. To enter such an obstruction, select all the affected rows, type a value in the Obstruction Height column and press Enter. For example, if a forest with 12 m high trees extends from Range 0.5 km to 0.7 km, but the clutter type is set to Rural, select the Clutter Type column for this range and change to Light Trees, which give a 5 m height, then select the Obstruction Height cells for this range, type 7 (12 m - 5 m)  and press Enter.</p></li>
+<li><p>If an isolated tall building partially obstructs the Fresnel zone by cutting vertically into one side, but has not been included in the clutter type, treat it as though it cuts horizontally into the bottom of the Fresnel zone. For example, if it extends 3 meters into the right hand side of the zone, enter it as a 3 m high obstruction.</p></li>
+</ul>
+<p>The Profile is updated to represent the obstructions as yellow blocks above the terrain and clutter</p>
+<figure class="align-default" id="id3">
+<span id="profile-editor-updated-with-clutter-and-obstructions"></span><img alt="_images/profile_editor_updated_with_clutter_and_obstructions.png" src="_images/profile_editor_updated_with_clutter_and_obstructions.png" />
+<figcaption>
+<p><span class="caption-text">Profile Editor and updated Profile with Clutter and Obstructions (in yellow)</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<p>When <strong>Use Clutter?</strong> is enabled obstructions are added to the path as blocks for the entire pixel and the obstruction loss is calculated using ITU-R P.526-14, method for a general terrestrial path.</p>
+</section>
+<section id="obstructions-without-clutter">
+<h2>Obstructions without Clutter<a class="headerlink" href="#obstructions-without-clutter" title="Permalink to this headline">¶</a></h2>
+<p>Double-click on the Profile visualization chart or click on the <img alt="edit_profile" src="_images/icon_edit_button_ProfileEditor.png" /> button. The <a class="reference internal" href="#profile-editor-updated-with-obstructions"><span class="std std-ref">Profile Editor and updated Profile with Obstructions (in yellow)</span></a> page is displayed. Enter or update the Range or Obstruction height as required. For example, enter a 4 meter high Obstruction at Range 0.501 km and a 3.5 meter high Obstruction at Range 0.678 km.</p>
+<p>If necessary, make allowances for forests and tall buildings:</p>
+<ul class="simple">
+<li><p>An obstruction of roughly constant height (for example a forest) may extend over two or more points. To enter such an obstruction, select all the affected rows, type a value in the Obstruction Height column and press Enter. For example, if a forest with 12 m high trees extends from Range 1 km to 1.2 km, select the Obstruction Height cells for this range, type 12 and press Enter.</p></li>
+<li><p>If a tall building partially obstructs the Fresnel zone by cutting vertically into one side, treat it as though it cuts horizontally into the bottom of the Fresnel zone. For example, if it extends 3 meters into the right hand side of the zone, enter it as a 3 m high obstruction.</p></li>
+</ul>
+<figure class="align-default" id="id4">
+<span id="profile-editor-updated-with-obstructions"></span><img alt="_images/profile_editor_updated_with_obstructions.png" src="_images/profile_editor_updated_with_obstructions.png" />
+<figcaption>
+<p><span class="caption-text">Profile Editor and updated Profile with Obstructions (in yellow)</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>The Profile is updated to represent the obstructions as yellow points above the terrain.</p>
+<blockquote>
+<div><p><img alt="note" src="_images/note.jpg" /></p>
+</div></blockquote>
+<p>When <strong>Use Clutter?</strong> is disabled obstructions are added to the path as individual points at the center of a pixel and the obstruction loss is calculated using ITU-R P.526-10, using the Cascaded Knife Edge Method.</p>
+</section>
+<section id="adding-new-points">
+<span id="index-2"></span><h2>Adding new points<a class="headerlink" href="#adding-new-points" title="Permalink to this headline">¶</a></h2>
+<p>If you would like to add an obstruction in between two of the existing profile points, you can add a new point using the Add <img alt="add_button" src="_images/icon_add_button.png" /> button.</p>
+<figure class="align-default" id="id5">
+<span id="adding-a-profile-point"></span><img alt="_images/adding_a_profile_point.png" src="_images/adding_a_profile_point.png" />
+<figcaption>
+<p><span class="caption-text">Adding a Profile Point</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>You need to specify the range along the path, the terrain height at that point, the clutter type (if using) and the obstruction height. For either of the height values, you can press the Estimate height <img alt="estimate" src="_images/icon_estimate_button.png" /> button to enter a height based on the points either side of the new one, however the clutter type must be individually chosen.</p>
+</section>
+<section id="adding-multiple-new-points">
+<span id="index-3"></span><h2>Adding multiple new points<a class="headerlink" href="#adding-multiple-new-points" title="Permalink to this headline">¶</a></h2>
+<p>If you are on a short link (&lt; 300m) the resolution of the terrain and clutter data may be too coarse to show all the detail you wish to include. To add multiple points select the Add Multiple Points <img alt="add_multiple_points" src="_images/icon_add_multiple_points.png" /> button, then choose the point interval for the new points from the available list. The profile will then automatically have new points at the interval chosen with the terrain height interpolated between the known points.</p>
+<p>This does not increase the resolution of the source data but allows you to quickly make adjustments to clutter and obstructions to add roads and define building edges in the profile.</p>
+</section>
+<section id="deleting-points">
+<span id="index-4"></span><h2>Deleting points<a class="headerlink" href="#deleting-points" title="Permalink to this headline">¶</a></h2>
+<p>You can remove points from the profile by selecting them and pressing the Delete <img alt="delete_button" src="_images/icon_delete.png" /> button. Any points except the first and last may be deleted.</p>
+</section>
+<section id="editing-multiple-points">
+<h2>Editing multiple points<a class="headerlink" href="#editing-multiple-points" title="Permalink to this headline">¶</a></h2>
+<p>Some types of obstruction, for example forests, may extend for some distance along the path. These can be represented in the profile by editing multiple points either in the clutter type or the obstruction height. To set the same clutter type for multiple points, either highlight the range in the profile image or select the rows using <strong>Shift</strong> + left mouse click, then double click in the clutter type column and select the new clutter type from the drop down menu, which when selected is applied to all highlighted cells.</p>
+<p>To set the same obstruction height for multiple points, select the rows as for the clutter type then double click on one of the cells in the obstruction height column and type the new height. When you press Return, that height will be entered for all those points.</p>
+<p>To adjust the heights for multiple points so that there is a constant gradient, set the heights at either end of the range, then select the range and click the Interpolate button <img alt="straight_line_1" src="_images/icon_interpolate_points.png" /> and select <strong>Terrain Height</strong> for Terrain Height adjustment or <strong>Obstruction</strong> for Obstruction Height adjustment.</p>
+</section>
+<section id="reverting-to-the-original-profile">
+<span id="index-5"></span><h2>Reverting to the Original Profile<a class="headerlink" href="#reverting-to-the-original-profile" title="Permalink to this headline">¶</a></h2>
+<p>To revert to the original non edited version of the profile, click the <img alt="revert" src="_images/icon_revert_profile.png" /> button. This overwrites the edited version of the profile.</p>
+</section>
+<section id="export-profile-to-a-spreadsheet">
+<span id="index-6"></span><h2>Export Profile to a Spreadsheet<a class="headerlink" href="#export-profile-to-a-spreadsheet" title="Permalink to this headline">¶</a></h2>
+<p>To export the profile to a csv file, select the <img alt="edit_profile" src="_images/icon_edit_button_ProfileEditor.png" /> button on the profile and click <img alt="spreadsheet" src="_images/table_download_csv.png" />.</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="list_of_figures.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_this_user_guide.html">About This User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_linkplanner.html">Using LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_ptp_links.html">Planning PTP links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_pmp_links.html">Planning PMP networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background_information.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notices.html">Legal Notices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes_to_linkplanner.html">Changes to LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="link_profile_adjustment_examples.html" title="Link Profile Adjustment Examples"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="verifying_high_points.html" title="Verifying High Points"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="using_linkplanner.html" >Using LINKPlanner</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="profiles.html" >Profiles</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="adjusting_link_profiles.html" >Adjusting Link Profiles</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Updating Link Profiles</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2025, Cambium Networks.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

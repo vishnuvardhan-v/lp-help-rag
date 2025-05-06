@@ -1,0 +1,495 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>PMP Network Devices &#8212; Cambium LINKPlanner Online Help (6.3.3)</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/default.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Mesh Links" href="mesh_links.html" />
+    <link rel="prev" title="Planning PMP networks" href="planning_pmp_links.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="mesh_links.html" title="Mesh Links"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="planning_pmp_links.html" title="Planning PMP networks"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="planning_pmp_links.html" accesskey="U">Planning PMP networks</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">PMP Network Devices</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="pmp-network-devices">
+<span id="index-0"></span><h1>PMP Network Devices<a class="headerlink" href="#pmp-network-devices" title="Permalink to this headline">¶</a></h1>
+<p>The Network Device connects to one or more Subscriber Sites to create links to Subscriber Modules.</p>
+<section id="creating-network-devices">
+<h2>Creating Network Devices<a class="headerlink" href="#creating-network-devices" title="Permalink to this headline">¶</a></h2>
+<p>To create a new Network Device from the map view, click <img alt="new_nd_device" src="_images/icon_right_menu_PMP_Network_device.png" />  on the right panel  of the project window. This opens the Network Device Mode window.</p>
+<figure class="align-default" id="id1">
+<span id="new-network-device-mode"></span><img alt="_images/New_Network_Device_Mode.png" src="_images/New_Network_Device_Mode.png" />
+<figcaption>
+<p><span class="caption-text">New Network Device Mode</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>To use the height of an existing network site, tick <strong>Use the site Maximum Height</strong>? For new sites or to override the network site height leave this box unticked and set the required height. Set the Range Units and SM Range to configure the furthest point at which SMs can connect to the Network Device.</p>
+<p>To add a network device to an existing site, click on the site. Multiple network devices can be added to the same site, they will be separated by the beamwidth of the antenna or the Modeled Beamwidth if it has been set to a different value.</p>
+<p>To create multiple Network Devices Click <img alt="icon_pmp_nd" src="_images/icon_menu_PMP_Network_devices.png" /> OR <img alt="menu_pmp_nd" src="_images/icon_menu_PMP_Network_devices_expand.png" /> in the left panel of the page.</p>
+<p>This displays the PMP Tables page. Click on the <strong>Network Devices</strong> tab.</p>
+<p>Click <img alt="icon_add_extend" src="_images/icon_add_button_extend.png" /> to create new PMP Network Devices</p>
+<p>This displays the <a class="reference internal" href="#create-select-template"><span class="std std-ref">Create/Select Template</span></a> page.</p>
+<p>Select <strong>New equipment configuration</strong> and click <img alt="icon_next" src="_images/icon_next.png" /> to create a first template or select <strong>Use previous configuration</strong> to choose from an existing template. If there are existing Network Devices, then the <strong>Configure from existing end</strong> option will also be available.</p>
+<figure class="align-default" id="id2">
+<span id="create-select-template"></span><img alt="_images/Create_Select_Template.png" src="_images/Create_Select_Template.png" />
+<figcaption>
+<p><span class="caption-text">Create/Select Template</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Enter the parameters required to configure the network device, see <a class="reference internal" href="#nd-equipment"><span class="std std-ref">Network Device Equipment</span></a> and subsequent sections for details on each of the parameters and click <img alt="icon_next" src="_images/icon_next.png" /></p>
+<p>The <strong>Create PMP Network Device</strong> page is displayed</p>
+<figure class="align-default" id="id3">
+<span id="pmp-network-device-configuration"></span><img alt="_images/PMP_Network_Device_Configuration.png" src="_images/PMP_Network_Device_Configuration.png" />
+<figcaption>
+<p><span class="caption-text">PMP Network Device Configuration</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Select the sites from the left hand list. The search field narrows the choice when there is a large number of sites in the list.</p>
+<p>From the right hand side menu, configure the following:</p>
+<ul class="simple">
+<li><p>Enter the number of Network Devices required on each site</p></li>
+<li><p>Enter the azimuth of the first Network Device on the site.</p></li>
+<li><p>The separation angle defaults to 360 degrees divided by the number of Network Devices, select a different angle if required.</p></li>
+<li><p>Set the Range Units and the SM Range of the sectors and click <img alt="ok" src="_images/icon_ok.png" />.</p></li>
+</ul>
+</section>
+<section id="displaying-pmp-network-devices">
+<span id="nd-table-view"></span><h2>Displaying PMP Network Devices<a class="headerlink" href="#displaying-pmp-network-devices" title="Permalink to this headline">¶</a></h2>
+<p>When PMP Network Devices have been created they appear in the PMP Tree view and Table views. To see the tree view, click the <img alt="icon_expand_tree" src="_images/icon_expand_tree.png" /> which is beside the <strong>PMP</strong> tool bar. To change to the table view, click on <img alt="icon_pmp_nd" src="_images/icon_menu_PMP_Network_devices.png" /> OR <img alt="menu_pmp_nd" src="_images/icon_menu_PMP_Network_devices_expand.png" />. To manage the table view see <a class="reference internal" href="user_interface_tips.html"><span class="doc">User Interface Tips</span></a>.</p>
+<dl class="simple">
+<dt><img alt="note" src="_images/note.jpg" /></dt><dd><p>To locate Network Devices in the map view from the details page, click the <img alt="icon_locate" src="_images/icon_locate_on_map.png" /> icon, which is displayed next to the <img alt="icon_delete_detailspage" src="_images/icon_delete_detailspage.png" /> icon at the top.</p>
+</dd>
+</dl>
+</section>
+<section id="deleting-a-network-device">
+<h2>Deleting a Network Device<a class="headerlink" href="#deleting-a-network-device" title="Permalink to this headline">¶</a></h2>
+<p>To delete a Network Device, hover over the Network Device in the <strong>PMP</strong> tree view and click <img alt="list_delete" src="_images/list_delete.png" />, click <img alt="icon_delete_detailspage" src="_images/icon_delete_detailspage.png" /> on the details page, select rows and click <img alt="table_delete" src="_images/table_delete.png" /> in the table view, or right-click on the Network Device in the map view and select Delete from the pop-up menu.</p>
+<dl>
+<dt><img alt="note" src="_images/note.jpg" /></dt><dd><p>Deleting a Network Device will delete all links to Subscriber Modules connected to the Network Device. The Subscriber Sites will not be deleted and will be available to connect to other Network Devices.</p>
+<p>To revert the changes made, click the <img alt="icon_undo_changes" src="_images/icon_undo_changes.png" /> icon, which is displayed next to the Apply button. This icon is only displayed when there are changes to the parameters, replacing the <img alt="icon_delete_detailspage" src="_images/icon_delete_detailspage.png" /> icon.</p>
+</dd>
+</dl>
+</section>
+<section id="pmp-network-device-page">
+<span id="index-1"></span><h2>PMP Network Device Page<a class="headerlink" href="#pmp-network-device-page" title="Permalink to this headline">¶</a></h2>
+<p>The Network Device page includes the following features:</p>
+<ul class="simple">
+<li><p>Each section begins with a gray title bar. Click on this bar to open or close the section.</p></li>
+<li><p>The numeric data entry fields can be incremented or decremented in steps by using the up and down arrow keys. Use this feature to evaluate the impact of step changes on link performance.</p></li>
+<li><p>If a field is highlighted in pink, its value is out of the permitted range.</p></li>
+</ul>
+<section id="general">
+<h3>General<a class="headerlink" href="#general" title="Permalink to this headline">¶</a></h3>
+<p>Enter the Name and Description of the Network Devices. The MAC Address and MSN of the equipment may also be added.</p>
+<figure class="align-default" id="id4">
+<span id="access-point-details"></span><img alt="_images/access_point_details.png" src="_images/access_point_details.png" />
+<figcaption>
+<p><span class="caption-text">Network Device General</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p id="index-2">To move a Network Device to a different location from the Network site coordinates enter new coordinates in the Latitude and Longitude fields. The Offset value will show the distance between the Network Device and the central Network Site location, the ND can only be moved up to 100 m (328 ft) from the central Network Site location. If the distance is greater than this, the offset value is shown in red and it is not possible to <strong>Save</strong>. When the offset is less than 100m click <strong>Save</strong> to move the Network Device to the new location, which will automatically update the profiles for all subscribers connected to it. Select <strong>Reset</strong> to move the ND back to the central network site coordinates.</p>
+</section>
+<section id="equipment">
+<h3>Equipment<a class="headerlink" href="#equipment" title="Permalink to this headline">¶</a></h3>
+<p>Select the frequency band, equipment and country for the Network Device. The fields that are displayed in the “Equipment” box will change depending on the type of equipment selected.</p>
+<figure class="align-default" id="id5">
+<span id="nd-equipment"></span><img alt="_images/nd_equipment.png" src="_images/nd_equipment.png" />
+<figcaption>
+<p><span class="caption-text">Network Device Equipment</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p><strong>Equipment Parameters</strong></p>
+<blockquote>
+<div><p><strong>Band</strong>: Select the frequency band used by the Network Device. Changes to Band Carrier 1 when there is more than one carrier (PMP 450v only)</p>
+<p><strong>Product</strong>: Select the PMP product.</p>
+<p><strong>Color</strong> (PTP 700 HCMP only): Select the color of the radios, the same color will be used at the Network Devices and for all connected subscribers.</p>
+<p><strong>Capacity</strong> (PTP 700 HCMP only): Select the capacity varient of the radios.</p>
+<p><strong>Country</strong>: Select the country in which the Network Device is located.</p>
+<p><strong>Sync Input</strong> (PMP 450 and 450i only): Select the synchronization option for the link (information only).</p>
+<p><strong>Encryption Variant</strong> (PMP 450 and 450i only): Select the encryption option for the link, used for product selection only.</p>
+<p><strong>Number of Carriers</strong> (PMP 450v only): Select the number of carriers for the Network Device.</p>
+<p><strong>Band - Carrier 2</strong> (PMP 450v only): Select the second carrier band for the Network Device. This field is available only when the number of carriers is more than 1.</p>
+<p><strong>MIMO Mode</strong> (PMP 450m and ePMP 3000 only): Select the MIMO operating mode. For PMP 450m choose <strong>Sector</strong> mode to report ND performance in Legacy mode using the standard PMP 450 capacity scheduler or choose <strong>Mu-MIMO</strong> to report cnMedusa ND Performance.</p>
+<p><strong>I/O Connectivity</strong> (N500 Only): Select Expanded to get the additional IO port, used for product selection only.</p>
+<p><strong>Sync Input</strong> (N500 Only): Select the synchronization option for the link.</p>
+</div></blockquote>
+</section>
+<section id="product-configuration">
+<h3>Product Configuration<a class="headerlink" href="#product-configuration" title="Permalink to this headline">¶</a></h3>
+<p>Select the product parameters. The fields that are displayed in the “Product Configuration” box will change depending on the type of equipment selected. For example, when a PMP 450i is selected, the Color Code field is displayed.</p>
+<figure class="align-default" id="id6">
+<span id="nd-product-configuration"></span><img alt="_images/nd_product_configuration.png" src="_images/nd_product_configuration.png" />
+<figcaption>
+<p><span class="caption-text">Network Device Product Configuration</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<blockquote>
+<div><p>Some parameters are required when configuring the product but are currently not used in the LINKPlanner calculations, they will be used in future releases. These items are identified as “(information only)” in the descriptions below.</p>
+</div></blockquote>
+<p><strong>Product Configuration Parameters</strong></p>
+<blockquote>
+<div><p><strong>Band Setting</strong> (N500 Only): Select ISM or Licensed.</p>
+<p><strong>T/R Spacing</strong> (N500 Licensed Only): Select the difference between transmit and receive frequencies (MHz).</p>
+<p><strong>Bandwidth</strong>: Select the channel bandwidth. Available under Component Carriers section for PMP 450v 4x4 ND.</p>
+<p><strong>Channel</strong> (60 GHz cnWave Only): Select the Frequency and Channel number.</p>
+<p><strong>Modulation Type</strong> (N500 ISM Only): Select the group of modulation modes to use.</p>
+<p><strong>Color Code / Golay Code</strong>: Select the Color Code for the Network Device (information only), called Golay Code on 60 GHz cnWave.</p>
+<p><strong>Adjacent Channel Support</strong> (PMP 450 family Only): Select Enabled if using adjacent channels on adjacent sectors. This option only applies to the 3 GHz bands (all SMs) and to the 5GHz band for PMP 450b SMs.</p>
+<p><strong>Polarity</strong> (60 GHz cnWave Only): Set to Odd or Even. If the two sectors on the DN are set to opposite polarities this represents a Hybrid mode and the throughput is halved.</p>
+<p><strong>Range Units</strong>: Select the units for the SM Range.</p>
+<p><strong>SM Range</strong>: Set the maximum range for the Network Devices sector size. Subscriber sites beyond this range will not be shown as valid subscriber module options and if the SM Range is reduced after adding Subscribers, any subscribers beyond this range will be shown as invalid (i.e. in red).</p>
+<p><strong>SM Modulation Mode</strong> (N500 Only): Select the modulation mode to be used by the SM equipment.</p>
+<p><strong>SM Maximum Mod Mode</strong> (N500 Only): Select the maximum modulation mode that the SM equipment will use in adaptive mode. Only displayed when <strong>Adaptive</strong> modulation is selected.</p>
+<p><strong>SM Minimum Mod Mode</strong> (N500 Only): Select the minimum modulation mode that the SM equipment will use in adaptive mode. Only displayed when <strong>Adaptive</strong> modulation is selected.</p>
+<p><strong>DN Modulation Mode</strong> (N500 Only): Select the modulation mode to be used by the DN equipment.</p>
+<p><strong>Hop Pattern</strong> (N500 only): Select the uniform step interval for DTS modulations. A value of 0 sets the frequency to a single channel, a value of 1 creates a pseudo random hopping sequence. A value of 1 must be used when Modulation Type = FHSS.</p>
+<p><strong>MMS Hop Offset</strong> (N500 only): Select the MMS Hop Offset for the link.</p>
+<p><strong>DN Max Payload Bytes</strong> (N500 only): Set the maximum packet size at the DN. Maximum value is 1600 Bytes. Minimum value for fixed modulation mode is 64 Bytes, in adaptive mode, the minimum may be higher than this dependent on the configured Max and Min Modulation modes. Reducing the packet size will reduce the data rate from the quoted data rate per mode.</p>
+<p><strong>SM Max Payload Bytes</strong> (N500 only): Set the maximum packet size at the SM. Maximum value is 1600 Bytes. Minimum value for fixed modulation mode is 64 Bytes, in adaptive mode, the minimum may be higher than this dependent on the configured Max and Min Modulation modes. Reducing the packet size will reduce the data rate from the quoted data rate per mode.</p>
+<p><strong>Hi</strong> (N500 only): Set the end which will take the higher frequency when using FDD frequency assignments</p>
+<p><strong>Frame Period</strong>: Select the Frame Period.</p>
+<p><strong>Downlink Data</strong> (PMP 450 and 450i Only): Set the proportion of the link to be used for downlink data.</p>
+<p><strong>Maximum Mod Mode</strong> (ePMP and 60 GHz cnWave Only): Set the maximum modulation for the Network Device on the downlink to all Subscribers.</p>
+<p><strong>DL/UL Ratio</strong> (ePMP Only): Select the required DL/UL Ratio.</p>
+<p><strong>Contention Slots</strong> (PMP 450 and 450i Only): Set the number of contention slots required.</p>
+<p><strong>Broadcast Repeat Count</strong> (PMP 450 and 450i Only): Select the value required (information only).</p>
+<p><strong>Total Virtual Circuits</strong> (PMP 450 and 450i Only): Calculated value based on the number of Subscriber Modules, 1 per Subscriber Module plus 1 additional circuit for each Subscriber Module which has <strong>High Priority Channel</strong> set to Enabled.</p>
+<p><strong>CN Capacity Limit</strong> (60 GHz cnWave Only): percentage of maximum traffic which is allowed for use by Client Nodes, with the remainder reserved for use by the mesh links to other DNs.</p>
+<p><strong>Max Registrations Allowed</strong> (cnWave 5G Fixed, ePMP, PMP 450 and 450i Only): Set the maximum number of Subscribers allowed on the Network Device.</p>
+<p><strong>Max CN Registrations Allowed</strong> (60 GHz cnWave Only): Set the maximum number of Client Nodes allowed on the DN, noting that each DN can also support mesh links to two other DNs.</p>
+<p><strong>Max Slaves Allowed</strong> (PTP 670 and 700 HCMP Only): Set the maximum number of Slaves allowed on the Network Device.</p>
+<p><strong>Synchronization Source</strong> (ePMP Only): Set the required Synchronization Source, select None to use the Integrated or Unsynchronized Connectorized Network Device.</p>
+<p><strong>Sync</strong> (PTP 670 and 700 HCMP Only): Select the synchronization setting for the link.</p>
+<p><strong>TDD Frame Mode</strong> (PTP 670 and 700 HCMP Only): Only Standard Mode.</p>
+<p><strong>Symmetry</strong> (PTP 670 and 700 HCMP Only): Select the link operation (Adaptive, Symmetric, 2:1, 3:1 or 4:1 - options are dependent on bandwidth and other configuration settings).</p>
+<p><strong>Dual Payload</strong> (PTP 670 and 700 HCMP Only): Allow dual-payload modulation modes for better throughput.</p>
+<p><strong>Highest Mod Mode</strong> (PTP 670 and 700 HCMP Only): Select the highest modulation mode for the Ethernet traffic to limit the maximum throughput rate, default is 256 QAM 0.81 (no limit). Dual or Single will be automatically selected depending on the setting for <strong>Dual Payload</strong>.</p>
+<p><strong>Lowest Ethernet Mode</strong> (PTP 670 and 700 HCMP only): Select the lowest modulation mode for the Ethernet traffic to achieve the required throughput rate, default is BPSK 0.63 Single.</p>
+</div></blockquote>
+</section>
+<section id="antenna-configuration">
+<h3>Antenna Configuration<a class="headerlink" href="#antenna-configuration" title="Permalink to this headline">¶</a></h3>
+<p>Select the antenna and its height and orientation.</p>
+<figure class="align-default" id="id7">
+<span id="nd-antenna-configuration"></span><img alt="_images/nd_antenna_configuration.png" src="_images/nd_antenna_configuration.png" />
+<figcaption>
+<p><span class="caption-text">Network Device Antenna Configuration</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p><strong>Antenna Configuration Parameters</strong></p>
+<blockquote>
+<div><p><strong>Antenna Selection</strong>: Select the antenna for the Network Device.</p>
+<p><strong>Modeled Beamwidth</strong>: Set the beamwidth angle that will be used for planning purposes. This will control the appearance of the network device on the map views and it will be used to determine if subscriber sites are in range.</p>
+<p><strong>Antenna Height</strong>: Select the height of the Network Device above ground level.</p>
+<p><strong>Antenna Azimuth</strong>: Set the bearing of peak of beam of Network Device antenna.</p>
+<p><strong>Antenna Tilt</strong>: Set the angle of mechanical tilt of the Network Device antenna, enter downtilt as a negative value (not available for omni antennas).</p>
+<p><strong>Calc Tilt</strong>: Select to calculate the optimum mechanical tilt angle for maximum throughput.</p>
+<p><strong>Calculate Loss</strong>: (N500 Only). Tick the Calculate box to select the type of cable that connects the radio to the antenna. The Cable Loss field is automatically updated.</p>
+<p><strong>Cable Length</strong>: (N500 Only). The length of cable required to connect the radio to the antenna. The Cable Loss field is automatically updated.</p>
+<p><strong>Cable Loss</strong>: Loss of the cable between the Network Device and the antenna, read only value for most antenna options.</p>
+</div></blockquote>
+</section>
+<section id="power-panel">
+<h3>Power Panel<a class="headerlink" href="#power-panel" title="Permalink to this headline">¶</a></h3>
+<p>Set the power and interference parameters.</p>
+<figure class="align-default" id="id8">
+<span id="nd-power"></span><img alt="_images/nd_power.png" src="_images/nd_power.png" />
+<figcaption>
+<p><span class="caption-text">Network Device Power</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p><strong>Power Parameters</strong></p>
+<blockquote>
+<div><p><strong>EIRP</strong>: Read only value for all products except PMP 450m, showing the EIRP of the antenna, if the country selected has a regulatory limit this value is shown in brackets underneath.</p>
+<p><strong>Power</strong>: Read Only. If the country selected has a regulatory limit (or an implied limit to meet the EIRP limit) the value is shown as “Max Power” in brackets underneath. To set the transmit power for the Network Device to a lower value tick the <strong>User Limit</strong> box and enter the value in the box below it.</p>
+<p><strong>SM Receive Target Level</strong>: (ePMP and 450 family only) Set the receive power required at the Network Device from each of the Subscribers.</p>
+<p><strong>ATPC HCMP Master Target Rx Power</strong> (PTP 670 and 700 HCMP Only): Set the receive power required at the Network Device from each of the Slaves.</p>
+<p><strong>ND Interference</strong>: This is the amount of site noise in the selected channel bandwidth, expected at the antenna connector of the ND. This noise is assumed to be a constant power added to the thermal noise of the front end of the radio. The bandwidth displayed depends on the bandwidth selected in the Equipment Settings box (in this example it is 20 MHz). To enter Interference, tick the box and update the default value. If the Network Device has been set up and background power measurements are available, then use these measurements. Available under Component Carriers section for PMP 450v 4x4 ND.</p>
+<p><strong>Default SM Interference</strong>: Select this option to set the same interference level to every SM attached to the ND. This is the amount of site noise in the selected channel bandwidth, expected at the antenna connector of the SM. This noise is assumed to be a constant power added to the thermal noise of the front end of the radio. The bandwidth displayed depends on the bandwidth selected in the Equipment Settings box (in this example it is 20 MHz). To enter Interference, tick the box and update the default value. Use the Interference on the Subscriber Module Equipment to adjust the level for an individual SM. Available under Component Carriers section for PMP 450v 4x4 ND.</p>
+<blockquote>
+<div><p><img alt="note" src="_images/note.jpg" /></p>
+<blockquote>
+<div><p>To update subscriber module parameters and performance calculations after editing Network Device parameters, click <img alt="save_page" src="_images/save_page.png" />.</p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</section>
+</section>
+<section id="calculating-tilt-angle">
+<span id="index-3"></span><h2>Calculating Tilt Angle<a class="headerlink" href="#calculating-tilt-angle" title="Permalink to this headline">¶</a></h2>
+<p>To calculate the optimum tilt angle for a Network Device (the mechanical tilt required to give maximum throughput) select the <strong>Calc Tilt</strong> <img alt="calc_tilt_button" src="_images/icon_calc_tilt_button.png" /> option to display the <a class="reference internal" href="#calc-tilt-dialog"><span class="std std-ref">Calculate Tilt Dialog</span></a>.</p>
+<blockquote>
+<div><p><img alt="note" src="_images/note.jpg" /></p>
+<blockquote>
+<div><p>Attach all the required subscriber modules to the Network Device before running this command.</p>
+</div></blockquote>
+</div></blockquote>
+<figure class="align-default" id="id9">
+<span id="calc-tilt-dialog"></span><img alt="_images/calc_tilt_dialog.png" src="_images/calc_tilt_dialog.png" />
+<figcaption>
+<p><span class="caption-text">Calculate Tilt Dialog</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>The dialog shows a number of options:</p>
+<blockquote>
+<div><p><strong>Min Tilt</strong>: Set the minimum tilt angle to consider when running the calculations. The default is the minimum downtilt of the antenna.</p>
+<p><strong>Max Tilt</strong>: Set the maximum tilt angle to consider when running the calculations. The default is the maximum uptilt of the antenna.</p>
+<p><strong>Interval</strong>: Set the step interval to define the intermediate tilt angles in the results list. Use a large value if the difference between the Minimum and Maximum is large, reduce the interval for smaller ranges.</p>
+<p><strong>Calculate</strong>: Start the calculation.</p>
+<p><strong>Cancel</strong>: Cancel the calculation from running.</p>
+<p><strong>Apply Tilt</strong>: Apply the selected tilt angle to the network device. The network device will not update unless this command is executed.</p>
+</div></blockquote>
+<p>When the calculation has finished running, the results are shown below the configuration settings. The angle that offers the maximum throughput has its radio button activated and is automatically selected. If multiple angles offer the same throughput then the middle angle is selected. To use a different angle, select the radio button next to the required row. Select <strong>Apply Tilt</strong> to update the Network Device to the new tilt angle. The <img alt="table_download_csv" src="_images/table_download_csv.png" /> exports the results to a CSV file.</p>
+<figure class="align-default" id="id10">
+<span id="calc-tilt-complete"></span><img alt="_images/calc_tilt_complete.png" src="_images/calc_tilt_complete.png" />
+<figcaption>
+<p><span class="caption-text">Completed Tilt Calculation Run</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="component-carriers">
+<span id="index-4"></span><h2>Component Carriers<a class="headerlink" href="#component-carriers" title="Permalink to this headline">¶</a></h2>
+<p>Component Carriers section is only available for the PMP 450v 4x4 Network Device. In this section, select the channel bandwidth, frequency, and enter interferences for the carriers.</p>
+<figure class="align-default" id="id11">
+<span id="component-carriers-view"></span><img alt="_images/component_carriers_view.png" src="_images/component_carriers_view.png" />
+<figcaption>
+<p><span class="caption-text">Component Carriers</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p><strong>Component Carrier Configuration Parameters</strong></p>
+<blockquote>
+<div><p><strong>Component Carriers</strong>: Select the number of Component Carriers for the network device.</p>
+<p><strong>Component Carrier</strong>: Read only value. This is the Component Carrier number assignment.</p>
+<p><strong>Carrier</strong>: Read only value. Name of the Carrier.</p>
+<p><strong>Band</strong>: Read Only value. This is the Carrier band selected.</p>
+<p><strong>Bandwidth</strong>: Select the channel bandwidth for the Component Carriers.</p>
+<dl class="simple">
+<dt><img alt="note" src="_images/note.jpg" /></dt><dd><p>Bandwidths have to be the same for the Component Carriers.</p>
+</dd>
+</dl>
+<p><strong>Frequency (MHz)</strong>: To select the Component Carrier frequencies, click on <img alt="icon_cc_select" src="_images/icon_cc_select.png" />. The Select Transmit Frequencies dialog is displayed.</p>
+</div></blockquote>
+<figure class="align-default" id="id12">
+<span id="select-frequency-dialog-cc"></span><img alt="_images/select_frequency_dialog_cc.png" src="_images/select_frequency_dialog_cc.png" />
+<figcaption>
+<p><span class="caption-text">Select Transmit Frequencies</span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Select the frequency for the component carrier and, if there are multiple component carriers, the available frequencies for the other component carriers are filtered to show only valid Tx frequencies. Select the frequencies from the modified list.</p>
+<p>Click Clear Selection to remove selected frequencies from the list.</p>
+<p>Select the channel raster from the <strong>Raster</strong> parameter dropdown list.</p>
+<blockquote>
+<div><p><strong>ND Interference</strong>: This is the amount of site noise in the selected channel bandwidth, expected at the antenna connector of the Carrier. This noise is assumed to be a constant power added to the thermal noise of the front end of the radio. To enter Interference, tick the box and update the default value. If the Carrier has been set up and background power measurements are available, then use these measurements.</p>
+<p><strong>Default SM Interference</strong>: Select this option to set the same interference level to every SM attached to the Carrier. This is the amount of site noise in the selected channel bandwidth, expected at the antenna connector of the SM. This noise is assumed to be a constant power added to the thermal noise of the front end of the radio. To enter Interference, tick the box and update the default value. Use the Interference on the Subscriber Module Equipment to adjust the level for an individual SM.</p>
+</div></blockquote>
+</section>
+<section id="mesh-links">
+<span id="index-5"></span><h2>Mesh Links<a class="headerlink" href="#mesh-links" title="Permalink to this headline">¶</a></h2>
+<p>Mesh Links are only available for 60 GHz cnWave products. View, add, delete and modify Mesh Links on the Distribution Node (DN). To manage the table view see <a class="reference internal" href="user_interface_tips.html"><span class="doc">User Interface Tips</span></a>.</p>
+<figure class="align-default" id="id13">
+<span id="mesh-link-view"></span><img alt="_images/mesh_link_view.png" src="_images/mesh_link_view.png" />
+<figcaption>
+<p><span class="caption-text">Mesh Links View on Network Devices page</span><a class="headerlink" href="#id13" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="links-to-subscriber-modules">
+<span id="sm-table-view"></span><span id="index-6"></span><h2>Links to Subscriber Modules<a class="headerlink" href="#links-to-subscriber-modules" title="Permalink to this headline">¶</a></h2>
+<p>View, add and delete Subscriber Modules on the Network Device.</p>
+<figure class="align-default" id="id14">
+<span id="subscriber-module-view"></span><img alt="_images/Subscriber_module_view.png" src="_images/Subscriber_module_view.png" />
+<figcaption>
+<p><span class="caption-text">Links to Subscriber Module View on Network Device page</span><a class="headerlink" href="#id14" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>To add additional Subscriber Modules at the Network Device, click <img alt="table_add" src="_images/table_add.png" />. A list of available subscriber sites will be displayed. Any subscriber sites which are not connected to the Network Device will be highlighted. To create an additional Subscriber Module at the same subscriber site select the required subscriber site and a duplicate Subscriber Module is created.</p>
+<p>To delete a Subscriber Module at the Network Device, select the Subscriber row and click <img alt="table_delete" src="_images/table_delete.png" />.</p>
+<p>To export the data in the Subscriber Module table to a csv file, click <img alt="table_download_csv" src="_images/table_download_csv.png" /></p>
+<p>To manage the table view see <a class="reference internal" href="user_interface_tips.html"><span class="doc">User Interface Tips</span></a>.</p>
+</section>
+<section id="performance-summary">
+<span id="index-7"></span><h2>Performance Summary<a class="headerlink" href="#performance-summary" title="Permalink to this headline">¶</a></h2>
+<p>This section provides a summary of the Maximum Usable Modulation Modes of all the PMP Links on the Network Device and the Mean Predicted Throughput per modulation mode and for the ND. These values assume that all subscribers are evenly loaded and using the modulation modes shown, it does not include the capacity limits of individual subscribers.</p>
+<figure class="align-default" id="id15">
+<span id="performance-summary-of-nd"></span><img alt="_images/performance_summary_of_nd.png" src="_images/performance_summary_of_nd.png" />
+<figcaption>
+<p><span class="caption-text">Performance Summary for the Network Device</span><a class="headerlink" href="#id15" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>For 60 GHz cnWave and PMP 450v 4x4 (when Number of Carriers is more than 1), the Performance Summary is shown separately for the Aggregate, Sector 1 (Component Carrier 1) and Sector 2 (Component Carrier 2) in tabs.</p>
+<figure class="align-default" id="id16">
+<span id="performance-summary-of-nd-sector"></span><img alt="_images/performance_summary_of_nd_sector.png" src="_images/performance_summary_of_nd_sector.png" />
+<figcaption>
+<p><span class="caption-text">Performance Summary for the Network Device with Multiple Sectors (Component Carriers)</span><a class="headerlink" href="#id16" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<blockquote>
+<div><p>A PMP Link will only be included in the summary if it supports a modulation mode at the required performance level in both directions of the link. A warning will show the number of PMP Links which don’t meet this criteria.</p>
+</div></blockquote>
+</section>
+<section id="bill-of-materials">
+<span id="index-8"></span><h2>Bill of Materials<a class="headerlink" href="#bill-of-materials" title="Permalink to this headline">¶</a></h2>
+<p>To display the Bill of Materials for the Network Device and associated Subscriber Modules select the clipboard symbol <img alt="bom_icons" src="_images/bom_icons.png" /> next to the Save button.</p>
+<section id="bill-of-materials-for-pmp-network-device">
+<h3>Bill of Materials for PMP Network Device<a class="headerlink" href="#bill-of-materials-for-pmp-network-device" title="Permalink to this headline">¶</a></h3>
+<p>LINKPlanner automatically calculates the Bill of Materials (BOM) for the required components of the Network Device. The Network Device BOM contains the list of part numbers and associated quantities. To add additional items to the BOM, click <img alt="new_extra" src="_images/icon_new_extra.png" />. A list of optional extras for the Network Device will be displayed. To add items to the BOM tick the box next to each item required and click <strong>OK</strong>. The item will appear in the main list, where the quantity can be adjusted by selecting the number in the <strong>Qty</strong> column and adjusting as required. To delete optional items from the BOM list, tick the box next to each item and click <img alt="delete_extra" src="_images/icon_delete_extra.png" />. A star denotes optional extras which have been added to the automatic BOM items. To power the Network Device from the switch tick the <strong>Power from switch?</strong> box.</p>
+<p>When Power from switch is selected, where possible the PoE and line cord are removed from the BOM, which may result in the kit part number changing to a different kit that doesn’t include a PoE. This is not available for all products and country variants.</p>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<blockquote>
+<div><p>The <strong>Power from Switch</strong> option is only available if the network site has a switch attached to it, see <a class="reference internal" href="adding_switches.html"><span class="doc">Adding Switches</span></a> and the product selected can be powered by the switch, which includes most of the PoE powered Cambium radios.</p>
+</div></blockquote>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<blockquote>
+<div><p>If TX2000 is the Sync option on PTP 670 HCMP/PTP 700 HCMP the Network Device will automatically be configured to be powered from the switch.</p>
+</div></blockquote>
+<figure class="align-default" id="id17">
+<span id="bill-of-materials-for-nd"></span><img alt="_images/bill_of_materials_for_nd.png" src="_images/bill_of_materials_for_nd.png" />
+<figcaption>
+<p><span class="caption-text">Bill of Materials for Network Device</span><a class="headerlink" href="#id17" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p><strong>P/N</strong>: The Cambium part number. If the component is not supplied by Cambium, this is set to ‘(no part number)’.</p>
+<p><strong>Description</strong>: Description of the components.</p>
+<p><strong>Qty</strong>: Quantity required. This value can be edited, for items automatically added if the quantity is increased the row will be shown in green, if the quantity is decreased from the recommended value, the row will be shown in red. To reset to the default value, click on the value and choose <img alt="icon_revert" src="_images/icon_revert.png" />.</p>
+<p><strong>Notes</strong>: Displays information about certain items, such as whether they are obsolete.</p>
+</section>
+<section id="bill-of-materials-for-subscriber-modules">
+<h3>Bill of Materials for Subscriber Modules<a class="headerlink" href="#bill-of-materials-for-subscriber-modules" title="Permalink to this headline">¶</a></h3>
+<p>The Subscriber Modules BOM displayed in the Network Device page contains an aggregate view of all the equipment required for the Subscribers connected to the Network Device. This BOM cannot be edited at this level. To change the quantites or add Optional Extras, select the individual Subscriber Modules.</p>
+<figure class="align-default" id="id18">
+<span id="bill-of-materials-for-nd-sms"></span><img alt="_images/bill_of_materials_for_nd_sms.png" src="_images/bill_of_materials_for_nd_sms.png" />
+<figcaption>
+<p><span class="caption-text">Aggregate Bill of Materials for Subscriber Modules on a Network Device</span><a class="headerlink" href="#id18" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="viewing-saving-the-bom-file-in-ms-excel">
+<h3>Viewing &amp; saving the BOM file in MS Excel<a class="headerlink" href="#viewing-saving-the-bom-file-in-ms-excel" title="Permalink to this headline">¶</a></h3>
+<p>To view the Network Device BOM or Subscriber Module Aggregate BOM in Excel, click <img alt="table_download_csv" src="_images/table_download_csv.png" /> in the appropriate BOM section. Once in the spreadsheet the file can be saved as normal.</p>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<blockquote>
+<div><p>All numeric only part numbers consist of 11 digits, if the number displayed is only 10 digits the part number should start with a zero.</p>
+</div></blockquote>
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="list_of_figures.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_this_user_guide.html">About This User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_linkplanner.html">Using LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_ptp_links.html">Planning PTP links</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="planning_pmp_links.html">Planning PMP networks</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">PMP Network Devices</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#creating-network-devices">Creating Network Devices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#displaying-pmp-network-devices">Displaying PMP Network Devices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#deleting-a-network-device">Deleting a Network Device</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pmp-network-device-page">PMP Network Device Page</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#general">General</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#equipment">Equipment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#product-configuration">Product Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#antenna-configuration">Antenna Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#power-panel">Power Panel</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#calculating-tilt-angle">Calculating Tilt Angle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#component-carriers">Component Carriers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mesh-links">Mesh Links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#links-to-subscriber-modules">Links to Subscriber Modules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#performance-summary">Performance Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bill-of-materials">Bill of Materials</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#bill-of-materials-for-pmp-network-device">Bill of Materials for PMP Network Device</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bill-of-materials-for-subscriber-modules">Bill of Materials for Subscriber Modules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#viewing-saving-the-bom-file-in-ms-excel">Viewing &amp; saving the BOM file in MS Excel</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="mesh_links.html">Mesh Links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="subscriber_modules.html">Subscriber Modules</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="background_information.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notices.html">Legal Notices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes_to_linkplanner.html">Changes to LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="mesh_links.html" title="Mesh Links"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="planning_pmp_links.html" title="Planning PMP networks"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="planning_pmp_links.html" >Planning PMP networks</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">PMP Network Devices</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2025, Cambium Networks.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

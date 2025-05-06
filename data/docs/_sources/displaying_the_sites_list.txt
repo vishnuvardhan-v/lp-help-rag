@@ -1,0 +1,106 @@
+.. index::
+   single: Displaying the Sites List
+   single: Sites List
+
+
+Displaying the Sites List
+=========================
+
+When one or more network sites have been created, they appear in the :ref:`network_sites_list`.
+To display this list, click the |icon_expand_tree| beside the **"Network Sites"** menu in the navigation tree. The Network Sites tree is displayed in the left hand panel. To display the subscriber sites, click the |icon_expand_tree| beside the **Subscriber Sites** node in the navigation tree. The Sites lists for both Network Sites and Subscriber Sites can be viewed and modified in exactly the same way.
+
+  .. _network_sites_list:
+  .. figure:: network_sites_list.png
+
+     Network Sites List
+ 
+|note|
+    To locate the sites in the map view, move the cursor over the site, click |icon_locate| icon, which is displayed on the right hand side of the site. 
+
+.. _sites_table_view:
+
+Displaying the Sites in a Table View
+-------------------------------------------
+
+To display the sites in a table view, click on **"Network Sites"** node in the navigation tree. The table view shows the co-ordinates, height and description for both network and subscriber sites. For network sites it also shows the Node Type (only applicable for 60 GHz cnWave products), number of PMP Network Devices at each site, number of PTP links at each site, number of Mesh links at each site, total subscriber connections, total throughput for all Network Devices on the site and Site owner if any. For subscriber sites the table shows the number of PMP links at each site. To manage the table view see :doc:`user_interface_tips`.
+
+  .. _network_sites_table:
+  .. figure:: network_sites_table.png
+
+     Network Sites Table
+     
+
+.. index::
+   single: Adding Sites
+
+Adding the Sites in a Table View
+-------------------------------------------
+
+Sites can be added in the Sites Table view. To add a site in the table view, click |icon_add| icon. This opens the **New Site** pop-up window. Enter the details for the new site and then click |icon_ok|
+
+  .. _table_view_add_site:
+  .. figure:: table_view_add_site.png
+
+     Adding Site in Table View
+
+
+
+.. index::
+   single: Deleting Sites
+
+Deleting Sites
+--------------
+
+To delete a site, hover over the site name in the **Network Sites** or **Subscriber Sites** tree view and click |list_delete|, click |icon_delete_detailspage| on the details page, select rows and click |table_delete| in the table view, or right-click on the Site in the map view and select Delete from the pop-up menu.
+
+|note|
+    To revert the changes made, click the |icon_undo_changes| icon, which is displayed next to the Apply button. This icon is only displayed when there are changes to the parameters, replacing the |icon_delete_detailspage| icon.
+
+.. index::
+   single: Editing Site details
+   
+
+Editing Site details
+--------------------
+
+Site Name and Description can be edited directly in the Sites table. To edit any other Site attributes, click on the Site and update it in the :doc:`site_page`.
+
+|note|
+    To locate the sites in the map view, click |icon_locate| icon, which is displayed next to the |icon_delete_detailspage| icon at the top.
+    
+    
+
+.. index::
+   single: Converting and Duplicating Sites
+
+Converting and Duplicating Sites
+---------------------------------
+
+Sites can be converted from Network Sites to Subscriber Sites or from Subscriber Sites to Network Sites. To convert a Network Site(s) to Subscriber Site(s), open the Network Site Table view, tick the box(es) to the left of the site name and click |icon_convert_to_subscriber_site|. To convert a Subscriber Site(s) to Network Site(s), open the Subscriber Site Table view, tick the box(es) to the left of the site name and click |icon_convert_to_network_site|.
+
+Sites can be duplicated from Network Sites to Subscriber Sites or from Subscriber Sites to Network Sites. To duplicate a Network Site(s) as a Subscriber Site(s), open the Network Site Table view, tick the box(es) to the left of the site name and click |icon_create duplicate_subscriber_site|. To duplicate a Subscriber Site(s) to Network Site(s), open the Subscriber Site Table view, tick the box(es) to the left of the site name and click |icon_create duplicate_network_site|.
+     .. _convert_sites:
+     .. figure:: convert_sites.png
+     
+        Converting or Duplicating Network and Subscriber Sites
+
+|note|
+    If a site already has links or Network Devices attached to it, these will be deleted if a site is converted rather than duplicated.
+
+
+
+.. |note| image:: note.jpg
+.. |list_delete| image:: list_delete.png
+.. |icon_add| image:: icon_add_button_extend.png
+.. |icon_undo_changes| image:: icon_undo_changes.png
+.. |icon_delete_detailspage| image:: icon_delete_detailspage.png
+.. |icon_ok| image:: icon_ok.png
+.. |icon_locate| image:: icon_locate_on_map.png
+.. |icon_expand_tree| image:: icon_expand_tree.png
+.. |icon_table_view| image:: icon_table_view.png
+.. |icon_delete| image:: icon_delete.png
+.. |table_delete| image:: table_delete.png
+.. |icon_convert_to_subscriber_site| image:: icon_convert_to_subscriber_site.png
+.. |icon_convert_to_network_site| image:: icon_convert_to_network_site.png
+.. |icon_create duplicate_subscriber_site| image:: icon_create_duplicate_subscriber_site.png
+.. |icon_create duplicate_network_site| image:: icon_create_duplicate_network_site.png

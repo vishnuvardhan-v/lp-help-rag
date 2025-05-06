@@ -1,0 +1,78 @@
+.. index::
+   single: Creating Reports
+   single: HTML Reports
+   single: Reporting
+   single: Reports
+
+Creating Reports
+================
+
+Reports can be created in PDF format for the currently open and selected project. There are six categories of report:
+
+* PTP Proposal reports offer a general overview. This report is only available when viewing the PTP Link.
+* PTP Installation reports contain detailed configuration and performance parameters for the PTP Link. This report is only available when viewing the PTP Link.
+* Mesh Proposal reports offer a general overview. This report is only available when viewing the Mesh Link.
+* Mesh Installation reports contain detailed configuration and performance parameters for the Mesh Link. This report is only available when viewing the Mesh Link.
+* PMP Proposal reports offer a general overview. This report is available at the Network Device for an individual Network Device and at the Network Site for all Network Devices on the site.
+* PMP Installation reports contain detailed configuration and performance parameters for the PMP Links to Subscriber Modules. This report is available in the following places:
+    * Network Site - contains all Network Devices on the site
+    * Network Device - contains the one Network Device and connected PMP and Mesh Links 
+    * PMP Link - contains the one PMP Link
+
+|note|
+
+        Installation reports contain ordered lists of field settings. These are very useful when completing the Installation Wizard of the radio web interface.
+
+PTP Proposal Reports
+---------------------
+
+To obtain a PTP Proposal report, open the required PTP Link then choose |icon_report_proposal| **Proposal Report**
+
+The proposal report consists of a project summary, a path profile for the link with performance information for each end, a link summary, performance charts, a table of climatic factors, losses and standards and a BOM for the PTP link equipment. 
+
+PTP Installation Reports
+-------------------------
+
+To obtain a PTP Installation report, open the required PTP Link then choose |icon_report_install| **Installation Report**
+
+The PTP Link installation report consists of details of one PTP link, a link summary, path profile, link configuration, BOM, installation notes for each end of the link, regulatory conditions and performance reports.
+
+Mesh Proposal Reports
+-----------------------
+
+To obtain a Mesh Proposal report, open the required Mesh Link then choose |icon_report_proposal| **Proposal Report**
+
+The proposal report consists of a project summary, a path profile for the link with performance information for each end, a link summary, performance charts and a table of climatic factors, losses and standards There is no BOM in the Mesh reports as the equipment is defined on the Network Device. 
+
+Mesh Installation Reports
+---------------------------
+
+To obtain a Mesh Installation report, open the required Mesh Link then choose |icon_report_install| **Installation Report**
+
+The Mesh Link installation report consists of details of one Mesh link, a link summary, path profile, regulatory conditions and performance reports.
+
+PMP Proposal Reports
+---------------------
+
+To obtain a PMP Proposal report for a single Network Device, open the required PMP Network Device then choose |icon_report_proposal| **Proposal Report**. To obtain a PMP Proposal Report at the site level, open the network site and then choose |icon_report_proposal| **Proposal Report**. This report contains the same sections shown below for each Network Device on the site and a high level summary of all Network Devices at the site.
+
+The Network Device level proposal report consists of a project summary, a Network Device Summary, a Subscriber Module Summary, detailed throughput data for the Network Device, a BOM for the Network Device Equipment and a BOM for the Subscriber Module Equipment. 
+
+
+PMP Installation Reports
+-------------------------
+
+To obtain a PMP Installation report, open the required page (Network Site, Network Device or Subscriber Module)  then choose |icon_report_install| **Installation Report**
+
+The **Network Site PMP** installation report consists of a site summary, site level BOM for the PMP Network Devices and then the Network Device sections shown below  (excluding the details for each PMP link) for all Network Devices at the site.
+
+The **Network Device** installation report consists of a project summary, Network Device Summary, installation notes for the Network Device,  detailed throughput data for the Network Device, BOM and details of each PMP and Mesh link. 
+
+
+The **PMP Link** installation report consists of details of one PMP link (link summary, path profile, installation notes for the Subscriber Module, Performance reports and BOM).
+
+
+
+.. |icon_report_proposal| image:: icon_report_proposal.png
+.. |icon_report_install| image:: icon_report_install.png
+.. |note| image:: note.jpg

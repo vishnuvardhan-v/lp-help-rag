@@ -1,0 +1,68 @@
+.. index::
+   single: Google Earth
+   single: Link Profiles
+   single: Path Profiles
+   single: Verifying
+
+Using Google Earth(TM)
+======================
+
+The link profile can be viewed as a Google Earth(TM) aerial photograph (if
+it is available). Air photographs help the planner to identify potential
+obstructions and estimate their heights and positions.
+
+.. index::
+   single: Viewing in Google Earth
+
+Viewing Links and Sites in Google Earth(TM)
+-------------------------------------------
+
+To view a link, export the LINKPlanner project to Googel Earth(TM) see (:ref:`file_options`) and then open the KMZ file in Google Earth(TM)
+
+
+.. _google_earth_aerial_photograph:  
+.. figure:: google_earth_aerial_photograph.png
+
+   Google Earth(TM) Aerial Photograph
+
+
+.. index::
+   single: Aerial Photographs
+
+Zoom in Aerial Photographs
+---------------------------------------
+
+Zoom into areas of the photograph where obstructions may be present, as shown here (:ref:`google_earth_zoomed`):
+
+.. _google_earth_zoomed:  
+.. figure:: google_earth_zoomed.png
+
+   Google Earth(TM) Aerial Photograph (Zoomed)
+
+
+Color Code in Aerial Photographs
+----------------------------------
+
+**Magenta lines - LoS links**: The magenta lines represent LoS links between sites.
+
+**Magenta transparent area - ground Fresnel zone**: The magenta transparent area represents the projection of the Fresnel cigar shaped tube on the ground. Obstructions can be easily compared with this Ground Fresnel zone to establish their significance. The zoomed example photograph shows a tree at 0.26 miles (0.42 km) that is wider than the Fresnel zone and thus, if it is high enough, is of
+significance. The shadows and general size suggest that it may be 30 ft (9.2 m) high.
+
+**Blue translucent area - vertical Fresnel zone**: The blue translucent shaded area represents the Vertical Fresnel zone as seen from the air  (:ref:`fresnel_zone_in_google_earth`). It has no thickness and so may not be seen when the observer is immediately above the link.
+
+.. _fresnel_zone_in_google_earth:  
+.. figure:: fresnel_zone_in_google_earth.png
+
+   Fresnel zone representation in Google Earth
+
+.. index::
+   single: High Points
+
+High Points in Aerial Photographs
+---------------------------------
+
+Hp1-3 identify points which have the greatest significance to the excess path loss of the link. Hp1 has the greatest significance while Hp2 is the largest effect on the left hand side of the link and Hp3 is the largest effect on the right hand side of the link.
+
+When an obstruction is identified, with practice, the height of the obstruction can be estimated and quickly added to the profile using the range markers and the profile editor.
+
+

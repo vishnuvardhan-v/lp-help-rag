@@ -1,0 +1,446 @@
+.. index::
+   single: Creating Project, Access Points and Subscriber Modules
+   single: Network Devices
+   single: Projects
+   single: Subscriber Modules
+   single: Tutorial
+
+
+Creating Project, Network Devices and Subscriber Modules (PMP)
+=================================================================
+
+To create a project with one Network Site, one Network Device and two Subscriber Modules:
+
+1. Click |new_project|.
+
+   A pop-up message is displayed asking for the project name and Prediction model to be used
+   
+   .. _create_new_project_window:
+   .. figure:: create_new_project_window.png
+
+      Create new project window
+
+2. Enter Project name and Default settings for new links.
+
+    Enter the Project Name as Tutorial_PMP
+    
+    Click  |ok|
+
+    The project is now saved and the Project Page is displayed.
+
+3.	Click New Network Site |new_network_site| on the right panel of the page. 
+
+    The Network Site Mode page is displayed. Enter this data: 
+    
+        **Site Name**: Golf Club
+	
+	**Maximum Height**: 40 meters 
+    
+        **Enter coordinates?**: Tick
+    
+        **Latitude**: 39.75093N 
+    
+        **Longitude**: 104.84035W 
+
+|note|
+
+        Latitude and longitude should be separated by a comma. For example, 39.75093N, 104.84035W
+    
+   .. _Network_Site_Mode_Window:
+   .. figure:: Network_Site_Mode_Window.png
+
+      Network Site Mode Window
+      
+
+Click |submit|, the new Network Site is created with a default name.
+
+
+4.	Edit the Site Properties by following the steps below.
+
+    Click |icon_expand_tree| which is on the left side of the |menu_network_site| in the left panel of the page.
+
+    This shows Network Site tree view.
+
+   .. _Network_Sites_Window:
+   .. figure:: Network_Sites_Window.png
+
+      Network Sites Window
+
+Click **Golf Club**, enter the details below:
+    
+        **Description**: Network Site located at Golf Club
+        
+    Click |apply|
+    
+    Now the Network Site is updated with the new properties.
+
+
+   .. _Network_Sites_window_with_properties:
+   .. figure:: Network_Sites_window_with_properties.png
+
+      Network Sites window with properties
+
+  
+To locate the Network Site on the map window, click |icon_zoom_to_fit| in the right panel. This zooms to the level of the network device.
+
+5.	Create New PMP Network Devices by following the steps below
+
+    Click |new_nd_device| on the right panel of the project window. This opens the Network Device Mode window.
+    
+    In the window **Tick** the option **Use the site Maximum Height?** 
+    
+   .. _Network_Device_Mode:
+   .. figure:: Network_Device_Mode.png
+
+      Network Device Mode
+
+Now move the cursor to the **Golf Club** network site and click on the site.
+
+This will create a PMP Network Device with default device settings.
+
+   .. _PMP_Network_Device_Map_Window:
+   .. figure:: PMP_Network_Device_Map_Window.png
+
+      PMP Network Device Map Window
+      
+      
+6.	Edit the default properties of the new PMP Network Device.
+
+    Click |icon_expand_tree| which is on the left side of the |menu_pmp_nd| in the left panel of the page.
+    
+    This shows PMP Network Device tree view.
+     
+   .. _PMP_Network_Devices_window:
+   .. figure:: PMP_Network_Devices_window.png
+
+      PMP Network Devices Window
+
+Click on **Golf Club: 000** PMP Network Device. This displays all the properties of the PMP Network Device.
+
+The PMP Network Devices page has 7 sections, namely General, Equipment, Product Configuration, Antenna Configuration, Power, Links to Subscriber Modules and Performance Summary.
+
+Click on a section header to expand/collapse the section.
+
+Click on the **General** Section. This shows Name, Latitude/Longitude info, MAC Address, MSN and Description.
+
+Click on **Equipment** section. Enter the details below:
+
+    **Band**: 5.8 GHz 
+    
+    **Product**: PMP450i 
+    
+    **Country**: United States 
+    
+    **Sync Input**: Generate Sync 
+    
+    **Encryption Variant**: AES 
+
+   .. _PMP_Network_Devices_General_and_Equipment_Configuration:
+   .. figure:: PMP_Network_Devices_General_and_Equipment_Configuration.png
+
+      PMP Network Devices General and Equipment Configuration
+
+Click on the **Product Configuration** section. Enter the details below:
+   
+    **Bandwidth**: 20 MHz     
+   
+    **Color Code**: 0   
+   
+    **Adjacent Channel Support**: Disabled
+
+    **Range Units**: miles
+   
+    **SM Range**: 2.0 mi.
+
+    **Frame Period**: 2.5 ms
+   
+    **Max Registrations Allowed**: 238
+   
+    **Downlink Data**: 75 % 
+   
+    **Contention Slots**: 3
+   
+    **Effective Contention Slots**: 3
+   
+    **Broadcast Repeat Count**: 0
+
+    **Total Virtual Circuits**: 0 (read only)
+   
+   
+   .. _PMP_Network_Devices_Product_Configuration:
+   .. figure:: PMP_Network_Devices_Product_Configuration.png
+
+      PMP Network Devices Product Configuration 
+   
+   
+Click on **Antenna Configuration** section. Enter the details below:
+ 
+    **Antenna Selection**: Cambium Networks 90 deg 4.9 - 6 GHz, 90/120 deg Sector Antenna (18.0 dBi)
+   
+    **Modeled Beamwidth**: 90 degrees
+
+    **Antenna Height**: 40m
+   
+    **Antenna Azimuth**: 90 degrees
+   
+    **Antenna Tilt**: 0 degrees
+    
+    
+   .. _PMP_Network_Devices_Antenna_Configuration:
+   .. figure:: PMP_Network_Devices_Antenna_Configuration.png
+
+      PMP Network Devices Antenna Configuration   
+
+Click on |save_page| to update the Power information with these settings.
+ 
+Click on **Power** section. Enter the details below: 
+   
+    **EIRP**: 36 dBm (read only)
+   
+    **Power**: 18 dBm (read only)
+   
+    **User Limit**: Unticked
+   
+    **SM Receive Target Level**: -56 dBm
+   
+    **ND Interference?**: Tick, -90.0 dBm
+   
+    **Default SM Interference?**: Unticked
+
+   .. _PMP_Network_Devices_Power_Configuration:
+   .. figure:: PMP_Network_Devices_Power_Configuration.png
+
+      PMP Network Devices Power Configuration
+      
+Click |save_page|
+
+Now the PMP Network Device is updated with the new settings.
+
+7.	Create two PMP Subscriber Sites by following the steps below:
+
+    Click |new_sub_site| on the right panel of the project window.
+    
+    Enter the data below for the first Subscriber Site
+    
+        **Site Name**: Billings Street
+	
+	**Maximum Height**: 25 meters
+        
+        **Enter coordinates?**: Tick
+        
+        **Latitude**: 39.74739N 
+        
+        **Longitude**: 104.82459W
+        
+        
+|note|
+
+        Latitude and longitude should be separated by a comma. For example, 39.74739N, 104.82459W
+        
+Click |submit|
+
+   .. _Subscriber_Site_1:
+   .. figure:: Subscriber_Site_1.png
+
+      Subscriber Site 1
+
+Enter the data below for the second Subscriber Site
+    
+        **Site Name**: Xanadu Street
+	
+	**Maximum Height**: 15 meters
+        
+        **Enter coordinates?**: Tick
+        
+        **Latitude**: 39.75385N 
+        
+        **Longitude**: 104.82905W
+        
+        
+|note|
+
+        Latitude and longitude should be separated by a comma. For example, 39.75385N, 104.82905W
+        
+Click |submit|
+
+   .. _Subscriber_Site_2:
+   .. figure:: Subscriber_Site_2.png
+
+      Subscriber Site 2
+
+Two Subscriber Sites are created now with given names.
+
+8.	Edit the default properties of the new Subscriber Sites.
+
+        Click |icon_expand_tree| which is on the left side of the |menu_sub_site| in the left panel of the page.
+        
+        This shows Subscriber Site tree view.
+
+    
+   .. _Subscriber_Sites_Window:
+   .. figure:: Subscriber_Sites_Window.png
+
+      Subscriber Sites Window
+      
+      
+Click on **Billings Street** Subscriber Site. This displays all the properties of the Subscriber Site.
+
+    Enter the details below:
+        
+        **Description**: Corner of Billings Street and E. Montview Blvd
+      
+    Click |apply|      
+    
+   .. _Subscriber_Site_1_updating_properties:
+   .. figure:: Subscriber_Site_1_updating_properties.png
+
+      Subscriber Site 1 updating properties
+      
+Click on **Xanadu Street** Subscriber Site. This displays all the properties of the Subscriber Site.
+
+    Enter the details below:
+        
+        **Description**: Customer on Xanadu Street
+      
+    Click |apply|      
+    
+   .. _Subscriber_Site_2_updating_properties:
+   .. figure:: Subscriber_Site_2_updating_properties.png
+
+      Subscriber Site 2 updating properties
+      
+    
+9.	Add Subscriber Modules to Network Device.
+
+    Click |icon_expand_tree| which is on the left side of the |menu_pmp_nd| in the left panel of the page.
+
+    This displays the PMP Network Device added to the project.
+
+    Click on **Golf Club: 090** PMP Network Device. This displays all the properties of the PMP Network Device.
+
+    In the **Links to Subscriber Modules** section, click the |table_add| button. The :ref:`Attach_Subscribers_Window` is displayed. Select the Subscriber Sites to be connected to the Network Device. 
+    
+   .. _Attach_Subscribers_Window:
+   .. figure:: Attach_Subscribers_Window.png
+
+      Attach Subscribers Window
+
+Click  |ok|
+    
+The Subscriber Modules are now added to the Network Device and can be selected from the **Links to Subscriber Modules** section under PMP Network Devices.
+
+   .. _Two_Subscriber_Modules_on_One_Network_Device:
+   .. figure:: Two_Subscriber_Modules_on_One_Network_Device.png
+
+      Two Subscriber Modules on One Network Device
+      
+
+11.	Configure the Subscriber Module Billings Street.
+    
+    Click |icon_expand_tree| which is on the left side of the |menu_pmp_nd| in the left panel of the page.
+    
+    This displays the PMP Network Device added to the project.
+    
+    Click on |icon_expand_tree| which is on the left side of the **Golf Club : 090** PMP Network Device. This lists all the Subscriber Module attached to the Network Device.
+    
+    Click on **Billing Street**. This displays all the properties of the Subscriber Module. 
+
+    Subscriber Modules properties are categorized under 8 sections, namely General, Equipment, Product Configuration, Antenna Configuration, Power Profile, Performance Summary and Performance Details.
+
+    Click on **General** section. This shows Name, Latitude/Longitude info, MAC Address, MSN and Description.
+    
+    Click on **Equipment** section. Enter the details below,
+
+
+    **Band**: 5.8 GHz (read only)     
+   
+    **Product**: PMP450b Mid-gain
+   
+    **Country**: United States (read only)
+    
+    **Encryption Variant**: AES (read only)
+   
+   .. _Subscriber_Module_General_and_Equipment_Configuration:
+   .. figure:: Subscriber_Module_General_and_Equipment_Configuration.png
+
+      Subscriber Module General and Equipment Configuration
+      
+Click on **Product Configuration** section. Enter the details below:
+   
+   **Bandwidth**: 20 MHz (read only)    
+   
+   **Color Code**: 0 (read only)     
+   
+   **Data Channels**: 1
+   
+   **SM Range**: 2 mi. (read only)
+
+   **Frame Period**: 2.5 ms (read only)
+
+   **Downlink Data**: 75 % (read only) 
+   
+   **Contention Slots**: 3 (read only)
+   
+   **Effective Contention Slots**: 3 (read only)
+   
+   **MIMO Rate Adapt**: MIMO-A/B
+   
+   **DL Maximum Mod Mode**: x8
+   
+   **UL Maximum Mod Mode**: x8
+   
+   
+   .. _Subscriber_Module_Product_Configuration:
+   .. figure:: Subscriber_Module_Product_Configuration.png
+
+      Subscriber Module Product Configuration  
+ 
+Click on **Antenna Configuration** and **Power** section. Enter the details below:
+   
+   **Antenna Selection**: Cambium Networks 15 deg Mid- Gain Integrated (16.3 dBi)
+   
+   **Antenna Height**: 21 m  - Click |save_page| to update Antenna parameters after changing SM antenna height
+   
+   **Antenna Azimuth**: 286.2 degrees (read only)
+   
+   **Antenna Tilt**: 1.6 degrees (uptilt) (read only)
+   
+   **ND Antenna Gain**: 17 dBi (read only)
+   
+   **EIRP** 35 dBm (read only)
+   
+   **Power**: 19 dBm (read only)
+   
+   **User Limit**: unticked
+   
+   **Interference?**: Tick, -90.0 dBm
+
+   .. _Subscriber_Module_Antenna_and_Power_Configuration:
+   .. figure:: Subscriber_Module_Antenna_and_Power_Configuration.png
+
+      Subscriber Module Antenna and Power Configuration
+
+Click |save_page|
+
+.. |new_project| image:: Create_new_project.png
+.. |save_project| image:: save_project_icon.png
+.. |ok| image:: icon_ok.png
+.. |submit| image:: icon_submit.png
+.. |apply| image:: icon_apply.png
+.. |save_page| image:: icon_apply.png
+.. |icon_expand_tree| image:: icon_expand_tree.png
+.. |new_network_site| image:: icon_right_menu_network_site.png
+.. |note| image:: note.jpg
+.. |icon_network_site| image:: icon_menu_network_site.png
+.. |menu_network_site| image:: icon_menu_network_site_expand.png
+.. |icon_zoom_to_fit| image:: icon_zoom_to_fit.png
+.. |new_nd_device| image:: icon_right_menu_PMP_Network_device.png
+.. |icon_pmp_nd| image:: icon_menu_PMP_Network_devices.png
+.. |menu_pmp_nd| image:: icon_menu_PMP_Network_devices_expand.png
+.. |new_sub_site| image:: icon_right_menu_subscriber_site.png
+.. |icon_sub_site| image:: icon_menu_subscriber_site.png
+.. |menu_sub_site| image:: icon_menu_subscriber_site_expand.png
+.. |table_add| image:: table_add.png
+.. |icon_pmp_link| image:: icon_menu_pmp_link.png
+.. |menu_pmp_link| image:: icon_menu_pmp_link_expand.png
+

@@ -1,0 +1,11 @@
+Exporting and Reporting
+=======================
+
+Site and Link data can be exported in CSV format, as described in :doc:`exporting_data`.
+
+Reports can be created in PDF format for the currently open and selected project, as described in :doc:`creating_reports`.
+
+.. toctree::
+
+   exporting_data
+   creating_reports

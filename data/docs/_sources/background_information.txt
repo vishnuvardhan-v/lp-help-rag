@@ -1,0 +1,21 @@
+Background Information
+======================
+
+The following background information is provided to help users of LINKPlanner:
+
+  * A description of availability models. See :doc:`availability`.
+  * A description of path loss. See :doc:`path_loss`.
+  * A description of the Cambium Path Profiler. See :doc:`path_profiles`.
+  * Specifications of import file formats. See :doc:`import_file_formats`.
+
+
+
+
+.. toctree::
+
+   availability
+   path_loss
+   path_profiles
+   import_file_formats
+
+   

@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>LINKPlanner Concepts &#8212; Cambium LINKPlanner Online Help (6.3.3)</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/default.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Quick Tutorial - PTP Unlicensed Band" href="quick_tutorial.html" />
+    <link rel="prev" title="Getting started" href="getting_started.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="quick_tutorial.html" title="Quick Tutorial - PTP Unlicensed Band"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="getting_started.html" title="Getting started"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="getting_started.html" accesskey="U">Getting started</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">LINKPlanner Concepts</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="linkplanner-concepts">
+<span id="index-0"></span><h1>LINKPlanner Concepts<a class="headerlink" href="#linkplanner-concepts" title="Permalink to this headline">¶</a></h1>
+<section id="nlos-and-los">
+<h2>NLoS and LoS<a class="headerlink" href="#nlos-and-los" title="Permalink to this headline">¶</a></h2>
+<p>The Cambium Networks Series of point-to-multipoint (PMP) wireless broadband solutions are designed to operate in non-line-of-sight (NLoS) and line-of-sight (LoS) environments. Link planning and estimation enable a link of known quality to be installed. LINKPlanner uses path profile data to predict the data rates and reliability over each link, through adjustment of antenna height and RF power. When the link is installed, the mean path loss can be checked to confirm these predictions.</p>
+</section>
+<section id="architecture">
+<h2>Architecture<a class="headerlink" href="#architecture" title="Permalink to this headline">¶</a></h2>
+<p>The LINKPlanner is a single-page web application that is designed to run on larger screens, such as laptop or desktop computer. It performs the calculations from the ITU recommendations ITU-R P.526-10 (without clutter) or ITU-R P.526-14 (with clutter) and ITU-R P.530-12, ITU-R P.530-17 or Vigants - Barnett (VB) to predict NLoS and LoS paths for anywhere in the world. Path profile data is provided for all links; see <a class="reference internal" href="path_profiles.html"><span class="doc">Path Profiles</span></a>. Trees and buildings (clutter and obstructions) can modify this profile, and often the path must be surveyed to establish the correct estimation.</p>
+<p>The main concepts of LINKPlanner are:</p>
+<ul class="simple">
+<li><p><strong>Project</strong>: a set of data about the sites and links in a wireless network.</p></li>
+<li><p><strong>Network Site</strong>: the location of PMP Network Devices.</p></li>
+<li><p><strong>Subscriber Site</strong>: the location of a PMP Subscriber Module outdoor unit and antenna.</p></li>
+<li><p><strong>PMP Network Device (ND)</strong>: an outdoor unit and antenna which connects to multiple Subscriber Modules, also known as an Access Point (AP), Distribution Node (DN) or Base Transceiver Station (BTS).</p></li>
+<li><p><strong>Subscriber Module</strong>: an outdoor unit and antenna at a customer or remote premises, also known as Customer Premises Equipment (CPE) or Customer Node (CN).</p></li>
+<li><p><strong>Link</strong>: a wireless connection between a PMP Network Device and a single Subscriber Module.</p></li>
+</ul>
+</section>
+<section id="inputs-and-outputs">
+<h2>Inputs and Outputs<a class="headerlink" href="#inputs-and-outputs" title="Permalink to this headline">¶</a></h2>
+<p>The main inputs to LINKPlanner are:</p>
+<ul class="simple">
+<li><p>Site name, position, maximum antenna height and site definition; network or subscriber (input by the user).</p></li>
+<li><p>Details of the equipment and license restrictions (selected by the user).</p></li>
+<li><p>Required performance targets for each link or network (input by the user).</p></li>
+<li><p>Profile of the terrain and (optionally) clutter along the path of each link (provided by Cambium).</p></li>
+</ul>
+<p>The main output from LINKPlanner is a performance summary that shows how well the network is predicted to perform in response to the selected combination of inputs. It shows predicted and required throughput performance and availability at each end of the link.</p>
+</section>
+<section id="user-interface">
+<h2>User Interface<a class="headerlink" href="#user-interface" title="Permalink to this headline">¶</a></h2>
+<p>The following example shows the LINKPlanner <a class="reference internal" href="#user-interface-fig"><span class="std std-ref">User Interface</span></a> for the “Tutorial PMP” project, which models a PMP network containing one Network Device, which is connected to two Subscriber Modules:</p>
+<blockquote id="user-interface-fig">
+<div><figure class="align-default" id="id2">
+<span id="id1"></span><img alt="_images/user_interface.png" src="_images/user_interface.png" />
+<figcaption>
+<p><span class="caption-text">User Interface</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="list_of_figures.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_this_user_guide.html">About This User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_linkplanner.html">Using LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_ptp_links.html">Planning PTP links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_pmp_links.html">Planning PMP networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background_information.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notices.html">Legal Notices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes_to_linkplanner.html">Changes to LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="quick_tutorial.html" title="Quick Tutorial - PTP Unlicensed Band"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="getting_started.html" title="Getting started"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="getting_started.html" >Getting started</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">LINKPlanner Concepts</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2025, Cambium Networks.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+.. index::
+   single: Getting started
+   single: PMP Design Process
+   single: Tutorial
+
+PMP Network Design Process
+============================
+
+This section provides a quick process to design a PMP network. It describes how to build a PMP network with multiple network sites, Network Devices and Subscriber sites in a few simple steps.
+
+Before starting this process, complete the following steps:
+
+1. Login to LINKPlanner, see :doc:`starting_the_application`.
+2. Enter the correct details in the Preferences page. See :doc:`preferences`.
+
+Build the network in four simple steps:
+
+1. Add network sites from csv. See  :doc:`importing_sites`.
+
+   .. _PMP_Network_Sites_Added:
+   .. figure:: PMP_Network_Sites_Added.png
+
+      PMP Network Sites Added
+      
+2. Add subscriber sites from csv. See  :doc:`importing_sites`.
+
+   .. _PMP_Network_with_Subscriber_Sites_Added:
+   .. figure:: PMP_Network_with_Subscriber_Sites_Added.png
+
+      PMP Network with Subscriber Sites Added
+      
+      
+3. Add network devices. See :doc:`network_devices`.
+
+
+   .. _PMP_Network_with_Network_Devices:
+   .. figure:: PMP_Network_with_Network_Devices.png
+
+      PMP Network with Network Devices
+      
+4. Connect subscribers using Best Server Analysis. See :doc:`best_server_analysis`.
+
+
+   .. _PMP_Network_Connected:
+   .. figure:: PMP_Network_Connected.png
+
+      PMP Network Connected
+
+
+

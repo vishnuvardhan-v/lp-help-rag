@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Adjusting Configuration and Requirements (Unlicensed Band) &#8212; Cambium LINKPlanner Online Help (6.3.3)</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/default.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Quick Tutorial - PTP Licensed Band" href="quick_tutorial_licensed_band.html" />
+    <link rel="prev" title="Creating Project, Sites and Link (Unlicensed Band)" href="creating_project_sites_and_link.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="quick_tutorial_licensed_band.html" title="Quick Tutorial - PTP Licensed Band"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="creating_project_sites_and_link.html" title="Creating Project, Sites and Link (Unlicensed Band)"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="getting_started.html" >Getting started</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="quick_tutorial.html" accesskey="U">Quick Tutorial - PTP Unlicensed Band</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Adjusting Configuration and Requirements (Unlicensed Band)</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="adjusting-configuration-and-requirements-unlicensed-band">
+<span id="index-0"></span><h1>Adjusting Configuration and Requirements (Unlicensed Band)<a class="headerlink" href="#adjusting-configuration-and-requirements-unlicensed-band" title="Permalink to this headline">¶</a></h1>
+<p>Adjust the antennas at both ends of the link and confirm that the selected equipment meets the performance requirements:</p>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<blockquote>
+<div><p>Antenna heights are entered from ground level not from the top of the clutter (if using).</p>
+<p>The results shown are using the ITU-R P.530-17 propagation model</p>
+</div></blockquote>
+<ol class="arabic">
+<li><p>Adjust the Antenna Heights in the <a class="reference internal" href="link_page.html"><span class="doc">Link Page</span></a> to given values and add Interference Density. Adjust the Interference Density to the required value.</p>
+<figure class="align-default" id="id1">
+<span id="configuration-of-unlicensed"></span><img alt="_images/configuration_of_unlicensed.png" src="_images/configuration_of_unlicensed.png" />
+<figcaption>
+<p><span class="caption-text">Adjust Both Ends of Unlicensed Link</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Insert target values in the <a class="reference internal" href="performance_summary.html"><span class="doc">Performance Summary</span></a> data rate boxes for Mean Throughput Required, Minimum Throughput Required and Minimum Throughput Availability Required.</p>
+<p>Observe that the predicted values are now red because they are less than required values.</p>
+<figure class="align-default" id="id2">
+<span id="performance-summary-of-unlicensed"></span><img alt="_images/performance_summary_of_unlicensed.png" src="_images/performance_summary_of_unlicensed.png" />
+<figcaption>
+<p><span class="caption-text">Performance Unacceptable at Both Ends of Unlicensed Link</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Select different antennas and change Antenna Heights in the <a class="reference internal" href="link_page.html"><span class="doc">Link Page</span></a>. Adjust User limits if required.</p>
+<figure class="align-default" id="id3">
+<span id="configuration-of-unlicensed-updated"></span><img alt="_images/configuration_of_unlicensed_updated.png" src="_images/configuration_of_unlicensed_updated.png" />
+<figcaption>
+<p><span class="caption-text">Adjust Both Ends of Unlicensed Link Again</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Confirm that the predicted values are no longer red.</p>
+<figure class="align-default" id="id4">
+<span id="performance-summary-of-unlicensed-updated"></span><img alt="_images/performance_summary_of_unlicensed_updated.png" src="_images/performance_summary_of_unlicensed_updated.png" />
+<figcaption>
+<p><span class="caption-text">Performance Acceptable at Both Ends of Unlicensed Link</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</li>
+</ol>
+<blockquote>
+<div><ol class="arabic simple" start="5">
+<li><p>Click <strong>Projects</strong> in the top menu bar and then click <strong>Save</strong> <img alt="save_project" src="_images/save_project_icon.png" /></p></li>
+</ol>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<blockquote>
+<div><p>It is not necessary to save the project after each change. Changes
+are automatically stored in the database after clicking Apply. Project
+saving is useful to save a snapshot of the project so that future
+changes can be rolled back using the “Discard Changes” command under the
+“Projects” menu.</p>
+</div></blockquote>
+</div></blockquote>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="list_of_figures.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_this_user_guide.html">About This User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_linkplanner.html">Using LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_ptp_links.html">Planning PTP links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_pmp_links.html">Planning PMP networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background_information.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notices.html">Legal Notices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes_to_linkplanner.html">Changes to LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="quick_tutorial_licensed_band.html" title="Quick Tutorial - PTP Licensed Band"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="creating_project_sites_and_link.html" title="Creating Project, Sites and Link (Unlicensed Band)"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="getting_started.html" >Getting started</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="quick_tutorial.html" >Quick Tutorial - PTP Unlicensed Band</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Adjusting Configuration and Requirements (Unlicensed Band)</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2025, Cambium Networks.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Mesh Links &#8212; Cambium LINKPlanner Online Help (6.3.3)</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/default.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Subscriber Modules" href="subscriber_modules.html" />
+    <link rel="prev" title="PMP Network Devices" href="network_devices.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="subscriber_modules.html" title="Subscriber Modules"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="network_devices.html" title="PMP Network Devices"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="planning_pmp_links.html" accesskey="U">Planning PMP networks</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Mesh Links</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="mesh-links">
+<span id="index-0"></span><h1>Mesh Links<a class="headerlink" href="#mesh-links" title="Permalink to this headline">¶</a></h1>
+<p>Mesh Links are only available in 60 GHz cnWave Networks. A mesh link connects two Distribution Nodes (DNs) together to create a backhaul link between the two devices.</p>
+<p>The Mesh Link automatically assumes a number of the Distribution Node equipment parameters at each end of the link and warnings will be shown if they are not compatible with each other. To change the equipment parameters go to the Distribution Node for that end of the link, see <a class="reference internal" href="network_devices.html"><span class="doc">PMP Network Devices</span></a>.</p>
+<p>Mesh Links do not add any additional equipment to the Bill of Materials, which is shown on the individual Distribution Node page.</p>
+<section id="creating-mesh-links">
+<h2>Creating Mesh Links<a class="headerlink" href="#creating-mesh-links" title="Permalink to this headline">¶</a></h2>
+<p>Mesh Links can be created  from either a Network Device or from the Mesh Links table.</p>
+<p>To create a new Mesh Link from a Network Device, click <img alt="table_add" src="_images/table_add.png" /> from the Mesh Links table on the right panel of the project window. This opens the <strong>Attach Mesh Links</strong> window.</p>
+<figure class="align-default" id="id1">
+<span id="new-mesh-link-from-nd"></span><img alt="_images/new_mesh_link_from_ND.png" src="_images/new_mesh_link_from_ND.png" />
+<figcaption>
+<p><span class="caption-text">Attach Mesh Link from Network Device</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>This page shows the list of available Distribution Nodes within the coverage area of the selected Distribution Node. Select one or more DNs and hit OK. The filter field narrows the choice when there is a large number of Distribution Nodes in the list.</p>
+<p>To create a new Mesh Link from the Mesh Links table view, click <img alt="table_add" src="_images/table_add.png" /> , this opens the <strong>Create Mesh Links</strong> window.</p>
+<figure class="align-default" id="id2">
+<span id="create-mesh-links"></span><img alt="_images/create_mesh_links.png" src="_images/create_mesh_links.png" />
+<figcaption>
+<p><span class="caption-text">Create Mesh Links</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Select the required DN in the top row and the bottom panel shows the list of available Distribution Nodes it can connect with. Select one or more DNs and hit OK. The filter field narrows the choice when there is a large number of Distribution Nodes in the list.</p>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<blockquote>
+<div><p>A Distribution Node can have a maximum of four mesh links (two per sector). A warning will be shown if more options are selected (including any mesh links already created).</p>
+</div></blockquote>
+</section>
+<section id="displaying-mesh-links">
+<span id="mesh-table-view"></span><h2>Displaying Mesh Links<a class="headerlink" href="#displaying-mesh-links" title="Permalink to this headline">¶</a></h2>
+<p>The Mesh Links are then created and listed under the <strong>Network Devices</strong> in the <strong>PMP</strong> left hand side tree view. To change to the table view, click on the <strong>PMP</strong> menu in the left hand tool bar and then select the <strong>Mesh Links</strong> tab. To manage the table view see <a class="reference internal" href="user_interface_tips.html"><span class="doc">User Interface Tips</span></a>.</p>
+<figure class="align-default" id="id3">
+<span id="mesh-links-table"></span><img alt="_images/mesh_links_table.png" src="_images/mesh_links_table.png" />
+<figcaption>
+<p><span class="caption-text">Mesh Links Table</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<dl class="simple">
+<dt><img alt="note" src="_images/note.jpg" /></dt><dd><p>To locate the Mesh Links in the map view from the Mesh Links details page, click the <img alt="icon_locate" src="_images/icon_locate_on_map.png" /> icon, which is displayed next to the <img alt="icon_delete_detailspage" src="_images/icon_delete_detailspage.png" /> icon at the top.</p>
+</dd>
+</dl>
+</section>
+<section id="deleting-mesh-links">
+<h2>Deleting Mesh Links<a class="headerlink" href="#deleting-mesh-links" title="Permalink to this headline">¶</a></h2>
+<p>To delete a Mesh Link, hover over the Mesh Link in the <strong>PMP</strong> tree view and click <img alt="list_delete" src="_images/list_delete.png" />, click <img alt="icon_delete_detailspage" src="_images/icon_delete_detailspage.png" /> on the details page, select rows and click <img alt="table_delete" src="_images/table_delete.png" /> in the table view, or right-click on the Mesh Link in the map view and select Delete from the pop-up menu.</p>
+<dl class="simple">
+<dt><img alt="note" src="_images/note.jpg" /></dt><dd><p>To revert the changes made, click the <img alt="icon_undo_changes" src="_images/icon_undo_changes.png" /> icon in the details page, which is displayed next to the Apply button. This icon is only displayed when there are changes to the parameters, replacing the <img alt="icon_delete_detailspage" src="_images/icon_delete_detailspage.png" /> icon.</p>
+</dd>
+</dl>
+</section>
+<section id="mesh-link-page">
+<span id="index-1"></span><h2>Mesh Link Page<a class="headerlink" href="#mesh-link-page" title="Permalink to this headline">¶</a></h2>
+<p>To access an individual mesh link click on the Link Name in the Mesh Links Table. The Mesh Link page includes the following features:</p>
+<ul class="simple">
+<li><p>Each section begins with a gray title bar. Click on this bar to open or close the section.</p></li>
+<li><p>If a field is highlighted in pink, its value is out of the permitted range.</p></li>
+</ul>
+</section>
+<section id="equipment-summary">
+<h2>Equipment Summary<a class="headerlink" href="#equipment-summary" title="Permalink to this headline">¶</a></h2>
+<p>This shows the equipment parameters for each end of the link. Most of the parameters are read only and can only be changed at the Network Device.</p>
+<figure class="align-default" id="id4">
+<span id="mesh-link-equipment"></span><img alt="_images/mesh_link_equipment.png" src="_images/mesh_link_equipment.png" />
+<figcaption>
+<p><span class="caption-text">Mesh Link Equipment</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p><strong>Equipment Parameters</strong></p>
+<blockquote>
+<div><p><strong>Summary</strong>: Displays the Frequency Band / Product / Country / Maximum Modulation Mode</p>
+<p><strong>Sector</strong>: The sector of the DN the mesh link connects to. If the link is close to a sector boundary, this value may be editable</p>
+<p><strong>Channel</strong>: Displays the channel, the channel must be the same at each end of the mesh link.</p>
+<p><strong>Golay Code</strong>: Select the Golay Code for the link, by default this is set to the same as the DN sector, but can be changed. The Golay code must be the same at each end of the mesh link.</p>
+<p><strong>Polarity</strong>: Displays the polarity, the polarity must be opposite at each end of the mesh link</p>
+<p><strong>Antenna Height</strong>: Displays the height of the DN.</p>
+<p><strong>Antenna Azimuth</strong>: Displays the alignment of the DN.</p>
+<p><strong>Link Bearing</strong>: Displays the bearing to the other end of the link and the offset from the DN antenna azimuth.</p>
+<p><strong>Calculated Tilt</strong>: Displays the tilt angle to the other end of the link, where a positive angle is uptilt and a negative angle downtilt</p>
+<p><strong>Antenna Gain</strong>: Displays the gain of the DN antenna in the direction of the other end of the link</p>
+<p><strong>Power</strong>: Displays the transmit power used to achieve the operational receive power.</p>
+<p><strong>Interference</strong>: This is the amount of site noise in the selected channel bandwidth, expected at the antenna connector. This noise is assumed to be a constant power added to the thermal noise of the front end of the wireless. The bandwidth displayed depends on the bandwidth selected in the Equipment Settings box (in this example it is 2.16 GHz). To enter Interference on a mesh link, first tick the interference box on the associated ND and update the default value. Once interference is enabled on the associated ND, the interference field is displayed and can be edited on the Equipment Parameters window of the mesh link. The value will default to the value from the ND but can be updated independently of the interference level on the Network Device.</p>
+</div></blockquote>
+</section>
+<section id="profile">
+<h2>Profile<a class="headerlink" href="#profile" title="Permalink to this headline">¶</a></h2>
+<p>This section contains a visualization of the path between the two Distribution Nodes, for details on the profile components see  <a class="reference internal" href="sm_profile.html"><span class="doc">Profile</span></a>.</p>
+</section>
+<section id="performance-summary">
+<span id="index-2"></span><h2>Performance Summary<a class="headerlink" href="#performance-summary" title="Permalink to this headline">¶</a></h2>
+<p>This section shows how well the link is predicted to perform in response to the selected combination of the variables, such as frequency, region, equipment, antenna and height. It shows performance at each end of the link.</p>
+<figure class="align-default" id="id5">
+<span id="mesh-link-performance-summary"></span><img alt="_images/mesh_link_performance_summary.png" src="_images/mesh_link_performance_summary.png" />
+<figcaption>
+<p><span class="caption-text">Mesh Link Performance Summary</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<section id="performance-to-devices">
+<h3>Performance to Devices<a class="headerlink" href="#performance-to-devices" title="Permalink to this headline">¶</a></h3>
+<p>This summary is a prediction of the Receive Power, Mean IP Predicted and Availability at each end of the link, based on the equipment parameters entered.</p>
+<blockquote>
+<div><p><strong>Operational Power</strong>: The operational receive power and associated tolerance level at this end of the link. The 60 GHz cnWave uses Adaptive Power Control, where the maximum power may be reduced depending on the link conditions, resulting in lower measured receive powers over time. The APC works to maintain an operational receive power of -60 dBm, or as close to this as possible. The tolerance is the sum of two components, a fixed value which is dependent on the equipment performance over temperature and a variable value which is proportional to the amount of Excess Path Loss. When using adaptive modulation the receive power shown is the maximum for the link, which corresponds to the lowest selected modulation mode and Maximum Power.</p>
+</div></blockquote>
+<p>Mean throughput of the planned link in one direction:</p>
+<blockquote>
+<div><p><strong>Mean IP Predicted</strong>:  The mean Ethernet throughput capability, calculated from the data entered. This parameter will be shown in red if it is below the <strong>Mean IP Required</strong></p>
+<p><strong>Mean IP Required</strong>: Enter the required mean Ethernet throughput capability</p>
+<p><strong>% of Required IP</strong>: IP Predicted expressed as a percentage of IP Required</p>
+</div></blockquote>
+<p>Minimum throughput of the planned link in one direction:</p>
+<blockquote>
+<div><p><strong>Min IP Required</strong>: Enter the required minimum Ethernet throughput capability.</p>
+<p><strong>Min IP Availability Required (%)</strong>: Enter the required minimum availability the link must meet for acceptable performance.</p>
+<p><strong>Min IP Availability Predicted (%)</strong>: The minimum predicted availability of the link, calculated from the data entered, for the Min IP Required or the lowest equipment data rate (whichever is the higher). This parameter will turn red if the value is less than <strong>Min IP Availability Required</strong>.</p>
+</div></blockquote>
+</section>
+<section id="link-summary">
+<h3>Link Summary<a class="headerlink" href="#link-summary" title="Permalink to this headline">¶</a></h3>
+<p>This summary highlights the Free Space Path Loss component and the Excess Path Loss based upon the diffraction loss over the obstacles that cut the Fresnel zone number 0.6. The Total Path Loss and System Gain Margin are also given.</p>
+<blockquote>
+<div><p><strong>Lowest Mode Availability (%)</strong>: This is the availability of basic link operation. This is equivalent to the availability of the most robust modulation in both directions.</p>
+<p><strong>System Gain Margin (dB)</strong>: This is the margin in dB above which the ratio of (mean wanted receive level) to (mean interference plus thermal noise), or “C to (I+N)”, for the worst link direction is above the level required for basic link operation for the most robust modulation.</p>
+<p><strong>Free Space Path Loss (dB)</strong>: The amount that the signal would be attenuated if travelling through a vaccuum.</p>
+<p><strong>Gaseous Absorption Loss (dB)</strong>: The amount of attenuation due to oxygen and water in the atmosphere.</p>
+<p><strong>Excess Path Loss (dB)</strong>: The amount of attenuation due to obstructions in the path. If the path is completely line-of-sight, this will be zero.</p>
+<p><strong>Total Path Loss (dB)</strong>: The sum of Free Space, Gaseous Absorption and Excess Path Loss.</p>
+</div></blockquote>
+</section>
+<section id="link-summary-additional-information">
+<span id="index-3"></span><h3>Link Summary additional information<a class="headerlink" href="#link-summary-additional-information" title="Permalink to this headline">¶</a></h3>
+<p>Select the <img alt="icon_info" src="_images/icon_info.png" /> information icon to view a new window showing a detailed breakdown of the availability calculations.</p>
+<figure class="align-default" id="id6">
+<span id="availability-detail-itu-mesh"></span><img alt="_images/availability_detail_ITU_mesh.png" src="_images/availability_detail_ITU_mesh.png" />
+<figcaption>
+<p><span class="caption-text">Detailed Availability Information for a Mesh Link (ITU Model)</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>This window shows detailed information for Link Availability for Lowest Mode Availability. When the ITU prediction model has been selected, see <a class="reference internal" href="availability.html"><span class="doc">Availability</span></a>, the parameters are as displayed in <a class="reference internal" href="#availability-detail-itu-mesh"><span class="std std-ref">Detailed Availability Information for a Mesh Link (ITU Model)</span></a> and described below:</p>
+<p><strong>dN/dH not exceeded for 1% of time</strong>: Point refractivity gradient in the lowest 65m of the atmosphere not exceeded for 1% of an average year. This data is provided in 1.5 degree grid form by the ITU and the value is a bilinear interpolation for the mid point of the path.</p>
+<p><strong>Area roughness 110 x 110 km</strong>:  the standard deviation of terrain heights (m) within a 110 x 110 km area. If using the ITU-R P.530-17 model this data is provided in 0.5 x 0.5 degree grid form by the ITU and the value is a bilinear interpolation for the mid point of the path.</p>
+<p><strong>Geoclimatic Factor</strong>: Calculated from the point refractivity gradient and area roughness according to the selected ITU-R P.530 model.</p>
+<p><strong>Fade Occurrence Factor (P0)</strong>: The intercept of the deep-fading distribution with the percentage of time-axis for multipath fading. This parameter is dependent on the Geoclimatic Factor, path length, path inclination, frequency and altitude of lower antenna, calculated as given in the selected ITU-R P530 model.</p>
+<p><strong>Path Inclination</strong>: Absolute difference in antenna height above mean sea level (m) divided by path length (km), given in mrad.</p>
+<p><strong>Value of K Exceeded for 99.9% (ke)</strong>: This value is taken from ITU-R P.530 Figure 2, the value of ke exceeded for approximately 99.9% of the worst month in a continental temperature climate and is often referred to as “Worst Earth Curvature”. The impact of this value on the terrain height is shown by the grey line on the path profile (<a class="reference internal" href="profile.html#profile-with-clutter-and-obstructions"><span class="std std-ref">Profile with Clutter and Obstructions</span></a>).</p>
+<p><strong>Excess Path Loss at K = ke</strong>: This value shows the amount of excess loss that will occur on the link during the time when the K value drops to that shown above. This may occur for up to 0.1% of the time, but is not taken into account in the availability calculations. Links which require at least 99.9% availability should ensure that this value is 0 dB, by selecting appropriate antenna heights to give sufficient clearance.</p>
+<p><strong>0.01% Rain rate</strong>: Calculated using ITU-R P837, which uses a matrix of rain values for the globe with a 1.25 degree resolution. These values are bi-linearly interpolated for the Latitude and Longitude of the center of the path.</p>
+<p><strong>Rain Attenuation</strong>: The attenuation in dB/km for the given rain rate and polarization. 60 GHz cnWave uses vertical polarization.</p>
+<p><strong>Rain Availability</strong>: The availability of the given rain rate with the system gain margin calculated using ITU-R P530.</p>
+<p><strong>Rain Unavailability</strong>: The amount of time the link is predicted to be unavailable due to rain.</p>
+<p>When using the Vigants - Barnett prediction model the first five parameters are replaced by the following terms, for further information on the Vigants - Barnett model see <a class="reference internal" href="availability.html"><span class="doc">Availability</span></a> :</p>
+<p><strong>Terrain Roughness</strong>: Standard deviation of terrain height along the path profile, excluding the ends of the path.</p>
+<p><strong>Climatic Factor</strong>: Derived from the atmospheric conditions maps for the mid point of the path.</p>
+<p><strong>C Factor</strong>: Calculated from the Terrain Roughness and the Climatic Factor.</p>
+<p><strong>Temperature</strong>: The temperature is taken from the ESATEMP data. This data is provided in 1.5 deg grid form by the ITU and the value is a bilinear interpolation for the mid point of the path.</p>
+</section>
+</section>
+<section id="performance-details">
+<span id="index-4"></span><h2>Performance Details<a class="headerlink" href="#performance-details" title="Permalink to this headline">¶</a></h2>
+<p>This section contains more detail about the predicted performance of the link.</p>
+<figure class="align-default" id="id7">
+<span id="mesh-link-performance-details"></span><img alt="_images/mesh_link_performance_details.png" src="_images/mesh_link_performance_details.png" />
+<figcaption>
+<p><span class="caption-text">Mesh Link Performance Details</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<section id="common-details">
+<h3>Common Details<a class="headerlink" href="#common-details" title="Permalink to this headline">¶</a></h3>
+<p><strong>MCS</strong>: The Modulation Coding Scheme Number</p>
+<p><strong>Mode</strong>: The modulation technique used.</p>
+<p><strong>Code Rate</strong>: The code rate for the specified mode.</p>
+</section>
+<section id="performance-to-each-end">
+<h3>Performance to each end<a class="headerlink" href="#performance-to-each-end" title="Permalink to this headline">¶</a></h3>
+<p><strong>Max IP Throughput (Gbps)</strong>: The maximum user throughput achievable in the given direction.</p>
+<p><strong>Fade Margin (dB)</strong>: The margin available to each end in the specified Mode.</p>
+<p><strong>Mode Availability(%)</strong>: The percentage of time that the modulation mode for each end is predicted to be available.</p>
+<p><strong>Receive Time in Mode(%)</strong>: The percentage of time the specified mode is predicted to be used to receive data.</p>
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="list_of_figures.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_this_user_guide.html">About This User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_linkplanner.html">Using LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_ptp_links.html">Planning PTP links</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="planning_pmp_links.html">Planning PMP networks</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="network_devices.html">PMP Network Devices</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Mesh Links</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#creating-mesh-links">Creating Mesh Links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#displaying-mesh-links">Displaying Mesh Links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#deleting-mesh-links">Deleting Mesh Links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mesh-link-page">Mesh Link Page</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#equipment-summary">Equipment Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#profile">Profile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#performance-summary">Performance Summary</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#performance-to-devices">Performance to Devices</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#link-summary">Link Summary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#link-summary-additional-information">Link Summary additional information</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#performance-details">Performance Details</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#common-details">Common Details</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#performance-to-each-end">Performance to each end</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="subscriber_modules.html">Subscriber Modules</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="background_information.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notices.html">Legal Notices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes_to_linkplanner.html">Changes to LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="subscriber_modules.html" title="Subscriber Modules"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="network_devices.html" title="PMP Network Devices"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="planning_pmp_links.html" >Planning PMP networks</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Mesh Links</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2025, Cambium Networks.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

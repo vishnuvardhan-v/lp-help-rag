@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Performance Summary &#8212; Cambium LINKPlanner Online Help (6.3.3)</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/default.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Performance Details" href="performance_details.html" />
+    <link rel="prev" title="Configuration at Each End" href="configuration_at_each_end.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="performance_details.html" title="Performance Details"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="configuration_at_each_end.html" title="Configuration at Each End"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="planning_ptp_links.html" >Planning PTP links</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="link_page.html" accesskey="U">Link Page</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Performance Summary</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="performance-summary">
+<span id="index-0"></span><h1>Performance Summary<a class="headerlink" href="#performance-summary" title="Permalink to this headline">¶</a></h1>
+<p>This section shows how well the link is predicted to perform in response to the selected combination of the variables, such as band, region, equipment, antenna and height. It shows throughput performance at each end of the link. Throughput values are displayed in either kbps or Mbps depending on the product selected.</p>
+<p>If the predicted Throughput and Availability values fall below the required values, they are displayed in red (<a class="reference internal" href="#id1"><span class="std std-ref">Performance Summary</span></a>). If they meet or exceed the required values, they are displayed in black. In the following example, the predicted values at North Middle School are displayed in red because they fall below requirements, but the predicted values at Park Lane
+Elementary School are displayed in black because they exceed requirements:</p>
+<figure class="align-default" id="id3">
+<span id="id1"></span><img alt="_images/performance_summary.png" src="_images/performance_summary.png" />
+<figcaption>
+<p><span class="caption-text">Performance Summary</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>For 2+0 Link Types, the Performance Summary is shown separately for the Aggregate, Link A and Link B paths in tabs. Required Throughput and Availability values can be set individually for each path. The specific path tab is displayed in red, if the individual path (Link A or Link B) or aggregate path fall below the required values. <a class="reference internal" href="#performance-summary-2-0"><span class="std std-ref">Performance Summary 2+0 Link</span></a> shows that Link B is not meeting the required values, but the main path (Aggregate) and Link A are meeting the requirements. The link in the list view will be shown in red if any of the three paths are red.</p>
+<figure class="align-default" id="id4">
+<span id="performance-summary-2-0"></span><img alt="_images/performance_summary_2+0.png" src="_images/performance_summary_2+0.png" />
+<figcaption>
+<p><span class="caption-text">Performance Summary 2+0 Link</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<section id="performance-to-each-site">
+<span id="index-1"></span><h2>Performance to each Site<a class="headerlink" href="#performance-to-each-site" title="Permalink to this headline">¶</a></h2>
+<p>This summary is a prediction of the Receive Power, Throughput and Availability at each end of the link, based on the equipment and performance data entered. Enter the required values in the data entry fields for comparison with the predicted data.</p>
+<blockquote>
+<div><p><strong>Predicted Receive Power</strong>: The predicted receive power and associated tolerance level at this end of the link. The tolerance is the sum of two components, a fixed value which is dependent on the equipment performance over temperature and a variable value which is proportional to the amount of Excess Path Loss. When using adaptive modulation the receive power shown is the maximum for the link, which corresponds to the lowest selected modulation mode and Maximum Power. If the link is operating in a higher modulation mode, the normal operating receive power of the link may be lower, as many products have transmit power which varies with modulation mode.</p>
+<p><strong>Operational Power</strong>: For PTP 8xx when ATPC is set to <strong>Enabled</strong> or for 60 GHz cnWave where APC is always enabled, the Receive Power displayed is the Operational Power. When ATPC/APC is enabled the Maximum Power may be reduced depending on the link conditions, resulting in lower measured receive powers, which can vary over time. The value shown is a typical value at the high end of what may be achieved. The tolerance levels shown are the same as given for the Predicted Receive Power.</p>
+</div></blockquote>
+<p>Mean throughput of the planned link in one direction:</p>
+<blockquote>
+<div><p><strong>Mean IP Predicted</strong>: The mean Ethernet throughput capability, calculated from the data entered.</p>
+<p><strong>Mean IP Required</strong>: Enter the required mean Ethernet throughput capability.</p>
+<p><strong>% of Required IP</strong>: IP Predicted expressed as a percentage of IP Required.</p>
+</div></blockquote>
+<p>Minimum throughput of the planned link in one direction:</p>
+<blockquote>
+<div><p><strong>Min IP Required</strong>: Enter the required minimum Ethernet throughput capability.</p>
+<p><strong>Min IP Availability Required (%)</strong>: Enter the required minimum availability of the link.</p>
+<p><strong>Min IP Availability Predicted (%)</strong>: The minimum availability of the link, calculated from the data entered, for the lowest equipment data rate.</p>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<p>The <strong>Min IP Availability Predicted (%)</strong> may be higher than the <strong>Lowest Mode Availability</strong> if the <strong>Min IP Availability Required</strong> is set to a value greater than the data rate supported by the <strong>Minimum Mod Mode</strong>.</p>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<p>If <strong>ePMP ePTP Mode</strong> is selected the capacity achieved in each direction of the link is variable, depending on the load presented. Which direction of the link will take the maximum load is unknown therefore the values presented in the <strong>Performance to Each Site</strong> are those of the symmetrical case. Values for the peak throughput in a either direction can be found in <a class="reference internal" href="performance_details.html"><span class="doc">Performance Details</span></a>.</p>
+</div></blockquote>
+</section>
+<section id="operating-conditions">
+<h2>Operating Conditions<a class="headerlink" href="#operating-conditions" title="Permalink to this headline">¶</a></h2>
+<p>This option is only available when the ePMP, PTP 820 or PTP 850 products are selected. The throughput of these products is more dependent upon frame size than the other PTP products and this option allows the user to select different frame sizes and view the impact on the throughput.</p>
+<figure class="align-default" id="id5">
+<span id="id2"></span><img alt="_images/operating_conditions.png" src="_images/operating_conditions.png" />
+<figcaption>
+<p><span class="caption-text">Operating Conditions for ePMP, PTP 820 or PTP 850</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>The throughput displayed in the Performance Summary, as well as in the Performance Details, is for the frame size selected. The frame size options are the standard RFC2544 sizes of 64, 128, 256, 512, 1024 and 1518 bytes. There is also an option to select a pre-determined mixed traffic option called Tolly Mix, which is based on the following combination of packet sizes:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>55% of packets at 64 bytes</p></li>
+<li><p>5% of packets at 78 bytes</p></li>
+<li><p>17% of packets at 576 bytes</p></li>
+<li><p>23% of packets at 1518 bytes</p></li>
+</ul>
+</div></blockquote>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<blockquote>
+<div><p>Tolly Mix is not available for the PTP 850E in the 80 GHz band.</p>
+</div></blockquote>
+</section>
+<section id="link-summary">
+<h2>Link Summary<a class="headerlink" href="#link-summary" title="Permalink to this headline">¶</a></h2>
+<p>This summary highlights the Free Space Path Loss component and the Excess Path Loss based upon the diffraction loss over the obstacles that cut the Fresnel zone number 0.6. The Total Path Loss and System Gain Margin are also given.</p>
+<blockquote>
+<div><p><strong>Aggregate Throughput</strong>: The sum of the Mean IP Predicted at both ends.</p>
+<p><strong>Lowest Mode Availability (%)</strong>: This is the availability of basic link operation. This is equivalent to the availability of the most robust modulation or better in both link directions.</p>
+<p><strong>FCC 99.95%</strong>: This is only shown when using PTP 820 or PTP 850 in either of the FCC regulations and adaptive modulation. It shows the modulation mode for the minimum payload capacity required by the FCC and the two-way availability at that mode. In order to meet FCC Part 101 regulations the link must be planned to have an availability better than 99.95% at the minimum payload when operating in adaptive mode.</p>
+<p><strong>System Gain Margin (dB)</strong>: This is the margin in dB above which the ratio of (mean wanted receive level) to (mean interference plus thermal noise), or “C to (I + N)”, for the worst link direction is above the level required for basic link operation for the most robust modulation.</p>
+<p><strong>Free Space Path Loss (dB)</strong>: The amount that the signal would be attenuated if travelling through a vacuum.</p>
+<p><strong>Gaseous Absorption Loss (dB)</strong>: The amount of attenuation due to oxygen and water in the atmosphere.</p>
+<p><strong>Excess Path Loss (dB)</strong>: The amount of attenuation due to obstructions in the path. If the path is completely line-of-sight, this will be zero.</p>
+<p><strong>Total Path Loss (dB)</strong>: The sum of Free Space, Gaseous Absorption and Excess Path Loss.</p>
+</div></blockquote>
+<section id="performance-summary-when-tdm-is-selected">
+<h3>Performance Summary when TDM is selected<a class="headerlink" href="#performance-summary-when-tdm-is-selected" title="Permalink to this headline">¶</a></h3>
+<p>If the equipment is PTP 820G then additional fields appear in the Performance Summary section (<a class="reference internal" href="#performance-summary-with-tdm-licensed"><span class="std std-ref">Performance Summary with TDM for PTP 820G</span></a>):</p>
+<ul class="simple">
+<li><p>E1 Carried</p></li>
+<li><p>TDM Availability Required</p></li>
+<li><p>TDM Availability Predicted</p></li>
+</ul>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<blockquote>
+<div><p>These fields only appear if there are E1/T1 added to the individual path.</p>
+</div></blockquote>
+<figure class="align-default" id="id6">
+<span id="performance-summary-with-tdm-licensed"></span><img alt="_images/performance_summary_with_tdm_licensed.png" src="_images/performance_summary_with_tdm_licensed.png" />
+<figcaption>
+<p><span class="caption-text">Performance Summary with TDM for PTP 820G</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>If the Regulation selected is either FCC or Canada (or T1 TDM Type has been selected), then E1 will be replaced by T1. The Availability Required is used in the same way as the Min IP Availability Required. The Availability Predicted is the two way availability of the link.</p>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<p>When operating with a fixed modulation mode the Availability Predicted for the TDM circuits will be the same as the Link Availability.</p>
+</section>
+<section id="link-summary-additional-information-for-60-ghz-cnwave-ptp-820-or-ptp-850">
+<span id="index-2"></span><h3>Link Summary additional information for 60 GHz cnWave, PTP 820 or PTP 850<a class="headerlink" href="#link-summary-additional-information-for-60-ghz-cnwave-ptp-820-or-ptp-850" title="Permalink to this headline">¶</a></h3>
+<p>If the equipment is 60 GHz cnWave, PTP 820 or PTP 850, additional information is available via the <img alt="icon_info" src="_images/icon_info.png" /> icon. Select the icon to view a new window showing the detailed breakdown of the availability calculations, see <a class="reference internal" href="#availability-detail-itu"><span class="std std-ref">Detailed Availability Information (ITU Model)</span></a>. This allows the information to be viewed during planning without having to produce a proposal report.</p>
+<figure class="align-default" id="id7">
+<span id="availability-detail-itu"></span><img alt="_images/availability_detail_ITU.png" src="_images/availability_detail_ITU.png" />
+<figcaption>
+<p><span class="caption-text">Detailed Availability Information (ITU Model)</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>This window shows detailed information for Link Availability when in fixed modulation mode or for Lowest Mode Availability when Adaptive Modulation has been selected. When the ITU prediction model has been selected, see <a class="reference internal" href="availability.html"><span class="doc">Availability</span></a>, the parameters are as displayed in <a class="reference internal" href="#availability-detail-itu"><span class="std std-ref">Detailed Availability Information (ITU Model)</span></a> and described below:</p>
+<p><strong>dN/dH not exceeded for 1% of time</strong>: Point refractivity gradient in the lowest 65m of the atmosphere not exceeded for 1% of an average year. This data is provided in 1.5 deg grid form by the ITU and the value is a bilinear interpolation for the mid point of the path.</p>
+<p><strong>Area roughness 110 x 110 km</strong>: the standard deviation of terrain heights (m) within a 110 x 110 km area. If using the ITU-R P.530-17 model this data is provided in 0.5 x 0.5 degree grid form by the ITU and the value is a bilinear interpolation for the mid point of the path.</p>
+<p><strong>Geoclimatic Factor</strong>: Calculated from the point refractivity gradient and area roughness according to the selected ITU-R P530 model.</p>
+<p><strong>Fade Occurrence Factor (P0)</strong>: The intercept of the deep-fading distribution with the percentage of time-axis for multipath fading. This parameter is dependent on the Geoclimatic Factor, path length, path inclination, frequency and altitude of lower antenna, calculated as given in the selected ITU-R P530 model.</p>
+<p><strong>Path Inclination</strong>: Absolute difference in antenna height above mean sea level (m) divided by path length (km), given in mrad.</p>
+<p><strong>Value of K Exceeded for 99.9% (ke)</strong>: This value is taken from ITU-R P.530 Figure 2, the value of ke exceeded for approximately 99.9% of the worst month in a continental temperature climate and is often referred to as “Worst Earth Curvature”. The impact of this value on the terrain height is shown by the grey line on the path profile (<a class="reference internal" href="profile.html#profile-with-clutter-and-obstructions"><span class="std std-ref">Profile with Clutter and Obstructions</span></a>).</p>
+<p><strong>Excess Path Loss at K = ke</strong>: This value shows the amount of excess loss that will occur on the link during the time when the K value drops to that shown above. This may occur for up to 0.1% of the time, but is not taken into account in the availability calculations. Links which require at least 99.9% availability should ensure that this value is 0 dB, by selecting appropriate antenna heights to give sufficient clearance.</p>
+<p><strong>0.01% Rain rate</strong>: Calculated using ITU-R P837, which uses a matrix of rain values for the globe with a 1.25 degree resolution. These values are bi-linearly interpolated for the Latitude and Longitude of the center of the path.</p>
+<p><strong>Rain Availability</strong>: The availability of the given rain rate with the system gain margin calculated using the selected ITU-R P530 model.  60 GHz cnWave uses vertical polarization.</p>
+<p><strong>Rain Unavailability</strong>: The amount of time the link is predicted to be unavailable due to rain.</p>
+<p><strong>Annual 1-way Availability</strong>: The annual availability due to clear air multipath effects in a single direction, shown for each end of the link. This also accounts for any obstructions on the path.</p>
+<p><strong>Annual 2-way Availability</strong>: The sum of both 1-way unavailabilities, expressed as availability.</p>
+<p><strong>Annual 2-way Unavailability</strong>: The amount of time the link is predicted to be unavailable due to multipath effects.</p>
+<p><strong>Annual 2-way Availability Including Rain</strong>: The sum of the Rain Unavailability and the Annual 2-way Unavailability, expressed as availability.</p>
+<p><strong>Annual 2-way Unavailability Including Rain</strong>: The total time the link is predicted to be unavailable.</p>
+<p>When using the Vigants - Barnett prediction model the first five parameters are replaced by the following terms, for further information on the Vigants - Barnett model see <a class="reference internal" href="availability.html"><span class="doc">Availability</span></a> :</p>
+<p><strong>Terrain Roughness</strong>: Standard deviation of terrain height along the path profile, excluding the ends of the path.</p>
+<p><strong>Climatic Factor</strong>: Derived from the atmospheric conditions maps for the mid point of the path.</p>
+<p><strong>C Factor</strong>: Calculated from the Terrain Roughness and the Climatic Factor.</p>
+<p><strong>Temperature</strong>: The temperature is taken from the ESATEMP data. This data is provided in 1.5 deg grid form by the ITU and the value is a bilinear interpolation for the mid point of the path.</p>
+<blockquote>
+<div></div></blockquote>
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="list_of_figures.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_this_user_guide.html">About This User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_linkplanner.html">Using LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_ptp_links.html">Planning PTP links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_pmp_links.html">Planning PMP networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background_information.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notices.html">Legal Notices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes_to_linkplanner.html">Changes to LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="performance_details.html" title="Performance Details"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="configuration_at_each_end.html" title="Configuration at Each End"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="planning_ptp_links.html" >Planning PTP links</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="link_page.html" >Link Page</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Performance Summary</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2025, Cambium Networks.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

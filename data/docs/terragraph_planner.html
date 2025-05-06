@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Terragraph Planner Configuration &#8212; Cambium LINKPlanner Online Help (6.3.3)</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/default.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Exporting and Reporting" href="exporting_and_reporting.html" />
+    <link rel="prev" title="Best Server Analysis" href="best_server_analysis.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="exporting_and_reporting.html" title="Exporting and Reporting"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="best_server_analysis.html" title="Best Server Analysis"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="using_linkplanner.html" >Using LINKPlanner</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="project_configuration.html" accesskey="U">Advanced Features</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Terragraph Planner Configuration</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="terragraph-planner-configuration">
+<span id="index-0"></span><h1>Terragraph Planner Configuration<a class="headerlink" href="#terragraph-planner-configuration" title="Permalink to this headline">¶</a></h1>
+<p>Build a project with the details of all the sites before starting the Terragraph Planner.</p>
+<p>There are two approaches available to automatically plan the network:</p>
+<ul class="simple">
+<li><p>Distribution Network – End to End network planning with CNs. The project file must include both Network Sites and Subscriber Sites</p></li>
+<li><p>Mesh Only Network - Cost Model – 60 GHz backhaul network planning without CNs. The project file must include Network sites and does not require subscriber sites to be created. Any subscriber sites added to the project file will not be used in the analysis.</p></li>
+</ul>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<blockquote>
+<div><p>Only Network Sites for which the Node Type is defined as POP or DN are considered for the Terragraph Planner.</p>
+</div></blockquote>
+<p>To start the Terragraph Planner, select the Terragraph Planner icon <img alt="icon_tp" src="_images/icon_menu_tp.png" /> or <img alt="icon_tp_expand" src="_images/icon_menu_tp_expand.png" /> from the left hand Navigation Tree, which will launch the Terragraph Planner Configuration Wizard, then complete the following five configuration steps.</p>
+<section id="step-1-network-plan">
+<span id="index-1"></span><h2>Step 1 Network Plan<a class="headerlink" href="#step-1-network-plan" title="Permalink to this headline">¶</a></h2>
+<figure class="align-default" id="id1">
+<span id="tp-network-plan"></span><img alt="_images/tp_Network_Plan.png" src="_images/tp_Network_Plan.png" />
+<figcaption>
+<p><span class="caption-text">Network Plan</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Choose which type of network to plan by selecting from the following options:</p>
+<ul class="simple">
+<li><p>Select <strong>Distribution Network</strong> when the subscriber locations are known</p></li>
+<li><p>Select <strong>Mesh Only Network - Cost Model</strong> to only plan the mesh layer. This model uses the POP and DN locations as CN demand locations</p></li>
+</ul>
+<p>Then click <img alt="next" src="_images/icon_tp_next.png" /></p>
+</section>
+<section id="step-2-inputs-data">
+<span id="index-2"></span><h2>Step 2 Inputs/Data<a class="headerlink" href="#step-2-inputs-data" title="Permalink to this headline">¶</a></h2>
+<p>In this section choose the project area (which also checks and loads the Lidar data), see the site summary and define the LOS parameters.</p>
+<figure class="align-default" id="id2">
+<span id="tp-inputs-data"></span><img alt="_images/tp_Inputs_Data.png" src="_images/tp_Inputs_Data.png" />
+<figcaption>
+<p><span class="caption-text">Inputs/Data</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p><strong>GIS</strong></p>
+<blockquote>
+<div><p><strong>Boundary Polygon</strong>: Click the Browse button and navigate to the required boundary polygon, which defines the area that planning will be restricted to. The file can contain only one polygon and the file should be in KML/KMZ formats only.</p>
+</div></blockquote>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<blockquote>
+<div><p>LiDAR data is automatically fetched for the provided boundary file (project area). LiDAR data is required to run the Terragraph Planner. If there is not a complete set of data available for the area then a warning will be shown and it will not be possible to proceed to the next steps of the configuration.</p>
+<p>The original boundary file is not stored for security reasons but a local copy is created using a generic filename, which is available in the output file list.</p>
+</div></blockquote>
+<p><strong>Sites</strong></p>
+<p>This section summarizes the number of POP, DN and if required the CN sites input to the Terragraph Planner. Warnings are shown if there are any sites in the project which are outside of the boundary area and these will not be included in the Terragraph Planner analysis.</p>
+<blockquote>
+<div><p><img alt="note" src="_images/note.jpg" /></p>
+<blockquote>
+<div><p>If none of the Network Sites are defined as POP sites (POP Sites = 0), set the <strong>Extra POPs</strong> field in Step 5 to greater than zero.</p>
+</div></blockquote>
+</div></blockquote>
+<p><strong>Line Of Sight</strong></p>
+<p>In this section specify the LOS related parameters.</p>
+<blockquote>
+<div><p><strong>Use Site Maximum Height?</strong>: Select this option to use the site Maximum Height provided in the Network Sites list.</p>
+<p><strong>Use Height Above Surface?</strong>: Select this option to use fixed height above the surface (ground height + obstruction height).</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Set the heights for the <strong>POP</strong>, <strong>DN</strong> and <strong>CN</strong> (if available)</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Max LOS Distance</strong>: Specify the maximum line of sight distance that should be considered between any two sites.</p>
+<p><strong>Min MCS of Mesh Link</strong>: Select the minimum MCS used to determine the maximum line-of-sight distance for viable backhaul links in the LOS candidate graph. Increasing the minimum MCS shortens that distance.</p>
+<p><strong>Min MCS of Access Link</strong>: (Distribution Network Only) Select the minimum MCS used to determine the maximum line-of-sight distance for viable access links in the LOS candidate graph. Increasing the minimum MCS shortens that distance.</p>
+</div></blockquote>
+<p>After configuring the parameters in this step, click <img alt="next" src="_images/icon_tp_next.png" /> .</p>
+</section>
+<section id="step-3-equipment-configuration">
+<span id="index-3"></span><h2>Step 3 Equipment Configuration<a class="headerlink" href="#step-3-equipment-configuration" title="Permalink to this headline">¶</a></h2>
+<figure class="align-default" id="id3">
+<span id="tp-equipment-configuration"></span><img alt="_images/tp_Equipment_Configuration.png" src="_images/tp_Equipment_Configuration.png" />
+<figcaption>
+<p><span class="caption-text">Equipment Configuration</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>In this section choose the 60 GHz channel, country and equipment settings.</p>
+<blockquote>
+<div><p><strong>Channel</strong>: Select the 60 GHz channel for the network plan</p>
+<p><strong>Country</strong>: Select the country for the project. This will automatically apply any required power limits</p>
+<p><strong>POP/DN</strong>: Read Only, V5000 is the only DN Equipment option. Select the minimum MCS required for the DN.</p>
+<p><strong>Max EIRP</strong>: The default Max EIRP for the project is calculated based on the POP/DN products and country selected. To reduce the maximum default value, enter a smaller value in this field. The Terragraph Planner analysis only considers the downlink and therefore the higher EIRP levels for some of the CNs is not used, only the EIRP for the DN radios is required.</p>
+<p><strong>CN</strong>: (Distribution Network Only) Select each CN product for the network. For each CN type select the minimum MCS required. To add the Radome to the V3000 High Gain tick the Radome box.</p>
+</div></blockquote>
+<p>Click  <img alt="next" src="_images/icon_tp_next.png" /></p>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<blockquote>
+<div><p>When planning a Distribution Network at least one CN equipment must be selected for the study. The CN equipment selection can be more than one. Terragraph Planner chooses the lowest cost equipment for the CN location which meets the required performance setup.</p>
+</div></blockquote>
+</section>
+<section id="step-4-financials">
+<span id="index-4"></span><h2>Step 4 Financials<a class="headerlink" href="#step-4-financials" title="Permalink to this headline">¶</a></h2>
+<figure class="align-default" id="id4">
+<span id="tp-financials"></span><img alt="_images/tp_Financials.png" src="_images/tp_Financials.png" />
+<figcaption>
+<p><span class="caption-text">Financials</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>In this section, set the equipment cost for each product and the total budget for the project.</p>
+<blockquote>
+<div><p><strong>Equipment Capex</strong>: Enter the hardware cost of the POP/DN and any CN equipment selected.</p>
+<p><strong>Budget</strong>: Enter the maximum budget allowed for the total radio cost.</p>
+</div></blockquote>
+<p>All the default values for the Equipment Capex and Budget are in US Dollars. The minimum budget required to run the Terragraph Planner is calculated based on the number of POP, DN and CN in the project and their equipment capex values. The Budget value must be greater than the calculated minimum budget for the project.</p>
+<p>Click  <img alt="next" src="_images/icon_tp_next.png" /></p>
+</section>
+<section id="step-5-create-network-design">
+<span id="index-5"></span><h2>Step 5 Create Network Design<a class="headerlink" href="#step-5-create-network-design" title="Permalink to this headline">¶</a></h2>
+<figure class="align-default" id="id5">
+<span id="tp-create-network-design"></span><img alt="_images/tp_Create_Network_Design.png" src="_images/tp_Create_Network_Design.png" />
+<figcaption>
+<p><span class="caption-text">Create Network Design</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>In this step, enter the parameters to define the network design.</p>
+<p><strong>Dimensioning</strong></p>
+<blockquote>
+<div><p><strong>Default CN CIR (Gbps)</strong>: Enter the minimum required committed information rate (CIR) for each CN location in Gbps.</p>
+<p><strong>POP Capacity (Gbps)</strong>: Enter the total bandwidth per POP location in Gbps.</p>
+</div></blockquote>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<blockquote>
+<div><blockquote>
+<div><p>Where the POP is using a DN to link to the rest of the 60 GHz network the total bandwidth available to the POP will be limited by the DN capacity. To ensure that this POP Capacity is not a limiting factor it must be set to higher than the maximum DN capacity of 3.8 Gbps, but increasing this value will not prevent the network having insufficient POP Capacity.</p>
+</div></blockquote>
+<p><strong>Oversubscription</strong>: Enter the oversubscription for the network.</p>
+<p><strong>Link Availability (%)</strong>: Enter the percentage of time in one year that each line-of-sight (LOS) link will be available.</p>
+</div></blockquote>
+<p><strong>Network Design</strong></p>
+<blockquote>
+<div><p><strong>Use all POP Sites</strong>: Tick this box to use all the candidate POPs provided in the site input.</p>
+<p><strong>Extra POPs</strong>: Enter the maximum number of extra POPs that the tool should propose. This is the number of POPs in addition to the specified POPs in the site file.</p>
+<p><strong>Number Of Channels</strong>: Select the number of channels to use in the network design.</p>
+<p><strong>Maximize Minimum Guaranteed BW</strong>: Tick this box to equally distribute bandwidth across all connected clients. This ensures that all of the CNs that can be connected are connected, although sometimes at a lower bandwidth.</p>
+<p><strong>Maximum Number of Hops</strong>: Enter the maximum number of hops from the POP to the edge site of the network.</p>
+<p><strong>Redundancy Level</strong>: Select the level of redundancy required for the network.</p>
+<ul class="simple">
+<li><p>Legacy Method maximizes redundancy within the budget constraint.</p></li>
+<li><p>None is not redundant to any link or site.</p></li>
+<li><p>Low is resilient to any single link failure.</p></li>
+<li><p>Medium is resilient to any single site (POP or DN) failure.</p></li>
+<li><p>High is resilient to a simultaneous POP and DN failure or 3 simultaneous DN failures.</p></li>
+</ul>
+</div></blockquote>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<blockquote>
+<div><p>The Legacy Method is both constrained by the budget and will also attempt to utilize all of the budget, which can result in more DNs being added. The other methods are driven by finding the lowest cost solution, which will result in fewer DNs added to the network, particularly for the lower redundancy levels, but this may not connect all sites.</p>
+</div></blockquote>
+<p>Click on <img alt="create" src="_images/icon_tp_Create.png" /> to show the summary of the Terragraph Planner project configuration.</p>
+</section>
+<section id="terragraph-planner-summary">
+<span id="index-6"></span><h2>Terragraph Planner Summary<a class="headerlink" href="#terragraph-planner-summary" title="Permalink to this headline">¶</a></h2>
+<p>The Configuration parameters entered in Steps 1 to 5 are shown in a Summary page for review before starting the Terragraph Planner process.</p>
+<figure class="align-default" id="id6">
+<span id="tp-summary-page"></span><img alt="_images/tp_Summary_Page.png" src="_images/tp_Summary_Page.png" />
+<figcaption>
+<p><span class="caption-text">Summary Page</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Select <img alt="edit" src="_images/icon_tp_Edit.png" /> to go back through the previous steps to update parameters and settings.</p>
+<p>Select <img alt="run" src="_images/icon_tp_Run.png" /> to start the Terragraph Planner project analysis.</p>
+<p>Select <img alt="reset" src="_images/icon_tp_Reset.png" /> to change all the parameters back to their default settings</p>
+<p>The project running status can be viewed in the top right of the Terragraph Planner page.</p>
+<blockquote>
+<div><p><strong>Queuing analysis</strong>: the Terragraph Planner Project has been created and placed in a queue until a processor is available.</p>
+<p><strong>Preparing lidar data</strong>: the required lidar data is being processed.</p>
+<p><strong>Optimising network</strong>: the Terragraph Planner is running the analysis.</p>
+</div></blockquote>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<blockquote>
+<div><p>Small projects should complete in a few minutes, however larger projects, particularly if using multiple channels may take an hour or more to complete. Changing to another page or refreshing the browser will cause the project running status message to disappear, however it will return when it changes to a new status.</p>
+</div></blockquote>
+</section>
+<section id="terragraph-planner-results-and-import">
+<span id="index-7"></span><h2>Terragraph Planner Results and Import<a class="headerlink" href="#terragraph-planner-results-and-import" title="Permalink to this headline">¶</a></h2>
+<p>Once the Terragraph Planner project analysis completes, the results are shown in the file list.</p>
+<figure class="align-default" id="id7">
+<span id="tp-successful-run"></span><img alt="_images/tp_successful_run.png" src="_images/tp_successful_run.png" />
+<figcaption>
+<p><span class="caption-text">Successful Analysis</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Check that the number of POPs, DNs and CNs in the Results summary are close to expectations. If they are too low, select <img alt="edit" src="_images/icon_tp_Edit.png" /> and review the input criteria, which may not have sufficient number of POPs or DNs to carry the required throughput or the MCS requirements may be too high. To import the results into the LINKPlanner project, following a successful run, click on <strong>Import Network</strong>.</p>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<blockquote>
+<div><p>Importing a Terragraph Planner analysis will result in the deletion of any existing network devices, PMP and Mesh links in the project. Click OK on the warning message to proceed.
+Some links may show as NLOS in LINKPlanner following the import due to the Terragraph Planner algorithm using a different LOS calculation to the main LINKPlanner code. A LOS path can usually be found with only a small (1 to 2 m) adjustment in the end closest to the obstruction.</p>
+</div></blockquote>
+<figure class="align-default" id="id8">
+<span id="tp-failed-run"></span><img alt="_images/tp_failed_run.png" src="_images/tp_failed_run.png" />
+<figcaption>
+<p><span class="caption-text">Failed Analysis</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>If the analysis fails a message is displayed to provide guidance on what might be wrong with the configuration. Click <img alt="edit" src="_images/icon_tp_Edit.png" /> to go back and update the settings.</p>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<blockquote>
+<div><p>Check the candidate topology file to ensure that there are enough LOS paths, particularly to give connections to the POP sites and on the mesh backhaul. If the heights are too low and too many paths are obstructed the analysis may still see this as having too little capacity available.</p>
+</div></blockquote>
+</section>
+<section id="file-list">
+<h2>File List<a class="headerlink" href="#file-list" title="Permalink to this headline">¶</a></h2>
+<p>The File List contains both the input and output files from the analysis process for reference.</p>
+<ul>
+<li><p>Input Files</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Config.yaml</strong> - this is the summary of the criteria used during the Terragraph Planner analysis</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Output Files - all runs</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>generated_boundary.kml</strong> - local copy of the input boundary file</p></li>
+<li><p><strong>candidate_topology.kmz</strong>  - contains all the paths which pass the Line of Sight analysis and can be used as candidate paths in the optimization</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Output Files - successful runs only</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>link.csv</strong> - contains the details of the links analysed during the process, only those with a Status = Proposed are included in the final design</p></li>
+<li><p><strong>metrics.yaml</strong> - contains a summary of the project, including costs, site counts, equipment usage and availability metrics</p></li>
+<li><p><strong>reporting_topology.kml</strong> - shows the resulting network which can be viewed in Google Earth</p></li>
+<li><p><strong>sector.csv</strong> - contains the configuration information for each sector in the network</p></li>
+<li><p><strong>site.csv</strong> - contains the coordinates, altitude, device type and connections for each site location</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<blockquote>
+<div></div></blockquote>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="list_of_figures.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_this_user_guide.html">About This User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="using_linkplanner.html">Using LINKPlanner</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="starting_the_application.html">Starting the Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_interface_tips.html">User Interface Tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="projects.html">Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sites.html">Sites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html">Profiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="viewsheds.html">Viewsheds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bill_of_materials_for_project.html">Bill of Materials for Project</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="project_configuration.html">Advanced Features</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="antennas.html">Antennas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="best_server_analysis.html">Best Server Analysis</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Terragraph Planner Configuration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#step-1-network-plan">Step 1 Network Plan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-2-inputs-data">Step 2 Inputs/Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-3-equipment-configuration">Step 3 Equipment Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-4-financials">Step 4 Financials</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-5-create-network-design">Step 5 Create Network Design</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#terragraph-planner-summary">Terragraph Planner Summary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#terragraph-planner-results-and-import">Terragraph Planner Results and Import</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#file-list">File List</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="exporting_and_reporting.html">Exporting and Reporting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="planning_ptp_links.html">Planning PTP links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_pmp_links.html">Planning PMP networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background_information.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notices.html">Legal Notices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes_to_linkplanner.html">Changes to LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="exporting_and_reporting.html" title="Exporting and Reporting"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="best_server_analysis.html" title="Best Server Analysis"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="using_linkplanner.html" >Using LINKPlanner</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="project_configuration.html" >Advanced Features</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Terragraph Planner Configuration</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2025, Cambium Networks.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

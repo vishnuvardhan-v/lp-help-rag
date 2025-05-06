@@ -1,0 +1,44 @@
+.. index::
+   single: Warnings
+   single: Cautions
+   single: Notes
+
+
+Warnings, cautions and notes
+=============================
+
+The following describes how warnings and cautions are used in this document and in all documents of this Cambium document set.
+
+
+Warnings
+~~~~~~~~~
+
+Warnings precede instructions that contain potentially hazardous situations. Warnings are used to alert the reader to possible hazards that could cause loss of life or physical injury. A warning has the following format:
+
+|warning|
+  
+        **Warning text and consequence for not following the instructions in the warning.**
+        
+Cautions
+~~~~~~~~~
+
+Cautions precede instructions and are used when there is a possibility of damage to systems, software, or individual items of equipment within a system. However, this damage presents no danger to personnel. A caution has the following format:
+
+|caution|
+
+        Caution text and consequence for not following the instructions in the caution.
+        
+Notes
+~~~~~~
+
+A note means that there is a possibility of an undesirable situation or provides additional information to help the reader understand a topic or concept. A note has the following format:
+
+|note|
+
+        Note text. 
+   
+
+
+.. |warning| image:: warning.jpg
+.. |caution| image:: caution.jpg
+.. |note| image:: note.jpg

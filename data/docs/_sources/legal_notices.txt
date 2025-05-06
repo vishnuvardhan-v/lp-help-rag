@@ -1,0 +1,10 @@
+Legal Notices
+=============
+
+Users of the LINKPlanner application should read the following legal notices:
+
+
+.. toctree::
+   
+   cambium_lp_terms_and_conditions
+

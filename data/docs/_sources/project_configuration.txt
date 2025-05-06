@@ -1,0 +1,22 @@
+.. index::
+   single: Project Configuration
+
+
+Advanced Features
+=====================
+
+The Advanced Features node of the navigation tree contains the following:
+   
+
+* **Antennas**: This feature displays tables of available antennas. It is possible to create, edit and delete custom antennas for Unlicensed PTP and Subscriber Modules. See :doc:`antennas`. 
+
+* **Best Server Analysis**: Automatically determine which ND is the best option for all subscriber sites. This requires the PMP Network Device to be created prior to running. See :doc:`best_server_analysis`. 
+
+* **Terragraph Planner**:  This feature only applies to cnWave 60 GHz products. Use the Terragraph Planner feature to automatically plan a 60 GHz Network. The Terragraph Planner automatically selects the most appropriate DN locations, assigns the orientation of the DN and if required connects the CNs to each DN. See :doc:`terragraph_planner`. 
+
+.. toctree::
+
+   antennas
+   best_server_analysis
+   terragraph_planner
+   

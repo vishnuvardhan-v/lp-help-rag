@@ -1,0 +1,16 @@
+.. index::
+   single: Excess Path Loss
+   single: Path Loss
+
+Excess Path Loss
+================
+
+Excess Path Loss is the loss incurred due to obstacles between the two end points of the radio link. This loss is calculated by LINKPlanner. Trees and foliage create a number of problems:
+
+* They are often not marked on the path profiles, leading to optimistic results.
+* They are not completely solid, leading to pessimistic results.
+* They are responsible for seasonal variation.
+
+Identify trees and foliage as either clutter types and/or obstructions in LINKPlanner, thus giving worst case results. It may be necessary to add additional obstructions above the clutter to locally increase the height of an individual clutter type, without changing the default height for the clutter type. When the link is installed, make an allowance for seasonal variations in the estimated mean path loss.
+
+Excess Path Loss in LINKPlanner is calculated using the algorithms in ITU-R P526. If LINKPlanner is not enabled to use clutter LINKPlanner continues to use the P526-10 Cascaded Knife Edge Method used before clutter was introduced to LINKPlanner to allow continuity of predictions. If LINKPlanner is using clutter then the excess path loss algorithm has been updated to the method for a general terrestrial path which is more applicable to the block obstructions from the clutter data.

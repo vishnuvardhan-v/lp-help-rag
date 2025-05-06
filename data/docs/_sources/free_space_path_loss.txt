@@ -1,0 +1,15 @@
+.. index::
+   single: Free Space Path Loss
+   single: Path Loss
+
+Free Space Path Loss
+====================
+
+Free Space Path Loss is the loss incurred along a line-of-sight path
+between the two end points of the radio link. The following graph shows
+the value in dB by range, at the frequency used by PTP 670 bridges:
+
+.. _free_space_path_loss:
+.. figure:: free_space_path_loss.jpg
+
+   Free Space Path Loss at 5.8 GHz

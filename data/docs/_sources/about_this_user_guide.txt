@@ -1,0 +1,81 @@
+.. index::
+   single: Features of LINKPlanner
+   single: Cambium Networks Technical Support
+   single: Welcome
+   
+
+About This User Guide
+=======================
+
+The purpose of this user guide is to describe how to access and use Cambium LINKPlanner.
+
+Cambium Networks provides the LINKPlanner application with the following products:
+
+* PTP Planning - 60 GHz cnWave, ePMP (PTP Mode) , PTP 450 family, PTP 670, PTP 700, PTP 820 and PTP 850 equipment
+* PMP Planning - cnWave 5G Fixed, 60 GHz cnWave, ePMP, N500, PMP 450 family and HCMP equipment
+* cnMatrix Tower Switches
+
+
+Use LINKPlanner to help predict where and how equipment will work. It allows the network planner to answer
+these questions:
+
+* Will each link transmit data fast enough for the user?
+* Will each link be reliable enough for the user?
+* Which Network Device will be best for a subscriber?
+
+
+.. index::
+    single: Getting started
+
+**Getting started**
+
+
+* To understand the concepts of LINKPlanner, see :doc:`linkplanner_concepts`
+* If any problems are experienced with LINKPlanner, see :doc:`contacting_cambium`.
+
+
+**How to use LINKPlanner**
+
+
+To perform a quick test of the feasibility of a planned link, follow the procedure described in:.
+
+* :doc:`PTP Tutorial <quick_tutorial>` - for 60 GHz cnWave, ePMP (PTP Mode), PTP 450 family, PTP 670 and PTP 700 link planning.
+* :doc:`PTP Licensed Band Tutorial <quick_tutorial_licensed_band>` - for PTP 820 and PTP 850 links
+* :doc:`PMP Tutorial <quick_tutorial__pmp>` - for cnWave 5G Fixed, ePMP, N500, PMP 450 family and PTP 670 HCMP and PTP 700 HCMP network planning.
+* :doc:`pmp_network_design` - for PMP network planning
+
+
+If the resulting performance predictions look promising, plan the link in greater detail as described in :doc:`using_linkplanner`.
+
+.. index::
+   single: Supporting information
+
+**Supporting information**
+
+
+* For more information about link planning, such as path loss, path profiles and file formats, see :doc:`background_information`.
+* For licensing and third party information, see :doc:`legal_notices`.
+* For a history of LINKPlanner software changes, see :doc:`changes_to_linkplanner`
+* For definitions of common terms, see :doc:`glossary`.
+
+.. index::
+   single: Training
+
+**LINKPlanner Training Course**
+
+A LINKPlanner Certification Training course is available in Cambium Networks Learning, see |training|
+
+.. toctree::
+
+   general_information
+   contacting_cambium
+   warnings_cautions_notes
+   
+   
+.. |note| image:: note.jpg
+
+.. |training| replace:: https://learning.cambiumnetworks.com/
+   
+
+   
+

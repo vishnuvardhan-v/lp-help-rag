@@ -1,0 +1,50 @@
+Path Profiles
+=============
+
+The accuracy of the LINKPlanner results depends upon obtaining accurate path data. This data is a combination of terrain height and the obstructions above ground (e.g. trees and buildings), which is generally known as "clutter". 
+
+**Terrain Data**
+
+NASA has provided 1 arc second data (30m) covering land masses between latitudes 60 north and 60 south. The vertical accuracy is claimed by NASA to be 10 meters RMS. 
+(See :doc:`srtm_technical_guide`). LINKPlanner also imports from other data sources to cover the areas above latitude 60 north and below 60 south and other areas not covered by the 1 arc second data.
+
+LINKPlanner uses the following terrain data sources:
+
+* SRTM V3 (See :doc:`srtm_technical_guide`)
+* ASTER Version 1 (For more information, visit https://www.nasa.gov/centers/jpl/missions/aster.html)
+* GeoBase (For more information, visit http://www.geobase.ca/geobase/en/index.html)
+
+Note that the SRTM and ASTER data collection methods generally map the top of the landscape including its land cover, which means that significant areas of land cover such as forest and urban areas may be incorporated into the terrain height. The SRTM data collection happened in February, a period of minimum leaf cover for northern latitude deciduous forests. This needs to be considered when setting the heights for each of the clutter classes for a given area.
+
+**Clutter Data**
+
+Various databases for ground cover are available in different parts of the world. The creation of these datasets is driven primarily from understanding the vegetation usage across the area and hence the classifications for different types of buildings does vary significantly. The resolution also varies from 30m, which matches the terrain data, to 300m. Adding clutter to the path profiles can be very useful to gain a better understanding of likely areas where the path may impinge on the Fresnel zone, however it may not be suitable in all cases, in which case it can be disabled by unticking the **Use clutter?** option in **Project Properties**, see :ref:`project_properties`
+
+LINKPlanner uses the following clutter data sources:
+
+* United States
+
+    * NLCD 2016 Land Cover (for more information, visit https://www.mrlc.gov/data/nlcd-2016-land-cover-conus)
+    * Coordinate Resolution: 30 meters
+    * Data Sources: Landsat ETM, Landsat TM, DEM, USGS/EROS
+
+* Europe
+
+    *  Corine Land Cover (CLC) 2012 (for more information, visit https://land.copernicus.eu/pan-european/corine-land-cover/clc-2012?tab=metadata)
+    * Coordinate Resolution: 100 meters
+    * Data Sources: Photointerpretation of satellite images by the national teams of the participating countries
+
+* Rest of the World
+
+    * GLOBCOVER 2009 (for more information, visit http://due.esrin.esa.int/files/GLOBCOVER2009_Validation_Report_2.2.pdf)
+    * Coordinate Resolution: 300 meters
+    * Data Sources: MERIS FR
+
+**Profile Accuracy**
+
+Even with accurate path data, the losses over certain objects depend upon the curvature of the top of those objects. Nevertheless the tool gives a good idea of the performance to be expected, and by doing a what/if analysis, helps the user to understand the concept of non-line-of-sight.
+
+
+.. toctree::
+   
+   srtm_technical_guide

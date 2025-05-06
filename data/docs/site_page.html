@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Site Page &#8212; Cambium LINKPlanner Online Help (6.3.3)</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/default.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Adding Switches" href="adding_switches.html" />
+    <link rel="prev" title="Displaying the Sites List" href="displaying_the_sites_list.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="adding_switches.html" title="Adding Switches"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="displaying_the_sites_list.html" title="Displaying the Sites List"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="using_linkplanner.html" >Using LINKPlanner</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="sites.html" accesskey="U">Sites</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Site Page</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="site-page">
+<span id="index-0"></span><h1>Site Page<a class="headerlink" href="#site-page" title="Permalink to this headline">¶</a></h1>
+<p>Use this page to view and update the details of an existing site.</p>
+<section id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<p>View and update the Name, Maximum Height, Latitude, Longitude and Description. To change any of the parameters enter the new values and select <strong>Apply</strong> to confirm the change. Once <strong>Apply</strong> is selected the site is moved to the new coordinates, moving any Network Devices or subscribers at that site and the path profiles for any links connected to that site are automatically updated.</p>
+<figure class="align-default" id="id2">
+<span id="details-in-site-page"></span><img alt="_images/details_in_site_page.png" src="_images/details_in_site_page.png" />
+<figcaption>
+<p><span class="caption-text">Details in Site Page</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p><strong>Name:</strong> Enter the site name.</p>
+<p><strong>Maximum Height:</strong> Enter the maximum antenna height (above ground) allowed at the site. The units are set in the Preferences page (feet or meters).</p>
+<p><strong>Latitude and Longitude:</strong> Enter the coordinates, see <a class="reference internal" href="creating_sites.html"><span class="doc">Creating Sites</span></a> for the allowed formats.</p>
+<p><strong>Node Type:</strong> Only applies to 60 GHz cnWave networks, leave blank for all other networks. For 60 GHz networks select either DN or POP to define the site.</p>
+<p><strong>Description:</strong> Enter the site description</p>
+</section>
+<section id="ptp-links">
+<h2>PTP Links<a class="headerlink" href="#ptp-links" title="Permalink to this headline">¶</a></h2>
+<p>This is shown on a network site and is a list of PTP Links that have been defined between this network site and other network sites in the network. If the Remote End is displayed in red, it means that the predicted performance of the link is below requirements. Click on a Remote End to open the PTP Link page to evaluate the link, as described in <a class="reference internal" href="link_page.html"><span class="doc">Link Page</span></a>.</p>
+<figure class="align-default" id="id3">
+<span id="ptp-links-in-site-page"></span><img alt="_images/ptp_links_in_site_page.png" src="_images/ptp_links_in_site_page.png" />
+<figcaption>
+<p><span class="caption-text">PTP Links in Site Page</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="performance-summary">
+<h2>Performance Summary<a class="headerlink" href="#performance-summary" title="Permalink to this headline">¶</a></h2>
+<p>This is a high level summary of the number of Network Devices, Connected Subscribers and Throughput for all devices at the site.</p>
+<figure class="align-default" id="id4">
+<span id="performance-summary-of-site"></span><img alt="_images/performance_summary_of_site.png" src="_images/performance_summary_of_site.png" />
+<figcaption>
+<p><span class="caption-text">Performance Summary of Site</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<blockquote>
+<div><p>Throughput values are not shown for cnReach Network Devices, but the number of Network Devices and Subscribers will be shown.</p>
+</div></blockquote>
+</section>
+<section id="pmp-network-devices">
+<h2>PMP Network Devices<a class="headerlink" href="#pmp-network-devices" title="Permalink to this headline">¶</a></h2>
+<p>This is shown on a network site and is a list of PMP Network Devices that have been created on this site.</p>
+<p>If the Network Device is displayed in red, it means that there are errors on the network device. Click on a network device to open the Network Device page to evaluate the configuration, as described in <a class="reference internal" href="network_devices.html"><span class="doc">PMP Network Devices</span></a>.</p>
+<figure class="align-default" id="id5">
+<span id="nd-in-site-page"></span><img alt="_images/nd_in_site_page.png" src="_images/nd_in_site_page.png" />
+<figcaption>
+<p><span class="caption-text">PMP Network Devices in Site Page</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="pmp-links">
+<span id="index-1"></span><h2>PMP Links<a class="headerlink" href="#pmp-links" title="Permalink to this headline">¶</a></h2>
+<p>This is shown on a subscriber site and is a list of PMP Links that have been defined between this subscriber site and Network Devices in the network. If the PMP Link is displayed in red, it means that the predicted performance of the link is below requirements. Click on a link to open the PMP Link page to evaluate the link, as described in <a class="reference internal" href="subscriber_modules.html"><span class="doc">Subscriber Modules</span></a>.</p>
+<figure class="align-default" id="id6">
+<span id="links-in-site-page"></span><img alt="_images/links_in_site_page.png" src="_images/links_in_site_page.png" />
+<figcaption>
+<p><span class="caption-text">PMP Links in Site Page</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="bill-of-materials-for-site">
+<h2>Bill of Materials for Site<a class="headerlink" href="#bill-of-materials-for-site" title="Permalink to this headline">¶</a></h2>
+<p>To view the BOM at the network site level select the clipboard symbol <img alt="bom_icons" src="_images/bom_icons.png" /> in the menu options. LINKPlanner automatically calculates the Bill of Materials (BOM) for the required components for the Tower Switch and for all the Network Devices on the site. The Site BOM contains the list of part numbers and associated quantities. To add additional items or edit quantities in the Tower Switch section click on the <img alt="edit_switch_icon" src="_images/icon_edit_switch.png" /> icon on the main network site page and add them in the tower switch configuration BOM.To add additional items to the PMP Network Devices BOM, click <img alt="new_extra" src="_images/icon_new_extra.png" />. A list of optional extras for the Site will be displayed. To add items to the BOM tick the box next to each item required and click <strong>OK</strong>. The item will appear in the main list, where the quantity can be adjusted by selecting the number in the <strong>Qty</strong> column and adjusting as required. To delete optional items from the BOM list, tick the box next to each item and click <img alt="delete_extra" src="_images/icon_delete_extra.png" />. A star denotes optional extras which have been added to the automatic BOM items.</p>
+<figure class="align-default" id="id7">
+<span id="id1"></span><img alt="_images/bill_of_materials_for_site.png" src="_images/bill_of_materials_for_site.png" />
+<figcaption>
+<p><span class="caption-text">Bill of Materials for Site</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p><strong>P/N</strong>: The Cambium part number. If the component is not supplied by Cambium, this is set to ‘(no part number)’.</p>
+<p><strong>Description</strong>: Description of the components.</p>
+<p><strong>Qty</strong>: Quantity required. This value can be edited, for items automatically added if the quantity is increased the row will be shown in green, if the quantity is decreased from the recommended value, the row will be shown in red. To reset to the default value, click on the value and choose <img alt="icon_revert" src="_images/icon_revert.png" />.</p>
+<p><strong>Notes</strong>: Displays information about certain items, such as whether they are obsolete.</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="list_of_figures.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_this_user_guide.html">About This User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="using_linkplanner.html">Using LINKPlanner</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="starting_the_application.html">Starting the Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_interface_tips.html">User Interface Tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="projects.html">Projects</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="sites.html">Sites</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="sites.html#new-sites">New Sites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sites.html#sites-list">Sites List</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="sites.html#viewing-and-updating-sites">Viewing and Updating Sites</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="importing_sites.html">Importing Sites</a></li>
+<li class="toctree-l4"><a class="reference internal" href="creating_sites.html">Creating Sites</a></li>
+<li class="toctree-l4"><a class="reference internal" href="displaying_the_sites_list.html">Displaying the Sites List</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Site Page</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#details">Details</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ptp-links">PTP Links</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#performance-summary">Performance Summary</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#pmp-network-devices">PMP Network Devices</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#pmp-links">PMP Links</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#bill-of-materials-for-site">Bill of Materials for Site</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="adding_switches.html">Adding Switches</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html">Profiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="viewsheds.html">Viewsheds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bill_of_materials_for_project.html">Bill of Materials for Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project_configuration.html">Advanced Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exporting_and_reporting.html">Exporting and Reporting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="planning_ptp_links.html">Planning PTP links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_pmp_links.html">Planning PMP networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background_information.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notices.html">Legal Notices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes_to_linkplanner.html">Changes to LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="adding_switches.html" title="Adding Switches"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="displaying_the_sites_list.html" title="Displaying the Sites List"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="using_linkplanner.html" >Using LINKPlanner</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="sites.html" >Sites</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Site Page</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2025, Cambium Networks.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

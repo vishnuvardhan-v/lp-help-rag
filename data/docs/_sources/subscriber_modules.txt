@@ -1,0 +1,25 @@
+.. index::
+   single: Subscriber Modules
+   single: Creating Subscriber Modules
+
+
+Subscriber Modules
+===================
+
+A Subscriber Module is created when a Subscriber Site location is connected to a Network Device.
+
+The Subscriber Module automatically assumes a number of the Network Device equipment parameters and the choices available at the Subscriber Module are dependent on how the Network Device has been configured.
+
+The Subscriber Module contains the link to the Network Device, including the path profile and performance information.
+
+The Subscriber Module contains the following sections:
+
+
+.. toctree::
+   
+   sm_creating_and_deleting
+   sm_description_and_equipment
+   sm_profile
+   sm_performance_summary
+   sm_performance_details
+   sm_bill_of_materials_for_link

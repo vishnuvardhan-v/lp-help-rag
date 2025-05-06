@@ -1,0 +1,57 @@
+.. index::
+   single: Concepts
+   single: Ethernet bridges
+   single: ITU recommendations
+   single: LoS
+   single: NLoS
+
+LINKPlanner Concepts
+====================
+
+NLoS and LoS
+------------
+
+The Cambium Networks Series of point-to-multipoint (PMP) wireless broadband solutions are designed to operate in non-line-of-sight (NLoS) and line-of-sight (LoS) environments. Link planning and estimation enable a link of known quality to be installed. LINKPlanner uses path profile data to predict the data rates and reliability over each link, through adjustment of antenna height and RF power. When the link is installed, the mean path loss can be checked to confirm these predictions.  
+
+Architecture
+------------
+
+The LINKPlanner is a single-page web application that is designed to run on larger screens, such as laptop or desktop computer. It performs the calculations from the ITU recommendations ITU-R P.526-10 (without clutter) or ITU-R P.526-14 (with clutter) and ITU-R P.530-12, ITU-R P.530-17 or Vigants - Barnett (VB) to predict NLoS and LoS paths for anywhere in the world. Path profile data is provided for all links; see :doc:`path_profiles`. Trees and buildings (clutter and obstructions) can modify this profile, and often the path must be surveyed to establish the correct estimation.
+
+The main concepts of LINKPlanner are:
+
+- **Project**: a set of data about the sites and links in a wireless network.
+    
+- **Network Site**: the location of PMP Network Devices.
+
+- **Subscriber Site**: the location of a PMP Subscriber Module outdoor unit and antenna.
+
+- **PMP Network Device (ND)**: an outdoor unit and antenna which connects to multiple Subscriber Modules, also known as an Access Point (AP), Distribution Node (DN) or Base Transceiver Station (BTS).
+
+- **Subscriber Module**: an outdoor unit and antenna at a customer or remote premises, also known as Customer Premises Equipment (CPE) or Customer Node (CN). 
+    
+- **Link**: a wireless connection between a PMP Network Device and a single Subscriber Module.
+
+Inputs and Outputs
+------------------
+
+The main inputs to LINKPlanner are:
+
+* Site name, position, maximum antenna height and site definition; network or subscriber (input by the user).
+* Details of the equipment and license restrictions (selected by the user).
+* Required performance targets for each link or network (input by the user).
+* Profile of the terrain and (optionally) clutter along the path of each link (provided by Cambium).
+
+The main output from LINKPlanner is a performance summary that shows how well the network is predicted to perform in response to the selected combination of inputs. It shows predicted and required throughput performance and availability at each end of the link.
+
+User Interface
+--------------
+
+The following example shows the LINKPlanner :ref:`User Interface <user-interface-fig>` for the "Tutorial PMP" project, which models a PMP network containing one Network Device, which is connected to two Subscriber Modules:
+
+.. _user-interface-fig:
+
+  .. _user_interface:
+  .. figure:: user_interface.png
+
+     User Interface

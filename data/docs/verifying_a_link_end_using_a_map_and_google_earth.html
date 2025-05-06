@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Verifying a Link End Using a Map and Google Earth &#8212; Cambium LINKPlanner Online Help (6.3.3)</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/default.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Verifying a Link End Using a Survey" href="verifying_a_link_end_using_a_survey.html" />
+    <link rel="prev" title="Link Profile Adjustment Examples" href="link_profile_adjustment_examples.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="verifying_a_link_end_using_a_survey.html" title="Verifying a Link End Using a Survey"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="link_profile_adjustment_examples.html" title="Link Profile Adjustment Examples"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="using_linkplanner.html" >Using LINKPlanner</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="profiles.html" >Profiles</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="link_profile_adjustment_examples.html" accesskey="U">Link Profile Adjustment Examples</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Verifying a Link End Using a Map and Google Earth</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="verifying-a-link-end-using-a-map-and-google-earth">
+<span id="index-0"></span><h1>Verifying a Link End Using a Map and Google Earth<a class="headerlink" href="#verifying-a-link-end-using-a-map-and-google-earth" title="Permalink to this headline">¶</a></h1>
+<p>This is an example to show how Cambium link planners use a map and Google Earth(TM) to estimate the height of the terrain and obstructions near one end of a test link. We use the following aids:</p>
+<ul class="simple">
+<li><p>Path Profile data imported into LINKPlanner.</p></li>
+<li><p>LINKPlanner, open at the Link Profile and Profile Editor.</p></li>
+<li><p>An accurate topographic map with contours at 10m intervals.</p></li>
+<li><p>The Google Earth aerial photograph zoomed in on the end of the link.</p></li>
+</ul>
+<ol class="arabic">
+<li><p>Path Profiler returned the following profile for the start of  a link path:</p>
+<figure class="align-default" id="id1">
+<span id="unadjusted-profile-near-antenna-site"></span><img alt="_images/unadjusted_profile_near_antenna_site.png" src="_images/unadjusted_profile_near_antenna_site.png" />
+<figcaption>
+<p><span class="caption-text">Unadjusted profile near antenna site</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>The first 0.1 km of this link must be examined in more detail.</p>
+</li>
+<li><p>We examine the map of the site:</p>
+<figure class="align-default" id="id2">
+<span id="map-of-addislade"></span><img alt="_images/map_of_addislade.jpg" src="_images/map_of_addislade.jpg" />
+<figcaption>
+<p><span class="caption-text">Map of Addislade</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>The antenna site is just below the 160 m contour, so the path profile height 159.2 m at range 0 km is probably correct. However, the 160 m contour curves around and crosses the link path at two points in the first 0.1 km of the link. This means that the path profile height of 157.7 m at range 0.089 km is too low. We estimate that the terrain height at this point is162 m.</p>
+</li>
+<li><p>We examine the Google Earth air photograph of the link end. This reveals some potential obstructions:</p>
+<ul>
+<li><p>Just in front of the antenna - a building and some bushes, estimated height 6 m. The buildings cover the area around the antenna and therefore can be portayed in LINKPlanner as the clutter type Sparse Houses, which has a height of 5 m and then add an additional 1 m obstruction</p></li>
+<li><p>At 0.1 km from the antenna - a row of trees, estimated height 8 m. These trees are very narrow and wouldn’t occupy the majority of the 100 m clutter pixel size in Europe and therefore these are better added as a single additional obstruction</p></li>
+<li><p>These obstructions and the higher ground are annotated in this Google Earth photograph:</p>
+<figure class="align-default" id="id3">
+<span id="obstructions-and-higher-ground-near-addlisade"></span><img alt="_images/obstructions_and_higher_ground_near_addlisade.jpg" src="_images/obstructions_and_higher_ground_near_addlisade.jpg" />
+<figcaption>
+<p><span class="caption-text">Obstructions and higher ground near Addislade</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</li>
+</ul>
+</li>
+<li><p>We enter estimates for the clutter types and obstructions and the higher ground in the Profile Editor:</p></li>
+</ol>
+<figure class="align-default" id="id4">
+<span id="profile-updated-with-map-and-google-earth-results"></span><img alt="_images/profile_updated_with_map_and_google_earth_results.png" src="_images/profile_updated_with_map_and_google_earth_results.png" />
+<figcaption>
+<p><span class="caption-text">Profile Updated with Map and Google Earth Results</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Our conclusion is that the Fresnel zone may be severely obstructed at this site. This must be confirmed by conducting a survey, as described in <a class="reference internal" href="verifying_a_link_end_using_a_survey.html"><span class="doc">Verifying a Link End Using a Survey</span></a>.</p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="list_of_figures.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_this_user_guide.html">About This User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_linkplanner.html">Using LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_ptp_links.html">Planning PTP links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_pmp_links.html">Planning PMP networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background_information.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notices.html">Legal Notices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes_to_linkplanner.html">Changes to LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="verifying_a_link_end_using_a_survey.html" title="Verifying a Link End Using a Survey"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="link_profile_adjustment_examples.html" title="Link Profile Adjustment Examples"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="using_linkplanner.html" >Using LINKPlanner</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="profiles.html" >Profiles</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="link_profile_adjustment_examples.html" >Link Profile Adjustment Examples</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Verifying a Link End Using a Map and Google Earth</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2025, Cambium Networks.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

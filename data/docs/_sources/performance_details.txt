@@ -1,0 +1,66 @@
+.. index::
+   single: Details
+   single: Performance Details
+   single: Performance
+
+   
+Performance Details
+===================
+
+This section contains more detail about the predicted performance of the link. The data is displayed in tabular form.
+
+
+.. _performance_details:
+.. figure:: performance_details.png
+
+   Performance Details
+   
+For 2+0 Link Types, the predicted performances of the main (Aggregate) path and individual (Link A and Link B) paths are displayed in tabs. Click on the respective tab to see the performance details of the path.
+
+|note|
+
+        The same tab is shown for both Performance Summary and Performance Details
+    
+
+
+.. _performance_details_2+0:
+.. figure:: performance_details_2+0.png
+
+   Performance Details 2+0
+
+Common Details
+--------------
+
+**MCS**: (ePMP and 60 GHz cnWave Only) The Modulation Coding Scheme Number
+
+**Mode**: The modulation technique used.
+
+**Code Rate**: The code rate for the specified Mode (not available for PTP 450 family, PTP 820 or PTP 850).
+
+**Profile**: (PTP 820 and PTP 850 Only) The profile number of the modulation mode.
+
+**MIMO Type**: (PTP 450 and 450i Only) The MIMO method used.
+
+**Payloads**: (ePMP Only) Indicates whether the payload mode is Single or Dual.
+
+**Multiplier**: (PTP 450 and 450i Only) Indicates the relative capacity capability of the different modes.
+
+**Max. Aggregate IP Throughput (Mbps)**: The maximum aggregate throughput achievable (sum of both directions). This field is automatically adjusted for the range of the link being studied.
+
+**E1/T1 Carried**: This row is only displayed if the equipment is PTP 670 or PTP 820G and one or more E1 or T1 channels have been selected. It indicates the number of E1 or T1 channels supported in each modulation mode. For PTP 670 it is set to "Timing" for those modulation modes that are below the Lowest Telecom Mode selected in the Equipment section, for more information, see :doc:`optimizing_e1_or_t1_latency`.
+
+
+Performance to each end
+-------------------------
+       
+**Max. IP Throughput (Mbps)**: The maximum user throughput achievable. For modulation modes below **Lowest Ethernet Mode** this value will be set to zero and no contribution from these modulation modes will be included in the **Mean IP Predicted**.
+
+**Fade Margin (dB)**: The margin available to each end in the specified Mode.
+
+**Mode Availability (%)**: The percentage of time that the data throughput rate shown for each end will be available.
+
+**Receive Time in Mode (%)**:The percentage of time used to receive data in the specified Mode.
+
+When **ePMP ePTP Mode** is selected the values shown in the **Performance to each end** section of the table assume that there is no load in the opposite direction of the link.
+
+ .. |note| image:: note.jpg

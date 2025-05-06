@@ -1,0 +1,59 @@
+.. index::
+   single: Adjusting Configuration and Requirements
+   single: Configuration of Links
+   single: Tutorial
+   
+Adjusting Configuration and Requirements (Unlicensed Band)
+==========================================================
+
+Adjust the antennas at both ends of the link and confirm that the selected equipment meets the performance requirements:
+
+|note|
+
+        Antenna heights are entered from ground level not from the top of the clutter (if using).
+        
+        The results shown are using the ITU-R P.530-17 propagation model
+
+1. Adjust the Antenna Heights in the :doc:`Link Page <link_page>` to given values and add Interference Density. Adjust the Interference Density to the required value.                                          
+
+   .. _configuration_of_unlicensed:
+   .. figure:: configuration_of_unlicensed.png
+
+      Adjust Both Ends of Unlicensed Link
+
+2. Insert target values in the :doc:`Performance Summary <performance_summary>` data rate boxes for Mean Throughput Required, Minimum Throughput Required and Minimum Throughput Availability Required.
+
+   Observe that the predicted values are now red because they are less than required values.
+
+   .. _performance_summary_of_unlicensed:
+   .. figure:: performance_summary_of_unlicensed.png
+
+      Performance Unacceptable at Both Ends of Unlicensed Link
+
+3. Select different antennas and change Antenna Heights in the :doc:`Link Page <link_page>`. Adjust User limits if required.
+
+   .. _configuration_of_unlicensed_updated:
+   .. figure:: configuration_of_unlicensed_updated.png
+
+      Adjust Both Ends of Unlicensed Link Again
+
+4. Confirm that the predicted values are no longer red. 
+
+   .. _performance_summary_of_unlicensed_updated:
+   .. figure:: performance_summary_of_unlicensed_updated.png
+
+      Performance Acceptable at Both Ends of Unlicensed Link
+
+ 5. Click **Projects** in the top menu bar and then click **Save** |save_project|
+ 
+ |note|
+ 
+        It is not necessary to save the project after each change. Changes
+        are automatically stored in the database after clicking Apply. Project
+        saving is useful to save a snapshot of the project so that future
+        changes can be rolled back using the "Discard Changes" command under the
+        "Projects" menu.
+
+ .. |save_project| image:: save_project_icon.png
+ .. |note| image:: note.jpg
+

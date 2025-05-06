@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Adding Switches &#8212; Cambium LINKPlanner Online Help (6.3.3)</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/default.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Profiles" href="profiles.html" />
+    <link rel="prev" title="Site Page" href="site_page.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="profiles.html" title="Profiles"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="site_page.html" title="Site Page"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="using_linkplanner.html" >Using LINKPlanner</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="sites.html" accesskey="U">Sites</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Adding Switches</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="adding-switches">
+<span id="index-0"></span><h1>Adding Switches<a class="headerlink" href="#adding-switches" title="Permalink to this headline">¶</a></h1>
+<p>To add a switch to a site click on the <img alt="add_switch_icon" src="_images/icon_add_switch.png" /> icon in the Site Page. To add switches to multiple network sites simultaneously select the sites in the Network Sites table and select <strong>Add/Edit Tower Switch</strong> from the menu options.</p>
+<p>The Tower Switch page is displayed.</p>
+<figure class="align-default" id="id1">
+<span id="new-tower-switch"></span><img alt="_images/new_tower_switch.png" src="_images/new_tower_switch.png" />
+<figcaption>
+<p><span class="caption-text">New Tower Switch Page</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<section id="equipment-selection">
+<h2>Equipment Selection<a class="headerlink" href="#equipment-selection" title="Permalink to this headline">¶</a></h2>
+<p>Select the equipment configuration. The fields that are displayed will change depending on the equipment selected. For example when an AC power supply is selected, the Power Cord field is displayed.</p>
+<p><strong>Redundant Power</strong>: Select the redundant power option. Redundant power supplies are only available on the 16 Port switch</p>
+<p><strong>Switch Type</strong>: Select the switch family, TX1000 series or TX2000 series</p>
+<p><strong>RJ45 Ports</strong>: Select the number of RJ45 ports required</p>
+<p><strong>Fiber Ports</strong>: Select the number of Fiber ports required</p>
+<p><strong>Country</strong>: For use in United States, select <strong>United States</strong>, for anywhere else select <strong>Other</strong></p>
+<p><strong>Power</strong>: Select the power supply, either AC or DC and size depending on equipment to be connected</p>
+<p><strong>Power Cord</strong>: For an AC power supply, select the Power Cord</p>
+<p><strong>External Sync</strong>: Select the External Sync source</p>
+<p><strong>cnPulse</strong>: (TX2000 only) Select the cnPulse port, if required</p>
+<p><strong>Transceivers</strong>: Select the type and enter the number of transceivers. The number of transceivers is dependent on the number of Fiber ports selected, therefore the sum of all transceivers must not exceed the total fiber ports configured. SFP+ ports can be either 1 Gbps or 10 Gbps, SFP ports can only be 1 Gbps.</p>
+<figure class="align-default" id="id2">
+<span id="completed-tower-switch-page"></span><img alt="_images/completed_tower_switch_page.png" src="_images/completed_tower_switch_page.png" />
+<figcaption>
+<p><span class="caption-text">Completed Tower Switch Page</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="bill-of-materials">
+<h2>Bill of Materials<a class="headerlink" href="#bill-of-materials" title="Permalink to this headline">¶</a></h2>
+<p>LINKPlanner automatically calculates the Bill of Materials (BOM) for the required components of the switch. The switch BOM contains the list of part numbers, descriptions and associated quantities for the switch. Optional items can be added to the list. The link BOM can be saved as a CSV or Excel file by clicking <img alt="table_download_csv" src="_images/table_download_csv.png" /> in the menu options.</p>
+<p><strong>P/N</strong>: The Cambium part number. If the component is not supplied by Cambium, this is set to ‘(no part number)’.</p>
+<p><strong>Description</strong>: Description of the components.</p>
+<p><strong>Qty</strong>: Quantity required.</p>
+<p><strong>Notes</strong>: By default this displays information about certain items, such as whether they are obsolete.</p>
+<p>To add additional items to the BOM, click <img alt="new_extra" src="_images/icon_new_extra.png" />. A list of optional extras for the link will be displayed. To filter the list of optional extras, enter a part number or description in the Filter field. To add items to the BOM tick the box next to each item required and click <strong>OK</strong>. The item will appear in the main list, where the quantity can be adjusted by selecting the number in the <strong>Qty</strong> column and adjusting as required. To delete optional items from the BOM list, tick the box next to each item and click <img alt="delete_extra" src="_images/icon_delete_extra.png" />. A star denotes optional extras which have been added to the automatic BOM items.</p>
+</section>
+<section id="editing-and-deleting-switches">
+<h2>Editing and Deleting Switches<a class="headerlink" href="#editing-and-deleting-switches" title="Permalink to this headline">¶</a></h2>
+<p>When a switch is already added to a site the menu icons change. To edit or view the switch configuration click on the <img alt="edit_switch_icon" src="_images/icon_edit_switch.png" /> icon or to delete the switch from the network site click on the <img alt="delete_switch_icon" src="_images/icon_delete_switch.png" /> icon. Switches can also be deleted from multiple sites by selecting all the sites required in the network sites table and clicking on <strong>Delete Tower Switch</strong></p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="list_of_figures.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_this_user_guide.html">About This User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="using_linkplanner.html">Using LINKPlanner</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="starting_the_application.html">Starting the Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_interface_tips.html">User Interface Tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="projects.html">Projects</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="sites.html">Sites</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="sites.html#new-sites">New Sites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sites.html#sites-list">Sites List</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="sites.html#viewing-and-updating-sites">Viewing and Updating Sites</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="importing_sites.html">Importing Sites</a></li>
+<li class="toctree-l4"><a class="reference internal" href="creating_sites.html">Creating Sites</a></li>
+<li class="toctree-l4"><a class="reference internal" href="displaying_the_sites_list.html">Displaying the Sites List</a></li>
+<li class="toctree-l4"><a class="reference internal" href="site_page.html">Site Page</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Adding Switches</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#equipment-selection">Equipment Selection</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#bill-of-materials">Bill of Materials</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#editing-and-deleting-switches">Editing and Deleting Switches</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html">Profiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="viewsheds.html">Viewsheds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bill_of_materials_for_project.html">Bill of Materials for Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project_configuration.html">Advanced Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exporting_and_reporting.html">Exporting and Reporting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="planning_ptp_links.html">Planning PTP links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_pmp_links.html">Planning PMP networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background_information.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notices.html">Legal Notices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes_to_linkplanner.html">Changes to LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="profiles.html" title="Profiles"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="site_page.html" title="Site Page"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="using_linkplanner.html" >Using LINKPlanner</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="sites.html" >Sites</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Adding Switches</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2025, Cambium Networks.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

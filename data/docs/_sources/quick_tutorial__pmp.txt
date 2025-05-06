@@ -1,0 +1,26 @@
+.. index::
+   single: Getting started
+   single: Quick Tutorial
+   single: Tutorial
+
+Quick Tutorial - PMP
+===========================
+
+This section is a quick tutorial to plan a simple PMP Network. It describes how to create a project to connect two Subscriber Modules to a Network Device.
+
+Before starting this tutorial, complete the following steps:
+
+1. Login to LINKPlanner, see :doc:`starting_the_application`.
+2. Enter the correct details in the Preferences page. See :doc:`preferences`.
+
+
+There are two parts to this tutorial:
+
+1. Create a project with one Network Site, one PMP Network Device and two Subscriber Modules. See :doc:`creating_project_sites_and_link_pmp`.
+2. Adjust the antennas at both ends of the link and confirm that the selected equipment meets the performance requirements. See :doc:`adjusting_configuration_and_requirements_pmp`.
+
+
+.. toctree::
+
+   creating_project_sites_and_link_pmp
+   adjusting_configuration_and_requirements_pmp

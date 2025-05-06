@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Verifying a Link End Using a Survey &#8212; Cambium LINKPlanner Online Help (6.3.3)</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/default.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Verifying a High Point Using a Map" href="verifying_a_high_point_using_a_map.html" />
+    <link rel="prev" title="Verifying a Link End Using a Map and Google Earth" href="verifying_a_link_end_using_a_map_and_google_earth.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="verifying_a_high_point_using_a_map.html" title="Verifying a High Point Using a Map"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="verifying_a_link_end_using_a_map_and_google_earth.html" title="Verifying a Link End Using a Map and Google Earth"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="using_linkplanner.html" >Using LINKPlanner</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="profiles.html" >Profiles</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="link_profile_adjustment_examples.html" accesskey="U">Link Profile Adjustment Examples</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Verifying a Link End Using a Survey</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="verifying-a-link-end-using-a-survey">
+<span id="index-0"></span><h1>Verifying a Link End Using a Survey<a class="headerlink" href="#verifying-a-link-end-using-a-survey" title="Permalink to this headline">¶</a></h1>
+<p>This is an example to show how Cambium link planners use a site
+survey to refine their estimates of the terrain and obstructions near
+one end of a test link. This builds on the previous example
+<a class="reference internal" href="verifying_a_link_end_using_a_map_and_google_earth.html"><span class="doc">Verifying a Link End Using a Map and Google Earth</span></a>.</p>
+<p>We use the following survey aids:</p>
+<ul class="simple">
+<li><p>Map, path profile, Google Earth(TM) aerial photo</p></li>
+<li><p>Barometric GPS receiver</p></li>
+<li><p>Clear plastic ruler</p></li>
+<li><p>Surveyor’s tape measure</p></li>
+<li><p>Pocket calculator</p></li>
+<li><p>Binoculars</p></li>
+</ul>
+<p>We follow these steps:</p>
+<ol class="arabic">
+<li><p>We use the barometric GPS receiver to verify terrain height.</p>
+<p>Because air pressure may change frequently, the GPS receiver must be
+recalibrated near every survey site, at a point with a known altitude. The
+map shows a suitable point for calibration, where the road crosses the
+160m contour near the site, as annotated on this Google Earth photograph:</p>
+<figure class="align-default" id="id1">
+<span id="gps-calibration-point"></span><img alt="_images/gps_calibration_point.jpg" src="_images/gps_calibration_point.jpg" />
+<figcaption>
+<p><span class="caption-text">GPS Calibration Point</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>We calibrate the GPS at this point.</p>
+</li>
+<li><p>We go to the antenna site.</p>
+<p>Standing at the foot of the antenna (or of the building on which
+the antenna is mounted), we record the terrain height from the GPS:
+155m.</p>
+</li>
+<li><p>We estimate the height of the antenna above ground level. The antenna height used in LINKPlanner is to the center line of the antenna, therefore the radius of the antenna should be taken into account.</p>
+<p>The following height estimation methods can be used:</p>
+<p><strong>Method 1</strong>: If it is safe (and permissible) to do so, go to the
+highest accessible point on the antenna and measure its height
+using the GPS receiver.</p>
+<p><strong>Method 2</strong>: If the antenna is on a building, estimate the height of each
+storey and count the number of storeys from the ground to the antenna.</p>
+<p><strong>Method 3</strong>: Ask a colleague to stand under the antenna and
+estimate the number of times the colleague’s height would be needed
+to reach the antenna height.</p>
+<p><strong>Method 4</strong>: Stand a measured distance away from the antenna (d2),
+hold the ruler at eye level and arms length (d1), measure the
+height above ground of the antenna as viewed through the ruler
+(h1), then calculate the height of the antenna (h2) using this
+formula (see illustration):</p>
+<blockquote>
+<div><p><cite>h2 = h1 * (d2/d1)</cite></p>
+</div></blockquote>
+<figure class="align-default" id="id2">
+<span id="using-a-ruler-to-estimate-height"></span><img alt="_images/using_a_ruler_to_estimate_height.jpg" src="_images/using_a_ruler_to_estimate_height.jpg" />
+<figcaption>
+<p><span class="caption-text">Using a ruler to estimate height</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>We record the estimated antenna height: 10m.</p>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<blockquote>
+<div><p>This method can also be used to estimate the height of trees and other potential obstructions. If it is not possible to measure the distance d2, use the map to estimate it.</p>
+</div></blockquote>
+</li>
+<li><p>We examine the potential obstructions and high points that were
+found on the air photograph:</p>
+<p>A building and some bushes immediately in front of the antenna: The
+building proves to be just clear of the link path and is not
+recorded as an obstruction. The bushes are on the link path, so we
+use the ruler method to estimate and record their height: 5 m.</p>
+<p>Higher ground at 0.088 km from the antenna: We go as near to this
+higher ground as we can and take the GPS reading: 161.4 m.</p>
+<p>A row of trees at 0.1 km from the antenna: This row of trees cuts
+through the link path. We identify the tree that is on the path and
+use the ruler method to estimate and record its height: 7 m.</p>
+<p>These obstructions and the higher ground are annotated in this Google
+Earth photograph:</p>
+<figure class="align-default" id="id3">
+<span id="results-of-site-survey-at-addislade"></span><img alt="_images/results_of_site_survey_at_addislade.jpg" src="_images/results_of_site_survey_at_addislade.jpg" />
+<figcaption>
+<p><span class="caption-text">Results of site survey at Addislade</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p><img alt="caution" src="_images/caution.jpg" /></p>
+<blockquote>
+<div><p>Link planners must allow for the possibility that tree growth or
+new buildings may cause new obstructions in the future. If the
+potential obstructions are deciduous trees, allow for seasonal
+changes in foliage.</p>
+</div></blockquote>
+</li>
+<li><p>When we return to the office, we update the profile with these
+results:</p>
+<figure class="align-default" id="id4">
+<span id="profile-updated-with-site-survey-results"></span><img alt="_images/profile_updated_with_site_survey_results.png" src="_images/profile_updated_with_site_survey_results.png" />
+<figcaption>
+<p><span class="caption-text">Profile updated with site survey results</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</li>
+</ol>
+<p>We now have a more accurate profile of the link end. This will help us to
+optimize the link and achieve acceptable data throughput.</p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="list_of_figures.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_this_user_guide.html">About This User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_linkplanner.html">Using LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_ptp_links.html">Planning PTP links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_pmp_links.html">Planning PMP networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background_information.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notices.html">Legal Notices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes_to_linkplanner.html">Changes to LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="verifying_a_high_point_using_a_map.html" title="Verifying a High Point Using a Map"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="verifying_a_link_end_using_a_map_and_google_earth.html" title="Verifying a Link End Using a Map and Google Earth"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="using_linkplanner.html" >Using LINKPlanner</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="profiles.html" >Profiles</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="link_profile_adjustment_examples.html" >Link Profile Adjustment Examples</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Verifying a Link End Using a Survey</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2025, Cambium Networks.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

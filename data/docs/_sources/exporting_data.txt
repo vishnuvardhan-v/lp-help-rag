@@ -1,0 +1,43 @@
+.. index::
+   single: CSV files
+   single: Data
+   single: Exporting
+   single: Exporting Data
+   single: Exporting sites (CSV file)
+
+
+Exporting Data
+==============
+
+Data can be exported in CSV format for the currently open and selected project.
+
+Network Sites (CSV)
+~~~~~~~~~~~~~~~~~~~~
+
+To export details of all Network sites to a CSV file, select the "Network Sites" Table view and then select **Download CSV**.
+
+Subscriber Sites (CSV)
+~~~~~~~~~~~~~~~~~~~~~~~
+
+To export details of all Subscriber sites to a CSV file, select the "Subscriber Sites" Table view and then select **Download CSV**.
+
+
+PTP Links (CSV)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  
+To export details of all PTP Linkss to a CSV file, select the "PTP Links" Table view and then select **Download CSV**. The CSV file can then be incorporated into a spreadsheet to enable further analysis and costing of the project.
+
+PMP Network Devices (CSV)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  
+To export details of all Network Devices to a CSV file, select the "PMP Devices" Table view and then select **Download CSV**. The CSV file can then be incorporated into a spreadsheet to enable further analysis and costing of the project.
+
+
+Subscriber Modules (CSV)
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To export details of all Subscriber Modules to a CSV file, select the "PMP Links" Table view and then select **Download CSV**. The CSV file can then be incorporated into a spreadsheet to enable further analysis and costing of the project.
+
+
+.. |excel_icon| image:: excel_icon.jpg
+.. |note| image:: note.jpg

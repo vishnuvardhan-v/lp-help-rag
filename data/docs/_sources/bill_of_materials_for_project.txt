@@ -1,0 +1,66 @@
+.. index::
+   single: Bill of Materials (BOM)
+   single: BOM
+   single: BOM for project
+
+
+Bill of Materials for Project
+=============================
+
+To calculate the Bill of Materials for a project select **Bill of Materials**, |icon_menu_bom|  from the left hand menu options and then click on **Load Project BOM**. The Bill of Materials for the project is split into four sections:
+
+* **PTP BOM** - contains an aggregated list of all the Network Device equipment required to build the PTP links in the network
+
+.. _bom_for_project_ptp:
+.. figure:: bom_for_project_ptp.png
+
+   Bill of Materials for Project PTP BOM
+   
+* **Switch Network BOM** - contains an aggregated list of all equipment required to support the Tower switches in the network
+
+.. _bom_for_project_switch:
+.. figure:: bom_for_project_switch.png
+
+   Bill of Materials for Project Switch Network BOM
+
+* **PMP Network BOM** - contains an aggregated list of all the Network Device equipment required to build the network side of the PMP network
+
+.. _bom_for_project_nd:
+.. figure:: bom_for_project_nd.png
+
+   Bill of Materials for Project Network BOM
+
+* **PMP Subscriber Modules BOM** - contains an aggregated list of all the equipment required for the Subscriber Modules in the PMP network
+
+.. _bom_for_project_sm:
+.. figure:: bom_for_project_sm.png
+
+   Bill of Materials for Project Subscriber BOM
+
+The project BOM contains the list of part numbers and associated quantities for the complete project. It includes all the main components required to install the project as configured in LINKPlanner, including antennas, radios, modems (if required), upgrade keys, cabling, lightning protection and GPS sync boxes (if required). It also includes all optional extras, which have been specified at the device or link level, including cables, accessories and spares, Comsearch, installation & mounting, power, security and warranty & support
+
+**P/N**: The Cambium part number. If the component is not supplied by Cambium, this is set to '(no part number)'.
+
+**Description**: Description of the components.
+
+**Qty**: Quantity required.
+
+**Notes**: Displays information about certain items, such as whether they are obsolete. 
+
+|note|
+
+        For instructions on how to view and save the BOM for a Network Device, see :ref:`bill_of_materials_for_nd` , for a Subscriber Module, see :doc:`sm_bill_of_materials_for_link` .
+
+
+Viewing & saving the project BOM file
+----------------------------------------
+
+To create a CSV for an individual section of the BOM, click |table_download_csv|  while viewing the section of the project BOM required. Once in the spreadsheet the file can be saved as normal.
+
+|note|
+
+        All numeric only part numbers consist of 11 digits, if the number displayed is only 10 digits the part number should start with a zero.
+
+.. |note| image:: note.jpg
+.. |icon_menu_bom| image:: icon_menu_bom.png
+.. |table_download_csv| image:: table_download_csv.png

@@ -1,0 +1,44 @@
+.. index::
+   single: Evaluating Performance
+   single: Link Page
+   single: Links
+   single: Performance of Links
+
+Link Page
+=========
+
+Use the Link page to evaluate the performance of a Link by selecting different combinations of the variables that affect performance, such as band, region, equipment, antenna and height. The results are displayed in the Performance Summary and Performance Details sections.
+
+Before using this page, ensure that the following requirements are defined for both ends of the link:
+
+* Mean Throughput Required (Mbps).
+* Minimum Throughput Required (Mbps).
+* Minimum Throughput Availability Required (%).
+
+The Link page includes the following features:
+
+* Each section begins with a gray title bar. Click on this bar to open or close the section.
+* The numeric data entry fields can be incremented or decremented in steps by using the up and down arrow keys. Use this feature to evaluate the impact of step changes on link performance.
+* If a field is highlighted in pink, its value is out of the permitted range.
+
+The Link page contains the following sections:
+
+* :doc:`link_description_and_equipment`
+* :doc:`profile`
+* :doc:`configuration_at_each_end`
+* :doc:`performance_summary`
+* :doc:`performance_details`
+* :doc:`bill_of_materials_for_link`
+
+
+
+.. toctree::
+   
+   link_description_and_equipment
+   profile
+   configuration_at_each_end
+   performance_summary
+   performance_details
+   bill_of_materials_for_link
+
+

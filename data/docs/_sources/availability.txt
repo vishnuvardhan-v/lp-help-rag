@@ -1,0 +1,51 @@
+.. index::
+   single: Availability
+   single: ITU
+   single: ITU-R P530-12
+   single: Vigants - Barnett
+
+Availability
+==============
+
+Availability is the amount of time that a link is predicted to be above a given threshold (the fade margin) and is usually expressed as a percentage of a year. LINKPlanner offers four different prediction models for calculating the availability. 
+
+    * ITU-R P.530 is the international standard from the ITU and comes in two versions:
+    
+        * P.530-12  
+        * P.530-17 
+        
+    * Vigants - Barnett, commonly used in the United States of America also has two variants. 
+    
+        * VB with ITU rain P.530-12
+        * VB with ITU rain P.530-17
+
+The ITU-R P.530-17 prediction model is the default within LINKPlanner. To change to any of the other models select the **Project** menu and then **Project Properties**. See :doc:`project_page`.
+
+ITU-R P.530
+-----------------
+
+P.530 is an international standard from the ITU and is continuously being reviewed and updated. 
+
+    * Version 12 was last updated in 2007 and was the default method used in LINKPlanner up to V5.3.3. It is maintained in subsequent versions of LINKPlanner to allow backwards compatibility and for comparison purposes as there are some significant changes between P.530-12 and P.530-17. 
+    * Version 17 was last updated in 2017 and is the default method currently used in LINKPlanner.
+    
+The ITU model is fully defined and has no ambiguity in its implementation, hence all implementations should return the same results for a given configuration of a link.  
+
+
+Vigants - Barnett 
+-------------------
+
+The Vigants - Barnett model is widely used in the United States of America. This model was defined in the 1970's and the algorithms used are described in the following two references:
+
+    * Multipath Propagation at 4, 6 and 11 GHz, by W.T. Barnett, Bell System Technical Journal, Vol 51 Feb 1972 Number 2
+    * Space-Diversity Engineering, by A. Vigants, Bell System Technical Journal, Vol 54 Jan 1975 Number 1
+
+These papers define the algorithms, but the implementation is open to interpretation. The following describes the implementation used within LINKPlanner:
+
+    * The Climatic Factor is automatically read from a database of the atmospheric conditions maps and is taken at the mid-point of the path.
+    * The terrain roughness is calculated for 50 evenly spaced points in the central 80% of the path, using terrain height above mean sea level plus obstruction height as the reference height.
+    * The temperature used to convert from worst month to annual availability is taken for the mid-point of the path using the standard ESATEMP data file available from the ITU.
+    
+The Vigants - Barnett model does not include definitions for Gaseous Absorption or rain availability calculations and therefore these are calculated using the relevant ITU recommendations.
+
+

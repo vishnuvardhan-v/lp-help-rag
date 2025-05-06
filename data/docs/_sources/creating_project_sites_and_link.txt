@@ -1,0 +1,164 @@
+.. index::
+   single: Creating Project, Sites and Link
+   single: Links
+   single: Projects
+   single: Sites
+   single: Tutorial
+
+
+Creating Project, Sites and Link (Unlicensed Band)
+==================================================
+
+To create a project with two sites and one link:
+
+1. Click |new_project|
+
+   A pop-up message is displayed asking for the project name and Prediction model to be used
+   
+   .. _create_new_project_window_tutorial:
+   .. figure:: create_new_project_window_tutorial.png
+
+      Create new project window for PTP Tutorial
+      
+2. Enter Project name and Default settings for new links.
+
+    Enter the Project Name as Tutorial_PTP
+    
+    Click  |ok|
+
+    The project is now saved and the Project Page is displayed.
+
+3.	Click New Network Site |new_network_site| on the right panel of the page. 
+
+    The Network Site Mode page is displayed. Enter this data: 
+    
+        **Site Name**: North Middle School
+	
+	**Maximum Height**: 25 meters 
+    
+        **Enter coordinates?**: Tick
+    
+        **Latitude**: 39.74828N 
+    
+        **Longitude**: 104.84861W 
+
+|note|
+
+        Latitude and longitude should be separated by a comma. For example, 39.75093N, 104.84035W
+    
+   .. _Network_Site_Mode_Window_ptp:
+   .. figure:: Network_Site_Mode_Window_ptp.png
+
+      Network Site Mode Window for PTP Tutorial
+
+Click |submit|, the new Network Site is created with a given site name. 
+
+4.	Edit the Site Properties by following the steps below.
+
+    Click |icon_expand_tree| which is left side of the |menu_network_site| in the left panel of the page.
+
+    This shows Network Site tree view.
+
+   .. _Network_Sites_Window_ptp:
+   .. figure:: Network_Sites_Window_ptp.png
+
+      Network Sites Window for PTP Tutorial
+
+Click **North Middle School**, enter the details below:
+        
+        **Description**: Antenna mounted on school building
+        
+    Click |apply|
+    
+    Now the Network Site is updated with the new properties.
+
+
+   .. _Network_Sites_window_with_ptp_properties:
+   .. figure:: Network_Sites_window_with_ptp_properties.png
+
+      Network Sites window with properties for PTP Tutorial
+
+  
+To locate the Network Site on the map window, click |icon_zoom_to_fit| in the right panel. This zooms to the level of the network device.
+ 
+5. Repeat steps 3 and 4 to add the site for the other end of the link using this data:
+
+   **Name**: Park Lane Elementary   
+   
+   **Maximum Height**: 15 meters         
+   
+   **Latitude**: 39.75914N              
+   
+   **Longitude**: 104.83700W           
+   
+   **Description**: Antenna mounted in school yard
+
+   .. _inserting_site_2:
+   .. figure:: inserting_site_2.png
+
+      Inserting Site 2
+
+6. Click the |icon_ptp_link| and select the sites in the map to link them or click **PTP Links** in the left hand tool bar. This displays the PTP Links table view page. Click |icon_add| from table view. This displays the **Create PTP Links** page. Select the two sites to be linked: North Middle School and Park Lane Elementary and click |ok|.
+
+.. _create_ptp_links_tutorial:
+.. figure:: create_ptp_links_tutorial.png
+
+  Create PTP Links for Tutorial
+      
+
+7. Configure the link equipment, see :ref:`equipment_in_link_page`:
+
+   **Band**: 5.8 GHz      
+   
+   **Product**: PTP 450i
+   
+   **Regulation**: United States
+
+   **Encryption Variant**: AES
+   
+   .. _equipment_ptp_tutorial:
+   .. figure:: equipment_ptp_tutorial.png
+
+      Link Equipment for PTP Tutorial
+   
+8. Configure the Product  information
+   
+   **Bandwidth**: 40 MHz     
+
+   **Color Code**: 0
+   
+   **Frame Period**: 2.5 ms  
+   
+   **Downlink Data**: 50%
+   
+   **MIMO Rate Adapt**: MIMO-A/B
+   
+   **Maximum Mod Mode**: x8
+   
+   **Minimum Mod Mode**: x1
+   
+   **Master**: North Middle School
+
+   .. _ptp_tutorial_product_configuration:
+   .. figure:: ptp_tutorial_product_configuration.png
+
+      Product Configuration for PTP Tutorial
+
+9. Click |save_page| to update the antenna and power values 
+
+
+.. |new_project| image:: Create_new_project.png
+.. |ok| image:: icon_ok.png
+.. |submit| image:: icon_submit.png
+.. |note| image:: note.jpg
+.. |save_project| image:: save_project_icon.png
+.. |new_site| image:: new_site_icon.png
+.. |new_link_icon| image:: new_link_icon.png
+.. |new_network_site| image:: icon_right_menu_network_site.png
+.. |icon_expand_tree| image:: icon_expand_tree.png
+.. |menu_network_site| image:: icon_menu_network_site_expand.png
+.. |apply| image:: icon_apply.png
+.. |icon_zoom_to_fit| image:: icon_zoom_to_fit.png
+.. |icon_ptp_link| image:: icon_menu_ptp_link.png
+.. |icon_add| image:: icon_add_button_extend.png
+.. |save_page| image:: icon_apply.png

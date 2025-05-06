@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Excess Path Loss &#8212; Cambium LINKPlanner Online Help (6.3.3)</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/default.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Fade Margin" href="fade_margin.html" />
+    <link rel="prev" title="Free Space Path Loss" href="free_space_path_loss.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="fade_margin.html" title="Fade Margin"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="free_space_path_loss.html" title="Free Space Path Loss"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="background_information.html" >Background Information</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="path_loss.html" accesskey="U">Path Loss</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Excess Path Loss</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="excess-path-loss">
+<span id="index-0"></span><h1>Excess Path Loss<a class="headerlink" href="#excess-path-loss" title="Permalink to this headline">¶</a></h1>
+<p>Excess Path Loss is the loss incurred due to obstacles between the two end points of the radio link. This loss is calculated by LINKPlanner. Trees and foliage create a number of problems:</p>
+<ul class="simple">
+<li><p>They are often not marked on the path profiles, leading to optimistic results.</p></li>
+<li><p>They are not completely solid, leading to pessimistic results.</p></li>
+<li><p>They are responsible for seasonal variation.</p></li>
+</ul>
+<p>Identify trees and foliage as either clutter types and/or obstructions in LINKPlanner, thus giving worst case results. It may be necessary to add additional obstructions above the clutter to locally increase the height of an individual clutter type, without changing the default height for the clutter type. When the link is installed, make an allowance for seasonal variations in the estimated mean path loss.</p>
+<p>Excess Path Loss in LINKPlanner is calculated using the algorithms in ITU-R P526. If LINKPlanner is not enabled to use clutter LINKPlanner continues to use the P526-10 Cascaded Knife Edge Method used before clutter was introduced to LINKPlanner to allow continuity of predictions. If LINKPlanner is using clutter then the excess path loss algorithm has been updated to the method for a general terrestrial path which is more applicable to the block obstructions from the clutter data.</p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="list_of_figures.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_this_user_guide.html">About This User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_linkplanner.html">Using LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_ptp_links.html">Planning PTP links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_pmp_links.html">Planning PMP networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background_information.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notices.html">Legal Notices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes_to_linkplanner.html">Changes to LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="fade_margin.html" title="Fade Margin"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="free_space_path_loss.html" title="Free Space Path Loss"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="background_information.html" >Background Information</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="path_loss.html" >Path Loss</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Excess Path Loss</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2025, Cambium Networks.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

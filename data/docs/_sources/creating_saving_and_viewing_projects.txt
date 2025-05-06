@@ -1,0 +1,88 @@
+Creating, Saving and Viewing Projects
+=====================================
+
+.. index::
+   single: New Projects
+
+New Projects
+------------
+
+To create a new Project, click on |create_project| in Project List page or click on **Projects**, then |new_project| in the Top Menu bar.
+
+The new project page is displayed. 
+
+.. _Create_new_project_screen:
+.. figure:: Create_new_project_screen.png
+
+   Configure new project parameters
+   
+Enter the Project name and default settings for the project and click |ok|, the Main Screen is then displayed, see :doc:`main_screen`.
+
+.. index::
+   single: Saving Projects
+   
+   
+Opening Projects
+---------------
+To open the existing project from the main screen, click **Projects**, then click |project_list|.
+
+Enter the required project name, for example **Tutorial**, which is used as the project name in the project window.
+
+.. _project_node:
+.. figure:: project_node.png
+
+   Project selection window
+
+Saving Projects
+---------------
+
+Save the project by clicking on |save_project|, under the **Projects** top menu bar. When a project has been updated this is shown in red, when a project has been saved and has no changes it is shown in black. To discard all changes in a project, click the **Projects** and then |discard| in the top menu bar. As for the Save icon, this will be shown in red when the project has been updated and black when there are no changes in the project.
+
+
+
+.. index::
+   single: Viewing and Updating Projects
+   single: Updating Projects
+   single: Editing Projects
+   single: Export to Google Earth
+   single: Opening Existing Projects
+
+
+
+Viewing and Updating Projects
+-----------------------------
+
+Manage existing projects by clicking on |project| in the top menu bar to go to the main Project window (:ref:`project_node`)
+
+  * To open a project click on the project name, for example **Tutorial**, which opens the Main Screen, see :doc:`main_screen`.
+  * Files which have been shared from another user are shown as read only, |read_only|. To make changes, first duplicate the project.
+  * To manage the files click on the three dots to the right of the file name (:ref:`file_options`).
+
+.. _file_options:
+.. figure:: file_options.png
+
+   File management options
+   
+1. Choose **Rename** to change the project name
+2. Choose **Duplicate project** to create a new separate version of the project
+3. Choose **Delete** to delete the project from your account
+
+|note|
+
+            If there are changes in the project **Discard** is shown instead of **Delete**. The project must either be saved or changes discarded before it can be deleted. If a project has been shared from another user **Remove from list** is shown instead of **Delete**. This will remove the project from your list of files but not delete the original version.
+
+
+
+
+.. |save_project| image:: save_project_icon.png
+.. |create_project| image:: Create_new_project.png
+.. |discard| image:: discard_changes.png
+.. |project| image:: icon_project.png
+.. |ok| image:: icon_ok.png
+.. |note| image:: note.jpg
+.. |export| image:: icon_export_project.png
+.. |export_ge| image:: icon_export_google_earth.png
+.. |new_project| image:: icon_new_project.png
+.. |project_list| image:: icon_project_list.png
+.. |read_only| image:: icon_read_only.png
+

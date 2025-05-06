@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Subscriber Module Description and Equipment &#8212; Cambium LINKPlanner Online Help (6.3.3)</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/default.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Profile" href="sm_profile.html" />
+    <link rel="prev" title="Creating and Deleting Subscriber Modules" href="sm_creating_and_deleting.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="sm_profile.html" title="Profile"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="sm_creating_and_deleting.html" title="Creating and Deleting Subscriber Modules"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="planning_pmp_links.html" >Planning PMP networks</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="subscriber_modules.html" accesskey="U">Subscriber Modules</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Subscriber Module Description and Equipment</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="subscriber-module-description-and-equipment">
+<h1>Subscriber Module Description and Equipment<a class="headerlink" href="#subscriber-module-description-and-equipment" title="Permalink to this headline">¶</a></h1>
+<section id="general">
+<span id="index-0"></span><h2>General<a class="headerlink" href="#general" title="Permalink to this headline">¶</a></h2>
+<p>Enter the Name and Description of this link. The MAC Address of the equipment may also be added.</p>
+<figure class="align-default" id="id1">
+<span id="sm-description"></span><img alt="_images/sm_description.png" src="_images/sm_description.png" />
+<figcaption>
+<p><span class="caption-text">Subscriber Module General</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="equipment">
+<span id="index-1"></span><h2>Equipment<a class="headerlink" href="#equipment" title="Permalink to this headline">¶</a></h2>
+<p>Select the available subscriber parameters for this link.</p>
+<figure class="align-default" id="id2">
+<span id="sm-equipment"></span><img alt="_images/sm_equipment.png" src="_images/sm_equipment.png" />
+<figcaption>
+<p><span class="caption-text">Subscriber Module Equipment</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p><strong>Equipment Parameters</strong></p>
+<blockquote>
+<div><p><strong>Number of Component Carriers</strong> (PMP 450v Only): Select the number of Component Carrier for the Subscriber Module</p>
+<p><strong>Component Carrier</strong> (PMP 450v Only): Select the Component Carrier for the Subscriber Module</p>
+<p><strong>Band</strong>: Read only value reflecting the band selected at the Network Device.</p>
+<p><strong>Product</strong>: Select from the available list, based on the product selected for the Network Device.</p>
+<p><strong>Country</strong>: Read only value reflecting the country selected at the Network Device.</p>
+<p><strong>I/O Connectivity</strong> (N500 Only): Select Expanded to get the additional IO port, used for product selection only.</p>
+<p><strong>Sync Input</strong> (N500 Only): Read only value reflecting the synchronization option for the link.</p>
+</div></blockquote>
+</section>
+<section id="product-configuration">
+<h2>Product Configuration<a class="headerlink" href="#product-configuration" title="Permalink to this headline">¶</a></h2>
+<p>Select the product parameters. The fields that are displayed in the “Product Configuration” box will change depending on the type of equipment selected. For example, when a PMP 450i is selected, the Color Code field is displayed.</p>
+<figure class="align-default" id="id3">
+<span id="sm-product-configuration"></span><img alt="_images/sm_product_configuration.png" src="_images/sm_product_configuration.png" />
+<figcaption>
+<p><span class="caption-text">Subscriber Module Product Configuration</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p><strong>Product Configuration Parameters</strong></p>
+<blockquote>
+<div><p><strong>Band Setting</strong> (N500 Only): Read only value reflecting the band setting value from the ND (ISM or Licensed).</p>
+<p><strong>T/R Spacing</strong> (N500 Licensed Only): Read only value reflecting the difference between transmit and receive frequencies (MHz).</p>
+<p><strong>Bandwidth</strong>: Read only value reflecting the bandwidth selected at the Network Device. Available under Component Carriers section when the ND is PMP 450v 4x4.</p>
+<p><strong>Modulation Type</strong> (N500 ISM Only): Read only value reflecting the group of modulation modes to use.</p>
+<p><strong>Channel</strong> (60 GHz cnWave Only): Read only value reflecting the channel selected at the Distribution Node.</p>
+<p><strong>Color Code</strong> (PMP 450 and 450i): Read only value reflecting the color code selected at the Network Device.</p>
+<p><strong>Link Golay</strong> (60 GHz cnWave Only): The Golay code for just this link between the DN and CN, default to the same as the DN, so that all links on the DN start the same.</p>
+<p><strong>Polarity</strong> (60 GHz cnWave Only): Read only value reflecting the Polarity selected at the Distribution Node</p>
+<p><strong>Capacity</strong> (PMP 450 only): Select the capacity limit for the Subscriber Module.</p>
+<p><strong>Data Channels</strong> (PMP 450 and 450i only): Defaults to 1. Select the number of Data Channels required for the Subscriber Module, range is 1 to 4.</p>
+<p><strong>SM Range</strong>: Read only value reflecting the SM range selected at the Network Device.</p>
+<p><strong>SM Modulation Mode</strong>: (N500 Only). Read only value reflecting the modulation mode to be used by the SM equipment.</p>
+<p><strong>SM Maximum Mod Mode</strong>: (N500 Only). Read only value reflecting the maximum modulation mode that the SM equipment will use in adaptive mode. Only displayed when <strong>Adaptive</strong> modulation is selected.</p>
+<p><strong>SM Minimum Mod Mode</strong>: (N500 Only). Read only value reflecting the minimum modulation mode that the SM equipment will use in adaptive mode. Only displayed when <strong>Adaptive</strong> modulation is selected.</p>
+<p><strong>Hop Pattern</strong>: (N500 only). Read only value reflecting the uniform step interval for DTS modulations. A value of 0 sets the frequency to a single channel, a value of 1 creates a pseudo random hopping sequence. A value of 1 must be used when Modulation Type = FHSS.</p>
+<p><strong>MMS Hop Offset</strong>: (N500 only). Read only value reflecting the MMS Hop Offset for the link.</p>
+<p><strong>SM Max Payload Bytes</strong>: (N500 only) Read only value reflecting the maximum packet size at the SM. Maximum value is 1600 Bytes. Minimum value for fixed modulation mode is 64 Bytes, in adaptive mode, the minimum may be higher than this dependent on the configured Max and Min Modulation modes. Reducing the packet size will reduce the data rate from the quoted data rate per mode.</p>
+<p><strong>Polarization</strong>: (N500 Only). Read only value reflecting the ND antenna polarization (Horizontal or Vertical).</p>
+<p><strong>Frame Period</strong>: Read only value reflecting the frame period selected at the Network Device.</p>
+<p><strong>Downlink Data</strong> (PMP 450 and 450i only): Read only value reflecting the downlink data ratio selected at the Network Device.</p>
+<p><strong>DL/UL Ratio</strong> (ePMP only): Read only value reflecting the downlink data ratio selected at the Network Device.</p>
+<p><strong>Maximum Mod Mode</strong> (ePMP Only): Set the maximum modulation for the Subscriber Module on the uplink to the Network Device.</p>
+<p><strong>Max Registrations Allowed</strong> (ePMP, PMP 450 and 450i Only): Read only value reflecting the maximum number of Subscribers selected at the Network Device.</p>
+<p><strong>Contention Slots</strong> (PMP 450 and 450i Only): Read only value reflecting the number of contention slots selected at the Network Device.</p>
+<p><strong>DL Maximum Mod Mode</strong> (PMP 450 and 450i Only): Set the maximum modulation mode for the Subscriber Module on the downlink from the Network Device to the Subscriber Module.</p>
+<p><strong>UL Maximum Mod Mode</strong> (PMP 450 and 450i Only): Set the maximum modulation mode for the Subscriber Module on the uplink from the Subscriber Module to the Network Device.</p>
+</div></blockquote>
+</section>
+<section id="antenna-configuration">
+<h2>Antenna Configuration<a class="headerlink" href="#antenna-configuration" title="Permalink to this headline">¶</a></h2>
+<p>Select the antenna and its height. The orientation is calculated automatically.</p>
+<figure class="align-default" id="id4">
+<span id="sm-antenna-configuration"></span><img alt="_images/sm_antenna_configuration.png" src="_images/sm_antenna_configuration.png" />
+<figcaption>
+<p><span class="caption-text">Network Device Antenna Configuration</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p><strong>Antenna Configuration Parameters</strong></p>
+<blockquote>
+<div><p><strong>Antenna Selection</strong>: Select the antenna for the Subscriber Module. If the Subscriber Module supports connectorized antennas and the required antenna is not in the list, click <strong>Other…</strong> and enter the details in the User Defined Antenna page. Antennas may also be viewed, created, edited and deleted from the <a class="reference internal" href="project_navigation_tree.html#antennas"><span class="std std-ref">Antennas</span></a> page.</p>
+<p><strong>Antenna Height</strong>: Select the height of the Subscriber Module above ground level</p>
+<p><strong>Positioner</strong>: (PMP 450i Only) Tick this box to add the positioner equipment to the BOM. This is only available for integrated antennas.</p>
+<p><strong>Calculate Loss</strong>: (N500 Only). Tick the Calculate box to select the type of cable that connects the radio to the antenna. The Cable Loss field is automatically updated.</p>
+<p><strong>Cable Length</strong>: (N500 Only). The length of cable required to connect the radio to the antenna. The Cable Loss field is automatically updated.</p>
+<p><strong>Cable Loss</strong>: Only displayed for external antennas, read only value for PMP 450 antenna options.</p>
+<p><strong>Antenna Azimuth</strong>: Calculated angle from Subscriber Module to Network Device</p>
+<p><strong>Antenna Tilt</strong>: Calculated elevation angle from Subscriber Module to Network Device - a negative value indicates downtilt is required.</p>
+<p><strong>ND Antenna Gain</strong>: Calculated value of the Network Device sector antenna in the direction of the Subscriber Module.</p>
+<p><strong>Sector</strong> (60 GHz cnWave Only): Select sector of the DN. Only available if close to boundary between the sectors otherwise read only.</p>
+</div></blockquote>
+</section>
+<section id="power">
+<h2>Power<a class="headerlink" href="#power" title="Permalink to this headline">¶</a></h2>
+<p>Set the power and interference parameters.</p>
+<figure class="align-default" id="id5">
+<span id="sm-power"></span><img alt="_images/sm_power.png" src="_images/sm_power.png" />
+<figcaption>
+<p><span class="caption-text">Subscriber Module Power</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p><strong>Power Parameters</strong></p>
+<blockquote>
+<div><p><strong>EIRP</strong>: Read only value showing the EIRP of the antenna, if the country selected has a regulatory limit this value is shown in brackets underneath.</p>
+<p><strong>Power</strong>: Calculated value to meet the <strong>SM Receive Target Level</strong> at the Network Device, if the country selected has a regulatory limit (or an implied limit to meet the EIRP limit) the value is shown as “Max Power” in brackets underneath.</p>
+<p><strong>User Limit</strong>: Tick the User Limit box and enter a value to limit the maximum transmit power used by the Subscriber Module. This value can only be used to lower the value from the default calculated.</p>
+<p><strong>Interference</strong>: This is the amount of site noise in the selected channel bandwidth, expected at the antenna connector. This noise is assumed to be a constant power added to the thermal noise of the front end of the radio. The bandwidth displayed depends on the bandwidth selected in the Product Configuration Settings box (in this example it is 20 MHz). To enter Interference, tick the box and update the default value. If the Network Device has been set up and mean power measurements are available, then use these measurements.</p>
+</div></blockquote>
+</section>
+<section id="component-carrier">
+<h2>Component Carrier<a class="headerlink" href="#component-carrier" title="Permalink to this headline">¶</a></h2>
+<p>This section is available only when the Network Device is PMP 450v. This section displays read-only parameters for the selected component carrier.</p>
+<figure class="align-default" id="id6">
+<span id="sm-component-carrier"></span><img alt="_images/sm_component_carrier.png" src="_images/sm_component_carrier.png" />
+<figcaption>
+<p><span class="caption-text">Component Carrier</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="list_of_figures.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_this_user_guide.html">About This User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_linkplanner.html">Using LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_ptp_links.html">Planning PTP links</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="planning_pmp_links.html">Planning PMP networks</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="network_devices.html">PMP Network Devices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mesh_links.html">Mesh Links</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="subscriber_modules.html">Subscriber Modules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="sm_creating_and_deleting.html">Creating and Deleting Subscriber Modules</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Subscriber Module Description and Equipment</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#general">General</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#equipment">Equipment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#product-configuration">Product Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#antenna-configuration">Antenna Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#power">Power</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#component-carrier">Component Carrier</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sm_profile.html">Profile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sm_performance_summary.html">Performance Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sm_performance_details.html">Performance Details</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sm_bill_of_materials_for_link.html">Bill of Materials for Subscriber Module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="background_information.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notices.html">Legal Notices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes_to_linkplanner.html">Changes to LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="sm_profile.html" title="Profile"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="sm_creating_and_deleting.html" title="Creating and Deleting Subscriber Modules"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="planning_pmp_links.html" >Planning PMP networks</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="subscriber_modules.html" >Subscriber Modules</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Subscriber Module Description and Equipment</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2025, Cambium Networks.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

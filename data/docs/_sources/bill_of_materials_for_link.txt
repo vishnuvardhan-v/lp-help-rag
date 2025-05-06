@@ -1,0 +1,111 @@
+.. index::
+   single: Bill of Materials (BOM)
+   single: BOM
+   single: BOM for link
+   single: New Extra
+   single: BOM Icons
+
+   
+   
+Bill of Materials for Link
+==========================
+
+To display the Bill of Materials for the PTP Link select the clipboard symbol |bom_icons| next to the Save button.
+
+LINKPlanner automatically calculates the Bill of Materials (BOM) for the required components of the planned link. The link BOM contains the list of part numbers and associated quantities for the link. 
+
+.. _bill_of_materials_for_link:
+.. figure:: bill_of_materials_for_link.png
+
+   Bill of Materials for Link
+
+**P/N**: The Cambium part number. If the component is not supplied by Cambium, this is set to '(no part number)'.
+
+**Description**: Description of the components.
+
+**Qty**: Quantity required. This value can be edited, for items automatically added if the quantity is increased the row will be shown in green, if the quantity is decreased from the recommended value, the row will be shown in red. To reset to the default value, click on the value and choose |icon_revert|.
+
+**Notes**: Displays information about certain items, such as whether they are obsolete.
+
+To add additional items to the BOM, click |new_extra|. A list of optional extras for the link will be displayed. To add items to the BOM tick the box next to each item required and click **OK**. The item will appear in the main list, where the quantity can be adjusted by selecting the number in the **Qty** column and adjusting as required. To delete optional items from the BOM list, tick the box next to each item and click |delete_extra|. A star denotes optional extras which have been added to the automatic BOM items. 
+
+.. _bill_of_materials_optional_extras:
+.. figure:: bill_of_materials_optional_extras.png
+
+    Bill of Materials Optional Extras
+
+The groups and extras will vary depending on the chosen product.
+
+To access more options, expand the list topics.
+
+**Accessories**: Additional accessories.
+
+**Antennas**: (PTP 820 and PTP 850 Only) Additional PTP 800 antenna options.
+
+**AP Lite**: (ePMP) Additional AP kits for Lite radios
+
+**Cable, Accessories & Spares**: This allows items such as additional cable, antenna supports etc. to be added to the order.
+
+**Comsearch**: Allows FCC Frequency Coordination or Protection Services to be added to the order.
+
+**GPS Synchronization**: (PTP 450 Only). Optional GPS Modules can be included with the order.
+
+**Installation & Mounting**: Optional installation, grounding and mounting kits can be included with the order.
+
+**Kits**: Alternative ODU and power supply kits.
+
+**License Keys**: PTP 820 and PTP 850 license keys and capacity upgrades
+
+**Lightning Protection**: Lightning protection options.
+
+**NMS**: PTP 820 Network Management System parts
+
+**Power**: This allows AC/DC power supplies and country specific mains leads and PIDU to be included with the order.
+
+**Quick Deploy Positioner**: This allows the parts for the Quick Deploy Positioner to be added to PTP 450i and PTP 670.
+
+**Security**: There is a range of different encryption options available, depending upon the product selected.
+
+**Staging**: (PTP 820 Only) Additional parts to use for bench testing
+
+**Warranty & Support**: Additional warranty options are available to extend the warranty by 1 to 4 years. Also annual PTP software support contracts are available, depending upon the number of links required.
+
+To filter the list of optional extras, enter a part number or description in the Filter field.
+
+|note|
+
+        For instructions on how to view and save the BOM for the entire project, see :doc:`bill_of_materials_for_project`.
+
+ 
+Viewing & saving the link BOM file in MS Excel
+---------------------------------------------------
+
+To view the link BOM in Excel,  click |table_download_csv| in the appropriate BOM section. Once in the spreadsheet the file can be saved as normal.  
+
+|note|
+
+        All numeric only part numbers consist of 11 digits, if the number displayed is only 10 digits the part number should start with a zero.
+
+Power from switch
+------------------------
+
+To power either or both ends of the link from the switch instead of using the PoE Injector select either end or both from the **Power from switch** list. This option is only available if the network site has a switch attached to it, see :doc:`adding_switches` and the product selected can be powered by the switch, which includes most of the PoE powered Cambium radios.
+
+When Power from switch is selected, where possible the PoE and line cord are removed from the BOM, which may result in the kit part number changing to a different kit that doesn't include a PoE. This is not available for all products and country variants.
+
+|note| 
+
+        If TX2000 is the Sync option on PTP 670 the master end will automatically be configured to be powered from the switch.
+        
+
+.. _bill_of_materials_for_link_with_switches:
+.. figure:: bill_of_materials_for_link_with_switches.png
+
+   Bill of Materials for Link Powered by Switches
+
+.. |note| image:: note.jpg
+.. |bom_icons| image:: bom_icons.png
+.. |new_extra| image:: icon_new_extra.png
+.. |delete_extra| image:: icon_delete_extra.png
+.. |table_download_csv| image:: table_download_csv.png
+.. |icon_revert| image:: icon_revert.png

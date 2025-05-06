@@ -1,0 +1,173 @@
+.. index::
+   single: Glossary
+   single: Meaning of Terms
+   single: Terms
+
+Glossary
+========
+
+.. glossary::
+    :sorted:
+
+    ACAP
+        Adjacent Channel Alternate Polarization
+
+    ACCP
+        Adjacent Channel Co-Polarization
+
+    ACMB
+        Adaptive Coding Modulation and Bandwidth   
+
+    AES
+        Advanced Encryption Standard
+
+    AGL
+        Above Ground Level
+
+    AMSL
+        Above Mean Sea Level
+        
+    AP
+        Access Point
+
+    ASTER
+        Advanced Spaceborne Thermal Emission and Reflection Radiometer
+        
+    ATDI
+        Advanced Topographic Development & Images Ltd.
+        
+    ATPC
+        Automatic Transmit Power Control   
+
+    BBU
+        Baseband Unit
+
+    BOM
+        Bill of Materials
+        
+    BPSK
+        Binary Phase Shift Keying
+
+    CCDP
+        Co-Channel Dual Polarized
+       
+    CD
+        Compact Disc
+
+    CSV
+        Comma Separated Variables
+
+    DFS
+        Dynamic Frequency Selection
+        
+    DL
+        Downlink
+
+    EIRP
+        Equivalent Isotropic Radiated Power
+
+    ETSI
+        European Telecommunications Standards Institute
+
+    FCC
+        Federal Communications Commission
+
+    FEC
+        Forward Error Correction
+    
+    HAAT
+        Height Above Average Terrain
+        
+    IRFU
+        Indoor Radio Frequency Unit
+
+    ITU
+        International Telecommunications Union
+
+    KML
+        Keyhole Markup Language
+
+    LoS
+        Line-of-Sight
+        
+    MAC
+        Media Access Control
+        
+    MCS
+        Modulation Coding Scheme
+
+    MHSB
+        Monitored Hot Standby
+        
+    MIMO
+        Multiple-Input Multiple-Output
+
+    MMU
+        Modular Modem Unit
+        
+    ND
+        Network Device
+        
+    NLoS
+        non-Line-of-Sight
+        
+    ODU
+        Outdoor Unit
+
+    OMT
+        Orthogonal Mount Transducer
+        
+    PMP
+        Point-To-Multi-Point 
+        
+    PTP
+        Point-To-Point
+
+    QAM
+        Quadrature Amplitude Modulation
+    
+    QPSK
+        Quadrature Phase Shift Keying
+    
+    RFU
+        Radio Frequency Unit
+        
+    RRH
+        Remote Radio Head
+        
+    RSRP
+        Reference Signal Receive Power
+
+    SAAS
+        Software as a Service
+        
+    SD
+        Spatial Diversity
+        
+    SM
+        Subscriber Module
+        
+    SRTM
+        Shuttle Radar Topography Mission
+        
+    SSF
+        Special Subframe
+
+    SSO
+        Single Sign On
+        
+    TDD
+        Time Division Duplex
+
+    TDM
+        Time Division Multiplexing
+    
+    UL
+        Uplink
+        
+    VSWR
+        Voltage Standing Wave Ratio
+        
+    XPIC
+        Cross-Polar Interference Cancellation
+

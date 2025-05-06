@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Performance Details &#8212; Cambium LINKPlanner Online Help (6.3.3)</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/default.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Bill of Materials for Link" href="bill_of_materials_for_link.html" />
+    <link rel="prev" title="Performance Summary" href="performance_summary.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="bill_of_materials_for_link.html" title="Bill of Materials for Link"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="performance_summary.html" title="Performance Summary"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="planning_ptp_links.html" >Planning PTP links</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="link_page.html" accesskey="U">Link Page</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Performance Details</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="performance-details">
+<span id="index-0"></span><h1>Performance Details<a class="headerlink" href="#performance-details" title="Permalink to this headline">¶</a></h1>
+<p>This section contains more detail about the predicted performance of the link. The data is displayed in tabular form.</p>
+<figure class="align-default" id="id2">
+<span id="id1"></span><img alt="_images/performance_details.png" src="_images/performance_details.png" />
+<figcaption>
+<p><span class="caption-text">Performance Details</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>For 2+0 Link Types, the predicted performances of the main (Aggregate) path and individual (Link A and Link B) paths are displayed in tabs. Click on the respective tab to see the performance details of the path.</p>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<blockquote>
+<div><p>The same tab is shown for both Performance Summary and Performance Details</p>
+</div></blockquote>
+<figure class="align-default" id="id3">
+<span id="performance-details-2-0"></span><img alt="_images/performance_details_2+0.png" src="_images/performance_details_2+0.png" />
+<figcaption>
+<p><span class="caption-text">Performance Details 2+0</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<section id="common-details">
+<h2>Common Details<a class="headerlink" href="#common-details" title="Permalink to this headline">¶</a></h2>
+<p><strong>MCS</strong>: (ePMP and 60 GHz cnWave Only) The Modulation Coding Scheme Number</p>
+<p><strong>Mode</strong>: The modulation technique used.</p>
+<p><strong>Code Rate</strong>: The code rate for the specified Mode (not available for PTP 450 family, PTP 820 or PTP 850).</p>
+<p><strong>Profile</strong>: (PTP 820 and PTP 850 Only) The profile number of the modulation mode.</p>
+<p><strong>MIMO Type</strong>: (PTP 450 and 450i Only) The MIMO method used.</p>
+<p><strong>Payloads</strong>: (ePMP Only) Indicates whether the payload mode is Single or Dual.</p>
+<p><strong>Multiplier</strong>: (PTP 450 and 450i Only) Indicates the relative capacity capability of the different modes.</p>
+<p><strong>Max. Aggregate IP Throughput (Mbps)</strong>: The maximum aggregate throughput achievable (sum of both directions). This field is automatically adjusted for the range of the link being studied.</p>
+<p><strong>E1/T1 Carried</strong>: This row is only displayed if the equipment is PTP 670 or PTP 820G and one or more E1 or T1 channels have been selected. It indicates the number of E1 or T1 channels supported in each modulation mode. For PTP 670 it is set to “Timing” for those modulation modes that are below the Lowest Telecom Mode selected in the Equipment section, for more information, see <a class="reference internal" href="optimizing_e1_or_t1_latency.html"><span class="doc">Optimizing E1 or T1 Latency</span></a>.</p>
+</section>
+<section id="performance-to-each-end">
+<h2>Performance to each end<a class="headerlink" href="#performance-to-each-end" title="Permalink to this headline">¶</a></h2>
+<p><strong>Max. IP Throughput (Mbps)</strong>: The maximum user throughput achievable. For modulation modes below <strong>Lowest Ethernet Mode</strong> this value will be set to zero and no contribution from these modulation modes will be included in the <strong>Mean IP Predicted</strong>.</p>
+<p><strong>Fade Margin (dB)</strong>: The margin available to each end in the specified Mode.</p>
+<p><strong>Mode Availability (%)</strong>: The percentage of time that the data throughput rate shown for each end will be available.</p>
+<p><strong>Receive Time in Mode (%)</strong>:The percentage of time used to receive data in the specified Mode.</p>
+<p>When <strong>ePMP ePTP Mode</strong> is selected the values shown in the <strong>Performance to each end</strong> section of the table assume that there is no load in the opposite direction of the link.</p>
+<blockquote>
+<div></div></blockquote>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="list_of_figures.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_this_user_guide.html">About This User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_linkplanner.html">Using LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_ptp_links.html">Planning PTP links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_pmp_links.html">Planning PMP networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background_information.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notices.html">Legal Notices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes_to_linkplanner.html">Changes to LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="bill_of_materials_for_link.html" title="Bill of Materials for Link"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="performance_summary.html" title="Performance Summary"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="planning_ptp_links.html" >Planning PTP links</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="link_page.html" >Link Page</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Performance Details</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2025, Cambium Networks.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

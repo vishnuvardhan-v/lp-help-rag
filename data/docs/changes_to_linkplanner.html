@@ -1,0 +1,1055 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Changes to LINKPlanner &#8212; Cambium LINKPlanner Online Help (6.3.3)</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/default.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Glossary" href="glossary.html" />
+    <link rel="prev" title="Cambium Networks, SAAS Terms of Service" href="cambium_lp_terms_and_conditions.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="glossary.html" title="Glossary"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="cambium_lp_terms_and_conditions.html" title="Cambium Networks, SAAS Terms of Service"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Changes to LINKPlanner</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="changes-to-linkplanner">
+<span id="index-0"></span><h1>Changes to LINKPlanner<a class="headerlink" href="#changes-to-linkplanner" title="Permalink to this headline">¶</a></h1>
+<p>This is a list of the main changes that have been made to the LINKPlanner application since version 6.0.0</p>
+<section id="changes-since-version-6-0-0">
+<h2>Changes since version 6.0.0<a class="headerlink" href="#changes-since-version-6-0-0" title="Permalink to this headline">¶</a></h2>
+<section id="changes-in-version-6-3-3">
+<h3>Changes in version 6.3.3<a class="headerlink" href="#changes-in-version-6-3-3" title="Permalink to this headline">¶</a></h3>
+<p><strong>New or changed features</strong></p>
+<ul>
+<li><p>General</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added bulk editing capabilities to the Site, PTP Links, and PMP table views.</p></li>
+<li><p>Added the <strong>Show in Map</strong> and <strong>Revert Changes</strong> option to the Sites, Links, and Network Devices details panel.</p></li>
+<li><p>Updated geomagnetic declination in line with changes from NOAA</p></li>
+<li><p>Added the new field <strong>Mesh Links Per Sector</strong> to the Terragraph Planner to allow the user to choose the mesh links required per sector.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>PTP 670/700</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Add support for PTP670/700 HCMP products in PMP mode.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>ePMP</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added support for the ePMP Force 4518 in both PTP and PMP mode.</p></li>
+<li><p>Added Rwanda regulatory in the 5.1 GHz, 5.2 GHz, 5.4 GHz and 5.8 GHz bands for ePMP 11ac and 11ax products</p></li>
+<li><p>Retired ePMP Force 425 range extender.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>PMP 450</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added United Kingdom regulatory in 3.9 GHz band for PMP 450m.</p></li>
+<li><p>Updated the PMP 450b6 FCC/IC regulatory limits in the 5.8 GHz band.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>PTP 820/850</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added PTP 850EX-P in 80 GHz band.</p></li>
+<li><p>Added 2+0 XPIC Link Type for the PTP 850EX.</p></li>
+<li><p>Replaced the standalone radio part with the radio with activation keys part in the PTP 850EX BOM.</p></li>
+<li><p>Added Canada regulatory in the 8 GHz and 15 GHz bands for PTP 820A with RFU-D/RFU-D HP products.</p></li>
+<li><p>Updated PTP 820/850 products to Release 12.9</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul class="simple">
+<li><p>Corrected the PMP 450v AP and SM regulatory limits in the FCC/IC 5.1 GHz band.</p></li>
+<li><p>Ensured that the appropriate TwistPort adapter is included in the BOM for ePMP products when RF Elements TP antennas are selected.</p></li>
+<li><p>Fixed the issue preventing the remote end height from being set on 2+0 PTP links.</p></li>
+<li><p>Fixed the N000000L179 PSU quantity in the PTP 850EX BOM.</p></li>
+<li><p>Ensured that the correct Canada radio part is added to the ePMP 4600 series products.</p></li>
+<li><p>Ensured that the LINKPlanner project export and project report include the Project Settings details.</p></li>
+<li><p>Fixed the issue where the site did not include a default name when importing a KML file without a site name.</p></li>
+<li><p>Fixed the issue where multiple clicks on the ‘Create Sites’ button while importing caused duplicate sites to be created.</p></li>
+<li><p>Added a message to the Convert or Duplicate Site field to notify the user when site limits are exceeded.</p></li>
+</ul>
+</section>
+<section id="changes-in-version-6-3-2">
+<h3>Changes in version 6.3.2<a class="headerlink" href="#changes-in-version-6-3-2" title="Permalink to this headline">¶</a></h3>
+<p><strong>New or changed features</strong></p>
+<ul>
+<li><p>General</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Replaced Bing Map layers with Google Map layers</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul class="simple">
+<li><p>Corrected the issue of azimuth overwriting in the PMP Network Devices table when <strong>Copy from existing</strong> option is used.</p></li>
+<li><p>Ensured that the message is displayed properly in the confirmation dialog popup window when editing the built in antenna.</p></li>
+</ul>
+</section>
+<section id="changes-in-version-6-3-1">
+<h3>Changes in version 6.3.1<a class="headerlink" href="#changes-in-version-6-3-1" title="Permalink to this headline">¶</a></h3>
+<p><strong>New or changed features</strong></p>
+<ul>
+<li><p>ePMP</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added backward compatibility between ePMP 4500 series AP (11ax) with 11ac SMs.</p></li>
+<li><p>Added Beamforming mode for the ePMP 4500, ePMP 4500C and ePMP 4600 APs.</p></li>
+<li><p>Updated ePMP 11ax capacity algorithm.</p></li>
+<li><p>Updated sensitivity levels for ePMP Force 4525 and Force 4525L to Release 5.9.0</p></li>
+<li><p>Added ePMP Force 4525L Feedhorn parts to the Optional Extras.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>PMP 450</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Updated FCC regulations for PMP 450b6 SM product.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>PTP 820/850</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added N000000L179 PSU to the PTP 850EX Bill of Materials (BOM).</p></li>
+<li><p>Added 375 MHz T/R Spacing for PTP 820A with RFU-D HP under the 8 GHz band and <em>Other</em> regulation.</p></li>
+<li><p>Added 315 MHz and 322 MHz T/R Spacing for PTP 820A with RFU-D under the 15 GHz band and <em>ETSI</em> regulation.</p></li>
+<li><p>Added CommScope HX10-11W-6GF antenna in 11 GHz band for licensed PTP 820/850 products.</p></li>
+<li><p>Retired PTP 820G Single Modem part and replaced with Dual Modem part.</p></li>
+<li><p>Retired PTP 820C product in all bands.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>General</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added project level BOM spreadsheet export</p></li>
+<li><p>Added an option to create sites from the Network Sites and Subscriber Sites table views.</p></li>
+<li><p>Added a confirmation dialog when the delete viewshed option is clicked</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul class="simple">
+<li><p>Corrected PTP 820A with RFU-D HP TX powers</p></li>
+<li><p>Fixed the issue where the correct Tx/Rx frequency was unable to be set for PTP 820/850 2+0 and 4+0 link types.</p></li>
+<li><p>Ensured that performance requirements can be set independently for each path of PTP 820/850 2+0 and 4+0 link types.</p></li>
+<li><p>Fixed the issue where LINKPlanner was crashing when switching from PTP 820/850 2+0 XPIC link type to 4+0 XPIC link type</p></li>
+<li><p>Fixed the issue on the AFC page where Antenna Height, Horizontal Distance, and Vertical Distance fields were locked for editing.</p></li>
+<li><p>Removed the GPS puck kit from the ePMP Force 4625 ROW BOM.</p></li>
+<li><p>Ensured that LINKPlanner projects with custom antennas import without errors</p></li>
+<li><p>Fixed the issue where the <em>No</em> and <em>Close</em> buttons were unresponsive in the TP import dialog</p></li>
+<li><p>Ensured that the selection in the profile chart consistently matches the click location when editing the path profile.</p></li>
+<li><p>Fixed the issue where the user was unable to add the TX1000 tower switch to the sites.</p></li>
+<li><p>Ensured that new network sites created using the map toolbar are visible in the network site list when the <em>Use Map View to Filter</em> option is enabled.</p></li>
+</ul>
+</section>
+<section id="changes-in-version-6-3-0">
+<h3>Changes in version 6.3.0<a class="headerlink" href="#changes-in-version-6-3-0" title="Permalink to this headline">¶</a></h3>
+<p><strong>New or changed features</strong></p>
+<ul>
+<li><p>UI Changes</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added top menu bar which contains Project, Reports, Import, Export, Preferences and Help menu options.</p></li>
+<li><p>Left menu bar is moved from list view to tree view.</p></li>
+<li><p>Added delete button in Network Device, SM, Site, PTP detail page tool bar.</p></li>
+<li><p>Added detailed pop-up help for the different features.</p></li>
+<li><p>Added performance details charts to the PTP, PMP and Mesh links.</p></li>
+<li><p>Added site name template to the Network and Subscriber Site map tools.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><dl class="simple">
+<dt>AFC</dt><dd><ul class="simple">
+<li><p>Added product specific lookup to the AFC feature.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>PTP 820/850</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added 2+0 Spatial Diversity, 1+1 HSB, 2+2 link types to the PTP 820C, PTP 820C HP, PTP 820A with RFU-D and PTP 820A with RFU-D HP products.</p></li>
+<li><p>Added PTP 820A with RFU-D in the Lower 6 GHz, Upper 6 GHz, 7 GHz, 8 GHz, 11 GHz, 13 GHz, 15 GHz, 18 GHz and 23 GHz band.</p></li>
+<li><p>Added PTP 820A with RFU-D HP in the Lower 6 GHz, Upper 6 GHz, 7 GHz, 8 GHz and 11 GHz band.</p></li>
+<li><p>Added 375 MHz T/R Spacing for PTP 820G with RFU-C under the 8 GHz band and Other regulation.</p></li>
+<li><p>Added 160 MHz bandwidth for PTP 850C under Other regulation.</p></li>
+<li><p>Added 80 MHz bandwidth for PTP 850C, PTP 820S, PTP 820C HP, PTP 820F with RFU-D/RFU-D HP and PTP 820A with RFU-D/RFU-D HP products under the Upper 6 GHz band and ETSI regulation.</p></li>
+<li><p>Updated ETSI 80 MHz MRMC script for PTP 850C, PTP 820F with RFU-D/RFU-D HP and PTP 820A with RFU-D/RFU-D HP.</p></li>
+<li><p>Added 112 MHz bandwidth for PTP 820F with RFU-D/RFU-D HP and PTP 820A with RFU-D/RFU-D HP in the 11 GHz band and ETSI regulation.</p></li>
+<li><p>Added AC/DC converter part N000000L054 to the optional extras of PTP 820A, PTP 820G and PTP 850C products.</p></li>
+<li><p>Added FCC License Coordination report.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><dl class="simple">
+<dt>PTP 700</dt><dd><ul class="simple">
+<li><p>Added PTP 700 product support. TDD Sync is not supported in this release.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>PMP 450</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added PMP 450v 2x2 SM.</p></li>
+<li><p>Added two component carrier in single carrier support for PMP 450v 4x4 AP.</p></li>
+<li><p>Added two Component Carrier support for PMP 450v SM.</p></li>
+<li><p>Updated PMP 450v 4x4 transmit power as per Rel 24.1</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>ePMP</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added ePMP 4500C Network Device.</p></li>
+<li><p>Added NetPoint antennas for the ePMP 4600C and ePMP 400C in PTP mode.</p></li>
+<li><p>Added RF Elements 4x4 Asymmetrical horn antennas to the ePMP 3000.</p></li>
+<li><p>Revised Force 130, Force 300-16, Force 300-19R, Force 300-19, ePMP 4500L, Force 4625 and ePMP 4600 Part numbers.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>60 GHz cnWave</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Retired cnMaestro X Subscriptions for cnWave 60 GHz Client Nodes</p></li>
+<li><p>Added the capability to export cnMaestro compatible Node and Link files for quicker provisioning.</p></li>
+<li><p>Removed multipath availability calculations for 60 GHz cnWave products. Only rain availability is calculated for the product.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><dl class="simple">
+<dt>cnWave 5G Fixed</dt><dd><ul class="simple">
+<li><p>Maximum MU-MIMO grouping size has been increased from six to eight in both downlink (DL) and uplink (UL) for 100 and 112 MHz bandwidths.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>General</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Retired N000000L142 60W PoE.</p></li>
+<li><p>Made Azimuth value editable in the Network Device table.</p></li>
+<li><p>Added project level proposal report for export.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul class="simple">
+<li><p>Ensured that the correct ODU parts are selected for the PTP 820A product with T/R spacing of 530 MHz in the 11 GHz band.</p></li>
+<li><p>Removed 2.5 Gbps throughput limit for the PTP 820A product with Fiber Optic cable.</p></li>
+<li><p>Fixed the issue of clearing the Tx frequency when there is a change in Tx frequency for 2+0 and 4+0 link types of licensed products.</p></li>
+<li><p>Corrected SFP part quantity for the PTP 850EX product.</p></li>
+<li><p>Fixed issue with Select locations in map Viewshed feature.</p></li>
+<li><p>Fixed the issue of being unable to create Upper 6 GHz viewshed.</p></li>
+<li><p>Making sure that Network Devices move with site when offset are removed.</p></li>
+<li><p>Ensuring that the ‘Power from switch?’ option is retained according to the user’s selection when the Sync Sources are changed for the product.</p></li>
+<li><p>Fixed the issue of clearing of the Tx frequency when there is a change in Tx frequency for licensed products.</p></li>
+<li><p>Corrected the azimuth field to accept only integer values.</p></li>
+</ul>
+</section>
+<section id="changes-in-version-6-2-2">
+<h3>Changes in version 6.2.2<a class="headerlink" href="#changes-in-version-6-2-2" title="Permalink to this headline">¶</a></h3>
+<p><strong>New or changed features</strong></p>
+<ul>
+<li><p>AFC</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added AFC map feature which allows the user to perform an Automated Frequency Coordination (AFC) lookup for USA and Canada.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>PTP 820/850</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added 4+0 link types for PTP 850C, PTP 820C and PTP 820C HP.</p></li>
+<li><p>Added PTP 820A with RFU-D in NTIA 7, 8 and 15 GHz band.</p></li>
+<li><p>Added PTP 850EX.</p></li>
+<li><p>Introduced 7, 8, 13 and 15 GHz PTP 850C radios.</p></li>
+<li><p>Reversed the retirement of PTP 820C HP product.</p></li>
+<li><p>Added N000000L129 PSU as an optional extra for PTP 820G product.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>ePMP</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added Mexico regulatory in 5.1 GHz and 5.2 GHz band for ePMP 11ac and 11ax products.</p></li>
+<li><p>Updated Uganda regulatory in 5.8 GHz and 5.2 GHz band for ePMP products.</p></li>
+<li><p>Updated FCC/IC EIRP limits for ePMP 4600, ePMP 4600L, ePMP Force 4600C and ePMP Force 4625 products.</p></li>
+<li><p>Revised Force 300-25L and Force 200L Part numbers.</p></li>
+<li><p>Retired ePMP Force 300-13L product.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>PMP 450</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added PMP 450b6 SM.</p></li>
+<li><p>Updated sensitivity levels and Tx power per modulation for PMP 450v 4x4 to Release 24.</p></li>
+<li><p>Added PMP 450m AP and 450b SM in 3.9 GHz band.</p></li>
+<li><p>Updated 3 GHz Mexico regulatory for PMP 450 products.</p></li>
+<li><p>Added support for PMP 450 products in 5.3 GHz band for Other regulatory.</p></li>
+<li><p>Retired 900 MHz and 2.4 GHz PMP 450 Products</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>60 GHz cnWave</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Removed V3000 single pack antenna C600500D001</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Tower Switches</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The External Sync field is separated into Sync Input and cnPulse fields.</p></li>
+<li><p>Added Bullet 720 option under Sync Input field.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>General</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>AC power Injector N000065L001 replaced with C000000L141</p></li>
+<li><p>Added icons to menu names in the left toolbar.</p></li>
+<li><p>UI improvements to ND and SM properties page.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul class="simple">
+<li><p>Corrected Maximum range for ePMP 11ac and 11ax products in both ePTP and PTP ePMP PTP Mode.</p></li>
+<li><p>The user interference level fields are now available in the PMP installation report’s performance section.</p></li>
+<li><p>Fixed the issue of displaying MCS mapping in performance summary when Maximum MCS is different at each end of the link.</p></li>
+<li><p>Removed Multiple Ethernet without LAG Ethernet Configuration option for PTP 850C</p></li>
+<li><p>Updated default priority of ePMP SM products, so that ePMP SM products defaults to low gain Integrated SM products.</p></li>
+<li><p>Making sure that the site importer accepts only valid Node Types.</p></li>
+<li><p>Fixed an error in creating a viewshed when more than one location were selected in the map.</p></li>
+<li><p>Restricted admin users to enter their own email address in user permission panel when adding read-only users.</p></li>
+<li><p>Displaying error messages when the admin user try to add unknown user in the user permission panel.</p></li>
+<li><p>Fixed the issue with report file names having special characters.</p></li>
+</ul>
+</section>
+<section id="changes-in-version-6-2-1">
+<h3>Changes in version 6.2.1<a class="headerlink" href="#changes-in-version-6-2-1" title="Permalink to this headline">¶</a></h3>
+<p><strong>New or changed features</strong></p>
+<ul>
+<li><p>PMP 450</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added carrier aggregation for PMP 450v 4x4 to the PMP side of the LINKPlanner. Support for multiple Component Carriers in a single Carrier will be added in the future.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Advanced Features</p>
+<blockquote>
+<div><ul>
+<li><p>Added tables displaying the available antennas.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Custom antennas can now be defined and selected for unlicensed PTP products and Subscriber Modules.</p></li>
+<li><p>PTP and Subscriber Module antenna patterns can be downloaded when the pattern is available.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Added Stop button to the Best Server analysis.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>cnWave 5G Fixed</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Updated Tx power levels for cnWave 5G Fixed to Release 3.2.0</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>ePMP</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added RF Elements ultra dish antennas for ePMP connectorized PTP and SM products.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>General</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added capability to convert the site type and create duplicate sites for network and subscriber sites.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul class="simple">
+<li><p>Ensured for PMP 450 SM products, the DL/UL Maximum Mod Mode dropdown list is updating as per the MIMO Rate Adapt parameter selection.</p></li>
+<li><p>Updated  cnPulse device for 450v 4x4 SM radios</p></li>
+<li><p>Fixed the issue of Network Device not refreshing after deleting Subscriber Modules attached to it.</p></li>
+<li><p>Fixed errors associated with site selection in the map when creating viewsheds</p></li>
+<li><p>Fixed bug saving Golay settings for 60 GHz cnWave Network Devices.</p></li>
+<li><p>Fixed a bug in the table views where the Delete button is not always enabled correctly.</p></li>
+<li><p>Fixed 60 GHz cnWave performance summary when there are errors on a sector.</p></li>
+<li><p>Fixed issue when editing the network plan in Terragraph Planner.</p></li>
+<li><p>Ensured that the error messages are displayed when the empty project or files are imported to the LINKPlanner.</p></li>
+<li><p>Corrected default SM Receive Target Level values as per the product selection.</p></li>
+<li><p>Prevent duplicate mesh links from being created.</p></li>
+<li><p>Ensured that the select all in the list and table views is applied only to the visible rows.</p></li>
+<li><p>Extract the boundary data from a Terragraph Planner KML/KMZ file so that the original file is not written to disk. This prevents possible security exploits and fixes issues with incompatible file names.</p></li>
+<li><p>Corrected issues when exporting and displaying projects in Google Earth</p></li>
+</ul>
+</section>
+<section id="changes-in-version-6-2-0">
+<h3>Changes in version 6.2.0<a class="headerlink" href="#changes-in-version-6-2-0" title="Permalink to this headline">¶</a></h3>
+<p><strong>New or changed features</strong></p>
+<ul>
+<li><p>PTP 850/820</p>
+<blockquote>
+<div><ul>
+<li><p>Added 2+0 Co-Polar (ACCP), 2+0 Cross-Polar (ACAP), 2+0 XPIC (CCDP) Link Type for the following licensed band PTP 850/820 products.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>PTP 850C</p></li>
+<li><p>PTP 850E</p></li>
+<li><p>PTP 820C</p></li>
+<li><p>PTP 820S</p></li>
+<li><p>PTP 820G with RFU-C</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Retired PTP 820C in U6 GHz band.</p></li>
+<li><p>Retired PTP 820C HP in 11 GHz band.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>ePMP</p>
+<blockquote>
+<div><ul>
+<li><p>ePMP 11ax updates</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added support for ePMP 4500, ePMP 4500L, ePMP Force 4525, ePMP Force 4525L, Force 400C and Force 425 products to the PMP side.</p></li>
+<li><p>Added support for ePMP 4600, ePMP 4600L, ePMP Force 4625, ePMP Force 4600C products to the PMP side.</p></li>
+<li><p>Added TDD support for ePMP 4500/4600 products in PTP mode.</p></li>
+<li><p>Updated Transmit Power levels for ePMP Force 400C, ePMP Force 425, ePMP 4500L, ePMP Force 4525, ePMP Force 4525L, ePMP Force 4600C</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Retired 2.4 GHz ePMP 1000 product.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>PMP 450</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added initial support for PMP 450v 4x4 ND and SM product to the PMP side of the LINKPlanner, using existing single carrier functionality. Carrier aggregation will be added in future releases.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Advanced Features</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added Terragraph Planner advanced feature to automatically plan 60 GHz cnWave networks.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Viewshed</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added High Resolution Viewshed feature which uses lidar data if available for the region</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>cnWave 5G Fixed</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Updated sensitivity levels for cnWave 5G Fixed to Release 3.1.1.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>60 GHz cnWave</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Included interference field on the mesh link panel when interference levels are set on DN. Interference levels can now be adjusted on the individual mesh links.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>General</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added Calc Tilt feature for the PMP Network Device.</p></li>
+<li><p>Added ability to scale the display size of the PMP ND sectors on the map without affecting SM Range connectivity.</p></li>
+<li><p>Added Reflection Editor capability on path profile for PTP Links.</p></li>
+<li><p>Added interpolating heights or obstructions in a given range and inserting points in a defined interval along the path features to the path profile editor.</p></li>
+<li><p>Displaying warning to the user if LINKPlanner truncating long names while importing the project.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul class="simple">
+<li><p>Removed Tolly Mix frame size option for PTP 850E.</p></li>
+<li><p>Corrected PTP 850E throughput values to show Layer 2 the same as the other products, rather than Layer 1.</p></li>
+<li><p>Corrected Canadian compliance of 11 GHz Cambium Networks 4ft C1000082D049 antenna</p></li>
+<li><p>Corrected PMP 450 family sensitivity levels for MIMO-A modulation modes</p></li>
+<li><p>Fixed the issue of PMP add Network Devices wizard failing for the ePMP product selection.</p></li>
+<li><p>Corrected “Right Height” column name in PTP table view.</p></li>
+<li><p>Fixed a bug preventing the Site CSV file from importing without the optional fields.</p></li>
+<li><p>Ensured that projects with missing profiles import without errors.</p></li>
+<li><p>Ensured that correct proposal and installation reports are produced for the mesh link selected.</p></li>
+<li><p>Default the Maximum Mod Mode to the highest mode when changing the product.</p></li>
+<li><p>Fixed issue with the path profile display when the height units are in “feet”.</p></li>
+<li><p>Ensured that warning messages are updating correctly in Create PTP Links dialog.</p></li>
+<li><p>Prevent very long PTP links from being created in the map</p></li>
+</ul>
+</section>
+<section id="changes-in-version-6-1-4">
+<h3>Changes in version 6.1.4<a class="headerlink" href="#changes-in-version-6-1-4" title="Permalink to this headline">¶</a></h3>
+<p><strong>New or changed features</strong></p>
+<ul>
+<li><p>PTP 850/820</p>
+<blockquote>
+<div><ul>
+<li><p>Added support for the following licensed band PTP 850/820 products with 1+0 link configuration.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>PTP 850C</p></li>
+<li><p>PTP 850E</p></li>
+<li><p>PTP 820C</p></li>
+<li><p>PTP 820S</p></li>
+<li><p>PTP 820G with RFU-C</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>ePMP</p>
+<blockquote>
+<div><ul>
+<li><p>ePMP 11ax updates</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added support for ePMP 4500L, ePMP Force 4525, ePMP Force 4525L products to the PTP side.</p></li>
+<li><p>Added support for ePMP 4600L, ePMP Force 4625, ePMP Force 4600C products to the PTP side.</p></li>
+<li><p>Extended support for ePMP Force 400C and ePMP Force 425 products in 5.9 GHz and L6 band.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Added connectorized antenna options to FCC/IC bands in PMP ND mode.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>60 GHz cnWave</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>POP sites are identified differently in the map view.</p></li>
+<li><p>Extended the list of available column options in the Mesh Links table.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>cnWave 5G Fixed</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Included Mu-MIMO throughput values in the ND Performance Summary.</p></li>
+<li><p>Added Mu-MIMO information to the Installation and Proposal reports.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>General</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added Path Profile editor.</p></li>
+<li><p>Added Google Earth Exporter</p></li>
+<li><p>Added antenna selection component PTP, PMP table with the required information.</p></li>
+<li><p>Extended the list of available column options in the PTP Links table.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul class="simple">
+<li><p>Corrected issue of 60 GHz cnWave products not respecting conducted power limits on ND when user limits selected.</p></li>
+<li><p>Fixed bug in 60GHz cnWave, which errored when sites in the sector warnings are using Unicode names</p></li>
+<li><p>Corrected ND/SM Interference constraint limits to only allow Interference values between -144 and -40 dBm.</p></li>
+<li><p>Added “Power from switch” option for 3 GHz PMP 450m, to power the LPU</p></li>
+<li><p>Fixed the issue with Network Site maximum height resetting to default when the Network Site moved in the map view.</p></li>
+<li><p>Corrected PMP Network Counts and added PTP Link Counts column to the Network Sites table.</p></li>
+<li><p>Removed Group Name from the PMP proposal and installation reports.</p></li>
+<li><p>Corrected Connected Subscribers counts in the PMP proposal and installation reports.</p></li>
+<li><p>Updated the hover help message on Antenna tilt label.</p></li>
+</ul>
+</section>
+<section id="changes-in-version-6-1-3">
+<h3>Changes in version 6.1.3<a class="headerlink" href="#changes-in-version-6-1-3" title="Permalink to this headline">¶</a></h3>
+<p><strong>New or changed features</strong></p>
+<ul>
+<li><p>PTP 670</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added support for PTP 670 without the network synchronization capability</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>cnMatrix - Tower switches</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added support to add cnMatrix TX switches to sites, which can then be used for power or synchronization for PTP ends and Network Devices</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>60 GHz cnWave</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added ability to create mesh links in the map view</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>5G Fixed cnWave</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added Mu-MIMO</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>General</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Updated the look and feel of the tooltips on the map view</p></li>
+<li><p>Added a search capability to the table columns dropdown selection menu</p></li>
+<li><p>Automatically populate the Tower Site email with site ID and name</p></li>
+<li><p>Removal of American Tower site locations</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li><p>Viewsheds</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Ensured they update correctly after deletion and hide properly when there are collocated sites</p></li>
+<li><p>Correctly use existing configuration when selecting the “Create from existing” option</p></li>
+<li><p>Maintain network site naming when there are collocated subscriber sites</p></li>
+<li><p>Use appropriate display resolution for heights and ranges</p></li>
+<li><p>Prevented height above clutter options being used when Clutter is not enabled</p></li>
+<li><p>Ensured that pending or failed viewsheds are only displayed on relevant project</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Update Save/Discard icon colors correctly when saving a project from the main menu</p></li>
+<li><p>Display limit warnings appropriately in the UI when adding sites, Network Devices and links</p></li>
+<li><p>Persist user selected column order in sites tables, within the project and between projects as for other tables</p></li>
+<li><p>Corrected PTP tables to use correct default columns and logical sorting, rather than sorting by string</p></li>
+<li><p>Prevented the Delete option being active on links in a read only project</p></li>
+<li><p>Corrected 60 GHz cnWave adjacent sector warning so that it only applies if sectors are on the same channel</p></li>
+<li><p>Ensured that the ND templates are recalculated correctly after a software update or project level recalculation</p></li>
+<li><p>Modified the CSV export precision to match the table view precision</p></li>
+<li><p>Prevented UI crashing when toggling from PTP links to table view</p></li>
+<li><p>Prevented user entering negative IP Required limits in Performance Summary</p></li>
+<li><p>Improved the Path Profile vertical scale labels</p></li>
+<li><p>Ensured that clutter height edits are used correctly in the Best Server Analysis</p></li>
+<li><p>Matched the SM antenna polarity with that at the ND for cnReach single polarization antennas</p></li>
+<li><p>Prevented the creation of PTP links from the same start and end location</p></li>
+</ul>
+</section>
+<section id="changes-in-version-6-1-2">
+<h3>Changes in version 6.1.2<a class="headerlink" href="#changes-in-version-6-1-2" title="Permalink to this headline">¶</a></h3>
+<p><strong>New or changed features</strong></p>
+<ul>
+<li><p>Addition of Tower Sites</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added support for Crown Castle and American Tower site locations</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul class="simple">
+<li><p>Ensured selections in sites table views clear when switching between them to prevent unexpected deletions</p></li>
+<li><p>Prevented sharing permissions from being copied or duplicated. All file instances must have their own sharing permissions configured individually</p></li>
+<li><p>Correct number entry in the SM Range field to allow values below 0.1 to be entered easily</p></li>
+<li><p>Prevent the user power/EIRP from being set as a string</p></li>
+</ul>
+</section>
+<section id="changes-in-version-6-1-1">
+<h3>Changes in version 6.1.1<a class="headerlink" href="#changes-in-version-6-1-1" title="Permalink to this headline">¶</a></h3>
+<p><strong>New or changed features</strong></p>
+<ul>
+<li><p>PTP support for the following products</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>60 GHz cnWave</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>60 GHz cnWave</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added Bridge in a Box part numbers for V1000 to V1000 and V2000 to V2000 PTP links</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul class="simple">
+<li><p>Ensure that the correct modulation modes are shown in the Performance Summary when the remote product is updated on a PTP link.</p></li>
+<li><p>Allow short links (&gt;=1 m) to be created for both PTP and PMP, to support 60 GHz cnWave.</p></li>
+</ul>
+</section>
+<section id="changes-in-version-6-1-0">
+<h3>Changes in version 6.1.0<a class="headerlink" href="#changes-in-version-6-1-0" title="Permalink to this headline">¶</a></h3>
+<p><strong>New or changed features</strong></p>
+<ul>
+<li><p>PTP support for the following products</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>ePMP family</p></li>
+<li><p>PMP 450 family</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>cnWave 5G Fixed</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added 26 GHz Australia regulation</p></li>
+<li><p>Expanded Frequency range for 26 GHz “Other” to 27.5 GHz</p></li>
+<li><p>Updated B1000 antenna pattern</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>60 GHz cnWave</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>ETSI/Israel regulations updated</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>PMP 450</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Updated Indonesia Regulatory limits in 5.8 GHz and 2.4 GHz</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>General</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added MSN field to Network Device and Subscriber Module General panel</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul class="simple">
+<li><p>Added warnings to the 60 GHz cnWave if CN’s and mesh links are within the 20 deg separation zone</p></li>
+<li><p>Corrected export issue when using non-default Golay codes on Mesh or PMP links.</p></li>
+<li><p>Ensure user set EIRP and Power values respect the power resolution step increment size for the given product and all set values and limits are to 1 decimal place</p></li>
+<li><p>Fixed issue on Viewsheds to respect the user configured range units and improve Create option to prevent multiple requests being sent</p></li>
+<li><p>Update mesh links automatically when a site is moved</p></li>
+<li><p>Corrected aggregation issues in Project Level BOM for optional extras on imported projects</p></li>
+<li><p>Ensure ND Performance Summary responds to improvements in SM Performance requirements</p></li>
+</ul>
+</section>
+<section id="changes-in-version-6-0-4">
+<h3>Changes in version 6.0.4<a class="headerlink" href="#changes-in-version-6-0-4" title="Permalink to this headline">¶</a></h3>
+<p><strong>Bug Fixes</strong></p>
+<ul class="simple">
+<li><p>Enable Network Devices to be created through the Create Network Device Wizard</p></li>
+<li><p>Ensure that PMP links created through the map view are processed correctly</p></li>
+<li><p>Added a maximum range limit of 30 km to the viewsheds</p></li>
+</ul>
+</section>
+<section id="changes-in-version-6-0-3">
+<h3>Changes in version 6.0.3<a class="headerlink" href="#changes-in-version-6-0-3" title="Permalink to this headline">¶</a></h3>
+<p><strong>New or changed features</strong></p>
+<ul class="simple">
+<li><p>Added mesh links for 60 GHz cnWave</p></li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul class="simple">
+<li><p>Prevent modelled beamwidth from reverting to default value</p></li>
+<li><p>Ensure Best Server progress warnings persist when changing projects</p></li>
+<li><p>Maintain project list after discarding changes</p></li>
+<li><p>Refresh site tables correctly after site import</p></li>
+<li><p>Prevent duplicate site creation when double clicking on map</p></li>
+<li><p>Prevent errors with invalid or null height settings</p></li>
+<li><p>Display warnings when number of SMs to be added exceeds requirement</p></li>
+</ul>
+</section>
+<section id="changes-in-version-6-0-2">
+<h3>Changes in version 6.0.2<a class="headerlink" href="#changes-in-version-6-0-2" title="Permalink to this headline">¶</a></h3>
+<p><strong>New or changed features</strong></p>
+<ul>
+<li><p>60 GHz cnWave</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added V2000 as a CN</p></li>
+<li><p>Added V3000 High Gain Radome</p></li>
+<li><p>Added Node Type definition to Networks sites</p></li>
+<li><p>Added alignment tube automatically to DN BOM when V3000 CNs are on the DN</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>28 GHz cnWave</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added 50 and 100 MHz channel bandwidths</p></li>
+<li><p>Added Spatial Frequency calculation</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>General</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Increase the default limits for number of projects per user and sites, Network Devices and PMP Links within a project</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul class="simple">
+<li><p>Prevent zero length links from causing errors</p></li>
+<li><p>ePMP - mark CMM5 as retired</p></li>
+<li><p>PMP 450m - changed default to Mu-MIMO mode</p></li>
+<li><p>Corrected aggregation of parts shared between CMM5 and other products and aggregation of cable products from optional extras</p></li>
+<li><p>ePMP MP 3000 MicroPop corrected Surge Suppressor and Power Supply to 56V devices</p></li>
+<li><p>Ensure that projects without profiles can be imported</p></li>
+</ul>
+</section>
+<section id="changes-in-version-6-0-1">
+<h3>Changes in version 6.0.1<a class="headerlink" href="#changes-in-version-6-0-1" title="Permalink to this headline">¶</a></h3>
+<p><strong>New or changed features</strong></p>
+<ul>
+<li><p>Import</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added site import from kml/kmz</p></li>
+<li><p>Improved notification of errors/warnings for both csv and kml/kmz imports</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Bill of Materials</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Addition of optional extras</p></li>
+<li><p>Added capability to adjust quantities</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Map features</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added SM Range and units to Network Device Mode for quickly adding Network Devices on the map</p></li>
+<li><p>Added a ruler option to the right hand toolbar to measure range and bearing from any point on the map</p></li>
+<li><p>Display summary information when the user selects a feature in the map view</p></li>
+<li><p>Viewshed – added “Show All Viewsheds” option</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Table views</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Added ability to choose the columns displayed on the PMP Network Device, PMP Links and Links to Subscriber Module Tables and added more column options.</p></li>
+<li><p>Added a performance summary table on the network site panel to show aggregate performance at the site level</p></li>
+<li><p>Persist table selections and table position when changes are made</p></li>
+<li><p>Improve filtering to work on displayed values</p></li>
+<li><p>Improve sorting so that band and throughput take account of units</p></li>
+<li><p>Improve visibility of updates happening within the tables</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>PMP 450 Release 21.1</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Removed EIRP limits in 900 MHz for Brazil.</p></li>
+<li><p>Added N-to-N cable to the BOM for PMP 450 and 450i SM connectorized products.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>ePMP</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Retired ePMP 2000 product.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>cnWave 28 GHz:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Updated BOM for BTS with default AC power supply.</p></li>
+<li><p>Updated BOM for CPE with default CAT6 cable and grounding kit.</p></li>
+<li><p>Updated Installation report.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><dl class="simple">
+<dt>cnWave 60 GHz:</dt><dd><ul class="simple">
+<li><p>Updated the default power supply for V5000 and V3000.</p></li>
+<li><p>Added Golay codes at link levels.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>General</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Automatically recalculate existing projects when opened in a new version</p></li>
+<li><p>Show link warnings when the mouse hovers over the link in the list or table views</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul class="simple">
+<li><p>Added site names to the PMP link performance summary tables</p></li>
+<li><p>Added the Propagation Model to the Network Device Performance Summary table</p></li>
+<li><p>Prevent errors when changing height units when the site list is visible</p></li>
+<li><p>Disabled Best Server analysis edit capability, during Best Server calculations and creation</p></li>
+<li><p>Reset invalid inputs to zero in Best Server Analysis section</p></li>
+<li><p>Included antenna parameters recalculation notifications when SM attributes change</p></li>
+</ul>
+</section>
+<section id="changes-in-version-6-0-0">
+<h3>Changes in version 6.0.0<a class="headerlink" href="#changes-in-version-6-0-0" title="Permalink to this headline">¶</a></h3>
+<p><strong>New features</strong></p>
+<ul>
+<li><p>PMP support for the following products</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>28 GHz cnWave</p></li>
+<li><p>60 GHz cnWave</p></li>
+<li><p>cnReach</p></li>
+<li><p>ePMP</p></li>
+<li><p>PMP 450</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="list_of_figures.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_this_user_guide.html">About This User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_linkplanner.html">Using LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_ptp_links.html">Planning PTP links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_pmp_links.html">Planning PMP networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background_information.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notices.html">Legal Notices</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Changes to LINKPlanner</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#changes-since-version-6-0-0">Changes since version 6.0.0</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#changes-in-version-6-3-3">Changes in version 6.3.3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#changes-in-version-6-3-2">Changes in version 6.3.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#changes-in-version-6-3-1">Changes in version 6.3.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#changes-in-version-6-3-0">Changes in version 6.3.0</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#changes-in-version-6-2-2">Changes in version 6.2.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#changes-in-version-6-2-1">Changes in version 6.2.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#changes-in-version-6-2-0">Changes in version 6.2.0</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#changes-in-version-6-1-4">Changes in version 6.1.4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#changes-in-version-6-1-3">Changes in version 6.1.3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#changes-in-version-6-1-2">Changes in version 6.1.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#changes-in-version-6-1-1">Changes in version 6.1.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#changes-in-version-6-1-0">Changes in version 6.1.0</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#changes-in-version-6-0-4">Changes in version 6.0.4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#changes-in-version-6-0-3">Changes in version 6.0.3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#changes-in-version-6-0-2">Changes in version 6.0.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#changes-in-version-6-0-1">Changes in version 6.0.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#changes-in-version-6-0-0">Changes in version 6.0.0</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="glossary.html" title="Glossary"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="cambium_lp_terms_and_conditions.html" title="Cambium Networks, SAAS Terms of Service"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Changes to LINKPlanner</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2025, Cambium Networks.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

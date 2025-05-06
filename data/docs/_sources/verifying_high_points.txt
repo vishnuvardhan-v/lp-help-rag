@@ -1,0 +1,24 @@
+.. index::
+   single: High Points
+   single: Obstructions
+   single: Terrain height
+   single: Verifying High Points
+
+Verifying High Points
+=====================
+
+The Google Earth photograph displays high points on the link path as
+"Hp1", "Hp2" and so on. These are points at which the link path is very
+close to the ground and so prone to obstruction. It is therefore vital to
+obtain the most accurate possible survey data at these high points. The
+planner needs to answer the following questions:
+
+* Does the path profile (from the Path Profiler) show the correct ground
+  height near the high points?
+* Are there any obstructions near the high points?
+
+To obtain approximate answers, use a map and Google Earth(TM): an example
+is described in :doc:`verifying_a_high_point_using_a_map`.
+
+To obtain more reliable answers, visit and survey the high point: an
+example is described in :doc:`verifying_a_high_point_using_a_survey`.

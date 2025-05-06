@@ -1,0 +1,42 @@
+.. index::
+	single: Reports
+	single: FCC License Coordination
+	single: Project Proposal Report
+	single: Project BOM Spreadsheet
+
+   
+Reports
+=====================
+
+Reports can be generated for the currently open project.
+
+
+Project Proposal Report
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To export the project level proposal report, click on **Reports** and then **Project Proposal Report**.
+
+The **Project Proposal Report** consists of a project summary (customer details, network map, list of links and BOM) and plans of each link (path profile, throughput, link summary, performance charts, climatic factors & losses and BOM).
+
+FCC License Coordination
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To export the information required for submission to the FCC Licensing Coordination body, click **Reports**, **FCC License Coordination**. The information will be exported to a CSV file, in the format required by Comsearch. This is only available for licensed band PTP links.
+
+Project BOM Spreadsheet
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To export the project level BOM spreadsheet, click on **Reports** and then **Project BOM Spreadheet**
+
+The **Project BOM Spreadsheet** consists of a full project BOM tab and includes tabs for complete PTP, Switch, PMP ND, PMP SM, and individual PTP link BOMs
+
+
+
+
+   
+
+
+
+.. |privacy| replace:: http://www.cambiumnetworks.com/privacy
+.. |caution| image:: caution.jpg
+.. |note| image:: note.jpg

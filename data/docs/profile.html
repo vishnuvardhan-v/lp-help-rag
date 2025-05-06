@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Profile &#8212; Cambium LINKPlanner Online Help (6.3.3)</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/default.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Configuration at Each End" href="configuration_at_each_end.html" />
+    <link rel="prev" title="Link Description and Equipment" href="link_description_and_equipment.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="configuration_at_each_end.html" title="Configuration at Each End"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="link_description_and_equipment.html" title="Link Description and Equipment"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="planning_ptp_links.html" >Planning PTP links</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="link_page.html" accesskey="U">Link Page</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Profile</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="profile">
+<span id="index-0"></span><h1>Profile<a class="headerlink" href="#profile" title="Permalink to this headline">¶</a></h1>
+<p>This section contains a visualization of the path between the two sites (<a class="reference internal" href="#profile-with-clutter-and-obstructions"><span class="std std-ref">Profile with Clutter and Obstructions</span></a>).</p>
+<p>In this example, there are 20m high obstructions above the suburban clutter from 19.569 km and 10.769 km, but the biggest obstruction is provided by the urban buildings around 21.5 km.</p>
+<figure class="align-default" id="id1">
+<span id="profile-with-clutter-and-obstructions"></span><img alt="_images/profile_with_clutter_and_obstructions.png" src="_images/profile_with_clutter_and_obstructions.png" />
+<figcaption>
+<p><span class="caption-text">Profile with Clutter and Obstructions</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Color code used in the profile:</p>
+<ul class="simple">
+<li><p>Brown: terrain.</p></li>
+<li><p>Colored blocks: clutter, see <a class="reference internal" href="project_page.html"><span class="doc">Project Settings</span></a> for default colors per clutter type</p></li>
+<li><p>Yellow: obstructions (such as trees or buildings), these can either be above ground level or above the clutter height.</p></li>
+<li><p>Red: line of site from the antennas to the largest obstruction (called “slope”).</p></li>
+<li><p>Blue: the Fresnel zone.</p></li>
+<li><p>Grey: the profile worst case which occurs up to 0.1% of the time.
+Sometimes known as Worst Earth curvature (Ke).</p></li>
+</ul>
+<p>To update the profile to allow for terrain height, obstructions and water reflections, see <a class="reference internal" href="adjusting_link_profiles.html"><span class="doc">Adjusting Link Profiles</span></a>.</p>
+<p>The Fresnel zone shown is a visualization of 0.6F<sub>1</sub>, which is shown for guidance when setting antenna heights for path clearance (When clutter is not enabled a visualization of F<sub>0.6</sub> or 0.78F<sub>1</sub> is shown). It is not used directly in the diffraction loss calculations.</p>
+<p>When planning high availability links (better than 99.9%) the antenna heights should be set to ensure that the grey line does not penetrate into the Fresnel zone shown.</p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="list_of_figures.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_this_user_guide.html">About This User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_linkplanner.html">Using LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_ptp_links.html">Planning PTP links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_pmp_links.html">Planning PMP networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background_information.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notices.html">Legal Notices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes_to_linkplanner.html">Changes to LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="configuration_at_each_end.html" title="Configuration at Each End"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="link_description_and_equipment.html" title="Link Description and Equipment"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="planning_ptp_links.html" >Planning PTP links</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="link_page.html" >Link Page</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Profile</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2025, Cambium Networks.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

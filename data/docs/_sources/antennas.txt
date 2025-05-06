@@ -1,0 +1,40 @@
+.. index::
+   single: Available Antennas
+
+Antennas
+==================
+
+To view the list of available antennas, click on the appropriate tab from the following options:
+
+* **PTP Antennas**
+
+* **PMP Network Devices Antennas**
+
+* **Subscriber Module Antennas**
+
+Select the required band from the **Band Selection** list to filter the available antennas accordingly, which is available on the left hand side of the Antennas page.
+
+The :ref:`antennas` page is displayed in the right hand panel. The column headings vary slightly between the lists.
+
+.. _available_antennas:
+.. figure:: available_antennas.png
+
+   Available PTP Antennas
+   
+To find a specific antenna or group of antennas type in the **Filter...** box and it will filter the list using the Manufacturer, Description, Products and Part columns. If the antenna pattern is stored in LINKPlanner then the **Save Antenna Pattern** will be highlighted when the antenna is selected. To save the antenna pattern click |icon_save_antenna| and select the required folder and if necessary adjust the default filename. Not all antennas have antenna patterns stored within LINKPlanner.
+
+
+PTP and Subscriber Module Antennas Only
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If the required antenna is not in the list, click |new_antenna| and enter the details in the User Defined Antenna page. New antennas can only be added for PTP and Subscriber Modules which support connectorized antennas and don't have a waveguide interface (i.e. all products except PTP 8xx). At present the PTP 8xx products and Network Devices only support Cambium antennas. 
+
+To delete a new antenna, click |delete_antenna|, this feature is only available for new antennas created by the user.
+
+To edit antenna details, click |edit_antenna| and change the details in the Edit Antenna page. This feature only applies to unlicensed PTP band and Subscriber Module antennas.
+
+.. |new_antenna| image:: icon_new_antenna.png
+.. |edit_antenna| image:: icon_edit_antenna.png
+.. |delete_antenna| image:: icon_delete_antenna.png
+.. |icon_save_antenna| image:: icon_save_antenna.png
+

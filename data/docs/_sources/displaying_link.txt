@@ -1,0 +1,87 @@
+.. index::
+   single: Displaying the Links List
+   single: Links List
+   single: Opening links
+
+.. _ptp_links_table_view:
+
+Displaying PTP Links
+====================
+
+When one or more links have been created, they appear in the PTP Links tree view and can be opened in the Link Page. To display tree view, click the |icon_expand_tree| beside the **"PTP Links"** menu in the navigation tree. To change to the table view, click on **"PTP Links"** menu in the navigation tree. To manage the table view see :doc:`user_interface_tips`.
+
+If the link is displayed in **red**, it means that the predicted performance of the link is below requirements.
+
+
+The PTP products have different types of links which are differentiated using the link icons as follows in the list view:
+
+    |link_1plus0| Link Type = 1+0
+    
+    |link_1plus1| Link Type = 1+1 Hot Standby
+    
+    |link_2plus0_co| Link Type = 2+0 Co-Polar (ACCP)
+    
+    |link_2plus0_cross| Link Type = 2+0 Cross-Polar (ACAP)
+    
+    |link_2plus0_sd| Link Type = 2+0 Spatial Diversity (PTP 820C Only)
+
+    |link_2plus0_xpic| Link Type = 2+0 XPIC (CCDP)
+    
+    |link_2plus2_co| Link Type = 2+2 Co-Polar (ACCP)(PTP 820C/820A Only)
+    
+    |link_2plus2_cross| Link Type = 2+2 Cross-Polar (ACAP)(PTP 820C/820A Only)
+    
+    |link_2plus2_xpic| Link Type = 2+2 XPIC (CCDP)(PTP 820C/820A Only)
+    
+    |link_2plus2_sd| Link Type = 2+2 Spatial Diversity (PTP 820C/820A Only)
+    
+    |link_4plus0_co| Link Type = 4+0 Co-Polar (ACCP)(PTP 820C/850C/820A Only)
+    
+    |link_4plus0_cross| Link Type = 4+0 Cross-Polar (ACAP)(PTP 820C/850C/820A Only)
+    
+    |link_4plus0_xpic| Link Type = 4+0 XPIC (CCDP)(PTP 820C/850C/820A Only)
+ 
+|note|
+    To locate the links in the map view from the Links details page, click |icon_locate| icon, which is displayed next to the |icon_delete_detailspage| icon at the top.
+
+.. index::
+   single: Deleting Links
+
+Deleting Links
+--------------
+
+To delete a PTP Link, hover over the PTP Link in the **PTP Links** tree view and click |list_delete|, click |icon_delete_detailspage| on the details page, select rows and click |table_delete| in the table view, or right-click on the PTP link in the map view and select Delete from the pop-up menu.
+
+|note|
+    To revert the changes made, click the |icon_undo_changes| icon in the PTP links details page, which is displayed next to the Apply button. This icon is only displayed when there are changes to the parameters, replacing the |icon_delete_detailspage| icon.
+
+
+Viewing & saving the list in MS Excel
+--------------------------------------
+
+To view the list in Excel, click |table_download_csv| while in the table view. Once in the spreadsheet the file can be saved as normal. 
+
+   
+.. |icon_ptp_link| image:: icon_menu_ptp_link.png
+.. |note| image:: note.jpg
+.. |icon_delete_detailspage| image:: icon_delete_detailspage.png
+.. |icon_undo_changes| image:: icon_undo_changes.png
+.. |icon_locate| image:: icon_locate_on_map.png
+.. |table_delete| image:: table_delete.png
+.. |list_delete| image:: list_delete.png
+.. |icon_table| image:: icon_table_view.png
+.. |table_download_csv| image:: table_download_csv.png
+.. |link_1plus0| image:: link_1plus0.png
+.. |link_2plus0_co| image:: link_2plus0_co.png
+.. |link_2plus0_cross| image:: link_2plus0_cross.png
+.. |link_2plus0_xpic| image:: link_2plus0_xpic.png
+.. |link_4plus0_co| image:: link_4plus0_co.png
+.. |link_4plus0_cross| image:: link_4plus0_cross.png
+.. |link_4plus0_xpic| image:: link_4plus0_xpic.png
+.. |link_1plus1| image:: link_1plus1.png
+.. |link_2plus0_sd| image:: link_2plus0_sd.png
+.. |link_2plus2_cross| image:: link_cross_polar_2plus2.png
+.. |link_2plus2_co| image:: link_co_polar_2plus2.png
+.. |link_2plus2_xpic| image:: link_xpic_2plus2.png
+.. |link_2plus2_sd| image:: link_2plus2_sd.png
+.. |icon_expand_tree| image:: icon_expand_tree.png

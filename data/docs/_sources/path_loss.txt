@@ -1,0 +1,47 @@
+.. index::
+   single: Path Loss
+
+Path Loss
+=========
+
+Path loss is the amount of attenuation a radio signal undergoes between the two ends of a link. Path loss comprises the sum of the attenuation of the path if there were no obstacles in the way (Free Space Path Loss) and the attenuation caused by obstacles (Excess Path Loss). It is also necessary to consider a margin to allow for possible fading of the radio signal (Fade Margin), and an allowance for the seasonal effects of foliage growth, to achieve a reliable link. This path loss must be lower than the equipment capability for the data rate required.
+
+LINKPlanner uses the following equation to judge whether a particular link can be installed:
+
+**Path Loss Equation:**
+
+.. figure:: path_loss_equation.png
+
+| 
+
+====================== ============================ ===========================
+Where                  Is                           See also
+====================== ============================ ===========================
+|L_FreeSpace|          Free Space Path Loss (dB)    :doc:`free_space_path_loss`
+|L_Excess|             Excess Path Loss (dB)        :doc:`excess_path_loss`
+|L_Fade|               Fade Margin Requirement (dB) :doc:`fade_margin`
+|L_Season|             Seasonal Fading (dB)
+|L_Capability|         Equipment Capability (dB)
+====================== ============================ ===========================
+
+
+When the link has been installed, web pages provide information about the link loss currently measured by the equipment, both instantaneously and
+averaged.
+
+Adaptive modulation ensures that the highest possible throughput is achieved instantaneously, taking account of propagation and interference. See also:
+
+
+.. toctree::
+   
+   free_space_path_loss
+   excess_path_loss
+   fade_margin
+   fresnel_zone
+   paths_over_sea_or_very_flat_ground
+
+
+.. |L_FreeSpace| image:: L_FreeSpace.png
+.. |L_Excess| image:: L_Excess.png
+.. |L_Fade| image:: L_Fade.png
+.. |L_Season| image:: L_Season.png
+.. |L_Capability| image:: L_Capability.png

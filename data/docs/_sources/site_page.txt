@@ -1,0 +1,110 @@
+.. index::
+   single: Details
+   single: Site Page
+
+Site Page
+=========
+
+Use this page to view and update the details of an existing site.
+
+Details
+-------
+
+View and update the Name, Maximum Height, Latitude, Longitude and Description. To change any of the parameters enter the new values and select **Apply** to confirm the change. Once **Apply** is selected the site is moved to the new coordinates, moving any Network Devices or subscribers at that site and the path profiles for any links connected to that site are automatically updated.
+
+.. _details_in_site_page:
+.. figure:: details_in_site_page.png
+
+   Details in Site Page
+
+**Name:** Enter the site name.
+
+**Maximum Height:** Enter the maximum antenna height (above ground) allowed at the site. The units are set in the Preferences page (feet or meters).
+
+**Latitude and Longitude:** Enter the coordinates, see :doc:`creating_sites` for the allowed formats.
+
+**Node Type:** Only applies to 60 GHz cnWave networks, leave blank for all other networks. For 60 GHz networks select either DN or POP to define the site.
+
+**Description:** Enter the site description
+
+PTP Links
+---------------------
+
+This is shown on a network site and is a list of PTP Links that have been defined between this network site and other network sites in the network. If the Remote End is displayed in red, it means that the predicted performance of the link is below requirements. Click on a Remote End to open the PTP Link page to evaluate the link, as described in :doc:`link_page`.
+
+
+.. _ptp_links_in_site_page:
+.. figure:: ptp_links_in_site_page.png
+
+   PTP Links in Site Page
+   
+
+Performance Summary
+----------------------------
+
+This is a high level summary of the number of Network Devices, Connected Subscribers and Throughput for all devices at the site.
+
+.. _performance_summary_of_site:
+.. figure:: performance_summary_of_site.png
+
+   Performance Summary of Site
+
+
+|note|
+
+        Throughput values are not shown for cnReach Network Devices, but the number of Network Devices and Subscribers will be shown.
+
+
+PMP Network Devices
+----------------------------
+
+This is shown on a network site and is a list of PMP Network Devices that have been created on this site. 
+
+If the Network Device is displayed in red, it means that there are errors on the network device. Click on a network device to open the Network Device page to evaluate the configuration, as described in :doc:`network_devices`.
+
+.. _nd_in_site_page:
+.. figure:: nd_in_site_page.png
+
+   PMP Network Devices in Site Page
+
+.. index::
+   single: Links Graph
+
+PMP Links
+------------
+
+This is shown on a subscriber site and is a list of PMP Links that have been defined between this subscriber site and Network Devices in the network. If the PMP Link is displayed in red, it means that the predicted performance of the link is below requirements. Click on a link to open the PMP Link page to evaluate the link, as described in :doc:`subscriber_modules`.
+
+
+.. _links_in_site_page:
+.. figure:: links_in_site_page.png
+
+   PMP Links in Site Page
+   
+Bill of Materials for Site
+-------------------------------
+
+To view the BOM at the network site level select the clipboard symbol |bom_icons| in the menu options. LINKPlanner automatically calculates the Bill of Materials (BOM) for the required components for the Tower Switch and for all the Network Devices on the site. The Site BOM contains the list of part numbers and associated quantities. To add additional items or edit quantities in the Tower Switch section click on the |edit_switch_icon| icon on the main network site page and add them in the tower switch configuration BOM.To add additional items to the PMP Network Devices BOM, click |new_extra|. A list of optional extras for the Site will be displayed. To add items to the BOM tick the box next to each item required and click **OK**. The item will appear in the main list, where the quantity can be adjusted by selecting the number in the **Qty** column and adjusting as required. To delete optional items from the BOM list, tick the box next to each item and click |delete_extra|. A star denotes optional extras which have been added to the automatic BOM items. 
+
+
+.. _bill_of_materials_for_site:
+.. figure:: bill_of_materials_for_site.png
+
+   Bill of Materials for Site
+   
+**P/N**: The Cambium part number. If the component is not supplied by Cambium, this is set to '(no part number)'.
+
+**Description**: Description of the components.
+
+**Qty**: Quantity required. This value can be edited, for items automatically added if the quantity is increased the row will be shown in green, if the quantity is decreased from the recommended value, the row will be shown in red. To reset to the default value, click on the value and choose |icon_revert|.
+
+**Notes**: Displays information about certain items, such as whether they are obsolete.
+
+
+.. |note| image:: note.jpg
+.. |new_extra| image:: icon_new_extra.png
+.. |delete_extra| image:: icon_delete_extra.png
+.. |icon_revert| image:: icon_revert.png
+.. |bom_icons| image:: bom_icons.png
+.. |edit_switch_icon| image:: icon_edit_switch.png
+

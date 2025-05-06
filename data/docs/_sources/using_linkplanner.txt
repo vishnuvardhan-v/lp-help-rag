@@ -1,0 +1,34 @@
+.. index::
+   single: Using LINKPlanner
+
+Using LINKPlanner
+=================
+
+LINKPlanner allows the planner to design PMP networks.
+
+
+To achieve this goal, follow this process:
+
+1. Start the application and set options. See :doc:`starting_the_application`.
+2. Build a project to model a PMP network See :doc:`projects`.
+3. Enter details of all sites in the project. See :doc:`sites`.
+4. Plan a PMP network, see :doc:`planning_pmp_links`
+5. View the Bill of Materials for the project. See :doc:`bill_of_materials_for_project`.
+6. Export and report project, network, site and link data. See :doc:`exporting_and_reporting`
+
+
+.. toctree::
+
+   starting_the_application
+   user_interface_tips
+   projects
+   sites
+   profiles
+   viewsheds
+   bill_of_materials_for_project
+   project_configuration
+   exporting_and_reporting
+
+
+
+

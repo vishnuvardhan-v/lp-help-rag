@@ -1,0 +1,615 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Cambium LINKPlanner &#8212; Cambium LINKPlanner Online Help (6.3.3)</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/default.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="List of Figures" href="list_of_figures.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="list_of_figures.html" title="List of Figures"
+             accesskey="N">next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Cambium LINKPlanner</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <img alt="_images/logo_s_alpha.png" class="align-right" src="_images/logo_s_alpha.png" />
+<section id="cambium-linkplanner">
+<h1>Cambium LINKPlanner<a class="headerlink" href="#cambium-linkplanner" title="Permalink to this headline">¶</a></h1>
+<section id="accuracy">
+<h2>Accuracy<a class="headerlink" href="#accuracy" title="Permalink to this headline">¶</a></h2>
+<p>While reasonable efforts have been made to assure the accuracy of this document, Cambium Networks assumes no liability resulting from any inaccuracies or omissions in this document, or from use of the information obtained herein. Cambium Networks reserves the right to make changes to any products described herein to improve reliability, function, or design, and reserves the right to revise this document and to make changes from time to time in content hereof with no obligation to notify any person of revisions or changes. Cambium Networks does not assume any liability arising out of the application or use of any product, software, or circuit described herein; neither does it convey license under its patent rights or the rights of others. It is possible that this publication may contain references to, or information about Cambium products (machines and programs), programming, or services that are not announced in your country. Such references or information must not be construed to mean that Cambium intends to announce such Cambium products, programming, or services in your country.</p>
+</section>
+<section id="copyrights">
+<h2>Copyrights<a class="headerlink" href="#copyrights" title="Permalink to this headline">¶</a></h2>
+<p>This document, Cambium products, and 3rd Party Software products described in this document may include or describe copyrighted Cambium and other 3rd Party supplied computer programs stored in semiconductor memories or other media. Laws in the United States and other countries preserve for Cambium, its licensors, and other 3rd Party supplied software certain exclusive rights for copyrighted material, including the exclusive right to copy, reproduce in any form, distribute and make derivative works of the copyrighted material. Accordingly, any copyrighted material of Cambium, its licensors, or the 3rd Party software supplied material contained in the Cambium products described in this document may not be copied, reproduced, reverse engineered, distributed, merged or modified in any manner without the express written permission of Cambium. Furthermore, the purchase of Cambium products shall not be deemed to grant either directly or by implication, estoppel, or otherwise, any license under the copyrights, patents or patent applications of Cambium or other 3rd Party supplied software, except for the normal non-exclusive, royalty free license to use that arises by operation of law in the sale of a product.</p>
+</section>
+<section id="restrictions">
+<h2>Restrictions<a class="headerlink" href="#restrictions" title="Permalink to this headline">¶</a></h2>
+<p>Software and documentation are copyrighted materials. Making unauthorized copies is prohibited by law. No part of the software or documentation may be reproduced, transmitted, transcribed, stored in a retrieval system, or translated into any language or computer language, in any form or by any means, without prior written permission of Cambium Networks.</p>
+</section>
+<section id="license-agreements">
+<h2>License Agreements<a class="headerlink" href="#license-agreements" title="Permalink to this headline">¶</a></h2>
+<p>The software described in this document is the property of Cambium Networks and its licensors. It is furnished by express license agreement only and may be used only in accordance with the terms of such an agreement.</p>
+</section>
+<section id="high-risk-materials">
+<h2>High Risk Materials<a class="headerlink" href="#high-risk-materials" title="Permalink to this headline">¶</a></h2>
+<p>Components, units, or 3rd Party products used in the product described herein are NOT fault-tolerant and are NOT designed, manufactured, or intended for use as on-line control equipment in the following hazardous environments requiring fail-safe controls: the operation of Nuclear Facilities, Aircraft Navigation or Aircraft Communication Systems, Air Traffic Control, Life Support, or Weapons Systems (High Risk Activities). Cambium and its supplier(s) specifically disclaim any expressed or implied warranty of fitness for such High Risk Activities.</p>
+</section>
+<section id="trademarks">
+<h2>Trademarks<a class="headerlink" href="#trademarks" title="Permalink to this headline">¶</a></h2>
+<p><img alt="cambium_logo" src="_images/logo_s.jpg" /></p>
+<div class="line-block">
+<div class="line">All product or service names are the property of their respective owners.</div>
+</div>
+<hr class="docutils" />
+<img alt="_images/logo_s.jpg" class="align-right" src="_images/logo_s.jpg" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="list_of_figures.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_this_user_guide.html">About This User Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="general_information.html">General Information</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="general_information.html#purpose">Purpose</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="contacting_cambium.html">Contacting Cambium</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="contacting_cambium.html#feedback-on-linkplanner">Feedback on LINKPlanner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contacting_cambium.html#cambium-networks">Cambium Networks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contacting_cambium.html#reporting-problems">Reporting problems</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="warnings_cautions_notes.html">Warnings, cautions and notes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="warnings_cautions_notes.html#warnings">Warnings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="warnings_cautions_notes.html#cautions">Cautions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="warnings_cautions_notes.html#notes">Notes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#accessing-linkplanner">Accessing LINKPlanner</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="linkplanner_concepts.html">LINKPlanner Concepts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="linkplanner_concepts.html#nlos-and-los">NLoS and LoS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkplanner_concepts.html#architecture">Architecture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkplanner_concepts.html#inputs-and-outputs">Inputs and Outputs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkplanner_concepts.html#user-interface">User Interface</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="quick_tutorial.html">Quick Tutorial - PTP Unlicensed Band</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="creating_project_sites_and_link.html">Creating Project, Sites and Link (Unlicensed Band)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="adjusting_configuration_and_requirements.html">Adjusting Configuration and Requirements (Unlicensed Band)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="quick_tutorial_licensed_band.html">Quick Tutorial - PTP Licensed Band</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="creating_project_sites_and_link_licensed.html">Creating Project, Sites and Link (Licensed Band)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="adjusting_configuration_and_requirements_licensed.html">Adjusting Configuration and Requirements (Licensed Band)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="quick_tutorial__pmp.html">Quick Tutorial - PMP</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="creating_project_sites_and_link_pmp.html">Creating Project, Network Devices and Subscriber Modules (PMP)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="adjusting_configuration_and_requirements_pmp.html">Reviewing Performance and Adjusting Configuration (PMP)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pmp_network_design.html">PMP Network Design Process</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="using_linkplanner.html">Using LINKPlanner</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="starting_the_application.html">Starting the Application</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="main_screen.html">Main Screen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="project_toolbar.html">Project Toolbar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="top_menu.html">Top Menu</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="top_menu.html#projects">Projects</a></li>
+<li class="toctree-l4"><a class="reference internal" href="top_menu.html#reports">Reports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="top_menu.html#import">Import</a></li>
+<li class="toctree-l4"><a class="reference internal" href="top_menu.html#export">Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="top_menu.html#preferences">Preferences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="top_menu.html#help">Help</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="project_navigation_tree.html">Project Navigation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="project_navigation_tree.html#project">Project</a></li>
+<li class="toctree-l4"><a class="reference internal" href="project_navigation_tree.html#sites">Sites</a></li>
+<li class="toctree-l4"><a class="reference internal" href="project_navigation_tree.html#ptp-links">PTP Links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="project_navigation_tree.html#pmp">PMP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="project_navigation_tree.html#bill-of-materials">Bill of Materials</a></li>
+<li class="toctree-l4"><a class="reference internal" href="project_navigation_tree.html#antennas">Antennas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="project_navigation_tree.html#best-server">Best Server</a></li>
+<li class="toctree-l4"><a class="reference internal" href="project_navigation_tree.html#terragraph-planner">Terragraph Planner</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="user_interface_tips.html">User Interface Tips</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="user_interface_tips.html#managing-table-views">Managing Table Views</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_interface_tips.html#customizing-the-table-view">Customizing the Table view</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_interface_tips.html#table-editing">Table Editing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_interface_tips.html#using-a-ptp-link-pmp-network-device-or-pmp-link-as-a-template">Using a PTP Link, PMP Network Device or PMP Link as a template</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="projects.html">Projects</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="creating_saving_and_viewing_projects.html">Creating, Saving and Viewing Projects</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="creating_saving_and_viewing_projects.html#new-projects">New Projects</a></li>
+<li class="toctree-l4"><a class="reference internal" href="creating_saving_and_viewing_projects.html#opening-projects">Opening Projects</a></li>
+<li class="toctree-l4"><a class="reference internal" href="creating_saving_and_viewing_projects.html#saving-projects">Saving Projects</a></li>
+<li class="toctree-l4"><a class="reference internal" href="creating_saving_and_viewing_projects.html#viewing-and-updating-projects">Viewing and Updating Projects</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="project_page.html">Project Settings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="project_page.html#general-properties">General Properties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="project_page.html#project-properties">Project Properties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="project_page.html#clutter-heights">Clutter Heights</a></li>
+<li class="toctree-l4"><a class="reference internal" href="project_page.html#permissions">Permissions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="map_window.html">Map</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="map_window.html#fit-the-map-window-to-the-project">Fit the map window to the project</a></li>
+<li class="toctree-l4"><a class="reference internal" href="map_window.html#add-new-network-sites">Add new network sites</a></li>
+<li class="toctree-l4"><a class="reference internal" href="map_window.html#add-new-subscriber-sites">Add new subscriber sites</a></li>
+<li class="toctree-l4"><a class="reference internal" href="map_window.html#add-new-ptp-link">Add new PTP Link</a></li>
+<li class="toctree-l4"><a class="reference internal" href="map_window.html#add-new-pmp-network-devices">Add new PMP Network Devices</a></li>
+<li class="toctree-l4"><a class="reference internal" href="map_window.html#add-new-subscriber-module-and-pmp-link">Add new Subscriber Module and PMP Link</a></li>
+<li class="toctree-l4"><a class="reference internal" href="map_window.html#add-viewsheds">Add Viewsheds</a></li>
+<li class="toctree-l4"><a class="reference internal" href="map_window.html#ruler">Ruler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="map_window.html#scale-pmp-nd-sector-display">Scale PMP ND Sector Display</a></li>
+<li class="toctree-l4"><a class="reference internal" href="map_window.html#general">General</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="map_window.html#map-pop-up-menu">Map Pop-Up Menu</a></li>
+<li class="toctree-l5"><a class="reference internal" href="map_window.html#map-information-window">Map Information Window</a></li>
+<li class="toctree-l5"><a class="reference internal" href="map_window.html#creating-pmp-network-ends">Creating PMP Network Ends</a></li>
+<li class="toctree-l5"><a class="reference internal" href="map_window.html#attaching-subscribers">Attaching Subscribers</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sites.html">Sites</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sites.html#new-sites">New Sites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sites.html#sites-list">Sites List</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sites.html#viewing-and-updating-sites">Viewing and Updating Sites</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="importing_sites.html">Importing Sites</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="importing_sites.html#preparing-sites-for-import-from-google-earth-tm-kml">Preparing Sites for Import from Google Earth (TM) (.KML)</a></li>
+<li class="toctree-l5"><a class="reference internal" href="importing_sites.html#preparing-sites-for-import-from-a-spreadsheet">Preparing Sites for Import from a Spreadsheet</a></li>
+<li class="toctree-l5"><a class="reference internal" href="importing_sites.html#importing-sites-from-google-earth-tm-kml-or-a-spreadsheet">Importing Sites from Google Earth (TM) (.KML) or a Spreadsheet</a></li>
+<li class="toctree-l5"><a class="reference internal" href="importing_sites.html#accessing-imported-sites">Accessing Imported Sites</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="creating_sites.html">Creating Sites</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="creating_sites.html#latitude-and-longitude-formats">Latitude and Longitude Formats</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="displaying_the_sites_list.html">Displaying the Sites List</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="displaying_the_sites_list.html#displaying-the-sites-in-a-table-view">Displaying the Sites in a Table View</a></li>
+<li class="toctree-l5"><a class="reference internal" href="displaying_the_sites_list.html#adding-the-sites-in-a-table-view">Adding the Sites in a Table View</a></li>
+<li class="toctree-l5"><a class="reference internal" href="displaying_the_sites_list.html#deleting-sites">Deleting Sites</a></li>
+<li class="toctree-l5"><a class="reference internal" href="displaying_the_sites_list.html#editing-site-details">Editing Site details</a></li>
+<li class="toctree-l5"><a class="reference internal" href="displaying_the_sites_list.html#converting-and-duplicating-sites">Converting and Duplicating Sites</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="site_page.html">Site Page</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="site_page.html#details">Details</a></li>
+<li class="toctree-l5"><a class="reference internal" href="site_page.html#ptp-links">PTP Links</a></li>
+<li class="toctree-l5"><a class="reference internal" href="site_page.html#performance-summary">Performance Summary</a></li>
+<li class="toctree-l5"><a class="reference internal" href="site_page.html#pmp-network-devices">PMP Network Devices</a></li>
+<li class="toctree-l5"><a class="reference internal" href="site_page.html#pmp-links">PMP Links</a></li>
+<li class="toctree-l5"><a class="reference internal" href="site_page.html#bill-of-materials-for-site">Bill of Materials for Site</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="adding_switches.html">Adding Switches</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="adding_switches.html#equipment-selection">Equipment Selection</a></li>
+<li class="toctree-l5"><a class="reference internal" href="adding_switches.html#bill-of-materials">Bill of Materials</a></li>
+<li class="toctree-l5"><a class="reference internal" href="adding_switches.html#editing-and-deleting-switches">Editing and Deleting Switches</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html">Profiles</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="adjusting_link_profiles.html">Adjusting Link Profiles</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="using_google_earth.html">Using Google Earth(TM)</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="using_google_earth.html#viewing-links-and-sites-in-google-earth-tm">Viewing Links and Sites in Google Earth(TM)</a></li>
+<li class="toctree-l5"><a class="reference internal" href="using_google_earth.html#zoom-in-aerial-photographs">Zoom in Aerial Photographs</a></li>
+<li class="toctree-l5"><a class="reference internal" href="using_google_earth.html#color-code-in-aerial-photographs">Color Code in Aerial Photographs</a></li>
+<li class="toctree-l5"><a class="reference internal" href="using_google_earth.html#high-points-in-aerial-photographs">High Points in Aerial Photographs</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="verifying_link_ends.html">Verifying Link Ends</a></li>
+<li class="toctree-l4"><a class="reference internal" href="verifying_high_points.html">Verifying High Points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="updating_link_profiles.html">Updating Link Profiles</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="updating_link_profiles.html#obstructions-with-clutter">Obstructions with Clutter</a></li>
+<li class="toctree-l5"><a class="reference internal" href="updating_link_profiles.html#obstructions-without-clutter">Obstructions without Clutter</a></li>
+<li class="toctree-l5"><a class="reference internal" href="updating_link_profiles.html#adding-new-points">Adding new points</a></li>
+<li class="toctree-l5"><a class="reference internal" href="updating_link_profiles.html#adding-multiple-new-points">Adding multiple new points</a></li>
+<li class="toctree-l5"><a class="reference internal" href="updating_link_profiles.html#deleting-points">Deleting points</a></li>
+<li class="toctree-l5"><a class="reference internal" href="updating_link_profiles.html#editing-multiple-points">Editing multiple points</a></li>
+<li class="toctree-l5"><a class="reference internal" href="updating_link_profiles.html#reverting-to-the-original-profile">Reverting to the Original Profile</a></li>
+<li class="toctree-l5"><a class="reference internal" href="updating_link_profiles.html#export-profile-to-a-spreadsheet">Export Profile to a Spreadsheet</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="link_profile_adjustment_examples.html">Link Profile Adjustment Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="verifying_a_link_end_using_a_map_and_google_earth.html">Verifying a Link End Using a Map and Google Earth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="verifying_a_link_end_using_a_survey.html">Verifying a Link End Using a Survey</a></li>
+<li class="toctree-l4"><a class="reference internal" href="verifying_a_high_point_using_a_map.html">Verifying a High Point Using a Map</a></li>
+<li class="toctree-l4"><a class="reference internal" href="verifying_a_high_point_using_a_survey.html">Verifying a High Point Using a Survey</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="viewsheds.html">Viewsheds</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="viewsheds.html#creating-a-viewshed">Creating a viewshed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="viewsheds.html#viewshed-configuration">Viewshed Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="viewsheds.html#viewshed-calculation">Viewshed Calculation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="viewsheds.html#viewshed-information">Viewshed Information</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bill_of_materials_for_project.html">Bill of Materials for Project</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bill_of_materials_for_project.html#viewing-saving-the-project-bom-file">Viewing &amp; saving the project BOM file</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="project_configuration.html">Advanced Features</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="antennas.html">Antennas</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="antennas.html#ptp-and-subscriber-module-antennas-only">PTP and Subscriber Module Antennas Only</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="best_server_analysis.html">Best Server Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="terragraph_planner.html">Terragraph Planner Configuration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="terragraph_planner.html#step-1-network-plan">Step 1 Network Plan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="terragraph_planner.html#step-2-inputs-data">Step 2 Inputs/Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="terragraph_planner.html#step-3-equipment-configuration">Step 3 Equipment Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="terragraph_planner.html#step-4-financials">Step 4 Financials</a></li>
+<li class="toctree-l4"><a class="reference internal" href="terragraph_planner.html#step-5-create-network-design">Step 5 Create Network Design</a></li>
+<li class="toctree-l4"><a class="reference internal" href="terragraph_planner.html#terragraph-planner-summary">Terragraph Planner Summary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="terragraph_planner.html#terragraph-planner-results-and-import">Terragraph Planner Results and Import</a></li>
+<li class="toctree-l4"><a class="reference internal" href="terragraph_planner.html#file-list">File List</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="exporting_and_reporting.html">Exporting and Reporting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="exporting_data.html">Exporting Data</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="exporting_data.html#network-sites-csv">Network Sites (CSV)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exporting_data.html#subscriber-sites-csv">Subscriber Sites (CSV)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exporting_data.html#ptp-links-csv">PTP Links (CSV)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exporting_data.html#pmp-network-devices-csv">PMP Network Devices (CSV)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exporting_data.html#subscriber-modules-csv">Subscriber Modules (CSV)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="creating_reports.html">Creating Reports</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="creating_reports.html#ptp-proposal-reports">PTP Proposal Reports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="creating_reports.html#ptp-installation-reports">PTP Installation Reports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="creating_reports.html#mesh-proposal-reports">Mesh Proposal Reports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="creating_reports.html#mesh-installation-reports">Mesh Installation Reports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="creating_reports.html#pmp-proposal-reports">PMP Proposal Reports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="creating_reports.html#pmp-installation-reports">PMP Installation Reports</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="planning_ptp_links.html">Planning PTP links</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="links.html">Links</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="creating_links.html">Creating PTP Links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="displaying_link.html">Displaying PTP Links</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="displaying_link.html#deleting-links">Deleting Links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="displaying_link.html#viewing-saving-the-list-in-ms-excel">Viewing &amp; saving the list in MS Excel</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="link_page.html">Link Page</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="link_description_and_equipment.html">Link Description and Equipment</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="link_description_and_equipment.html#link-description">Link Description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="link_description_and_equipment.html#equipment-unlicensed-bands">Equipment (unlicensed bands)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="link_description_and_equipment.html#equipment-licensed-bands">Equipment (licensed bands)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="link_description_and_equipment.html#product-configuration-unlicensed-bands">Product Configuration (unlicensed bands)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="link_description_and_equipment.html#product-configuration-licensed-bands">Product Configuration (licensed bands)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="profile.html">Profile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="configuration_at_each_end.html">Configuration at Each End</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="configuration_at_each_end.html#licensed-bands">Licensed bands</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="performance_summary.html">Performance Summary</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="performance_summary.html#performance-to-each-site">Performance to each Site</a></li>
+<li class="toctree-l4"><a class="reference internal" href="performance_summary.html#operating-conditions">Operating Conditions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="performance_summary.html#link-summary">Link Summary</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="performance_summary.html#performance-summary-when-tdm-is-selected">Performance Summary when TDM is selected</a></li>
+<li class="toctree-l5"><a class="reference internal" href="performance_summary.html#link-summary-additional-information-for-60-ghz-cnwave-ptp-820-or-ptp-850">Link Summary additional information for 60 GHz cnWave, PTP 820 or PTP 850</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="performance_details.html">Performance Details</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="performance_details.html#common-details">Common Details</a></li>
+<li class="toctree-l4"><a class="reference internal" href="performance_details.html#performance-to-each-end">Performance to each end</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bill_of_materials_for_link.html">Bill of Materials for Link</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bill_of_materials_for_link.html#viewing-saving-the-link-bom-file-in-ms-excel">Viewing &amp; saving the link BOM file in MS Excel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bill_of_materials_for_link.html#power-from-switch">Power from switch</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html">Advanced Features</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="optimizing_e1_or_t1_latency.html">Optimizing E1 or T1 Latency</a></li>
+<li class="toctree-l3"><a class="reference internal" href="setting_diversity.html">Setting Diversity</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="setting_diversity.html#space-diversity">Space Diversity</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="setting_diversity.html#reflections-over-water">Reflections over Water</a></li>
+<li class="toctree-l5"><a class="reference internal" href="setting_diversity.html#multipath-reflections">Multipath Reflections</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="setting_diversity.html#configuring-spatial-diversity-in-linkplanner">Configuring Spatial Diversity in LINKPlanner</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="setting_diversity.html#ptp-670">PTP 670</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="setting_diversity.html#height-clearance">Height Clearance</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="setting_single_antenna.html">Setting 2+0 Single Antenna</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="setting_single_antenna.html#equipment-configuration">2+0 Equipment Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="setting_single_antenna.html#configuration-at-each-end">2+0 Configuration at Each End</a></li>
+<li class="toctree-l4"><a class="reference internal" href="setting_single_antenna.html#bill-of-materials">2+0 Bill of Materials</a></li>
+<li class="toctree-l4"><a class="reference internal" href="setting_single_antenna.html#performance-summary">2+0 Performance Summary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="setting_single_antenna.html#reports">2+0 Reports</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="setting_hot_standby_protection.html">Setting Hot Standby Protection (1+1)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="setting_hot_standby_protection.html#hot-standby-configuration-at-each-end">Hot Standby Configuration at Each End</a></li>
+<li class="toctree-l4"><a class="reference internal" href="setting_hot_standby_protection.html#hot-standby-bill-of-materials">Hot Standby Bill of Materials</a></li>
+<li class="toctree-l4"><a class="reference internal" href="setting_hot_standby_protection.html#hot-standby-performance-summary">Hot Standby Performance Summary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="setting_hot_standby_protection.html#hot-standby-reports">Hot Standby Reports</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="setting_hot_standby_protection.html#proposal-report">Proposal Report</a></li>
+<li class="toctree-l5"><a class="reference internal" href="setting_hot_standby_protection.html#installation-report">Installation Report</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="planning_pmp_links.html">Planning PMP networks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="network_devices.html">PMP Network Devices</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="network_devices.html#creating-network-devices">Creating Network Devices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="network_devices.html#displaying-pmp-network-devices">Displaying PMP Network Devices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="network_devices.html#deleting-a-network-device">Deleting a Network Device</a></li>
+<li class="toctree-l3"><a class="reference internal" href="network_devices.html#pmp-network-device-page">PMP Network Device Page</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="network_devices.html#general">General</a></li>
+<li class="toctree-l4"><a class="reference internal" href="network_devices.html#equipment">Equipment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="network_devices.html#product-configuration">Product Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="network_devices.html#antenna-configuration">Antenna Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="network_devices.html#power-panel">Power Panel</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="network_devices.html#calculating-tilt-angle">Calculating Tilt Angle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="network_devices.html#component-carriers">Component Carriers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="network_devices.html#mesh-links">Mesh Links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="network_devices.html#links-to-subscriber-modules">Links to Subscriber Modules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="network_devices.html#performance-summary">Performance Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="network_devices.html#bill-of-materials">Bill of Materials</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="network_devices.html#bill-of-materials-for-pmp-network-device">Bill of Materials for PMP Network Device</a></li>
+<li class="toctree-l4"><a class="reference internal" href="network_devices.html#bill-of-materials-for-subscriber-modules">Bill of Materials for Subscriber Modules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="network_devices.html#viewing-saving-the-bom-file-in-ms-excel">Viewing &amp; saving the BOM file in MS Excel</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="mesh_links.html">Mesh Links</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="mesh_links.html#creating-mesh-links">Creating Mesh Links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_links.html#displaying-mesh-links">Displaying Mesh Links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_links.html#deleting-mesh-links">Deleting Mesh Links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_links.html#mesh-link-page">Mesh Link Page</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_links.html#equipment-summary">Equipment Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_links.html#profile">Profile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_links.html#performance-summary">Performance Summary</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="mesh_links.html#performance-to-devices">Performance to Devices</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mesh_links.html#link-summary">Link Summary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mesh_links.html#link-summary-additional-information">Link Summary additional information</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_links.html#performance-details">Performance Details</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="mesh_links.html#common-details">Common Details</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mesh_links.html#performance-to-each-end">Performance to each end</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="subscriber_modules.html">Subscriber Modules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sm_creating_and_deleting.html">Creating and Deleting Subscriber Modules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sm_creating_and_deleting.html#creating-subscriber-modules-pmp-links">Creating Subscriber Modules / PMP Links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sm_creating_and_deleting.html#displaying-pmp-links">Displaying PMP Links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sm_creating_and_deleting.html#deleting-subscriber-modules">Deleting Subscriber Modules</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sm_description_and_equipment.html">Subscriber Module Description and Equipment</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sm_description_and_equipment.html#general">General</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sm_description_and_equipment.html#equipment">Equipment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sm_description_and_equipment.html#product-configuration">Product Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sm_description_and_equipment.html#antenna-configuration">Antenna Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sm_description_and_equipment.html#power">Power</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sm_description_and_equipment.html#component-carrier">Component Carrier</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sm_profile.html">Profile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sm_performance_summary.html">Performance Summary</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sm_performance_summary.html#performance-to-network-device-and-subscriber-module">Performance to Network Device and Subscriber Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sm_performance_summary.html#link-summary">Link Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sm_performance_details.html">Performance Details</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sm_performance_details.html#common-details-450-family">Common Details - 450 family</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sm_performance_details.html#common-details-epmp">Common Details - ePMP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sm_performance_details.html#common-details-cnwave-5g-fixed">Common Details - cnWave 5G Fixed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sm_performance_details.html#common-details-60-ghz-cnwave">Common Details - 60 GHz cnWave</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sm_performance_details.html#common-details-ptp-670-and-700-hcmp">Common Details - PTP 670 and 700 HCMP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sm_performance_details.html#performance-to-each-end-network-device-and-subscriber-module">Performance to each end (Network Device and Subscriber Module)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sm_bill_of_materials_for_link.html">Bill of Materials for Subscriber Module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sm_bill_of_materials_for_link.html#viewing-saving-the-subscriber-module-bom-file-in-ms-excel">Viewing &amp; saving the Subscriber Module BOM file in MS Excel</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="background_information.html">Background Information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="availability.html">Availability</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="availability.html#itu-r-p-530">ITU-R P.530</a></li>
+<li class="toctree-l3"><a class="reference internal" href="availability.html#vigants-barnett">Vigants - Barnett</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="path_loss.html">Path Loss</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="free_space_path_loss.html">Free Space Path Loss</a></li>
+<li class="toctree-l3"><a class="reference internal" href="excess_path_loss.html">Excess Path Loss</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fade_margin.html">Fade Margin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fresnel_zone.html">Fresnel Zone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="paths_over_sea_or_very_flat_ground.html">Paths Over Sea or Very Flat Ground</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="path_profiles.html">Path Profiles</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="srtm_technical_guide.html">SRTM Technical Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="import_file_formats.html">Import File Formats</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="import_file_formats.html#sites-from-csv-file">Sites from CSV File</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notices.html">Legal Notices</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cambium_lp_terms_and_conditions.html">Cambium Networks, SAAS Terms of Service</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cambium_lp_terms_and_conditions.html#definitions">1. DEFINITIONS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cambium_lp_terms_and_conditions.html#licenses-and-restrictions">2. LICENSES AND RESTRICTIONS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cambium_lp_terms_and_conditions.html#passwords-and-security">3. PASSWORDS AND SECURITY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cambium_lp_terms_and_conditions.html#customer-obligations">4. CUSTOMER OBLIGATIONS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cambium_lp_terms_and_conditions.html#availability-and-support-services">5. AVAILABILITY AND SUPPORT SERVICES</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cambium_lp_terms_and_conditions.html#fees-and-payment">6. FEES AND PAYMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cambium_lp_terms_and_conditions.html#representations-warranties-and-disclaimer">7. REPRESENTATIONS, WARRANTIES AND DISCLAIMER</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cambium_lp_terms_and_conditions.html#indemnification">8. INDEMNIFICATION</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cambium_lp_terms_and_conditions.html#confidentiality">9. CONFIDENTIALITY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cambium_lp_terms_and_conditions.html#proprietary-rights">10. PROPRIETARY RIGHTS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cambium_lp_terms_and_conditions.html#limitation-of-liability">11. LIMITATION OF LIABILITY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cambium_lp_terms_and_conditions.html#term-and-termination">12.TERM AND TERMINATION</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cambium_lp_terms_and_conditions.html#miscellaneous">13. MISCELLANEOUS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="changes_to_linkplanner.html">Changes to LINKPlanner</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="changes_to_linkplanner.html#changes-since-version-6-0-0">Changes since version 6.0.0</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="changes_to_linkplanner.html#changes-in-version-6-3-3">Changes in version 6.3.3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changes_to_linkplanner.html#changes-in-version-6-3-2">Changes in version 6.3.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changes_to_linkplanner.html#changes-in-version-6-3-1">Changes in version 6.3.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changes_to_linkplanner.html#changes-in-version-6-3-0">Changes in version 6.3.0</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changes_to_linkplanner.html#changes-in-version-6-2-2">Changes in version 6.2.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changes_to_linkplanner.html#changes-in-version-6-2-1">Changes in version 6.2.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changes_to_linkplanner.html#changes-in-version-6-2-0">Changes in version 6.2.0</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changes_to_linkplanner.html#changes-in-version-6-1-4">Changes in version 6.1.4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changes_to_linkplanner.html#changes-in-version-6-1-3">Changes in version 6.1.3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changes_to_linkplanner.html#changes-in-version-6-1-2">Changes in version 6.1.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changes_to_linkplanner.html#changes-in-version-6-1-1">Changes in version 6.1.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changes_to_linkplanner.html#changes-in-version-6-1-0">Changes in version 6.1.0</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changes_to_linkplanner.html#changes-in-version-6-0-4">Changes in version 6.0.4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changes_to_linkplanner.html#changes-in-version-6-0-3">Changes in version 6.0.3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changes_to_linkplanner.html#changes-in-version-6-0-2">Changes in version 6.0.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changes_to_linkplanner.html#changes-in-version-6-0-1">Changes in version 6.0.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changes_to_linkplanner.html#changes-in-version-6-0-0">Changes in version 6.0.0</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+</div>
+<img alt="_images/logo_s.jpg" class="align-right" src="_images/logo_s.jpg" />
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="#">Table of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="list_of_figures.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_this_user_guide.html">About This User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_linkplanner.html">Using LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_ptp_links.html">Planning PTP links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_pmp_links.html">Planning PMP networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background_information.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notices.html">Legal Notices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes_to_linkplanner.html">Changes to LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="list_of_figures.html" title="List of Figures"
+             >next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Cambium LINKPlanner</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2025, Cambium Networks.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+.. index::
+   single: Examples
+   single: Link profile adjustment
+   single: Profiles
+
+Link Profile Adjustment Examples
+================================
+
+These examples show how Cambium link planners use a map, Google Earth and surveys to adjust link profiles.
+
+The original path profile for the point-to-point link from Addislade Farm to Yelland Cross Farm is built using the Path Profiler data where the clutter along the path is all set to Rural with 0 m height:
+
+.. _original_path_profile:
+.. figure:: original_path_profile.png
+
+   Original path profile
+
+We verify the link ends and the high points as described in the following
+examples:
+
+* :doc:`verifying_a_link_end_using_a_map_and_google_earth`
+* :doc:`verifying_a_link_end_using_a_survey`
+* :doc:`verifying_a_high_point_using_a_map`
+* :doc:`verifying_a_high_point_using_a_survey`
+
+These methods are applied to both link ends and to all high points in the
+link path. The resulting path profile is shown here:
+
+   
+.. _adjusted_path_profile:
+.. figure:: adjusted_path_profile.png
+
+   Adjusted path profile
+   
+   
+.. toctree::
+   
+   verifying_a_link_end_using_a_map_and_google_earth
+   verifying_a_link_end_using_a_survey
+   verifying_a_high_point_using_a_map
+   verifying_a_high_point_using_a_survey
+
+
+

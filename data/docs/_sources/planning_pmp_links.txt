@@ -1,0 +1,38 @@
+.. index::
+   single: Planning PMP networks
+   single: Using LINKPlanner
+
+Planning PMP networks
+=====================
+
+The goal of PMP network planning is to ensure that the Subscribers are connected to the appropriate Network Device and will perform to an acceptable level, measured by the Predicted Receive Power and Max Usable Mode values in the :doc:`sm_performance_summary` section of the :doc:`subscriber_modules`. To allow LINKPlanner to predict the Receive Power and Max Usable Mode, the planner must enter the variables that affect link performance, such as: band, region, equipment, antenna, height, terrain and obstructions.
+
+To achieve this goal, follow this process:
+
+1. Start the application and set options. See :doc:`starting_the_application`.
+2. Build a project to model a PMP network. See :doc:`projects`.
+3. Enter details of all sites in the project. See :doc:`sites`.
+4. Create the PMP Network Devices. See :doc:`network_devices`.
+5. Create Mesh Links (only for 60 GHz cnWave Networks). See :doc:`mesh_links`.
+6. Connect Subscriber Sites to a PMP Network Device and create profiles of those links. See :doc:`subscriber_modules`.
+7. Confirm that the link will perform to an acceptable level, measured by the Receive Power and Max Usable Mode values in the :doc:`sm_performance_summary` section of the :doc:`subscriber_modules`.
+8. Export and report project, site and link data. See :doc:`exporting_and_reporting`
+
+|note|
+
+        The :doc:`best_server_analysis` feature can be used to automatically connect subscriber sites to the network devices in a project.
+
+
+.. toctree::
+
+   network_devices
+   mesh_links
+   subscriber_modules
+
+
+
+
+.. |open_in_new_window_icon| image:: open_in_new_window.png
+.. |note| image:: note.jpg
+
+

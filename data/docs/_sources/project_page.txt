@@ -1,0 +1,101 @@
+.. index::
+   single: Project Settings
+
+Project Settings
+============
+
+Use this page to enter details of the project customer, define project level settings and view the sites and links on the project map.
+
+
+.. index::
+   single: Customer Information
+
+General Properties
+-------------------
+
+Enter details of the customer for whom this plan is being prepared. Enter a description of the project. This information is optional, and is included in the reports.
+
+.. _general_information:
+.. figure:: general_information.png
+
+   General Properties
+
+.. index::
+   single: Prediction Model
+   single: ITU
+   single: Vigants - Barnett
+   single: SM Antenna Height
+   single: Use Clutter
+
+Project Properties
+-------------------
+
+Set the prediction model that is used to calculate the link availability (see :doc:`availability`) and tick "Use Clutter" to include clutter data with the path profiles, untick to work without clutter information. These parameters are stored with the project.
+
+
+|note|
+    
+    When changing between working with or without clutter this changes the way that obstructions are portrayed and the version of ITU-R P.526 that is used to calculate obstruction loss. Changing an existing project to use clutter will change the obstruction loss predicted on paths within the project.
+
+.. _project_properties:
+.. figure:: project_properties.png
+
+
+   Project Properties
+
+.. index::
+   single: Clutter
+   single: Clutter Color
+   single: Clutter Height
+
+Clutter Heights
+-------------------
+
+Show the heights and colors for each clutter class. 
+
+.. _clutter_heights:
+.. figure:: clutter_heights.png
+
+
+   Clutter Heights and Colors
+   
+To change the default values select **Edit** and enter a new height or select the color to access a color chart and select the new color. Select **Restore Defaults** to return both heights and colors to those defined in LINKPlanner.
+
+.. _clutter_heights_editor:
+.. figure:: clutter_heights_editor.png
+
+
+   Editing Clutter Heights and Colors
+
+.. index::
+   single: Sharing Projects
+   single: Permissions
+
+Permissions
+-------------------
+
+To share a project with other users add their email address into the Permissions box
+
+.. _permissions_screen:
+.. figure:: permissions_screen.png
+
+
+   Permissions area
+   
+|note|
+
+        A project must be saved before other users can see it. Those with share permissions will see the latest saved version of the project file. When a shared project is opened by another user their version is read only |read_only| unless they save it locally as a new project.
+    
+    
+
+.. |note| image:: note.jpg
+.. |new_site| image:: new_site_icon.png
+.. |sub_place| image:: icon_subscriber_place.png
+.. |new_link| image:: icon_new_link.png
+.. |delete| image:: icon_delete.png
+.. |show_label| image:: icon_show_label.png
+.. |show_sub_lab| image:: icon_show_sub_label.png
+.. |profiles| image:: icon_profiles.png
+.. |icon_save| image:: icon_save.png
+.. |read_only| image:: icon_read_only.png
+

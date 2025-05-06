@@ -1,0 +1,26 @@
+.. index::
+   single: E1/T1
+   single: Latency
+   single: Optimizing E1/T1 Latency
+
+Optimizing E1 or T1 Latency
+===========================
+
+When a number of E1 or T1 channels are selected in the :doc:`Link Description and Equipment <link_description_and_equipment>` section, the LINKPlanner is able to predict the latency for those channels. The latency is displayed in the Link Summary section of the :doc:`performance_summary`.
+
+The latency depends on a number of factors which may be out of the user's control, such as the link range and radar detection requirements. It also depends on the number of telecoms channels selected, the channel Bandwidth, and the Lowest Telecoms Mode. By adjusting these values, it may be possible to improve the latency.
+
+The Lowest Telecoms Mode or Lowest TDM Mode selection determines which modulation modes will be allowed to carry telecoms data. Lower modulation modes will only carry timing information. The product will then optimize the latency for that modulation mode. For more information, see the section titled "Telecoms Circuits" or "TDM bridging" in the appropriate product User Guide, which can be downloaded from https://support.cambiumnetworks.com/files.
+
+In the LINKPlanner, the :ref:`lowest_telecoms_mode` selection box lists the modulation modes and their ability to carry the selected telecoms payload.
+If the mode would be unable to carry that payload, it displays "Timing". Otherwise it displays the selected channels.
+
+.. _lowest_telecoms_mode:
+.. figure:: lowest_telecoms_mode.png
+
+   Lowest Telecoms Mode
+
+In this example, **16QAM 0.87 Sngl** is the first modulation mode capable of carrying the 2 T1 channels - the lower modes can only carry timing
+information. However, by selecting a higher modulation mode, the latency may be reduced (potentially at the expense of the E1/T1 Availability, if the selected modulation mode does not have a high enough availability)
+
+When E1/T1 is selected, the :doc:`performance_details` display will also gain an extra row which indicates whether the mode will be carrying E1/T1 payloads, or timing data only.

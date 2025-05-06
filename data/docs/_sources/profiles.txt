@@ -1,0 +1,22 @@
+.. index::
+   single: Profile
+
+
+   
+Profiles
+=========
+
+Profiles are a visualization of the path between two end points, e.g. between a Network Device and a Subscriber Module for a PMP link. Profiles are automatically populated into the link as soon as it is created.
+
+Profiles can be requested with or without the clutter information. To request the clutter information tick the **Use Clutter?** option in **Project Properties**, to request only the terrain profile untick the **Use Clutter?** option, see :doc:`project_page`.
+
+Once a profile is available it can be modified to allow for local obstructions and correct any terrain heights or clutter types if necessary, see :doc:`adjusting_link_profiles` and :doc:`link_profile_adjustment_examples` .
+
+
+
+.. toctree::
+
+   adjusting_link_profiles
+   link_profile_adjustment_examples
+
+.. |note| image:: note.jpg

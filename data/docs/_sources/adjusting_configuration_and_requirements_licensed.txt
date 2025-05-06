@@ -1,0 +1,51 @@
+.. index::
+   single: Adjusting Configuration and Requirements
+   single: Configuration of Links
+   single: Tutorial
+   
+Adjusting Configuration and Requirements (Licensed Band)
+==========================================================
+
+Adjust the paramters at both ends of the link and confirm that the selected equipment meets the performance requirements:
+
+|note|
+
+        Antenna heights are entered from ground level not from the top of the clutter (if using).
+        
+        The results shown are using the ITU-R P.530-17 propagation model
+
+1. Adjust the Transmit Frequencies, see :ref:`select_transmit_frequencies` to given values and add Interference Density. Adjust the Interference Density to the required value.                                          
+
+   .. _configuration_of_licensed:
+   .. figure:: configuration_of_licensed.png
+
+      Adjust Both Ends of Licensed Link
+
+2. Insert target values in the :doc:`Performance Summary <performance_summary>` data rate boxes for Mean Throughput Required, Minimum Throughput Required and Minimum Throughput Availability Required.
+
+   Observe that the predicted values are now red because they are less than required values.
+
+   .. _performance_summary_of_licensed:
+   .. figure:: performance_summary_of_licensed.png
+
+      Performance Unacceptable at Both Ends of Licensed Link
+
+3. Change Antenna Heights to give a clear LOS path for licensed band operation in the :doc:`Link Page <link_page>`. Select different antennas and adjust User limits if required.
+
+   .. _configuration_of_licensed_updated:
+   .. figure:: configuration_of_licensed_updated.png
+
+      Adjust Both Ends of Licensed Link Again
+
+4. Confirm that the predicted values are no longer red. 
+
+   .. _performance_summary_of_licensed_updated:
+   .. figure:: performance_summary_of_licensed_updated.png
+
+      Performance Acceptable at Both Ends of Licensed Link
+
+ 5. Click **Projects** in the top menu bar and then click **Save** |save_project|
+
+ .. |save_project| image:: save_project_icon.png
+ .. |note| image:: note.jpg
+

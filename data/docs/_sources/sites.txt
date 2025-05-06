@@ -1,0 +1,55 @@
+.. index::
+   single: GPS
+   single: Google Earth
+   single: Previewing Link Profiles
+   single: Sites
+   single: Viewing and Updating Sites
+   single: WGS84
+   
+Sites
+=====
+
+Sites are locations that can be connected via PTP, Mesh or PMP links. A Project would normally contain at least two sites. Sites can be either **Network Sites**, used for Network Devices and PTP or Mesh Links, or **Subscriber Sites**, used for the remote end of PMP links.
+
+Identify all sites in the project, determine whether they are Network Sites or Subscriber Sites and obtain their latitude and longitude using the WGS84 frame of reference. Use tools such as:
+
+* GPS during a site survey.
+* Google Earth(TM): http://earth.google.com. This application must be downloaded and installed.
+* Bing: http://www.bing.com/maps/.
+
+          
+Network Sites and Subscriber Sites are both created and managed using the same facilities within LINKPlanner.
+
+New Sites
+------------------------------------
+
+Import sites from external files as described in :doc:`importing_sites`, or create them in LINKPlanner as described in :doc:`creating_sites`. 
+
+Sites List
+----------
+
+Display the list of sites in the project, as described in :doc:`displaying_the_sites_list`.
+
+Viewing and Updating Sites
+--------------------------
+
+When sites have been created, open them in the following ways:
+
+* Click on the site in the Network Sites, |icon_menu_network_site| or Subscriber Sites, |icon_menu_subscriber_site| list or table.
+* Right click on the site in the map view and select **Edit**.
+
+The Site page is displayed. See :doc:`site_page`.
+
+.. toctree::
+
+   importing_sites
+   creating_sites
+   displaying_the_sites_list
+   site_page
+   adding_switches
+
+
+
+.. |note| image:: note.jpg
+.. |icon_menu_network_site| image:: icon_menu_network_site.png
+.. |icon_menu_subscriber_site| image:: icon_menu_subscriber_site.png

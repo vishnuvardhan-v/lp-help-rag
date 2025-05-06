@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Availability &#8212; Cambium LINKPlanner Online Help (6.3.3)</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/default.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Path Loss" href="path_loss.html" />
+    <link rel="prev" title="Background Information" href="background_information.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="path_loss.html" title="Path Loss"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="background_information.html" title="Background Information"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="background_information.html" accesskey="U">Background Information</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Availability</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="availability">
+<span id="index-0"></span><h1>Availability<a class="headerlink" href="#availability" title="Permalink to this headline">¶</a></h1>
+<p>Availability is the amount of time that a link is predicted to be above a given threshold (the fade margin) and is usually expressed as a percentage of a year. LINKPlanner offers four different prediction models for calculating the availability.</p>
+<blockquote>
+<div><ul>
+<li><p>ITU-R P.530 is the international standard from the ITU and comes in two versions:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>P.530-12</p></li>
+<li><p>P.530-17</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Vigants - Barnett, commonly used in the United States of America also has two variants.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>VB with ITU rain P.530-12</p></li>
+<li><p>VB with ITU rain P.530-17</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p>The ITU-R P.530-17 prediction model is the default within LINKPlanner. To change to any of the other models select the <strong>Project</strong> menu and then <strong>Project Properties</strong>. See <a class="reference internal" href="project_page.html"><span class="doc">Project Settings</span></a>.</p>
+<section id="itu-r-p-530">
+<h2>ITU-R P.530<a class="headerlink" href="#itu-r-p-530" title="Permalink to this headline">¶</a></h2>
+<p>P.530 is an international standard from the ITU and is continuously being reviewed and updated.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Version 12 was last updated in 2007 and was the default method used in LINKPlanner up to V5.3.3. It is maintained in subsequent versions of LINKPlanner to allow backwards compatibility and for comparison purposes as there are some significant changes between P.530-12 and P.530-17.</p></li>
+<li><p>Version 17 was last updated in 2017 and is the default method currently used in LINKPlanner.</p></li>
+</ul>
+</div></blockquote>
+<p>The ITU model is fully defined and has no ambiguity in its implementation, hence all implementations should return the same results for a given configuration of a link.</p>
+</section>
+<section id="vigants-barnett">
+<h2>Vigants - Barnett<a class="headerlink" href="#vigants-barnett" title="Permalink to this headline">¶</a></h2>
+<p>The Vigants - Barnett model is widely used in the United States of America. This model was defined in the 1970’s and the algorithms used are described in the following two references:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Multipath Propagation at 4, 6 and 11 GHz, by W.T. Barnett, Bell System Technical Journal, Vol 51 Feb 1972 Number 2</p></li>
+<li><p>Space-Diversity Engineering, by A. Vigants, Bell System Technical Journal, Vol 54 Jan 1975 Number 1</p></li>
+</ul>
+</div></blockquote>
+<p>These papers define the algorithms, but the implementation is open to interpretation. The following describes the implementation used within LINKPlanner:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The Climatic Factor is automatically read from a database of the atmospheric conditions maps and is taken at the mid-point of the path.</p></li>
+<li><p>The terrain roughness is calculated for 50 evenly spaced points in the central 80% of the path, using terrain height above mean sea level plus obstruction height as the reference height.</p></li>
+<li><p>The temperature used to convert from worst month to annual availability is taken for the mid-point of the path using the standard ESATEMP data file available from the ITU.</p></li>
+</ul>
+</div></blockquote>
+<p>The Vigants - Barnett model does not include definitions for Gaseous Absorption or rain availability calculations and therefore these are calculated using the relevant ITU recommendations.</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="list_of_figures.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_this_user_guide.html">About This User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_linkplanner.html">Using LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_ptp_links.html">Planning PTP links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_pmp_links.html">Planning PMP networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background_information.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notices.html">Legal Notices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes_to_linkplanner.html">Changes to LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="path_loss.html" title="Path Loss"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="background_information.html" title="Background Information"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="background_information.html" >Background Information</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Availability</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2025, Cambium Networks.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

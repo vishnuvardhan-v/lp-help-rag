@@ -1,0 +1,39 @@
+.. index::
+   single: Getting started
+   single: Concepts
+   
+
+Getting started
+=====================
+
+This section describes the main concepts of LINKPlanner and how to access the software.
+
+Accessing LINKPlanner
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+LINKPlanner is available at |LP_URL|, see :doc:`starting_the_application` 
+
+* :doc:`linkplanner_concepts` 
+
+This section also contains quick tutorials for experienced Windows or Mac users. They describe how to create a project to quickly design a larger scale PMP network.
+
+* :doc:`quick_tutorial` (for 60 GHz cnWave, ePMP (PTP Mode), PTP 450 family, PTP 670 and PTP 700 links).
+* :doc:`quick_tutorial_licensed_band` (for PTP 820 and PTP 850 links).
+* :doc:`quick_tutorial__pmp` (for cnWave 5G Fixed, ePMP, N500, PMP 450 family networks).
+* :doc:`pmp_network_design` a simple process to quickly build a PMP network with multiple sites, network devices and subscribers
+
+
+
+
+.. toctree::
+
+   linkplanner_concepts
+   quick_tutorial
+   quick_tutorial_licensed_band
+   quick_tutorial__pmp
+   pmp_network_design
+
+   
+
+
+.. |LP_URL| replace:: https://lp.cambiumnetworks.com

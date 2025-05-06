@@ -1,0 +1,14 @@
+Main Screen
+===========
+
+The :ref:`main_screen` consists of two panels:
+
+* The left hand panel contains the :doc:`project_navigation_tree`. 
+* The right hand panel is for viewing and editing projects, sites and links. This panel initially displays links for opening new and recent projects. There are also information sections which can show news items and links to Cambium videos. If there are no news items or videos, these sections will not appear. 
+* Once a project is opened the right hand panel will show the map view. 
+
+
+    .. _main_screen:
+    .. figure:: main_screen.png
+
+         Main Screen

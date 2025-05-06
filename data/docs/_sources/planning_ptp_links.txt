@@ -1,0 +1,37 @@
+.. index::
+   single: Add field
+   single: Custom Field
+   single: Custom field
+   single: Open in New Window
+   single: User Interface
+   single: Using LINKPlanner
+
+Planning PTP links
+==================
+
+The goal of PTP link planning is to ensure that each direction of the link will perform to an acceptable level, measured by the Throughput and Availability values in the :doc:`performance_summary` section of the :doc:`link_page`. To allow LINKPlanner to predict Throughput and Availability, the planner must enter the variables that affect link performance, such as: band, region, equipment, antenna, height, terrain, obstructions and reflection.
+
+To achieve this goal, follow this process:
+
+1. Start the application and set options. See :doc:`starting_the_application`.
+2. Build a project to model a PTP link (or network). See :doc:`projects`.
+3. Enter details of all sites in the project. See :doc:`sites`.
+4. Define the links between sites. See :doc:`links`.
+5. Confirm that the link will perform to an acceptable level, measured by the Throughput and Availability values in the
+   :doc:`performance_summary` section of the :doc:`link_page`.
+6. Export and report project, site and link data. See :doc:`exporting_and_reporting`
+
+
+
+
+.. toctree::
+
+   links
+   link_page
+   advanced_features
+
+
+
+
+
+

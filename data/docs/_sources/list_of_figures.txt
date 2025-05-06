@@ -1,0 +1,471 @@
+List of Figures
+===============
+
+:ref:`A_viewshed_on_the_map` ..... (:doc:`viewsheds`)
+
+:ref:`preferences` ..... (:doc:`preferences`)
+
+:ref:`adding_a_profile_point` ..... (:doc:`updating_link_profiles`)
+
+:ref:`table_view_add_site` ..... (:doc:`displaying_the_sites_list`)
+
+:ref:`losses_licensed` ..... (:doc:`configuration_at_each_end`)
+
+:ref:`configuration_of_licensed` ..... (:doc:`adjusting_configuration_and_requirements_licensed`)
+
+:ref:`configuration_of_licensed_updated` ..... (:doc:`adjusting_configuration_and_requirements_licensed`)
+
+:ref:`Adjust_Both_Ends_of_PMP_Link` ..... (:doc:`adjusting_configuration_and_requirements_pmp`)
+
+:ref:`configuration_of_unlicensed` ..... (:doc:`adjusting_configuration_and_requirements`)
+
+:ref:`configuration_of_unlicensed_updated` ..... (:doc:`adjusting_configuration_and_requirements`)
+
+:ref:`adjusted_path_profile` ..... (:doc:`link_profile_adjustment_examples`)
+
+:ref:`bill_of_materials_for_nd_sms` ..... (:doc:`network_devices`)
+
+:ref:`Analysis_Progress` ..... (:doc:`best_server_analysis`)
+
+:ref:`new_mesh_link_from_ND` ..... (:doc:`mesh_links`)
+
+:ref:`new_sm_page` ..... (:doc:`sm_creating_and_deleting`)
+
+:ref:`Attach_Subscribers_Window` ..... (:doc:`creating_project_sites_and_link_pmp`)
+
+:ref:`available_antennas` ..... (:doc:`antennas`)
+
+:ref:`Best_Server_Analysis_Configuration` ..... (:doc:`best_server_analysis`)
+
+:ref:`Best_Server_Analysis_Panel` ..... (:doc:`best_server_analysis`)
+
+:ref:`Best_Server_Analysis_Results` ..... (:doc:`best_server_analysis`)
+
+:ref:`best_server_results_summary` ..... (:doc:`best_server_analysis`)
+
+:ref:`bill_of_materials_for_link` ..... (:doc:`bill_of_materials_for_link`)
+
+:ref:`bill_of_materials_for_link_with_switches` ..... (:doc:`bill_of_materials_for_link`)
+
+:ref:`bill_of_materials_for_nd` ..... (:doc:`network_devices`)
+
+:ref:`bom_for_project_nd` ..... (:doc:`bill_of_materials_for_project`)
+
+:ref:`bom_for_project_ptp` ..... (:doc:`bill_of_materials_for_project`)
+
+:ref:`bom_for_project_sm` ..... (:doc:`bill_of_materials_for_project`)
+
+:ref:`bom_for_project_switch` ..... (:doc:`bill_of_materials_for_project`)
+
+:ref:`bill_of_materials_for_site` ..... (:doc:`site_page`)
+
+:ref:`bill_of_materials_for_sm` ..... (:doc:`sm_bill_of_materials_for_link`)
+
+:ref:`bill_of_materials_optional_extras` ..... (:doc:`bill_of_materials_for_link`)
+
+:ref:`bom_optional_extras_sm` ..... (:doc:`sm_bill_of_materials_for_link`)
+
+:ref:`calc_tilt_dialog` ..... (:doc:`network_devices`)
+
+:ref:`clutter_heights` ..... (:doc:`project_page`)
+
+:ref:`calc_tilt_complete` ..... (:doc:`network_devices`)
+
+:ref:`completed_tower_switch_page` ..... (:doc:`adding_switches`)
+
+:ref:`sm_component_carrier` ..... (:doc:`sm_description_and_equipment`)
+
+:ref:`component_carriers_view` ..... (:doc:`network_devices`)
+
+:ref:`configuration_at_one_end` ..... (:doc:`configuration_at_each_end`)
+
+:ref:`configuration_of_end_co_polar` ..... (:doc:`setting_single_antenna`)
+
+:ref:`configuration_of_end_tabs` ..... (:doc:`setting_single_antenna`)
+
+:ref:`unlicensed_space_diversity_config` ..... (:doc:`setting_diversity`)
+
+:ref:`Create_new_project_screen` ..... (:doc:`creating_saving_and_viewing_projects`)
+
+:ref:`convert_sites` ..... (:doc:`displaying_the_sites_list`)
+
+:ref:`copy_from_existing` ..... (:doc:`user_interface_tips`)
+
+:ref:`create_mesh_links` ..... (:doc:`mesh_links`)
+
+:ref:`tp_Create_Network_Design` ..... (:doc:`terragraph_planner`)
+
+:ref:`create_new_project_window` ..... (:doc:`creating_project_sites_and_link_pmp`)
+
+:ref:`create_new_project_window_tutorial_licensed` ..... (:doc:`creating_project_sites_and_link_licensed`)
+
+:ref:`create_new_project_window_tutorial` ..... (:doc:`creating_project_sites_and_link`)
+
+:ref:`create_ptp_links` ..... (:doc:`creating_links`)
+
+:ref:`create_ptp_links_tutorial_licensed` ..... (:doc:`creating_project_sites_and_link_licensed`)
+
+:ref:`create_ptp_links_tutorial` ..... (:doc:`creating_project_sites_and_link`)
+
+:ref:`Create_Select_Template` ..... (:doc:`network_devices`)
+
+:ref:`availability_detail_ITU` ..... (:doc:`performance_summary`)
+
+:ref:`availability_detail_ITU_mesh` ..... (:doc:`mesh_links`)
+
+:ref:`Detailed_Performance_at_Both_Ends_of_PMP_Link` ..... (:doc:`adjusting_configuration_and_requirements_pmp`)
+
+:ref:`details_in_site_page` ..... (:doc:`site_page`)
+
+:ref:`multiple_edit` ..... (:doc:`user_interface_tips`)
+
+:ref:`clutter_heights_editor` ..... (:doc:`project_page`)
+
+:ref:`equipment_single_antenna` ..... (:doc:`setting_single_antenna`)
+
+:ref:`equipment_in_link_page_licensed` ..... (:doc:`link_description_and_equipment`)
+
+:ref:`equipment_in_link_page` ..... (:doc:`link_description_and_equipment`)
+
+:ref:`tp_Equipment_Configuration` ..... (:doc:`terragraph_planner`)
+
+:ref:`estimated_obstruction_height_near_hp1` ..... (:doc:`verifying_a_high_point_using_a_map`)
+
+:ref:`example_table_view` ..... (:doc:`user_interface_tips`)
+
+:ref:`export_project` ..... (:doc:`export_menu`)
+
+:ref:`fade_margin` ..... (:doc:`fade_margin`)
+
+:ref:`tp_failed_run` ..... (:doc:`terragraph_planner`)
+
+:ref:`file_options` ..... (:doc:`creating_saving_and_viewing_projects`)
+
+:ref:`tp_Financials` ..... (:doc:`terragraph_planner`)
+
+:ref:`free_space_path_loss` ..... (:doc:`free_space_path_loss`)
+
+:ref:`fresnel_zone_radius` ..... (:doc:`fresnel_zone`)
+
+:ref:`fresnel_zone_in_google_earth` ..... (:doc:`using_google_earth`)
+
+:ref:`general_information` ..... (:doc:`project_page`)
+
+:ref:`main_screen_new` ..... (:doc:`starting_the_application`)
+
+:ref:`google_earth_aerial_photograph` ..... (:doc:`using_google_earth`)
+
+:ref:`google_earth_zoomed` ..... (:doc:`using_google_earth`)
+
+:ref:`gps_calibration_point` ..... (:doc:`verifying_a_link_end_using_a_survey`)
+
+:ref:`gps_calibration_point_near_hp1` ..... (:doc:`verifying_a_high_point_using_a_survey`)
+
+:ref:`space_diversity_main_diverse` ..... (:doc:`setting_diversity`)
+
+:ref:`space_diversity_main_main` ..... (:doc:`setting_diversity`)
+
+:ref:`help_menu` ..... (:doc:`help`)
+
+:ref:`import_lp_project` ..... (:doc:`projects`)
+
+:ref:`import_sites_menu_bar` ..... (:doc:`importing_sites`)
+
+:ref:`import_csv_2` ..... (:doc:`importing_sites`)
+
+:ref:`tp_Inputs_Data` ..... (:doc:`terragraph_planner`)
+
+:ref:`inserting_site_2` ..... (:doc:`creating_project_sites_and_link`)
+
+:ref:`inserting_site_2_licensed` ..... (:doc:`creating_project_sites_and_link_licensed`)
+
+:ref:`toolbar_left_right` ..... (:doc:`project_toolbar`)
+
+:ref:`reflection_editor_licensed` ..... (:doc:`setting_diversity`)
+
+:ref:`link_description` ..... (:doc:`link_description_and_equipment`)
+
+:ref:`equipment_ptp_tutorial_licensed` ..... (:doc:`creating_project_sites_and_link_licensed`)
+
+:ref:`equipment_ptp_tutorial` ..... (:doc:`creating_project_sites_and_link`)
+
+:ref:`sign_in_page` ..... (:doc:`starting_the_application`)
+
+:ref:`Subscriber_module_view` ..... (:doc:`network_devices`)
+
+:ref:`lowest_telecoms_mode` ..... (:doc:`optimizing_e1_or_t1_latency`)
+
+:ref:`main_screen` ..... (:doc:`main_screen`)
+
+:ref:`display_menu` ..... (:doc:`map_window`)
+
+:ref:`map_info_window` ..... (:doc:`map_window`)
+
+:ref:`map_layers_menu` ..... (:doc:`map_window`)
+
+:ref:`map_nd_changes` ..... (:doc:`map_window`)
+
+:ref:`map_of_addislade` ..... (:doc:`verifying_a_link_end_using_a_map_and_google_earth`)
+
+:ref:`map_of_hp1` ..... (:doc:`verifying_a_high_point_using_a_map`)
+
+:ref:`sites_pop_up` ..... (:doc:`map_window`)
+
+:ref:`ruler_measure` ..... (:doc:`map_window`)
+
+:ref:`menu_search` ..... (:doc:`project_navigation_tree`)
+
+:ref:`mesh_link_equipment` ..... (:doc:`mesh_links`)
+
+:ref:`mesh_link_performance_details` ..... (:doc:`mesh_links`)
+
+:ref:`mesh_link_performance_summary` ..... (:doc:`mesh_links`)
+
+:ref:`mesh_links_table` ..... (:doc:`mesh_links`)
+
+:ref:`mesh_link_view` ..... (:doc:`network_devices`)
+
+:ref:`navigation_tree` ..... (:doc:`project_navigation_tree`)
+
+:ref:`nd_antenna_configuration` ..... (:doc:`network_devices`)
+
+:ref:`sm_antenna_configuration` ..... (:doc:`sm_description_and_equipment`)
+
+:ref:`nd_equipment` ..... (:doc:`network_devices`)
+
+:ref:`access_point_details` ..... (:doc:`network_devices`)
+
+:ref:`Network_Device_Mode` ..... (:doc:`creating_project_sites_and_link_pmp`)
+
+:ref:`nd_power` ..... (:doc:`network_devices`)
+
+:ref:`nd_product_configuration` ..... (:doc:`network_devices`)
+
+:ref:`tp_Network_Plan` ..... (:doc:`terragraph_planner`)
+
+:ref:`map_network_site_mode` ..... (:doc:`map_window`)
+
+:ref:`Network_Site_Mode_Window` ..... (:doc:`creating_project_sites_and_link_pmp`)
+
+:ref:`Network_Site_Mode_Window_ptp_licensed` ..... (:doc:`creating_project_sites_and_link_licensed`)
+
+:ref:`Network_Site_Mode_Window_ptp` ..... (:doc:`creating_project_sites_and_link`)
+
+:ref:`network_sites_list` ..... (:doc:`displaying_the_sites_list`)
+
+:ref:`network_sites_table` ..... (:doc:`displaying_the_sites_list`)
+
+:ref:`Network_Sites_Window` ..... (:doc:`creating_project_sites_and_link_pmp`)
+
+:ref:`Network_Sites_Window_ptp_licensed` ..... (:doc:`creating_project_sites_and_link_licensed`)
+
+:ref:`Network_Sites_Window_ptp` ..... (:doc:`creating_project_sites_and_link`)
+
+:ref:`Network_Sites_window_with_properties` ..... (:doc:`creating_project_sites_and_link_pmp`)
+
+:ref:`Network_Sites_window_with_ptp_properties_licensed` ..... (:doc:`creating_project_sites_and_link_licensed`)
+
+:ref:`Network_Sites_window_with_ptp_properties` ..... (:doc:`creating_project_sites_and_link`)
+
+:ref:`New_Network_Device_Mode` ..... (:doc:`network_devices`)
+
+:ref:`pmp_link_mode` ..... (:doc:`sm_creating_and_deleting`)
+
+:ref:`new_ptp_link_mode` ..... (:doc:`creating_links`)
+
+:ref:`new_tower_switch` ..... (:doc:`adding_switches`)
+
+:ref:`obstructions_and_higher_ground_near_addlisade` ..... (:doc:`verifying_a_link_end_using_a_map_and_google_earth`)
+
+:ref:`operating_conditions` ..... (:doc:`performance_summary`)
+
+:ref:`original_path_profile` ..... (:doc:`link_profile_adjustment_examples`)
+
+:ref:`performance_summary_of_licensed_updated` ..... (:doc:`adjusting_configuration_and_requirements_licensed`)
+
+:ref:`Performance_Acceptable_at_Both_Ends_of_PMP_Link` ..... (:doc:`adjusting_configuration_and_requirements_pmp`)
+
+:ref:`performance_summary_of_unlicensed_updated` ..... (:doc:`adjusting_configuration_and_requirements`)
+
+:ref:`performance_details` ..... (:doc:`performance_details`)
+
+:ref:`performance_details_2+0` ..... (:doc:`performance_details`)
+
+:ref:`performance_summary` ..... (:doc:`performance_summary`)
+
+:ref:`performance_summary_2+0` ..... (:doc:`performance_summary`)
+
+:ref:`performance_summary_of_nd` ..... (:doc:`network_devices`)
+
+:ref:`performance_summary_of_nd_sector` ..... (:doc:`network_devices`)
+
+:ref:`performance_summary_of_site` ..... (:doc:`site_page`)
+
+:ref:`performance_summary_with_tdm_licensed` ..... (:doc:`performance_summary`)
+
+:ref:`performance_summary_of_licensed` ..... (:doc:`adjusting_configuration_and_requirements_licensed`)
+
+:ref:`Performance_Unacceptable_at_Both_Ends_of_PMP_Link` ..... (:doc:`adjusting_configuration_and_requirements_pmp`)
+
+:ref:`performance_summary_of_unlicensed` ..... (:doc:`adjusting_configuration_and_requirements`)
+
+:ref:`permissions_screen` ..... (:doc:`project_page`)
+
+:ref:`sm_performance_details` ..... (:doc:`sm_performance_details`)
+
+:ref:`map_pmp_link_mode` ..... (:doc:`map_window`)
+
+:ref:`sm_performance_summary` ..... (:doc:`sm_performance_summary`)
+
+:ref:`links_in_site_page` ..... (:doc:`site_page`)
+
+:ref:`PMP_Network_Connected` ..... (:doc:`pmp_network_design`)
+
+:ref:`PMP_Network_Device_Configuration` ..... (:doc:`network_devices`)
+
+:ref:`PMP_Network_Device_Map_Window` ..... (:doc:`creating_project_sites_and_link_pmp`)
+
+:ref:`map_network_device_mode` ..... (:doc:`map_window`)
+
+:ref:`PMP_Network_Devices_Antenna_Configuration` ..... (:doc:`creating_project_sites_and_link_pmp`)
+
+:ref:`PMP_Network_Devices_General_and_Equipment_Configuration` ..... (:doc:`creating_project_sites_and_link_pmp`)
+
+:ref:`nd_in_site_page` ..... (:doc:`site_page`)
+
+:ref:`PMP_Network_Devices_Power_Configuration` ..... (:doc:`creating_project_sites_and_link_pmp`)
+
+:ref:`PMP_Network_Devices_Product_Configuration` ..... (:doc:`creating_project_sites_and_link_pmp`)
+
+:ref:`PMP_Network_Devices_window` ..... (:doc:`creating_project_sites_and_link_pmp`)
+
+:ref:`PMP_Network_Sites_Added` ..... (:doc:`pmp_network_design`)
+
+:ref:`PMP_Network_with_Network_Devices` ..... (:doc:`pmp_network_design`)
+
+:ref:`PMP_Network_with_Subscriber_Sites_Added` ..... (:doc:`pmp_network_design`)
+
+:ref:`sm_profile_with_trees` ..... (:doc:`sm_profile`)
+
+:ref:`ptp_tutorial_product_configuration_licensed` ..... (:doc:`creating_project_sites_and_link_licensed`)
+
+:ref:`ptp_tutorial_product_configuration` ..... (:doc:`creating_project_sites_and_link`)
+
+:ref:`profile_editor_updated_with_clutter_and_obstructions` ..... (:doc:`updating_link_profiles`)
+
+:ref:`profile_editor_updated_with_obstructions` ..... (:doc:`updating_link_profiles`)
+
+:ref:`profile_updated_with_hp1_survey_results` ..... (:doc:`verifying_a_high_point_using_a_survey`)
+
+:ref:`profile_updated_with_map_and_google_earth_results` ..... (:doc:`verifying_a_link_end_using_a_map_and_google_earth`)
+
+:ref:`profile_updated_with_site_survey_results` ..... (:doc:`verifying_a_link_end_using_a_survey`)
+
+:ref:`profile_with_clutter` ..... (:doc:`updating_link_profiles`)
+
+:ref:`profile_without_clutter` ..... (:doc:`updating_link_profiles`)
+
+:ref:`profile_with_clutter_and_obstructions` ..... (:doc:`profile`)
+
+:ref:`profile_with_reflection_obscured` ..... (:doc:`setting_diversity`)
+
+:ref:`profile_with_reflection_visible` ..... (:doc:`setting_diversity`)
+
+:ref:`project_properties` ..... (:doc:`project_page`)
+
+:ref:`project_node` ..... (:doc:`creating_saving_and_viewing_projects`)
+
+:ref:`propagation_over_the_sea` ..... (:doc:`paths_over_sea_or_very_flat_ground`)
+
+:ref:`proposal_performance_hot_standby` ..... (:doc:`setting_hot_standby_protection`)
+
+:ref:`map_ptp_link_mode` ..... (:doc:`map_window`)
+
+:ref:`ptp_links_in_site_page` ..... (:doc:`site_page`)
+
+:ref:`ptp_licensed_product_configuration` ..... (:doc:`link_description_and_equipment`)
+
+:ref:`ptp_unlicensed_product_configuration` ..... (:doc:`link_description_and_equipment`)
+
+:ref:`results_of_site_survey_at_addislade` ..... (:doc:`verifying_a_link_end_using_a_survey`)
+
+:ref:`scale_nd_sector_display` ..... (:doc:`map_window`)
+
+:ref:`select_columns_filter` ..... (:doc:`user_interface_tips`)
+
+:ref:`select_columns` ..... (:doc:`user_interface_tips`)
+
+:ref:`select_transmit_frequencies` ..... (:doc:`configuration_at_each_end`)
+
+:ref:`select_frequency_dialog_cc` ..... (:doc:`network_devices`)
+
+:ref:`select_transmit_frequencies_2+0` ..... (:doc:`configuration_at_each_end`)
+
+:ref:`space_diversity_unlicensed` ..... (:doc:`setting_diversity`)
+
+:ref:`stop_analysis` ..... (:doc:`best_server_analysis`)
+
+:ref:`Subscriber_Module_Antenna_and_Power_Configuration` ..... (:doc:`creating_project_sites_and_link_pmp`)
+
+:ref:`sm_equipment` ..... (:doc:`sm_description_and_equipment`)
+
+:ref:`sm_description` ..... (:doc:`sm_description_and_equipment`)
+
+:ref:`Subscriber_Module_General_and_Equipment_Configuration` ..... (:doc:`creating_project_sites_and_link_pmp`)
+
+:ref:`sm_power` ..... (:doc:`sm_description_and_equipment`)
+
+:ref:`sm_product_configuration` ..... (:doc:`sm_description_and_equipment`)
+
+:ref:`Subscriber_Module_Product_Configuration` ..... (:doc:`creating_project_sites_and_link_pmp`)
+
+:ref:`Subscriber_Site_1` ..... (:doc:`creating_project_sites_and_link_pmp`)
+
+:ref:`Subscriber_Site_1_updating_properties` ..... (:doc:`creating_project_sites_and_link_pmp`)
+
+:ref:`Subscriber_Site_2` ..... (:doc:`creating_project_sites_and_link_pmp`)
+
+:ref:`Subscriber_Site_2_updating_properties` ..... (:doc:`creating_project_sites_and_link_pmp`)
+
+:ref:`map_subscriber_site_mode` ..... (:doc:`map_window`)
+
+:ref:`Subscriber_Sites_Window` ..... (:doc:`creating_project_sites_and_link_pmp`)
+
+:ref:`tp_successful_run` ..... (:doc:`terragraph_planner`)
+
+:ref:`tp_Summary_Page` ..... (:doc:`terragraph_planner`)
+
+:ref:`import_csv_3` ..... (:doc:`importing_sites`)
+
+:ref:`tdm_equipment_licensed` ..... (:doc:`link_description_and_equipment`)
+
+:ref:`terms_and_conditions` ..... (:doc:`starting_the_application`)
+
+:ref:`top_menu` ..... (:doc:`project_toolbar`)
+
+:ref:`top_menu` ..... (:doc:`top_menu`)
+
+:ref:`Two_Subscriber_Modules_on_One_Network_Device` ..... (:doc:`creating_project_sites_and_link_pmp`)
+
+:ref:`unadjusted_profile_near_antenna_site` ..... (:doc:`verifying_a_link_end_using_a_map_and_google_earth`)
+
+:ref:`unadjusted_profile_near_high_point` ..... (:doc:`verifying_a_high_point_using_a_map`)
+
+:ref:`reflection_editor` ..... (:doc:`setting_diversity`)
+
+:ref:`Update_Subscriber_Modules` ..... (:doc:`best_server_analysis`)
+
+:ref:`Updating_your_project` ..... (:doc:`project_toolbar`)
+
+:ref:`user_interface` ..... (:doc:`linkplanner_concepts`)
+
+:ref:`using_a_ruler_to_estimate_height` ..... (:doc:`verifying_a_link_end_using_a_survey`)
+
+:ref:`import_csv_4` ..... (:doc:`importing_sites`)
+
+:ref:`Viewshed_Configuration_Dialog` ..... (:doc:`viewsheds`)
+
+:ref:`Viewshed_Map_Menu` ..... (:doc:`viewsheds`)
+
+:ref:`Viewshed_Progress_Bar` ..... (:doc:`viewsheds`)
+

@@ -1,0 +1,9 @@
+Disclaimer
+==========
+
+The parameters quoted in this document must be specifically confirmed in
+writing before they become applicable to any particular order or contract.
+The company reserves the right to make alterations or amendments to the
+detail specification at its discretion. The publication of information in
+this document does not imply freedom from patent or other rights of
+Cambium Networks or others.

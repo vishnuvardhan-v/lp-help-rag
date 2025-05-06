@@ -1,0 +1,31 @@
+.. index::
+   single: NASA
+   single: NGA
+   single: SRTM links
+   single: Survey Data
+   single: USGS
+   single: University of Maryland
+
+SRTM Technical Guide
+====================
+
+The Shuttle Radar Topography Mission (SRTM) obtained elevation data on a near-global scale to generate the most complete high-resolution digital topographic database of Earth. SRTM consisted of a specially modified radar system that flew onboard the Space Shuttle Endeavour during an 11-day mission in February of 2000.
+
+SRTM is an international project spearheaded by the National Geospatial-Intelligence Agency (NGA) and the National Aeronautics and Space Administration (NASA).
+
+USGS Acknowledgement:
+
+These data are distributed by the Land Processes Distributed Active 
+Archive Center (LP DAAC), located at the USGS EROS Center, Sioux Falls, SD. 
+https://lpdaac.usgs.gov
+
+For more information, visit:
+
+* NASA EARTHDATA LP DAAC SRTM Global 1 arc second (EARTHDATA_) and https://www.earthdata.nasa.gov/sensors/srtm
+  
+* NASA Jet Propulsion Laboratory SRTM home page: https://www2.jpl.nasa.gov/srtm/
+* Global Land Cover Facility (University of Maryland): (GLCF_)
+
+
+.. _EARTHDATA: https://search.earthdata.nasa.gov/search?q=SRTM%20Global%201
+.. _GLCF: https://geog.umd.edu/feature/global-land-cover-facility-(glcf)

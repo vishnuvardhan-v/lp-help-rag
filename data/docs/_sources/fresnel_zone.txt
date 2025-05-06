@@ -1,0 +1,40 @@
+.. index::
+   single: Fresnel Zone
+   single: Radius of Fresnel Zone
+
+Fresnel Zone
+============
+
+There is a theoretical area around the line-of-sight of an antenna, called
+the Fresnel Zone. Objects that penetrate the Fresnel Zone block some of
+the signal travelling from transmitter to receiver, causing the path loss
+to increase. The Fresnel radius at a point along the path is defined in
+the following equation:
+
+**Fresnel Zone Radius Equation**
+
+.. figure:: fresnel_zone_equation.png
+
+| 
+
+================= =======================================
+Where             Is
+================= =======================================
+d1                distance from one end in meters
+d2                distance from the other end in meters
+f                 frequency in MHz
+================= =======================================
+
+| 
+
+
+  
+.. _fresnel_zone_radius:
+.. figure:: fresnel_zone_radius.jpg
+
+   Fresnel Zone
+
+
+
+For a thorough understanding of the Fresnel Zone refer to ITU-R P.526-14.
+

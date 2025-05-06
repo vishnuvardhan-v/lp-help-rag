@@ -1,0 +1,38 @@
+.. index::
+   single: Creating a PTP link
+   single: Link
+   single: Creating PTP Links
+   single: New link
+
+  
+Creating PTP Links
+===================
+
+To create a new PTP Link from the map view, click |new_ptp_link| on the right panel of the project window. This opens the PTP Link Mode window
+
+.. _new_ptp_link_mode:
+.. figure:: new_ptp_link_mode.png
+
+   New PTP Link Mode
+   
+Set the Maximum Height (which is above ground and is used at both ends of the link). Then either click on the map at the required location for the first end of the link, move the cursor to the required location for the other end of the link and click again or tick the **Enter coordinates?** box and enter the coordinates of each end of the link. When moving from one end of the link to the other on the map the length of the link is shown on the dotted path or the link length is shown below the coordinates when entering them in the PTP Link Mode window.
+
+|note|
+
+        Latitude and longitude should be separated by a comma. For example, 39.75093N, 104.84035W
+        
+To create new PTP Links between existing network sites, click the |icon_ptp_link| or **PTP Links** in the left hand tool bar. This displays the PTP Links table view page. Click |icon_add| from either the list or table view to create new PTP Links. This displays the **Create PTP Links** page.
+
+.. _create_ptp_links:
+.. figure:: create_ptp_links.png
+
+  Create PTP Links
+
+Select the first end of the link in the top **From** list and the bottom panel shows the list of available network sites it can connect with. Select one or more network sites and hit OK. The sites are listed in order of range from the selected end of the link, with the shortest first. The filter field narrows the choice when there is a large number of network sites in the list. A warning will be shown if two sites already have a PTP link connection, but additional PTP links between the same two sites can be created.
+
+
+
+.. |note| image:: note.jpg   
+.. |new_ptp_link| image:: icon_right_menu_ptp_link.png
+.. |icon_ptp_link| image:: icon_menu_ptp_link.png
+.. |icon_add| image:: icon_add_button_extend.png

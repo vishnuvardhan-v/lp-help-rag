@@ -1,0 +1,724 @@
+.. index::
+   single: Changes to application
+   single: Errors fixed
+   single: Feature changes
+   single: Software changes
+
+
+Changes to LINKPlanner
+======================
+
+This is a list of the main changes that have been made to the LINKPlanner application since version 6.0.0
+
+Changes since version 6.0.0
+-----------------------------
+
+Changes in version 6.3.3
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**New or changed features**
+
+* General
+
+	* Added bulk editing capabilities to the Site, PTP Links, and PMP table views.
+	* Added the **Show in Map** and **Revert Changes** option to the Sites, Links, and Network Devices details panel.
+	* Updated geomagnetic declination in line with changes from NOAA
+	* Added the new field **Mesh Links Per Sector** to the Terragraph Planner to allow the user to choose the mesh links required per sector.
+	
+* PTP 670/700
+
+	* Add support for PTP670/700 HCMP products in PMP mode.
+	
+* ePMP
+
+	* Added support for the ePMP Force 4518 in both PTP and PMP mode.
+	* Added Rwanda regulatory in the 5.1 GHz, 5.2 GHz, 5.4 GHz and 5.8 GHz bands for ePMP 11ac and 11ax products
+	* Retired ePMP Force 425 range extender.
+	
+* PMP 450
+
+	* Added United Kingdom regulatory in 3.9 GHz band for PMP 450m.
+	* Updated the PMP 450b6 FCC/IC regulatory limits in the 5.8 GHz band.
+	
+* PTP 820/850
+
+	* Added PTP 850EX-P in 80 GHz band.
+	* Added 2+0 XPIC Link Type for the PTP 850EX.
+	* Replaced the standalone radio part with the radio with activation keys part in the PTP 850EX BOM.
+	* Added Canada regulatory in the 8 GHz and 15 GHz bands for PTP 820A with RFU-D/RFU-D HP products.
+	* Updated PTP 820/850 products to Release 12.9
+	
+**Bug Fixes**
+
+* Corrected the PMP 450v AP and SM regulatory limits in the FCC/IC 5.1 GHz band.
+* Ensured that the appropriate TwistPort adapter is included in the BOM for ePMP products when RF Elements TP antennas are selected.
+* Fixed the issue preventing the remote end height from being set on 2+0 PTP links.
+* Fixed the N000000L179 PSU quantity in the PTP 850EX BOM.
+* Ensured that the correct Canada radio part is added to the ePMP 4600 series products.
+* Ensured that the LINKPlanner project export and project report include the Project Settings details.
+* Fixed the issue where the site did not include a default name when importing a KML file without a site name.
+* Fixed the issue where multiple clicks on the 'Create Sites' button while importing caused duplicate sites to be created.
+* Added a message to the Convert or Duplicate Site field to notify the user when site limits are exceeded.
+
+
+
+Changes in version 6.3.2
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**New or changed features**
+
+* General
+
+	* Replaced Bing Map layers with Google Map layers
+	
+**Bug Fixes**
+
+* Corrected the issue of azimuth overwriting in the PMP Network Devices table when **Copy from existing** option is used.
+* Ensured that the message is displayed properly in the confirmation dialog popup window when editing the built in antenna.
+
+
+Changes in version 6.3.1
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**New or changed features**
+
+* ePMP
+
+	* Added backward compatibility between ePMP 4500 series AP (11ax) with 11ac SMs.
+	* Added Beamforming mode for the ePMP 4500, ePMP 4500C and ePMP 4600 APs.
+	* Updated ePMP 11ax capacity algorithm.
+	* Updated sensitivity levels for ePMP Force 4525 and Force 4525L to Release 5.9.0
+	* Added ePMP Force 4525L Feedhorn parts to the Optional Extras.
+
+* PMP 450
+
+	* Updated FCC regulations for PMP 450b6 SM product.
+
+* PTP 820/850
+
+	* Added N000000L179 PSU to the PTP 850EX Bill of Materials (BOM).
+	* Added 375 MHz T/R Spacing for PTP 820A with RFU-D HP under the 8 GHz band and *Other* regulation.
+	* Added 315 MHz and 322 MHz T/R Spacing for PTP 820A with RFU-D under the 15 GHz band and *ETSI* regulation.
+	* Added CommScope HX10-11W-6GF antenna in 11 GHz band for licensed PTP 820/850 products.
+	* Retired PTP 820G Single Modem part and replaced with Dual Modem part.
+	* Retired PTP 820C product in all bands.
+
+* General
+
+	* Added project level BOM spreadsheet export
+	* Added an option to create sites from the Network Sites and Subscriber Sites table views.
+	* Added a confirmation dialog when the delete viewshed option is clicked
+
+**Bug Fixes**
+
+* Corrected PTP 820A with RFU-D HP TX powers
+* Fixed the issue where the correct Tx/Rx frequency was unable to be set for PTP 820/850 2+0 and 4+0 link types.
+* Ensured that performance requirements can be set independently for each path of PTP 820/850 2+0 and 4+0 link types.
+* Fixed the issue where LINKPlanner was crashing when switching from PTP 820/850 2+0 XPIC link type to 4+0 XPIC link type
+* Fixed the issue on the AFC page where Antenna Height, Horizontal Distance, and Vertical Distance fields were locked for editing.
+* Removed the GPS puck kit from the ePMP Force 4625 ROW BOM.
+* Ensured that LINKPlanner projects with custom antennas import without errors
+* Fixed the issue where the *No* and *Close* buttons were unresponsive in the TP import dialog
+* Ensured that the selection in the profile chart consistently matches the click location when editing the path profile.
+* Fixed the issue where the user was unable to add the TX1000 tower switch to the sites.
+* Ensured that new network sites created using the map toolbar are visible in the network site list when the *Use Map View to Filter* option is enabled.
+
+
+Changes in version 6.3.0
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**New or changed features**
+
+* UI Changes
+
+	* Added top menu bar which contains Project, Reports, Import, Export, Preferences and Help menu options.
+	* Left menu bar is moved from list view to tree view.
+	* Added delete button in Network Device, SM, Site, PTP detail page tool bar.
+	* Added detailed pop-up help for the different features.
+	* Added performance details charts to the PTP, PMP and Mesh links.
+	* Added site name template to the Network and Subscriber Site map tools.
+
+* AFC
+	* Added product specific lookup to the AFC feature.
+
+* PTP 820/850
+
+	* Added 2+0 Spatial Diversity, 1+1 HSB, 2+2 link types to the PTP 820C, PTP 820C HP, PTP 820A with RFU-D and PTP 820A with RFU-D HP products.
+	* Added PTP 820A with RFU-D in the Lower 6 GHz, Upper 6 GHz, 7 GHz, 8 GHz, 11 GHz, 13 GHz, 15 GHz, 18 GHz and 23 GHz band.
+	* Added PTP 820A with RFU-D HP in the Lower 6 GHz, Upper 6 GHz, 7 GHz, 8 GHz and 11 GHz band.
+	* Added 375 MHz T/R Spacing for PTP 820G with RFU-C under the 8 GHz band and Other regulation.
+	* Added 160 MHz bandwidth for PTP 850C under Other regulation.
+	* Added 80 MHz bandwidth for PTP 850C, PTP 820S, PTP 820C HP, PTP 820F with RFU-D/RFU-D HP and PTP 820A with RFU-D/RFU-D HP products under the Upper 6 GHz band and ETSI regulation.
+	* Updated ETSI 80 MHz MRMC script for PTP 850C, PTP 820F with RFU-D/RFU-D HP and PTP 820A with RFU-D/RFU-D HP.
+	* Added 112 MHz bandwidth for PTP 820F with RFU-D/RFU-D HP and PTP 820A with RFU-D/RFU-D HP in the 11 GHz band and ETSI regulation.
+	* Added AC/DC converter part N000000L054 to the optional extras of PTP 820A, PTP 820G and PTP 850C products.
+	* Added FCC License Coordination report.
+
+* PTP 700
+	* Added PTP 700 product support. TDD Sync is not supported in this release.
+	
+* PMP 450
+
+	* Added PMP 450v 2x2 SM.
+	* Added two component carrier in single carrier support for PMP 450v 4x4 AP.
+	* Added two Component Carrier support for PMP 450v SM.
+	* Updated PMP 450v 4x4 transmit power as per Rel 24.1
+	
+* ePMP
+
+	* Added ePMP 4500C Network Device.
+	* Added NetPoint antennas for the ePMP 4600C and ePMP 400C in PTP mode.
+	* Added RF Elements 4x4 Asymmetrical horn antennas to the ePMP 3000.
+	* Revised Force 130, Force 300-16, Force 300-19R, Force 300-19, ePMP 4500L, Force 4625 and ePMP 4600 Part numbers.
+	
+* 60 GHz cnWave
+
+	* Retired cnMaestro X Subscriptions for cnWave 60 GHz Client Nodes
+	* Added the capability to export cnMaestro compatible Node and Link files for quicker provisioning.
+	* Removed multipath availability calculations for 60 GHz cnWave products. Only rain availability is calculated for the product.
+	
+* cnWave 5G Fixed
+	* Maximum MU-MIMO grouping size has been increased from six to eight in both downlink (DL) and uplink (UL) for 100 and 112 MHz bandwidths.
+	
+* General
+
+	* Retired N000000L142 60W PoE.
+	* Made Azimuth value editable in the Network Device table.
+	* Added project level proposal report for export.	
+
+**Bug Fixes**
+
+* Ensured that the correct ODU parts are selected for the PTP 820A product with T/R spacing of 530 MHz in the 11 GHz band.
+* Removed 2.5 Gbps throughput limit for the PTP 820A product with Fiber Optic cable.
+* Fixed the issue of clearing the Tx frequency when there is a change in Tx frequency for 2+0 and 4+0 link types of licensed products.
+* Corrected SFP part quantity for the PTP 850EX product.
+* Fixed issue with Select locations in map Viewshed feature.
+* Fixed the issue of being unable to create Upper 6 GHz viewshed.
+* Making sure that Network Devices move with site when offset are removed.
+* Ensuring that the 'Power from switch?' option is retained according to the user's selection when the Sync Sources are changed for the product.
+* Fixed the issue of clearing of the Tx frequency when there is a change in Tx frequency for licensed products.
+* Corrected the azimuth field to accept only integer values.
+
+Changes in version 6.2.2
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**New or changed features**
+
+* AFC
+
+	* Added AFC map feature which allows the user to perform an Automated Frequency Coordination (AFC) lookup for USA and Canada.
+	
+*  PTP 820/850
+
+	* Added 4+0 link types for PTP 850C, PTP 820C and PTP 820C HP.
+	* Added PTP 820A with RFU-D in NTIA 7, 8 and 15 GHz band.
+	* Added PTP 850EX.
+	* Introduced 7, 8, 13 and 15 GHz PTP 850C radios.
+	* Reversed the retirement of PTP 820C HP product.
+	* Added N000000L129 PSU as an optional extra for PTP 820G product.	
+	
+* ePMP
+
+	* Added Mexico regulatory in 5.1 GHz and 5.2 GHz band for ePMP 11ac and 11ax products.
+	* Updated Uganda regulatory in 5.8 GHz and 5.2 GHz band for ePMP products.
+	* Updated FCC/IC EIRP limits for ePMP 4600, ePMP 4600L, ePMP Force 4600C and ePMP Force 4625 products.
+	* Revised Force 300-25L and Force 200L Part numbers.
+	* Retired ePMP Force 300-13L product.
+	
+* PMP 450
+
+	* Added PMP 450b6 SM.
+	* Updated sensitivity levels and Tx power per modulation for PMP 450v 4x4 to Release 24.
+	* Added PMP 450m AP and 450b SM in 3.9 GHz band.
+	* Updated 3 GHz Mexico regulatory for PMP 450 products.
+	* Added support for PMP 450 products in 5.3 GHz band for Other regulatory.
+	* Retired 900 MHz and 2.4 GHz PMP 450 Products
+
+*  60 GHz cnWave
+
+	* Removed V3000 single pack antenna C600500D001
+	
+*  Tower Switches
+
+	* The External Sync field is separated into Sync Input and cnPulse fields.
+	* Added Bullet 720 option under Sync Input field.
+	
+*  General
+
+	* AC power Injector N000065L001 replaced with C000000L141
+	* Added icons to menu names in the left toolbar.
+	* UI improvements to ND and SM properties page.
+
+	
+**Bug Fixes**
+
+* Corrected Maximum range for ePMP 11ac and 11ax products in both ePTP and PTP ePMP PTP Mode.
+* The user interference level fields are now available in the PMP installation report's performance section.
+* Fixed the issue of displaying MCS mapping in performance summary when Maximum MCS is different at each end of the link.
+* Removed Multiple Ethernet without LAG Ethernet Configuration option for PTP 850C
+* Updated default priority of ePMP SM products, so that ePMP SM products defaults to low gain Integrated SM products.
+* Making sure that the site importer accepts only valid Node Types.
+* Fixed an error in creating a viewshed when more than one location were selected in the map.
+* Restricted admin users to enter their own email address in user permission panel when adding read-only users.
+* Displaying error messages when the admin user try to add unknown user in the user permission panel.
+* Fixed the issue with report file names having special characters.
+
+
+
+Changes in version 6.2.1
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**New or changed features**
+
+* PMP 450
+
+	* Added carrier aggregation for PMP 450v 4x4 to the PMP side of the LINKPlanner. Support for multiple Component Carriers in a single Carrier will be added in the future.
+	
+*  Advanced Features
+
+	* Added tables displaying the available antennas.
+	
+		* Custom antennas can now be defined and selected for unlicensed PTP products and Subscriber Modules.
+		* PTP and Subscriber Module antenna patterns can be downloaded when the pattern is available.
+	
+	* Added Stop button to the Best Server analysis.
+	
+* cnWave 5G Fixed
+
+	* Updated Tx power levels for cnWave 5G Fixed to Release 3.2.0
+	
+* ePMP
+
+	* Added RF Elements ultra dish antennas for ePMP connectorized PTP and SM products.
+	
+* General
+
+	* Added capability to convert the site type and create duplicate sites for network and subscriber sites.
+	
+**Bug Fixes**
+
+* Ensured for PMP 450 SM products, the DL/UL Maximum Mod Mode dropdown list is updating as per the MIMO Rate Adapt parameter selection.
+* Updated  cnPulse device for 450v 4x4 SM radios
+* Fixed the issue of Network Device not refreshing after deleting Subscriber Modules attached to it.
+* Fixed errors associated with site selection in the map when creating viewsheds
+* Fixed bug saving Golay settings for 60 GHz cnWave Network Devices.
+* Fixed a bug in the table views where the Delete button is not always enabled correctly.
+* Fixed 60 GHz cnWave performance summary when there are errors on a sector.
+* Fixed issue when editing the network plan in Terragraph Planner. 
+* Ensured that the error messages are displayed when the empty project or files are imported to the LINKPlanner.
+* Corrected default SM Receive Target Level values as per the product selection.
+* Prevent duplicate mesh links from being created.
+* Ensured that the select all in the list and table views is applied only to the visible rows.
+* Extract the boundary data from a Terragraph Planner KML/KMZ file so that the original file is not written to disk. This prevents possible security exploits and fixes issues with incompatible file names.
+* Corrected issues when exporting and displaying projects in Google Earth
+
+
+Changes in version 6.2.0
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**New or changed features**
+
+*  PTP 850/820
+
+    * Added 2+0 Co-Polar (ACCP), 2+0 Cross-Polar (ACAP), 2+0 XPIC (CCDP) Link Type for the following licensed band PTP 850/820 products. 
+    
+        * PTP 850C
+        * PTP 850E
+        * PTP 820C
+        * PTP 820S 
+        * PTP 820G with RFU-C
+        
+    * Retired PTP 820C in U6 GHz band.
+    * Retired PTP 820C HP in 11 GHz band.
+
+*  ePMP
+
+    * ePMP 11ax updates
+    
+        * Added support for ePMP 4500, ePMP 4500L, ePMP Force 4525, ePMP Force 4525L, Force 400C and Force 425 products to the PMP side.
+        * Added support for ePMP 4600, ePMP 4600L, ePMP Force 4625, ePMP Force 4600C products to the PMP side.
+        * Added TDD support for ePMP 4500/4600 products in PTP mode.
+        * Updated Transmit Power levels for ePMP Force 400C, ePMP Force 425, ePMP 4500L, ePMP Force 4525, ePMP Force 4525L, ePMP Force 4600C
+        
+    * Retired 2.4 GHz ePMP 1000 product.
+
+*  PMP 450
+
+    * Added initial support for PMP 450v 4x4 ND and SM product to the PMP side of the LINKPlanner, using existing single carrier functionality. Carrier aggregation will be added in future releases.
+
+*  Advanced Features
+
+    * Added Terragraph Planner advanced feature to automatically plan 60 GHz cnWave networks.
+
+*  Viewshed
+
+    * Added High Resolution Viewshed feature which uses lidar data if available for the region
+
+*  cnWave 5G Fixed
+
+    * Updated sensitivity levels for cnWave 5G Fixed to Release 3.1.1.
+
+*  60 GHz cnWave
+
+    * Included interference field on the mesh link panel when interference levels are set on DN. Interference levels can now be adjusted on the individual mesh links.
+
+*  General
+
+    * Added Calc Tilt feature for the PMP Network Device.
+    * Added ability to scale the display size of the PMP ND sectors on the map without affecting SM Range connectivity.
+    * Added Reflection Editor capability on path profile for PTP Links.
+    * Added interpolating heights or obstructions in a given range and inserting points in a defined interval along the path features to the path profile editor.  
+    * Displaying warning to the user if LINKPlanner truncating long names while importing the project.
+
+**Bug Fixes**
+
+*  Removed Tolly Mix frame size option for PTP 850E.
+*  Corrected PTP 850E throughput values to show Layer 2 the same as the other products, rather than Layer 1.
+*  Corrected Canadian compliance of 11 GHz Cambium Networks 4ft C1000082D049 antenna
+*  Corrected PMP 450 family sensitivity levels for MIMO-A modulation modes
+*  Fixed the issue of PMP add Network Devices wizard failing for the ePMP product selection.
+*  Corrected “Right Height” column name in PTP table view.
+*  Fixed a bug preventing the Site CSV file from importing without the optional fields.
+*  Ensured that projects with missing profiles import without errors.
+*  Ensured that correct proposal and installation reports are produced for the mesh link selected.
+*  Default the Maximum Mod Mode to the highest mode when changing the product.
+*  Fixed issue with the path profile display when the height units are in “feet”.
+*  Ensured that warning messages are updating correctly in Create PTP Links dialog.
+*  Prevent very long PTP links from being created in the map
+
+
+
+Changes in version 6.1.4
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**New or changed features**
+
+*  PTP 850/820
+
+    * Added support for the following licensed band PTP 850/820 products with 1+0 link configuration. 
+    
+        * PTP 850C
+        * PTP 850E
+        * PTP 820C
+        * PTP 820S 
+        * PTP 820G with RFU-C
+
+*  ePMP
+
+    * ePMP 11ax updates
+    
+        * Added support for ePMP 4500L, ePMP Force 4525, ePMP Force 4525L products to the PTP side.
+        * Added support for ePMP 4600L, ePMP Force 4625, ePMP Force 4600C products to the PTP side.
+        * Extended support for ePMP Force 400C and ePMP Force 425 products in 5.9 GHz and L6 band.
+
+    * Added connectorized antenna options to FCC/IC bands in PMP ND mode.
+
+*  60 GHz cnWave
+
+    * POP sites are identified differently in the map view.
+    * Extended the list of available column options in the Mesh Links table.
+
+*  cnWave 5G Fixed
+
+    * Included Mu-MIMO throughput values in the ND Performance Summary.
+    * Added Mu-MIMO information to the Installation and Proposal reports.
+
+*  General
+
+    * Added Path Profile editor.
+    * Added Google Earth Exporter
+    * Added antenna selection component PTP, PMP table with the required information.
+    * Extended the list of available column options in the PTP Links table.
+
+**Bug Fixes**
+
+*  Corrected issue of 60 GHz cnWave products not respecting conducted power limits on ND when user limits selected.
+*  Fixed bug in 60GHz cnWave, which errored when sites in the sector warnings are using Unicode names
+*  Corrected ND/SM Interference constraint limits to only allow Interference values between -144 and -40 dBm.
+*  Added “Power from switch” option for 3 GHz PMP 450m, to power the LPU
+*  Fixed the issue with Network Site maximum height resetting to default when the Network Site moved in the map view.
+*  Corrected PMP Network Counts and added PTP Link Counts column to the Network Sites table.
+*  Removed Group Name from the PMP proposal and installation reports.
+*  Corrected Connected Subscribers counts in the PMP proposal and installation reports.
+*  Updated the hover help message on Antenna tilt label.
+
+
+
+Changes in version 6.1.3
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**New or changed features**
+
+*  PTP 670
+
+    * Added support for PTP 670 without the network synchronization capability
+
+*  cnMatrix - Tower switches
+
+    * Added support to add cnMatrix TX switches to sites, which can then be used for power or synchronization for PTP ends and Network Devices
+
+*  60 GHz cnWave
+
+    * Added ability to create mesh links in the map view
+
+*  5G Fixed cnWave
+
+    * Added Mu-MIMO
+
+*  General
+
+    * Updated the look and feel of the tooltips on the map view
+    * Added a search capability to the table columns dropdown selection menu
+    * Automatically populate the Tower Site email with site ID and name
+    * Removal of American Tower site locations
+
+**Bug Fixes**
+   
+*  Viewsheds
+
+    * Ensured they update correctly after deletion and hide properly when there are collocated sites
+    * Correctly use existing configuration when selecting the "Create from existing" option
+    * Maintain network site naming when there are collocated subscriber sites
+    * Use appropriate display resolution for heights and ranges 
+    * Prevented height above clutter options being used when Clutter is not enabled
+    * Ensured that pending or failed viewsheds are only displayed on relevant project
+    
+*  Update Save/Discard icon colors correctly when saving a project from the main menu
+*  Display limit warnings appropriately in the UI when adding sites, Network Devices and links
+*  Persist user selected column order in sites tables, within the project and between projects as for other tables
+*  Corrected PTP tables to use correct default columns and logical sorting, rather than sorting by string 
+*  Prevented the Delete option being active on links in a read only project
+*  Corrected 60 GHz cnWave adjacent sector warning so that it only applies if sectors are on the same channel
+*  Ensured that the ND templates are recalculated correctly after a software update or project level recalculation
+*  Modified the CSV export precision to match the table view precision
+*  Prevented UI crashing when toggling from PTP links to table view
+*  Prevented user entering negative IP Required limits in Performance Summary
+*  Improved the Path Profile vertical scale labels
+*  Ensured that clutter height edits are used correctly in the Best Server Analysis
+*  Matched the SM antenna polarity with that at the ND for cnReach single polarization antennas 
+*  Prevented the creation of PTP links from the same start and end location
+
+
+Changes in version 6.1.2
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**New or changed features**
+
+*  Addition of Tower Sites
+
+    * Added support for Crown Castle and American Tower site locations
+
+**Bug Fixes**
+
+*  Ensured selections in sites table views clear when switching between them to prevent unexpected deletions
+*  Prevented sharing permissions from being copied or duplicated. All file instances must have their own sharing permissions configured individually
+*  Correct number entry in the SM Range field to allow values below 0.1 to be entered easily
+*  Prevent the user power/EIRP from being set as a string
+
+
+Changes in version 6.1.1
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**New or changed features**
+
+*  PTP support for the following products
+
+    * 60 GHz cnWave
+    
+*  60 GHz cnWave
+
+    * Added Bridge in a Box part numbers for V1000 to V1000 and V2000 to V2000 PTP links
+    
+
+**Bug Fixes**
+
+*  Ensure that the correct modulation modes are shown in the Performance Summary when the remote product is updated on a PTP link.
+*  Allow short links (>=1 m) to be created for both PTP and PMP, to support 60 GHz cnWave. 
+
+
+
+Changes in version 6.1.0
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**New or changed features**
+
+*  PTP support for the following products
+
+    * ePMP family
+    * PMP 450 family
+    
+*  cnWave 5G Fixed
+
+    * Added 26 GHz Australia regulation
+    * Expanded Frequency range for 26 GHz “Other” to 27.5 GHz
+    * Updated B1000 antenna pattern
+    
+*  60 GHz cnWave
+
+    * ETSI/Israel regulations updated
+    
+*  PMP 450
+
+    * Updated Indonesia Regulatory limits in 5.8 GHz and 2.4 GHz
+    
+*  General
+
+    * Added MSN field to Network Device and Subscriber Module General panel
+
+**Bug Fixes**
+
+*  Added warnings to the 60 GHz cnWave if CN’s and mesh links are within the 20 deg separation zone
+*  Corrected export issue when using non-default Golay codes on Mesh or PMP links.
+*  Ensure user set EIRP and Power values respect the power resolution step increment size for the given product and all set values and limits are to 1 decimal place
+*  Fixed issue on Viewsheds to respect the user configured range units and improve Create option to prevent multiple requests being sent
+*  Update mesh links automatically when a site is moved
+*  Corrected aggregation issues in Project Level BOM for optional extras on imported projects
+*  Ensure ND Performance Summary responds to improvements in SM Performance requirements
+
+
+Changes in version 6.0.4
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Bug Fixes**
+
+* Enable Network Devices to be created through the Create Network Device Wizard
+* Ensure that PMP links created through the map view are processed correctly
+* Added a maximum range limit of 30 km to the viewsheds
+
+
+Changes in version 6.0.3
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**New or changed features**
+
+*  Added mesh links for 60 GHz cnWave 
+
+**Bug Fixes**
+
+*  Prevent modelled beamwidth from reverting to default value
+*  Ensure Best Server progress warnings persist when changing projects
+*  Maintain project list after discarding changes
+*  Refresh site tables correctly after site import
+*  Prevent duplicate site creation when double clicking on map
+*  Prevent errors with invalid or null height settings
+*  Display warnings when number of SMs to be added exceeds requirement
+
+
+Changes in version 6.0.2
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**New or changed features**
+
+*  60 GHz cnWave 
+
+    * Added V2000 as a CN
+    * Added V3000 High Gain Radome
+    * Added Node Type definition to Networks sites
+    * Added alignment tube automatically to DN BOM when V3000 CNs are on the DN
+
+
+*  28 GHz cnWave
+
+    * Added 50 and 100 MHz channel bandwidths
+    * Added Spatial Frequency calculation
+
+*  General
+
+    * Increase the default limits for number of projects per user and sites, Network Devices and PMP Links within a project
+
+
+**Bug Fixes**
+
+*  Prevent zero length links from causing errors
+*  ePMP - mark CMM5 as retired
+*  PMP 450m - changed default to Mu-MIMO mode
+*  Corrected aggregation of parts shared between CMM5 and other products and aggregation of cable products from optional extras
+*  ePMP MP 3000 MicroPop corrected Surge Suppressor and Power Supply to 56V devices
+*  Ensure that projects without profiles can be imported
+
+
+Changes in version 6.0.1
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**New or changed features**
+
+*  Import
+
+    * Added site import from kml/kmz
+    * Improved notification of errors/warnings for both csv and kml/kmz imports
+
+*  Bill of Materials
+
+    * Addition of optional extras
+    * Added capability to adjust quantities
+
+*  Map features
+
+    * Added SM Range and units to Network Device Mode for quickly adding Network Devices on the map
+    * Added a ruler option to the right hand toolbar to measure range and bearing from any point on the map
+    * Display summary information when the user selects a feature in the map view
+    * Viewshed – added “Show All Viewsheds” option
+
+*  Table views
+
+    * Added ability to choose the columns displayed on the PMP Network Device, PMP Links and Links to Subscriber Module Tables and added more column options.
+    * Added a performance summary table on the network site panel to show aggregate performance at the site level
+    * Persist table selections and table position when changes are made
+    * Improve filtering to work on displayed values
+    * Improve sorting so that band and throughput take account of units 
+    * Improve visibility of updates happening within the tables
+
+*  PMP 450 Release 21.1
+
+    * Removed EIRP limits in 900 MHz for Brazil.
+    * Added N-to-N cable to the BOM for PMP 450 and 450i SM connectorized products.
+
+*  ePMP
+
+    * Retired ePMP 2000 product.
+
+*  cnWave 28 GHz:
+
+    * Updated BOM for BTS with default AC power supply.
+    * Updated BOM for CPE with default CAT6 cable and grounding kit.
+    * Updated Installation report.
+
+*  cnWave 60 GHz:
+    * Updated the default power supply for V5000 and V3000.
+    * Added Golay codes at link levels.
+
+*  General
+
+    * Automatically recalculate existing projects when opened in a new version
+    * Show link warnings when the mouse hovers over the link in the list or table views
+    
+**Bug Fixes**
+
+*  Added site names to the PMP link performance summary tables
+*  Added the Propagation Model to the Network Device Performance Summary table
+*  Prevent errors when changing height units when the site list is visible
+*  Disabled Best Server analysis edit capability, during Best Server calculations and creation
+*  Reset invalid inputs to zero in Best Server Analysis section
+*  Included antenna parameters recalculation notifications when SM attributes change
+
+
+
+Changes in version 6.0.0
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**New features**
+
+*  PMP support for the following products
+
+    * 28 GHz cnWave
+    * 60 GHz cnWave
+    * cnReach
+    * ePMP
+    * PMP 450
+    
+
+
+
+
+
+

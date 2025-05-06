@@ -1,0 +1,57 @@
+.. index::
+   single: Creating
+   single: Height
+   single: Latitude
+   single: Longitude
+   single: Creating a Site
+   single: Site
+   
+Creating Sites
+==============
+
+If sites cannot be imported, create them using the |new_network_site| for Network Sites or |new_sub_site| for Subscriber Sites, in the right hand toolbar. In each case set the Maximum Height (which is above ground) for the site. The units are set in the Preferences page (feet or meters). Then either click on the map at the required location or tick the **Enter coordinates?** box and enter the coordinates.
+
+To change the name of the site or add a description, see :doc:`site_page`
+
+Latitude and Longitude Formats
+------------------------------------
+
+The latitude and longitude must be in a format which can be understood and must use the WGS84 frame of reference. The following formats are supported:
+
+    +-------------------------------------------------------+---------------+
+    | Format                                                |  Examples     |
+    +=======================================================+===============+
+    | Decimal degrees prefixed by sign to indicate point of |  `+12.34567`  |
+    | Compass:                                              |               |
+    |                                                       |  `-12.34567`  |
+    | `+` means North or East.                              |               |
+    |                                                       |               |
+    | `-` means South or West.                              |               |
+    +-------------------------------------------------------+---------------+
+    | Decimal degrees and point of Compass.                 |  `12.34567N`  |
+    |                                                       |               |
+    |                                                       |  `12.34567E`  |
+    +-------------------------------------------------------+---------------+
+    | Degrees, decimal minutes and point of compass.        |  `12:34.567S` |
+    +-------------------------------------------------------+---------------+
+    | Degrees, minutes, decimal seconds and point of        | `12:34:56.7W` |
+    | compass.                                              |               |
+    +-------------------------------------------------------+---------------+
+
+    .. index::
+       single: WGS84
+
+    WGS84 is used by Google Earth(TM) and all GPS equipment, but sometimes the GPS is set to some other frame of reference.
+
+|note|
+
+        LINKPlanner stores site coordinates to 5 decimal places (~1m). If the coordinates are entered to a higher precision then the value will be rounded.
+
+
+.. |new_site_icon| image:: new_site_icon.png
+.. |subscriber_place| image:: icon_subscriber_place.png
+.. |note| image:: note.jpg   
+.. |new_network_site| image:: icon_right_menu_network_site.png
+.. |new_sub_site| image:: icon_right_menu_subscriber_site.png
+
+

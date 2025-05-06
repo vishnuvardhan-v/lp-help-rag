@@ -1,0 +1,88 @@
+.. index::
+   single: Details
+   single: Performance Details
+   single: Performance
+
+   
+Performance Details
+===================
+
+This section contains more detail about the predicted performance of the link. 
+
+
+.. _sm_performance_details:
+.. figure:: sm_performance_details.png
+
+   PMP 450 Link Performance Details
+
+Common Details - 450 family
+------------------------------------
+
+
+**Mode**: The modulation technique used.
+
+**MIMO Type**: Indicates whether the mode is operating in MIMO-B (dual payload) or MIMO-A (single payload) mode.
+
+**Multiplier**: Indicates the relative capacity capability of the different modes.
+
+**Aggregate Max Data Rate for 1 SM (Mbps)**: The maximum aggregate throughput achievable per modulation mode if only 1 SM is active on the Network Device (sum of both directions). This field is automatically adjusted for the max range of the Network Device.
+
+
+Common Details - ePMP
+----------------------
+
+**MCS**: The Modulation Coding Scheme Number
+
+**Mode**: The modulation technique used.
+
+**Payloads**: Indicates whether the modulation mode is using dual or single payload
+
+**Code Rate**: The code rate for the specified mode.
+
+**Aggregate Max Data Rate for 1 SM (Mbps)**: The maximum aggregate throughput achievable per modulation mode if only 1 SM is active on the Network Device (sum of both directions). This field is automatically adjusted for the max range of the Network Device and the number of SMs connected to the Network Device.
+
+Common Details - cnWave 5G Fixed
+------------------------------------------
+
+**MCS**: The Modulation Coding Scheme Number
+
+**Payloads**: Indicates whether the modulation mode is using dual or single payload
+
+
+**Aggregate Max Data Rate for 1 SM (Mbps)**: The maximum aggregate throughput achievable per modulation mode if only 1 SM is active on the Network Device (sum of both directions). This field is automatically adjusted for the max range of the Network Device and the number of SMs connected to the Network Device.
+
+Common Details - 60 GHz cnWave
+-----------------------------------------
+
+**MCS**: The Modulation Coding Scheme Number
+
+**Mode**: The modulation technique used.
+
+**Code Rate**: The code rate for the specified mode.
+
+Common Details - PTP 670 and 700 HCMP
+------------------------------
+
+**Mode**: The modulation technique used.
+
+**Code Rate**: The code rate for the specified mode.
+
+**Payloads**: Indicates whether the modulation mode is using dual or single payload
+
+**Aggregate Max Data Rate (Mbps)**: The maximum aggregate throughput achievable per modulation mode for the slave  (sum of both directions). This field is automatically adjusted for the max range of the Network Device and the maximum number of slaves connected to the Network Device.
+
+
+
+Performance to each end (Network Device and Subscriber Module)
+----------------------------------------------------------------------------------
+       
+**Max Data Rate for 1 SM (Mbps)**: The maximum user throughput achievable in the given direction if only 1 SM is currently active. For 60 GHz cnWave this is shown in Gbps.
+
+**Max Data Rate (Mbps)** (PTP 670 and 700 HCMP Only): The maximum user throughput achievable in the given direction for the slave. Modes above Highest Mod Mode or below Lowest Ethernet Mode are shown with Fade Margin, Mode Availability and Receive Time in Mode set to zero.
+
+**Fade Margin (dB)**: The margin available to each end in the specified Mode.
+
+**Mode Availability(%)**: The percentage of time that the modulation mode for each end is predicted to be available.
+
+**Receive Time in Mode(%)**: The percentage of time the specified mode is predicted to be used to receive data.
+

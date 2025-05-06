@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Setting Hot Standby Protection (1+1) &#8212; Cambium LINKPlanner Online Help (6.3.3)</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/default.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Planning PMP networks" href="planning_pmp_links.html" />
+    <link rel="prev" title="Setting 2+0 Single Antenna" href="setting_single_antenna.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="planning_pmp_links.html" title="Planning PMP networks"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="setting_single_antenna.html" title="Setting 2+0 Single Antenna"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="planning_ptp_links.html" >Planning PTP links</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="advanced_features.html" accesskey="U">Advanced Features</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Setting Hot Standby Protection (1+1)</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="setting-hot-standby-protection-1-1">
+<span id="index-0"></span><h1>Setting Hot Standby Protection (1+1)<a class="headerlink" href="#setting-hot-standby-protection-1-1" title="Permalink to this headline">¶</a></h1>
+<p>Hot Standby is available on PTP 700 and PTP 820 links, and it involves configuring two units at each end of the link to operate as primary and secondary (standby) units. For a more detailed understanding of 1+1 Hot Standby, see the appropriate product User Guide.</p>
+<p>Hot Standby can be enabled as described in <a class="reference internal" href="link_description_and_equipment.html"><span class="doc">Link Description and Equipment</span></a>.</p>
+<p>The link node gives access to the Link Description, Equipment Selection, Product Configuration and Bill of Materials aspects of the link configuration.</p>
+<section id="hot-standby-configuration-at-each-end">
+<span id="index-1"></span><h2>Hot Standby Configuration at Each End<a class="headerlink" href="#hot-standby-configuration-at-each-end" title="Permalink to this headline">¶</a></h2>
+<p>Select the required path for the protected link. In addition to the normal parameters as described in <a class="reference internal" href="link_description_and_equipment.html"><span class="doc">Link Description and Equipment</span></a>, links operating Hot Standby have the following additional attribute displayed:</p>
+<blockquote>
+<div><p><strong>Antenna Configuration</strong>: There are up to 4 options which can be selected to match the possible configurations for Hot Standby when using an ODU Product or PTP 820.</p>
+<ul class="simple">
+<li><p><strong>Common Antenna - Symmetric Coupling</strong></p></li>
+<li><p><strong>Common Antenna - Asymmetric Coupling</strong> - default setting</p></li>
+<li><p><strong>Redundant Antennas</strong> - PTP 700 Only</p></li>
+<li><p><strong>Spatial Diversity</strong>, see <a class="reference internal" href="setting_diversity.html"><span class="doc">Setting Diversity</span></a></p></li>
+</ul>
+</div></blockquote>
+<p>The primary and secondary parameters at each end can be configured as described in <a class="reference internal" href="configuration_at_each_end.html"><span class="doc">Configuration at Each End</span></a>, by selecting the following paths:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Primary to Primary</strong></p></li>
+<li><p><strong>Primary to Secondary</strong></p></li>
+<li><p><strong>Secondary to Primary</strong></p></li>
+<li><p><strong>Secondary to Secondary</strong></p></li>
+</ul>
+</div></blockquote>
+<p>Although the parameters can be configured through either the primary or secondary interface, some parameters are common to both configurations at the same end of the link. Any changes made to either primary or secondary configuration will automatically be reflected in the other configuration at that end of the link.</p>
+<blockquote>
+<div><p><strong>Antenna Type</strong>: If one of the common antenna protection options has been selected this value will be the same for both primary and secondary. If the redundant antennas or spatial diversity option have been selected then a different antenna can be chosen for primary and secondary. If using an FCC regulation Cat B, Cat B1 or Cat B2 antennas can be used as a receive only diverse antenna in locations where a Cat A primary antenna is required. In such locations these antennas must not be used for transmit, see <em>PTP 820 Series User Guide</em> or <em>PTP 850 Series User Guide</em> for further details on the correct way to commission the PTP 820 and PTP 850 product for use with these antennas.</p>
+<p><strong>Antenna Height</strong>: If one of the common antenna protection options has been selected this value will be the same for both primary and secondary. If the redundant antennas or spatial diversity option have been selected then a different antenna height can be chosen for primary and secondary.</p>
+<p><strong>Diversity Spacing</strong>: This field is only shown when the <strong>Antenna Configuration</strong> is set to <strong>Spatial Diversity</strong> and it shows the difference in height between the Primary and Secondary antennas. Improvement in availability will only occur when this value is greater than zero, see <a class="reference internal" href="setting_diversity.html"><span class="doc">Setting Diversity</span></a>.</p>
+<p><strong>Feeder Loss</strong>: This field will incorporate the coupler loss in addition to any waveguide loss. Any User Defined additional loss which has been included will be the same for both primary and secondary remote antennas for any of the common antenna protection options, but can be different for primary and secondary if the redundant antennas or spatial diversity option have been selected. The symmetric coupler will have the same loss for both primary and secondary, whereas the asymmetric coupler has a lower loss for the primary and higher loss for the secondary.</p>
+<p><strong>Maximum EIRP</strong>: The EIRP will often be different for the primary and secondary, in the majority of cases the primary will have the higher value. If the secondary has a higher value than the primary, a warning will be shown on the display, as this might violate the terms of the license.</p>
+<p><strong>Maximum Power</strong>: This field can be set independently for primary and secondary.</p>
+<p><strong>Tx Frequency</strong>: This value will always be the same for primary and secondary.</p>
+<p><strong>Interference</strong>: This value will always be the same for primary and secondary.</p>
+</div></blockquote>
+</section>
+<section id="hot-standby-bill-of-materials">
+<h2>Hot Standby Bill of Materials<a class="headerlink" href="#hot-standby-bill-of-materials" title="Permalink to this headline">¶</a></h2>
+<p>The Bill of Materials is displayed at the left corner of the link page and shows the full set of equipment required for both the primary and secondary units. If out-of-band management is required then additional items may be required to make up a full set of equipment, which can be selected via the <strong>New Extras</strong> <img alt="new_extra" src="_images/icon_new_extra.png" /> icon, see <a class="reference internal" href="bill_of_materials_for_link.html#bill-of-materials-optional-extras"><span class="std std-ref">Bill of Materials Optional Extras</span></a>.</p>
+</section>
+<section id="hot-standby-performance-summary">
+<span id="index-2"></span><h2>Hot Standby Performance Summary<a class="headerlink" href="#hot-standby-performance-summary" title="Permalink to this headline">¶</a></h2>
+<p>The performance summary information is shown separately for each path and can be accessed by selecting the appropriate path, for example <strong>Primary to Secondary</strong>, from the tabbed view. The required performance parameters can be set independently for each path and are defined in the usual way, see <a class="reference internal" href="performance_summary.html"><span class="doc">Performance Summary</span></a>.</p>
+<p>If the predicted performance of the primary to primary path is below requirements, then the main link node will be displayed in <strong>red</strong>. If the performance of any of the other paths is below requirements then the associated sub-path in the tabbed view will be shown in <strong>red</strong>, but will not affect the annotation of the link node, the map display or the link table . If a particular path is not considered relevant to the performance of the link, it can be “switched off” by setting the following:</p>
+<ul class="simple">
+<li><p><strong>Mean IP Required</strong> to 0.1 Mbps</p></li>
+<li><p><strong>Min IP Availability Required</strong> to 0.0000%</p></li>
+</ul>
+</section>
+<section id="hot-standby-reports">
+<h2>Hot Standby Reports<a class="headerlink" href="#hot-standby-reports" title="Permalink to this headline">¶</a></h2>
+<p>A detailed report is produced, which details all four paths, on clicking one of the report buttons.</p>
+<p>The proposal and installation reports are created for a given link, not path, in the usual way, see <a class="reference internal" href="creating_reports.html"><span class="doc">Creating Reports</span></a>.
+The detailed reports contain both installation and performance information for each of the path combinations, with the significant changes outlined in the following sections.</p>
+<section id="proposal-report">
+<h3>Proposal Report<a class="headerlink" href="#proposal-report" title="Permalink to this headline">¶</a></h3>
+<p>The throughput information for each end of the link and the link summary information is shown for each of the paths.</p>
+<blockquote>
+<div><figure class="align-default" id="id1">
+<span id="proposal-performance-hot-standby"></span><img alt="_images/proposal_performance_hot_standby.png" src="_images/proposal_performance_hot_standby.png" />
+<figcaption>
+<p><span class="caption-text">Proposal Report Performance Information for Protected (1+1) Link</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<p>For both sets of performance information the primary to primary notation refers to the left end to right end of the link, in this example Wood Farm to West Tower.</p>
+<p>For the Performance to West Tower the information is shown for the performance received at West Tower when:</p>
+<ul class="simple">
+<li><p>Primary to Primary - both Wood Farm and West Tower are set to primary.</p></li>
+<li><p>Primary to Secondary - Wood Farm is set to primary and West Tower is receiving a signal on its secondary unit.</p></li>
+<li><p>Secondary to Primary - Wood Farm is transmitting on its secondary unit, whilst West Tower is still receiving on its primary unit.</p></li>
+<li><p>Secondary to Secondary - both Wood Farm and West Tower are using their secondary units</p></li>
+</ul>
+</section>
+<section id="installation-report">
+<h3>Installation Report<a class="headerlink" href="#installation-report" title="Permalink to this headline">¶</a></h3>
+<p>The initial sections of the report (link summary, path profile and link configuration) are shown for the primary to primary path. For PTP 820 it is given as a single report for each end, showing any difference in primary and secondary parameters as required. The <strong>BNC Target Voltage</strong> and <strong>Predicted Receive Power</strong> are given for both the primary and secondary units with the other end of the link operating on primary.</p>
+<p>If the values are required to verify the secondary to secondary path, then the <strong>Predicted Receive Power</strong> can be estimated quite closely for the common antenna configuration. The <strong>BNC Target Voltage</strong> can be derived from the received signal level using the RSSI voltage table given in <em>PTP 820 Series User Guide</em>. Assuming that the same power level is used for both primary and secondary then the impact will be as follows:</p>
+<ul class="simple">
+<li><p>Symmetric Couplers - no change in predicted receiver power</p></li>
+<li><p>Asymmetric Couplers - the predicted receive power will drop by 5.4 dB compared with the secondary receive power level.</p></li>
+</ul>
+<p>If the transmit powers are different for primary and secondary then the offset will have to be adjusted according to the difference. Equally if different antennas are used for primary and secondary the predicted receive power for the secondary to secondary path will be changed (with respect to the primary to primary path) by the sum of the difference in antenna gains at each end of the link.</p>
+<p>For PTP 820 the performance information is given for all four paths, in a similar manner to the detailed proposal report.</p>
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="list_of_figures.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_this_user_guide.html">About This User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_linkplanner.html">Using LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_ptp_links.html">Planning PTP links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_pmp_links.html">Planning PMP networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background_information.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notices.html">Legal Notices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes_to_linkplanner.html">Changes to LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="planning_pmp_links.html" title="Planning PMP networks"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="setting_single_antenna.html" title="Setting 2+0 Single Antenna"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="planning_ptp_links.html" >Planning PTP links</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="advanced_features.html" >Advanced Features</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Setting Hot Standby Protection (1+1)</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2025, Cambium Networks.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

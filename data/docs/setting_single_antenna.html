@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Setting 2+0 Single Antenna &#8212; Cambium LINKPlanner Online Help (6.3.3)</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/default.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Setting Hot Standby Protection (1+1)" href="setting_hot_standby_protection.html" />
+    <link rel="prev" title="Setting Diversity" href="setting_diversity.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="setting_hot_standby_protection.html" title="Setting Hot Standby Protection (1+1)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="setting_diversity.html" title="Setting Diversity"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="planning_ptp_links.html" >Planning PTP links</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="advanced_features.html" accesskey="U">Advanced Features</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Setting 2+0 Single Antenna</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="setting-2-0-single-antenna">
+<span id="index-0"></span><h1>Setting 2+0 Single Antenna<a class="headerlink" href="#setting-2-0-single-antenna" title="Permalink to this headline">¶</a></h1>
+<p>2+0 single antenna is available on PTP 820 and PTP 850 links. How to configure 2+0 depends on the product:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>PTP 820S, PTP 820G and PTP 850E require two RFUs at each end of the link to operate either through a common coupler to a single antenna or a dual polar antenna to provide two parallel links between two sites.</p></li>
+<li><p>PTP 820C, PTP 820A with RFU-D and PTP 850C require a single RFU and either an OMT or splitter with a single polarity antenna.</p></li>
+</ul>
+</div></blockquote>
+<p>For a more detailed understanding of 2+0 Single Antenna, see the appropriate product User Guide.</p>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<blockquote>
+<div><p>2+0 single antenna sharing requires the two pairs of frequencies to be in the same sub-band. For narrow sub-bands not all bandwidths options are available.</p>
+</div></blockquote>
+<p>2+0 single antenna can be enabled as described in <a class="reference internal" href="link_description_and_equipment.html"><span class="doc">Link Description and Equipment</span></a>, for 2+0 Co-Polar (ACCP), 2+0 Cross-Polar (ACAP) and 2+0 XPIC (CCDP).</p>
+<section id="equipment-configuration">
+<h2>2+0 Equipment Configuration<a class="headerlink" href="#equipment-configuration" title="Permalink to this headline">¶</a></h2>
+<p>The Equipment and Product Configuration sections are common for Link A and Link B, with the following exception:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Polarization, which is the same for both links when 2+0 Co-Polar (ACCP) Link type is selected and is reversed from Link A to Link B when 2+0 Cross-Polar (ACAP) or 2+0 XPIC (CCDP) Link Type is selected.</p></li>
+</ul>
+</div></blockquote>
+<p>XPIC is only valid on LOS links, if the link has any Excess Path Loss the Throughput and Availability predictions will be set to zero. The link must be LOS in order to achieve the required polarization discrimination for XPIC operation.</p>
+<blockquote>
+<div><figure class="align-default" id="id1">
+<span id="equipment-single-antenna"></span><img alt="_images/equipment_single_antenna.png" src="_images/equipment_single_antenna.png" />
+<figcaption>
+<p><span class="caption-text">Equipment (2+0)</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+</section>
+<section id="configuration-at-each-end">
+<h2>2+0 Configuration at Each End<a class="headerlink" href="#configuration-at-each-end" title="Permalink to this headline">¶</a></h2>
+<p>The Configuration at Each End panel includes the following additional attribute for the PTP 820/PTP 850 products:</p>
+<p><strong>Antenna Configuration</strong>: Read only option for 2+0 Co-Polar Link Type.</p>
+<blockquote>
+<div><blockquote>
+<div><ul class="simple">
+<li><p><strong>Common Antenna - Symmetric Coupling</strong></p></li>
+</ul>
+</div></blockquote>
+<figure class="align-default" id="id2">
+<span id="configuration-of-end-co-polar"></span><img alt="_images/configuration_of_end_co_polar.png" src="_images/configuration_of_end_co_polar.png" />
+<figcaption>
+<p><span class="caption-text">Configuration at Each End for 2+0 Co-Polar</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<dl>
+<dt>The parameters at each end for each link can be configured as described in <a class="reference internal" href="configuration_at_each_end.html"><span class="doc">Configuration at Each End</span></a>. Some parameters are common to both links and are only shown once.</dt><dd><p><strong>Antenna Type</strong>: The antenna type will always be the same for both links.</p>
+<p><strong>Antenna Height</strong>: The antenna height will always be the same for both links.</p>
+<p><strong>Feeder Loss</strong>: This field will always be the same for both links. In the case of 2+0 Co-Polar this field will incorporate the coupler loss in addition to any waveguide loss, for an ODU. The symmetric coupler will have the same loss for both links (maximum 4.5 dB).</p>
+</dd>
+</dl>
+<p>The following parameters can be different for both links and are set on tabs for Link A and Link B</p>
+<blockquote>
+<div><blockquote>
+<div><p><strong>Maximum EIRP</strong>: This field can be set independently for the two links.</p>
+<p><strong>Maximum Power</strong>: This field can be set independently for the two links.</p>
+<p><strong>Tx Frequency</strong>: This field must be different for Link A and Link B for 2+0 Co-Polar and 2+0 Cross-Polar. 2+0 XPIC uses the same Tx Frequency for both links and hence the value will always be the same for both links.</p>
+<p><strong>Interference</strong>: This field can be set independently for the two links.</p>
+</div></blockquote>
+<figure class="align-default" id="id3">
+<span id="configuration-of-end-tabs"></span><img alt="_images/configuration_of_end_tabs.png" src="_images/configuration_of_end_tabs.png" />
+<figcaption>
+<p><span class="caption-text">Configuration at Each End for Link A and Link B tabs</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+</section>
+<section id="bill-of-materials">
+<h2>2+0 Bill of Materials<a class="headerlink" href="#bill-of-materials" title="Permalink to this headline">¶</a></h2>
+<p>The Bill of Materials is displayed in the same way as for a 1+0 link and shows the full set of equipment required for both Link A and Link B.</p>
+</section>
+<section id="performance-summary">
+<h2>2+0 Performance Summary<a class="headerlink" href="#performance-summary" title="Permalink to this headline">¶</a></h2>
+<p>The performance summary information for each link is shown on the Aggregate, Link A and Link B tabs.  For all products the required performance parameters can be set independently for each link and are defined in the usual way, see <a class="reference internal" href="performance_summary.html"><span class="doc">Performance Summary</span></a>. If the predicted performance of the main link(aggregate) or either link is below requirements, then the respective link tab will be displayed in <strong>red</strong>.</p>
+</section>
+<section id="reports">
+<h2>2+0 Reports<a class="headerlink" href="#reports" title="Permalink to this headline">¶</a></h2>
+<p>The reports for 2+0 configurations are created in the same way as for a 1+ link, see <a class="reference internal" href="creating_reports.html"><span class="doc">Creating Reports</span></a>. In the installation report, where the equipment is common to both Link A and Link B, the information in the installation notes is only given once. PTP 850 and PTP 820 reports contain the performance of the aggregate link and the installation information required for both links.</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="list_of_figures.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_this_user_guide.html">About This User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_linkplanner.html">Using LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_ptp_links.html">Planning PTP links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_pmp_links.html">Planning PMP networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background_information.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notices.html">Legal Notices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes_to_linkplanner.html">Changes to LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="setting_hot_standby_protection.html" title="Setting Hot Standby Protection (1+1)"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="setting_diversity.html" title="Setting Diversity"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="planning_ptp_links.html" >Planning PTP links</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="advanced_features.html" >Advanced Features</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Setting 2+0 Single Antenna</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2025, Cambium Networks.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

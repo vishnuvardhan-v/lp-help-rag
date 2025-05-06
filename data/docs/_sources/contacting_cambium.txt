@@ -1,0 +1,74 @@
+.. index::
+   single: Contact Details
+   single: Help
+   single: Cambium Networks Technical Support
+   single: Problems
+   single: Technical Support
+   single: Feedback
+
+Contacting Cambium
+=======================
+
+Feedback on LINKPlanner
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+We appreciate feedback from the users of our documents. This includes feedback
+on the structure, content, accuracy, or completeness of our documents. 
+Send feedback to |LP|.
+
+You can receive help from the wider LINKPlanner community through the
+Cambium Community Forum: |forum|.
+
+Cambium Networks
+~~~~~~~~~~~~~~~~~
+
+Support website: |support|
+
+Main website: |main| 
+
+Sales enquires: |sales|
+
+Support enquires: |support| 
+
+Telephone number list: |telephone|
+
+Address:
+
+    |   Cambium Networks Limited, 
+    |   Linhay Business Park, 
+    |   Eastern Road, 
+    |   Ashburton,
+    |   Devon, UK,
+    |   TQ13 7UP
+
+
+Reporting problems
+~~~~~~~~~~~~~~~~~~~~
+
+If any problems are encountered when using LINKPlanner, follow this
+procedure:
+
+1. Search this help document for a solution
+
+   * In the Table of Contents
+   * In the Index
+   * In the Search
+   
+2. Search the release note for this version of the product (available at |release_note|)
+3. Ask your Cambium products supplier to help.
+4. Escalate the problem to Cambium Networks Technical Support as follows:
+
+   * Either: send an email to |LP|
+   * Or: Contact Cambium Support at |support|
+
+
+
+.. |LP| replace:: linkplanner@cambiumnetworks.com
+.. |release_note| replace:: https://lp.cambiumnetworks.com/doc/changes_to_linkplanner.html
+.. |support| replace:: https://support.cambiumnetworks.com/ 
+.. |main| replace:: http://www.cambiumnetworks.com
+.. |sales| replace:: solutions@cambiumnetworks.com 
+.. |forum| replace:: http://community.cambiumnetworks.com/t5/LINK-Planner/bd-p/forums_management_link_planner
+.. |telephone| replace:: http://www.cambiumnetworks.com/support/contact-support/
+
+

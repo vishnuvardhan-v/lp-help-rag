@@ -1,0 +1,26 @@
+.. index::
+   single: CSV files
+   single: File Formats
+   single: Import File Formats
+
+Import File Formats
+===================
+
+.. index::
+   single: Import Sites from CSV files
+
+Sites from CSV File
+-------------------
+
+Network Sites or Subscriber Sites can be defined in a CSV (comma separated variable) file, created using Excel or a text editor. The first row contains titles. For example::
+
+  Name, Latitude, Longitude, Maximum Height, Description, Node Type
+  Place1, 50.371N, 3.523W, 200, Desc of place 1, POP
+  Place2, 50.384N, 3.525W, 100, Desc of place 2, DN
+  
+The Node Type column is only used in the Network Sites file. 
+
+The CSV file must contain the Name, Latitude and Longitude columns. The other columns are optional, but the column order must be preserved, therefore it is recommended to include all column headings and leave the fields empty where the data is either unknown or not required.
+
+
+

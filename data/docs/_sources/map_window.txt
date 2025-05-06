@@ -1,0 +1,240 @@
+.. index::
+   single: Map
+   single: Project Map
+
+Map
+---
+
+Control all the main functionality in the map view using the icons in the right hand menu.
+
+|note|
+
+        When an icon is active the background changes from gray to black and new features will continue to be added to the map until it is no longer active. To de-activate a function, either press Esc when the cursor is in the map area, click again on the same icon or click |pointer|.
+
+
+Fit the map window to the project
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To quickly home the map to include all of the sites in the project, click |zoom|
+        
+        
+Add new network sites
+~~~~~~~~~~~~~~~~~~~~~~
+        
+To add new network sites, click |new_network_site| which opens the following window:
+
+.. _map_network_site_mode:
+.. figure:: map_network_site_mode.png
+
+   Network Site Mode on the Map
+   
+Set the height of the sites to be added, then click in the map to place sites. If the coordinates are known tick **Enter coordinates?** and type in the coordinates. 
+
+Use the **Site Name Template** to automatically increment the site name number for each new site.
+
+|note|
+
+        To enter coordinates use a comma to separate the Latitude and Longitude
+
+
+Add new subscriber sites
+~~~~~~~~~~~~~~~~~~~~~~~~
+        
+To add new subscriber sites, click |new_sub_site| which opens the following window:
+
+.. _map_subscriber_site_mode:
+.. figure:: map_subscriber_site_mode.png
+
+   Subscriber Site Mode on the Map
+   
+Set the height of the sites to be added, then click in the map to place sites. If the coordinates are known tick **Enter coordinates?** and type in the coordinates. 
+
+Use the **Site Name Template** to automatically increment the site name number for each new site.
+
+|note|
+
+        To enter coordinates use a comma to separate the Latitude and Longitude
+        
+Add new PTP Link
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       
+ 
+To add new PTP Links, click |new_ptp_link| which opens the following window:
+
+.. _map_ptp_link_mode:
+.. figure:: map_ptp_link_mode.png
+
+   PTP Link Mode on the Map
+   
+Set the height of the antennas to be added, then click in the map to place the first site, then move the mouse to the other end of the link and click to place the second site, or select existing network site locations for one or both ends of the link. If the coordinates are known tick **Enter coordinates?** and type in the coordinates. 
+
+|note|
+
+        To enter coordinates use a comma to separate the Latitude and Longitude
+
+Add new PMP Network Devices
+~~~~~~~~~~~~~~~~~~~~~~~~~~~       
+ 
+To add new PMP Network Devices, click |new_nd| which opens the following window:
+
+.. _map_network_device_mode:
+.. figure:: map_network_device_mode.png
+
+   PMP Network Device Mode on the Map
+   
+Set the height, Range Units and SM Range (the furthest point at which SMs will be connected) of the Network Devices to be added, then click in the map to place Network Devices. Click on a network site in the map to add network devices to an existing site or click anywhere to create both a network device and a network site at that location. To add multiple network devices to the same site click again on the site.  Additional Network Devices will have their default Antenna Azimuth offset from the previous one by the beamwidth of the antenna or the Modeled Beamwidth if it has been set to a different value.
+        
+
+Add new Subscriber Module and PMP Link
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       
+ 
+To add new Subscriber Modules with a PMP Link to a Network Devices, click |new_link| which opens the following window:
+
+.. _map_pmp_link_mode:
+.. figure:: map_pmp_link_mode.png
+
+   PMP Link Mode on the Map
+        
+
+Add Viewsheds
+~~~~~~~~~~~~~~
+
+To add viewsheds to the map, click |viewshed| and see :doc:`viewsheds`.
+
+Ruler
+~~~~~~~~~~~~~~
+
+To measure distance and bearing on the map, click |ruler| and then select a starting location on the map and drag the cursor to the end location to see the range and bearing from the start point.
+
+.. _ruler_measure:
+.. figure:: ruler_measure.png
+
+   Measured Distance using Ruler
+   
+   
+Scale PMP ND Sector Display
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To change the displayed size of the Network Device sectors on the map, click |sector_display| and then adjust the slider to change the displayed size of the PMP sectors in the map view. This does not change the SM Range or the valid range for attaching subscribers, but makes it easier to see individual sectors when the full size view has overlapping sectors. When the scaling is active the sector display icon will be highlighted in yellow.
+
+.. _scale_nd_sector_display:
+.. figure:: scale_nd_sector_display.png
+
+   Scale PMP Network Device Sector Display Size
+        
+General
+~~~~~~~~~~~~
+
+To easily find a site or link on the map, type a search string into the filter box |filter| in the top menu bar. To focus the map on the filtered objects, click |zoom|
+
+To select the objects to show on the map click |layers| in the top menu bar, all objects, except the subscriber site labels, are displayed by default, untick objects not required or tick **Show Subscriber Site Labels**.
+
+|note|
+
+    These settings are used on all projects in the same browser session, but are not saved between browser sessions.
+
+.. _display_menu:
+.. figure:: display_menu.png
+
+   Map Display options
+
+.. index::
+   single: Map Layers
+
+To change the map background, click |map_layers| on the map and use the radio buttons to choose between the different background options.
+
+To show the locations of sites operated by Crown Castle, select the Crown Castle radio button. When on a low map resolution this shows the number of sites in an area. To see the individual sites zoom in to a higher resolution for the area required.
+
+To create a Network Site at the location of a Crown Castle Site, select the Crown Castle icon |icon_crown_castle|, which will pop-up a menu showing information about the site and then click on hyperlink **Create network site here**.
+
+.. _map_layers_menu:
+.. figure:: map_layers_menu.png
+
+   Map Layers options
+   
+.. index::
+   single: Link Formatting
+   
+By default, link lines are colored to indicate whether or not their predicted performance meets requirements: red means performance is not acceptable. When a PTP Link is meeting the criteria the link is shown in green, for good Mesh links the link is shown in dark blue and for good PMP links the link is shown in light blue.
+
+To reposition a site, simply select the site and drag it to the new location, then click |tick|. To return to the original location click |undo|. If the site has connected PMP links all the associated links will move with the site and the new path profiles are updated.
+
+To select an individual ND when there are multiple overlapping sectors, use the up and down arrow keys to toggle through the sectors.
+
+To reposition an individual ND from its central network site location, zoom into the area of the site and select the ND, the site icon will turn white, select the site icon and drag to the new position. The ND will move to the new position and path profiles for all connected subscriber modules will be updated automatically. The maximum distance an ND can be moved with respect to the network site is 100m. 
+
+To change the size or orientation of an ND, select the ND and then click the centre circle and drag to either change the range or orientation, or click one of the outside circles to change the beamwidth.
+
+.. _map_nd_changes:
+.. figure:: map_nd_changes.png
+
+   Map ND adjustments
+
+
+
+Map Pop-Up Menu
+'''''''''''''''''''''
+
+The pop-up menu (:ref:`sites_pop_up`) can be used to access a number of functions, depending on the item selected, that are also available through the project and equipment pages, but may be faster or easier to apply when viewing the map and surrounding sites. To display the menu, right-click on an item. 
+
+
+* **Edit**: Quickly return to the specific item to allow it to be edited 
+* **Delete**: Delete the item from the project
+* **Create PMP Network End**: Create a Network Device from a network site, multiple Network Devices can be created on the same network site.
+* **Attach subscribers**: Attach subscribers to the selected Network Device (only available from a Network Device coverage area).
+
+
+.. _sites_pop_up:
+.. figure:: sites_pop_up.png
+
+   Map Pop-up Menu
+   
+Map Information Window
+''''''''''''''''''''''''''''''''
+Click on a site, network device or PMP link and an information box will appear on the map containing a short summary of key details about the item. The information shown varies depending on the item selected.
+
+.. _map_info_window:
+.. figure:: map_info_window.png
+
+   Map Information Window for sites, network devices and PMP links
+
+
+
+Creating PMP Network Ends
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+The first Network Device will use the default settings with an Antenna Azimuth of 0 degrees (North), subsequent Network Devices will use the settings of the first Network Device. Configure the first Network Device, using the **Edit** option, see :doc:`network_devices`, before adding additional network devices to the site.  Additional Network Devices will have their default Antenna Azimuth offset from the previous one by the beamwidth of the antenna or the Modeled Beamwidth if it has been set to a different value.
+
+
+.. index::
+   single: Attaching Subscribers
+
+
+Attaching Subscribers
+''''''''''''''''''''''''''''''''''''''''''''
+
+
+The **Attach subscribers** command opens the **Attach Subscribers** dialog window, :ref:`new_sm_page`. This window displays the subscriber sites that are within range of the network device. Any subscriber sites that are not linked to a network device will be selected by default. Clicking OK in this dialog will create PMP links between the network device and the subscriber sites.
+
+   
+
+
+
+
+.. |note| image:: note.jpg
+.. |zoom| image:: icon_zoom_to_fit.png
+.. |pointer| image:: icon_right_menu_pointer.png
+.. |new_network_site| image:: icon_right_menu_network_site.png
+.. |new_sub_site| image:: icon_right_menu_subscriber_site.png
+.. |new_nd| image:: icon_right_menu_PMP_Network_device.png
+.. |new_link| image:: icon_right_menu_pmp_link.png
+.. |layers| image:: icon_layers.png
+.. |map_layers| image:: icon_map_layers.png
+.. |tick| image:: map_tick.png
+.. |undo| image:: map_undo.png
+.. |viewshed| image:: icon_right_menu_viewshed.png
+.. |filter| image:: icon_filter.png
+.. |ruler| image:: icon_ruler.png
+.. |icon_crown_castle| image:: icon_crown_castle.png
+.. |new_ptp_link| image:: icon_right_menu_ptp_link.png
+.. |sector_display| image:: icon_scale_ND_sector.png
+

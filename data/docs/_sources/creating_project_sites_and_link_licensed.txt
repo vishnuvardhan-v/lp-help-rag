@@ -1,0 +1,168 @@
+.. index::
+   single: Creating Project, Sites and Link
+   single: Links
+   single: Projects
+   single: Sites
+   single: Tutorial
+
+
+Creating Project, Sites and Link (Licensed Band)
+==================================================
+
+To create a project with two sites and one link:
+
+1. Click |new_project|
+
+   A pop-up message is displayed asking for the project name and Prediction model to be used
+   
+   .. _create_new_project_window_tutorial_licensed:
+   .. figure:: create_new_project_window_tutorial_licensed.png
+
+      Create new project window for Licensed PTP Tutorial
+      
+2. Enter Project name and Default settings for new links.
+
+    Enter the Project Name as Tutorial_PTP_Licensed
+    
+    Click  |ok|
+
+    The project is now saved and the Project Page is displayed.
+
+3.	Click New Network Site |new_network_site| on the right panel of the page. 
+
+    The Network Site Mode page is displayed. Enter this data: 
+    
+        **Site Name**: Park Hill
+	
+	**Maximum Height**: 30 meters 
+    
+        **Enter coordinates?**: Tick
+    
+        **Latitude**: 39.76631N 
+    
+        **Longitude**: 104.93411W 
+
+|note|
+
+        Latitude and longitude should be separated by a comma. For example, 39.75093N, 104.84035W
+    
+   .. _Network_Site_Mode_Window_ptp_licensed:
+   .. figure:: Network_Site_Mode_Window_ptp_licensed.png
+
+      Network Site Mode Window for Licensed PTP Tutorial
+
+Click |submit|, the new Network Site is created with a default name. 
+
+4.	Edit the Site Properties by following the steps below.
+
+    Click |icon_expand_tree| which is left side of the |menu_network_site| in the left panel of the page.
+
+    This shows Network Site tree view.
+
+   .. _Network_Sites_Window_ptp_licensed:
+   .. figure:: Network_Sites_Window_ptp_licensed.png
+
+      Network Sites Window for Licensed PTP Tutorial
+
+Click **Park Hill**, enter the details below:
+    
+        **Description**: Antenna mounted on tower
+        
+    Click |apply|
+    
+    Now the Network Site is updated with the new properties.
+
+
+   .. _Network_Sites_window_with_ptp_properties_licensed:
+   .. figure:: Network_Sites_window_with_ptp_properties_licensed.png
+
+      Network Sites window with properties for Licensed PTP Tutorial
+
+  
+To locate the Network Site on the map window, click |icon_zoom_to_fit| in the right panel. This zooms to the level of the network device.
+ 
+5. Repeat steps 3 and 4 to add the site for the other end of the link using this data:
+
+   **Name**: Golf Club 
+   
+   **Maximum Height**: 10 meters         
+   
+   **Latitude**: 39.75093N              
+   
+   **Longitude**: 104.84035W           
+   
+   **Description**: Antenna mounted on club house
+
+   .. _inserting_site_2_licensed:
+   .. figure:: inserting_site_2_licensed.png
+
+      Inserting Site 2 for Licensed link
+
+6. Click the |icon_ptp_link| or **PTP Links** in the left hand tool bar. This displays the PTP Links table view page. Click |icon_add| from either the list or table view. This displays the **Create PTP Links** page. Select the two sites to be linked: Park Hill and Golf Club and click |ok|.
+
+.. _create_ptp_links_tutorial_licensed:
+.. figure:: create_ptp_links_tutorial_licensed.png
+
+  Create PTP Links for Licensed Band Tutorial
+      
+
+7. Configure the link equipment, see :ref:`equipment_in_link_page_licensed`:
+
+   **Band**: 23 GHz      
+   
+   **Product**: PTP 850C
+   
+   **Regulation**: ETSI
+
+   **Link Type**: 1+0
+
+   **Remote Mount**: None   
+   
+   
+   .. _equipment_ptp_tutorial_licensed:
+   .. figure:: equipment_ptp_tutorial_licensed.png
+
+      Link Equipment for Licensed PTP Tutorial
+   
+8. Configure the Product  information
+   
+   **T/R Spacing**: 1008 MHz  
+   
+   **Bandwidth**: 112 MHz     
+
+   **Modulation Mode**: Adaptive
+   
+   **Maximum Mod Mode**: 12 - 4096QAM  
+   
+   **Minimum Mod Mode**: 0 - BPSK
+   
+   **Polarization**: Vertical
+   
+   **ATPC**: Disabled
+   
+   **Hi**: Park Hill
+
+   .. _ptp_tutorial_product_configuration_licensed:
+   .. figure:: ptp_tutorial_product_configuration_licensed.png
+
+      Product Configuration for Licensed PTP Tutorial
+
+9. Click |save_page| to update the antenna and power values 
+
+
+.. |new_project| image:: Create_new_project.png
+.. |ok| image:: icon_ok.png
+.. |submit| image:: icon_submit.png
+.. |note| image:: note.jpg
+.. |save_project| image:: save_project_icon.png
+.. |new_site| image:: new_site_icon.png
+.. |new_link_icon| image:: new_link_icon.png
+.. |new_network_site| image:: icon_right_menu_network_site.png
+.. |icon_expand_tree| image:: icon_expand_tree.png
+.. |icon_network_site| image:: icon_menu_network_site.png
+.. |menu_network_site| image:: icon_menu_network_site_expand.png
+.. |apply| image:: icon_apply.png
+.. |icon_zoom_to_fit| image:: icon_zoom_to_fit.png
+.. |icon_ptp_link| image:: icon_menu_ptp_link.png
+.. |icon_add| image:: icon_add_button.png
+.. |save_page| image:: icon_apply.png

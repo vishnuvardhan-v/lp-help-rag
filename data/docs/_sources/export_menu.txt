@@ -1,0 +1,50 @@
+.. index::
+   single: Export LINKPlanner Project
+   single: Export to Google Earth™
+   single: 60 GHz cnWave cnMaestro Export
+
+   
+Export
+=====================
+
+The Export menu provides options to export LINKPlanner project and Google Earth™ export files.
+
+
+.. _export_project:
+.. figure:: export_project.png
+
+   Export Menu
+
+LINKPlanner Project Export
+------------------------------------
+
+To export LINKPlanner project, click **Export** menu then click |export_lp_project|. When the project is ready to export, the |export_lp_project| icon changes to |export_lp_project_ready|. Click on |export_lp_project_ready| to download the project.
+
+Export to Google Earth™
+------------------------------------
+To export files to **Google Earth™**,  click **Export** menu then click |export_lp_googleearth|. When the project is ready to export, the |export_lp_googleearth| icon changes to |export_lp_googleearth_ready|. Click on |export_lp_googleearth_ready| to save the KMZ file locally. Open this file in Google Earth as usual for KMZ files.
+
+60 GHz cnWave cnMaestro Export
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To export the information required to import into cnMaestro and automatically populate the network information, click **Export**, then **60 GHz cnWave cnMaestro Export**. Then select from the following options.
+
+* **Nodes** - creates a file with all the radios, both DN and CN and their parameters
+* **Links** - creates a file with all the links, both DN to CN and Mesh
+
+Only radios that are configured for 60 GHz and have both a MAC Address and MSN populated will be exported.
+
+There are a few extra fields created in the nodes export file which are not stored in LINKPlanner. These fields need to be manually edited in the exported file.
+
+|note|
+
+	 If there are changes to the project, the export files are removed, and the Export menu options revert to the original icons
+
+.. |export_lp_project| image:: icon_export_lp_project.png
+.. |export_lp_project_ready| image:: icon_lp_export_ready.png
+.. |export_lp_googleearth| image:: icon_export_lp_googleearth.png
+.. |export_lp_googleearth_ready| image:: icon_export_lp_googleearth_ready.png
+.. |note| image:: note.jpg
+   
+
+

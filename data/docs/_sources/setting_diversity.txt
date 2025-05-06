@@ -1,0 +1,133 @@
+.. index::
+   single: Diversity
+   single: Reflections
+
+Setting Diversity
+===================
+
+Diversity is a method where the same digital information is sent or received over more than one path between the transmitting site and the receiving site, in order to reduce outages and hence achieve better performance of the link. There are several methods to achieve diverse paths and the Cambium PTP 670 products use space diversity. 
+
+Space Diversity
+-----------------
+
+In some cases it is necessary to add a second (diverse) antenna to improve the long term performance of the link. Diverse antennas are used to solve two different phenomena, which both cause reflections to be experienced at the antenna. The placement of the second antenna should be such that when one antenna is experiencing a null or faded signal, the other antenna is experiencing a good signal. The choice of antenna separation distance (which is always a vertical separation) is dependent on the mechanism which is causing the reflections.
+
+*  **Tropospheric Multipath** (one example of which is ducting) is where there are many reflections arriving at the antenna and the angles are not constant over time. In this case larger separations are preferred and the availability calculation will show the improvement which can be achieved for a given antenna separation. In general increasing the separation will improve the availability and decreasing the separation will reduce the availability. This will be more obvious in geographic locations which are prone to high levels of tropospheric multipath, in more benign areas the amount of antenna separation has little impact on the amount of diversity gain. The separation distance recommended by the LINKPlanner reflection editor is not for use in combating tropospheric multipath.
+
+* **Reflection mitigation** Two separate antennas are also used to protect against reflections from objects, most commonly those over water. In this instance the reflections follow the laws of geometry and specific separation distances are required to overcome them. It is therefore important in this case to ensure that the antennas use the separation distances recommended by the LINKPlanner reflection editor, see :ref:`reflection_editor`. 
+
+Some links may require spatial diversity to combat tropospheric multipath and provide protection from reflections over water. In this case use the multiplier factor to increase the separation to suit the spatial diversity requirements, but at the same time maintain the required geometrical separation.
+
+.. index::
+   single: Reflections
+   
+Reflections over Water
+~~~~~~~~~~~~~~~~~~~~~~~
+
+If the path is over water, it is necessary to detect whether mitigation techniques are necessary, and if they are, to calculate the optimum vertical separation for the diversity antennas. To do this, select the link and the path profile section. Tick the **Enable Reflection Mitigation** box on the path profile (:ref:`reflection_editor` or :ref:`reflection_editor_licensed`) to enable the calculation and display a visualization of the reflection on the Profile chart. The Reflection Surface Height (blue line with gray ends) will normally be aligned with the height of the reflecting surface, if it isn't adjust the Reflection Surface Height until the line aligns with the height of the reflecting surface.
+
+.. _profile_with_reflection_visible:
+.. figure:: profile_with_reflection_visible.png
+
+   Profile with Reflection Visible
+   
+If the reflected paths have an unobstructed route to both ends of the link, as shown in :ref:`profile_with_reflection_visible` then mitigation techniques are required. The simplest technique is to obstruct the reflected path, on this link the path can be obstructed by lowering the Caddoa antenna (:ref:`profile_with_reflection_obscured`). This makes diversity spacing unnecessary for reflection mitigation, because the reflection path is obscured by the hill in front of the Caddoa antenna.
+
+.. _profile_with_reflection_obscured:
+.. figure:: profile_with_reflection_obscured.png
+
+   Profile with Reflection Obscured
+   
+If the reflected path cannot be easily obstructed then spatial diversity will be required. 
+
+|caution|
+
+   **LINKPlanner does not adjust the reliability of the link based upon the possible reflection, but a link that suffers reflection can
+   have very bad performance if the mitigation has not been applied.**
+   
+
+.. _reflection_editor:
+.. figure:: reflection_editor.png
+
+   Unlicensed Band Reflection Editor
+
+Unlicensed products use both Tx and Rx diversity and therefore diversity should only be applied at one end of the link. The diversity separation ensures that both antennas are not fading simulataneously, however this means that it is only the single payload modes which have full protection against reflections. 
+
+|note|
+
+**LINKPlanner will only guarantee the performance of single payload modes in the presence of reflections.** When the reflection mitigation option is ticked the Performance Summary and Performance Details will only consider the single payload modulation modes.
+
+The reflection editor shows the **Optimum Spacing** at each end, see :ref:`reflection_editor`. The optimum spacing may be different for each end of the link. Choose the end of the link to apply the diversity spacing based on the physical constraints of the towers. 
+
+The optimum spacing is the smallest spacing that will cancel the reflection, however it may not be possible to install the antennas at this separation, depending on the size of antennas selected and mounting points available. If a larger separation is required choose a **Multiplier** from the pull down list to give a suitable spacing shown as the **Selected Spacing**. In the example above, the Multiplier is set to 3 to give a spacing of 11.09 meters, which is easily achievable without much cable loss. 
+
+The unlicensed band radios are mounted to external antennas to provide diversity spacing. The **Optimum Spacing** requires the minimum cable length and hence the minimum additional loss from the single radio unit to both antennas. When using a larger multiplier the antennas are further apart and require longer cables to connect from the radio to the two antennas, increasing the additional loss. 
+
+For unlicensed products set the Multiplier, then transfer the resulting Spacing value to the Configuration Diversity Spacing and tick the Reflection Mitigation box, as described in :doc:`configuration_at_each_end`.  If diversity is to be applied at both ends of the link, the Diversity Spacing at each end of the link should be entered as half the value given for each end by the Reflection Editor.
+
+Licensed band products only use Rx diversity and therefore diversity must be applied at both ends of the link using the full diversity spacing values given, see :ref:`reflection_editor_licensed`. Licensed band products have a radio for each antenna which can be directly mounted to the antenna, hence there is no difference in performance if a larger separation is required. If a Multiplier is to be used, select the value from the pull down list to give a suitable **Required Spacing** at each end of the link. Subtract the diversity spacing from the Primary antenna height to give the height required for the Secondary antenna.
+
+.. _reflection_editor_licensed:
+.. figure:: reflection_editor_licensed.png
+
+  Licensed Band Reflection Editor
+
+For more information about reflections, see :doc:`paths_over_sea_or_very_flat_ground`.
+
+Multipath Reflections
+~~~~~~~~~~~~~~~~~~~~~
+
+The problem is not easily solved deterministically for reflections due to multipath, because there are a very large number of reflections. LINKPlanner shows the improvement in availability when you select a second antenna and define a separation between the two. If you increase the spacing, the availability increases. If you decrease the spacing, the availability decreases. Adjust the combination of antenna size, antenna height, and antenna spacing to meet the availability requirements.
+
+The unlicensed products incorporate two transmitters and receivers, however both of these are used under normal conditions to provide dual payload throughput. When a diverse antenna is added the two polarizations are split between the two antennas, but there are no additional receive chains to apply protection to the individual polarizations. A licensed band link that supports spatial diversity, as a minimum, includes an extra receive chain to receive the same data from both antennas. In the unlicensed band the dual polarizations are used to provide additional robustness to the single payload modes, which can be at the expense of the dual payload modes. 
+
+Splitting the paths between two antennas improves the probability that both will not fade simultaneously, but it also doubles the probability that one of them will have a fade, which reduces the availability of the dual payload modes. It is therefore common to see a link which shows better availability in the dual payload modes without diversity compared with when diversity is enabled. Links which are mostly using dual payload are likely to see a reduction in throughput when diversity is added, however the probability of the link dropping out completely is reduced with diversity.
+
+ 
+Configuring Spatial Diversity in LINKPlanner
+----------------------------------------------
+
+The PTP equipment operates differently depending upon the product and this affects the way in which the equipment may be deployed for space diversity.
+
+PTP 670
+~~~~~~~~~~~~
+
+The PTP 670 equipment uses two transmit chains for all configurations and hence when two spatially separated antennas are used one antenna is transmitting and receiving on the vertical polarization and the other antenna is transmitting and receiving on the horizontal polarization. This means that spatial diversity improvement gain is achieved in both directions of a link by deploying separate antennas at just one end of the link. For the PTP 670 the spatial diversity is designed to protect the performance in the single payload modes, but will also offer improvement in dual payload modes when the receive levels on both paths are less than 7 dB apart, however in deeper fades the products will revert to single payload. 
+
+.. _space_diversity_unlicensed:
+.. figure:: space_diversity_unlicensed.png
+
+   Space Diversity Deployment (PTP 670)
+   
+On the PTP 670 spatial diversity is automatically applied when a single polarity antenna is selected and can be chosen to be enabled with dual polarity antennas. The default spacing is set to 5m (16.4 ft), this can be adjusted to suit the local conditions and the availability requirements. If the diversity spacing is set to 0, no additional benefit will be added to the availability. When spatial diversity is selected, a quantity of two antennas per end is included in the BOM. If using single polarity antennas, the two antennas at the same end of the link need to be installed on opposite polarities to match the dual polarity unit at the opposite end of the link. If the spatial diversity is required to overcome reflections then tick the Reflection Mitigation box. 
+
+.. _unlicensed_space_diversity_config:
+.. figure:: unlicensed_space_diversity_config.png
+
+   Configuration of Space Diversity (PTP 670) 
+   
+
+Height Clearance
+-----------------
+
+When planning a diversity link it is important to ensure that all paths have sufficient clearance. For licensed band links all paths must be Line of Sight and it is advisable even for PTP 670 links. Any additional path loss on the diverse path will not be taken into account in the availability calculations, therefore if some paths are not LoS the predicted availability will be optimistic.
+
+In addition to ensuring LoS, the path between the two main antennas should give clearance over the Worst Earth curvature (grey line), however other paths may allow some penetration of this area into the Fresnel zone.
+
+.. _space_diversity_main_main:
+.. figure:: space_diversity_main_main.png
+
+   Height Clearance between main antennas
+   
+.. _space_diversity_main_diverse:
+.. figure:: space_diversity_main_diverse.png
+
+   Height Clearance between main and diverse antennas
+
+.. index::
+   single: frequency diversity
+   
+
+
+.. |caution| image:: caution.jpg
+.. |note| image:: note.jpg

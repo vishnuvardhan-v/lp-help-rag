@@ -1,0 +1,57 @@
+.. index::
+   single: Summary of Link Performance
+   single: Summary of Performance
+
+
+Performance Summary
+===================
+
+This section shows how well the link is predicted to perform in response to the selected combination of the variables, such as band, region, equipment, antenna and height. It shows performance at each end of the link.
+
+
+.. _sm_performance_summary:
+.. figure:: sm_performance_summary.png
+
+   PMP Link Performance Summary
+
+.. index::
+   single: Performance to Sites
+
+Performance to Network Device and Subscriber Module
+-------------------------------------------------------------------
+ 
+This summary is a prediction of the Receive Power, Max Usable Mode and Availability at each end of the link, based on the equipment parameters entered.
+
+  **Predicted Receive Power**: The predicted receive power and associated tolerance level at this end of the link. The tolerance is the sum of two components, a fixed value which is dependent on the equipment performance over temperature and a variable value which is proportional to the amount of Excess Path Loss. When using adaptive modulation the receive power shown is the maximum for the link, which corresponds to the lowest selected modulation mode and Maximum Power.
+
+  **Min Mod Mode Required**:  Select the minimum modulation mode which provides the required throughput performance. If the Max Usable Mode is below Min Mod Mode Required, at either end of the link, the link will turn red.
+  
+  **Min Availability Required**: Set the minimum availability the **Min Mod Mode Required** must meet for acceptable performance.
+  
+  **Max Usable Mode**: The maximum modulation mode which is above the sensitivity threshold and can meets the active required performance metric. This parameter will be shown in red if it is below the **Min Mod Mode Required**.
+  
+  **Predicted Availability**: The predicted availability of the selected **Min Mod Mode Required**. This parameter will turn red if the value is less than **Min Availability Required**.
+  
+  |note| If any of the parameters fail to meet the configured requirements this will turn the link red and the SM will not be included in the Performance Summary of the Network Device.
+
+
+Link Summary
+------------
+
+This summary highlights the Free Space Path Loss component and the Excess Path Loss based upon the diffraction loss over the obstacles that cut the Fresnel zone number 0.6. The Total Path Loss and System Gain Margin are also given.
+
+  **Lowest Mode Availability (%)**: This is the availability of basic link operation. This is equivalent to the availability of the most robust modulation in both directions.
+  
+  **System Gain Margin (dB)**: This is the margin in dB above which the ratio of (mean wanted receive level) to (mean interference plus thermal noise), or "C to (I+N)", for the worst link direction is above the level required for basic link operation for the most robust modulation.
+
+  **Free Space Path Loss (dB)**: The amount that the signal would be attenuated if travelling through a vaccuum.
+
+  **Gaseous Absorption Loss (dB)**: The amount of attenuation due to oxygen and water in the atmosphere.
+
+  **Excess Path Loss (dB)**: The amount of attenuation due to obstructions in the path. If the path is completely line-of-sight, this will be zero.
+
+  **Total Path Loss (dB)**: The sum of Free Space, Gaseous Absorption and Excess Path Loss.
+
+
+
+ .. |note| image:: note.jpg

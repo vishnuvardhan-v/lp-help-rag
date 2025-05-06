@@ -1,0 +1,56 @@
+.. index::
+   single: Paths over the Sea
+   single: Propagation Over the Sea
+   single: Reflections
+   single: Sea
+   single: Water
+
+Paths Over Sea or Very Flat Ground
+==================================
+
+Paths over the sea are subject to a special problem due to the very strong
+reflection from the water. This reflection can add an anti-phase signal to
+the direct wave and cancel it out completely. This may not happen all of
+the time because the effective curvature of the earth changes depending
+upon the temperature gradient in the atmosphere. This gradient can change
+and in certain circumstances causes the signal to travel a long way in
+ducts. The following figure illustrates the problem and the solution,
+using a PTP 670 bridge:
+
+.. _propagation_over_the_sea:
+.. figure:: propagation_over_the_sea.jpg
+
+   Propagation Over The Sea
+
+The background of the diagram is shaded to illustrate the changing density
+and therefore refractive index. The upper antennas are in a signal
+inversion.
+
+The signals pass from one antenna to the other through two paths. One path
+is the direct path and the other is reflected from the sea. The mean path
+loss of the two components is almost identical. The graph adjacent to the
+mast illustrates the signal level that will occur as an antenna is moved
+vertically on the mast. In this case the x-axis illustrates the amplitude
+received while the y-axis illustrates the height.
+
+The polarization selected for the antennas are single V and H polarization
+on the left and a dual polarized antenna on the right. The two graphs on
+the right illustrate the signal received on each polarization while on the
+left the individual antennas will receive the same signal level
+independent of polarization but instead will only depend upon the height.
+
+There is an optimum vertical spacing of the two antennas on the left which
+is found from the geometry of the two paths. The important parameters are
+the length of the path, the height of the right single antenna and to a
+lesser extent the height of the pair of antennas on the left. An allowance
+is made for the apparent height of the middle of the path due to the mean
+radio curvature of the earth (4/3).
+
+|caution|
+
+   LINKPlanner does not adjust the reliability of the link based upon
+   the possible reflection, but a link that suffers reflection can
+   have very bad performance if the mitigation has not been applied.
+
+
+.. |caution| image:: caution.jpg

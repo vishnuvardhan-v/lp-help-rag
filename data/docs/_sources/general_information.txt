@@ -1,0 +1,15 @@
+.. index::
+   single: General Information
+  
+
+General Information
+===================
+
+Purpose
+~~~~~~~~
+
+Cambium Networks documents are intended to instruct and assist personnel in the operation, installation and maintenance of the Cambium Networks equipment and ancillary devices. It is recommended that all personnel engaged in such activities be properly trained.
+
+Cambium Networks disclaims all liability whatsoever, implied or express, for any risk of damage, loss or reduction in system performance arising directly or indirectly out of the failure of the customer, or anyone acting on the customer's behalf, to abide by the instructions, system parameters, or recommendations made in this document.
+
+

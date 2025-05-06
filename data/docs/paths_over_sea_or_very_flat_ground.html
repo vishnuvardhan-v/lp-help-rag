@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Paths Over Sea or Very Flat Ground &#8212; Cambium LINKPlanner Online Help (6.3.3)</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/default.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Path Profiles" href="path_profiles.html" />
+    <link rel="prev" title="Fresnel Zone" href="fresnel_zone.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="path_profiles.html" title="Path Profiles"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="fresnel_zone.html" title="Fresnel Zone"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="background_information.html" >Background Information</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="path_loss.html" accesskey="U">Path Loss</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Paths Over Sea or Very Flat Ground</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="paths-over-sea-or-very-flat-ground">
+<span id="index-0"></span><h1>Paths Over Sea or Very Flat Ground<a class="headerlink" href="#paths-over-sea-or-very-flat-ground" title="Permalink to this headline">¶</a></h1>
+<p>Paths over the sea are subject to a special problem due to the very strong
+reflection from the water. This reflection can add an anti-phase signal to
+the direct wave and cancel it out completely. This may not happen all of
+the time because the effective curvature of the earth changes depending
+upon the temperature gradient in the atmosphere. This gradient can change
+and in certain circumstances causes the signal to travel a long way in
+ducts. The following figure illustrates the problem and the solution,
+using a PTP 670 bridge:</p>
+<figure class="align-default" id="id1">
+<span id="propagation-over-the-sea"></span><img alt="_images/propagation_over_the_sea.jpg" src="_images/propagation_over_the_sea.jpg" />
+<figcaption>
+<p><span class="caption-text">Propagation Over The Sea</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>The background of the diagram is shaded to illustrate the changing density
+and therefore refractive index. The upper antennas are in a signal
+inversion.</p>
+<p>The signals pass from one antenna to the other through two paths. One path
+is the direct path and the other is reflected from the sea. The mean path
+loss of the two components is almost identical. The graph adjacent to the
+mast illustrates the signal level that will occur as an antenna is moved
+vertically on the mast. In this case the x-axis illustrates the amplitude
+received while the y-axis illustrates the height.</p>
+<p>The polarization selected for the antennas are single V and H polarization
+on the left and a dual polarized antenna on the right. The two graphs on
+the right illustrate the signal received on each polarization while on the
+left the individual antennas will receive the same signal level
+independent of polarization but instead will only depend upon the height.</p>
+<p>There is an optimum vertical spacing of the two antennas on the left which
+is found from the geometry of the two paths. The important parameters are
+the length of the path, the height of the right single antenna and to a
+lesser extent the height of the pair of antennas on the left. An allowance
+is made for the apparent height of the middle of the path due to the mean
+radio curvature of the earth (4/3).</p>
+<p><img alt="caution" src="_images/caution.jpg" /></p>
+<blockquote>
+<div><p>LINKPlanner does not adjust the reliability of the link based upon
+the possible reflection, but a link that suffers reflection can
+have very bad performance if the mitigation has not been applied.</p>
+</div></blockquote>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="list_of_figures.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_this_user_guide.html">About This User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_linkplanner.html">Using LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_ptp_links.html">Planning PTP links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_pmp_links.html">Planning PMP networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background_information.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notices.html">Legal Notices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes_to_linkplanner.html">Changes to LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="path_profiles.html" title="Path Profiles"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="fresnel_zone.html" title="Fresnel Zone"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="background_information.html" >Background Information</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="path_loss.html" >Path Loss</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Paths Over Sea or Very Flat Ground</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2025, Cambium Networks.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

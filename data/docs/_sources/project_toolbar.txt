@@ -1,0 +1,88 @@
+.. index::
+   single: Project Toolbar
+   single: Toolbar
+
+
+Project Toolbar
+================
+
+The Main Screen (see :doc:`main_screen`) has three toolbars, located above the main screen, to the left and to the right
+
+The menu at the top of the window has several features. It contains the top menu, project name and the version number. See :doc:`top_menu`
+
+.. _top_menu:
+.. figure:: top_menu.png
+
+   Top Menu
+
+When a new version is released the version number will update. Projects will automatically update as soon as they are opened in the new version. During the update the devices and links are greyed out until they have been re-calculated and the following message is shown.
+
+.. _Updating_your_project:
+.. figure:: Updating_your_project.png
+
+  Updating Your Project
+
+Use the icons to access the following functions:
+	|layers|  - Select which features are displayed on the map, choose from Network Sites, Subscriber Sites, PTP Links, Network Devices, Mesh Links, PMP Links, Network Site Labels and Subscriber Site Labels
+	|filter| - restrict items shown on the map to those containing the filter phrase
+	
+	|account_settings| - Click to logout from the application.
+	
+
+
+.. _toolbar_left_right:
+.. figure:: toolbar_left_right.png
+
+   Left and Right Toolbars
+   
+
+For the left toolbar, see :doc:`project_navigation_tree`.
+
+Use the icons in the right toolbar to access the following functions, see :doc:`map_window` for more details on each function :
+
+        |zoom| - Zoom the map to fit the sites in the project file
+        
+        |pointer| - Select items from the map
+        
+        |new_network_site| - Add new network sites to the map
+        
+        |new_sub_site| - Add new subscriber sites to the map
+        
+        |new_nd| - Add new PMP Network Devices to the map
+        
+        |new_ptp_link| - Add new PTP links to the map
+        
+        |new_link| - Add new PMP links to the map
+        
+        |viewshed| - Add viewsheds to the map
+        
+        |ruler| - Use the ruler to measure distances on the map
+	
+	|scale_ND_sector| - Scale PMP ND sector display
+	
+	|AFC| - Lookup 6 GHz AFC spectrum availability (US/Canada Only)
+
+
+.. |save_project| image:: save_project_icon.png
+.. |discard| image:: discard_changes.png
+.. |note| image:: note.jpg
+.. |project| image:: icon_project.png
+.. |help| image:: icon_help.png
+.. |account_settings| image:: icon_account_settings.png
+.. |layers| image:: icon_layers.png
+.. |filter| image:: icon_filter.png
+.. |zoom| image:: icon_zoom_to_fit.png
+.. |pointer| image:: icon_right_menu_pointer.png
+.. |new_network_site| image:: icon_right_menu_network_site.png
+.. |new_sub_site| image:: icon_right_menu_subscriber_site.png
+.. |new_nd| image:: icon_right_menu_PMP_Network_device.png
+.. |new_ptp_link| image:: icon_right_menu_ptp_link.png
+.. |new_link| image:: icon_right_menu_pmp_link.png
+.. |ruler| image:: icon_ruler.png
+.. |scale_ND_sector| image:: icon_scale_ND_sector.png
+.. |viewshed| image:: icon_right_menu_viewshed.png
+.. |AFC| image:: icon_AFC.png
+
+
+
+

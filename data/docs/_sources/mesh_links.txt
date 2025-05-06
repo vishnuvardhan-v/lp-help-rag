@@ -1,0 +1,292 @@
+.. index::
+   single: Mesh Links
+   single: Creating Mesh Links
+
+
+
+Mesh Links
+===================
+
+Mesh Links are only available in 60 GHz cnWave Networks. A mesh link connects two Distribution Nodes (DNs) together to create a backhaul link between the two devices. 
+
+The Mesh Link automatically assumes a number of the Distribution Node equipment parameters at each end of the link and warnings will be shown if they are not compatible with each other. To change the equipment parameters go to the Distribution Node for that end of the link, see :doc:`network_devices`.
+
+Mesh Links do not add any additional equipment to the Bill of Materials, which is shown on the individual Distribution Node page.
+
+Creating Mesh Links
+--------------------------
+
+Mesh Links can be created  from either a Network Device or from the Mesh Links table.
+
+To create a new Mesh Link from a Network Device, click |table_add| from the Mesh Links table on the right panel of the project window. This opens the **Attach Mesh Links** window. 
+
+.. _new_mesh_link_from_ND:
+.. figure:: new_mesh_link_from_ND.png
+
+  Attach Mesh Link from Network Device
+
+This page shows the list of available Distribution Nodes within the coverage area of the selected Distribution Node. Select one or more DNs and hit OK. The filter field narrows the choice when there is a large number of Distribution Nodes in the list.
+
+To create a new Mesh Link from the Mesh Links table view, click |table_add| , this opens the **Create Mesh Links** window.
+
+.. _create_mesh_links:
+.. figure:: create_mesh_links.png
+
+  Create Mesh Links
+
+Select the required DN in the top row and the bottom panel shows the list of available Distribution Nodes it can connect with. Select one or more DNs and hit OK. The filter field narrows the choice when there is a large number of Distribution Nodes in the list.
+  
+
+|note|
+
+        A Distribution Node can have a maximum of four mesh links (two per sector). A warning will be shown if more options are selected (including any mesh links already created).
+
+.. _mesh_table_view:
+
+Displaying Mesh Links
+----------------------------------
+
+The Mesh Links are then created and listed under the **Network Devices** in the **PMP** left hand side tree view. To change to the table view, click on the **PMP** menu in the left hand tool bar and then select the **Mesh Links** tab. To manage the table view see :doc:`user_interface_tips`.
+
+.. _mesh_links_table:
+.. figure:: mesh_links_table.png
+
+  Mesh Links Table
+
+|note|
+    To locate the Mesh Links in the map view from the Mesh Links details page, click the |icon_locate| icon, which is displayed next to the |icon_delete_detailspage| icon at the top.
+
+Deleting Mesh Links
+-------------------------------
+
+To delete a Mesh Link, hover over the Mesh Link in the **PMP** tree view and click |list_delete|, click |icon_delete_detailspage| on the details page, select rows and click |table_delete| in the table view, or right-click on the Mesh Link in the map view and select Delete from the pop-up menu.
+
+|note|
+    To revert the changes made, click the |icon_undo_changes| icon in the details page, which is displayed next to the Apply button. This icon is only displayed when there are changes to the parameters, replacing the |icon_delete_detailspage| icon.
+             
+        
+.. index::
+   single: Mesh Link Page
+
+Mesh Link Page
+---------------------------
+
+To access an individual mesh link click on the Link Name in the Mesh Links Table. The Mesh Link page includes the following features:
+
+* Each section begins with a gray title bar. Click on this bar to open or close the section.
+* If a field is highlighted in pink, its value is out of the permitted range.
+  
+
+Equipment Summary
+------------------
+
+This shows the equipment parameters for each end of the link. Most of the parameters are read only and can only be changed at the Network Device. 
+
+.. _mesh_link_equipment:
+.. figure:: mesh_link_equipment.png
+
+   Mesh Link Equipment
+
+**Equipment Parameters**
+
+  **Summary**: Displays the Frequency Band / Product / Country / Maximum Modulation Mode
+
+  **Sector**: The sector of the DN the mesh link connects to. If the link is close to a sector boundary, this value may be editable
+  
+  **Channel**: Displays the channel, the channel must be the same at each end of the mesh link.
+
+  **Golay Code**: Select the Golay Code for the link, by default this is set to the same as the DN sector, but can be changed. The Golay code must be the same at each end of the mesh link.
+  
+  **Polarity**: Displays the polarity, the polarity must be opposite at each end of the mesh link
+  
+  **Antenna Height**: Displays the height of the DN.
+  
+  **Antenna Azimuth**: Displays the alignment of the DN.
+  
+  **Link Bearing**: Displays the bearing to the other end of the link and the offset from the DN antenna azimuth. 
+  
+  **Calculated Tilt**: Displays the tilt angle to the other end of the link, where a positive angle is uptilt and a negative angle downtilt
+  
+  **Antenna Gain**: Displays the gain of the DN antenna in the direction of the other end of the link
+  
+  **Power**: Displays the transmit power used to achieve the operational receive power.
+  
+  **Interference**: This is the amount of site noise in the selected channel bandwidth, expected at the antenna connector. This noise is assumed to be a constant power added to the thermal noise of the front end of the wireless. The bandwidth displayed depends on the bandwidth selected in the Equipment Settings box (in this example it is 2.16 GHz). To enter Interference on a mesh link, first tick the interference box on the associated ND and update the default value. Once interference is enabled on the associated ND, the interference field is displayed and can be edited on the Equipment Parameters window of the mesh link. The value will default to the value from the ND but can be updated independently of the interference level on the Network Device.
+   
+Profile
+-----------
+
+This section contains a visualization of the path between the two Distribution Nodes, for details on the profile components see  :doc:`sm_profile`.
+
+.. index::
+   single: Summary of Mesh Link Performance
+   single: Summary of Performance
+   
+Performance Summary
+---------------------
+
+This section shows how well the link is predicted to perform in response to the selected combination of the variables, such as frequency, region, equipment, antenna and height. It shows performance at each end of the link. 
+
+
+.. _mesh_link_performance_summary:
+.. figure:: mesh_link_performance_summary.png
+
+  Mesh Link Performance Summary
+  
+Performance to Devices
+~~~~~~~~~~~~~~~~~~~~~~
+ 
+This summary is a prediction of the Receive Power, Mean IP Predicted and Availability at each end of the link, based on the equipment parameters entered.
+
+  **Operational Power**: The operational receive power and associated tolerance level at this end of the link. The 60 GHz cnWave uses Adaptive Power Control, where the maximum power may be reduced depending on the link conditions, resulting in lower measured receive powers over time. The APC works to maintain an operational receive power of -60 dBm, or as close to this as possible. The tolerance is the sum of two components, a fixed value which is dependent on the equipment performance over temperature and a variable value which is proportional to the amount of Excess Path Loss. When using adaptive modulation the receive power shown is the maximum for the link, which corresponds to the lowest selected modulation mode and Maximum Power.
+  
+Mean throughput of the planned link in one direction:
+
+  **Mean IP Predicted**:  The mean Ethernet throughput capability, calculated from the data entered. This parameter will be shown in red if it is below the **Mean IP Required**
+  
+  **Mean IP Required**: Enter the required mean Ethernet throughput capability
+  
+  **% of Required IP**: IP Predicted expressed as a percentage of IP Required
+  
+Minimum throughput of the planned link in one direction:
+
+ **Min IP Required**: Enter the required minimum Ethernet throughput capability. 
+  
+ **Min IP Availability Required (%)**: Enter the required minimum availability the link must meet for acceptable performance.
+   
+ **Min IP Availability Predicted (%)**: The minimum predicted availability of the link, calculated from the data entered, for the Min IP Required or the lowest equipment data rate (whichever is the higher). This parameter will turn red if the value is less than **Min IP Availability Required**.
+  
+Link Summary
+~~~~~~~~~~~~~~
+
+This summary highlights the Free Space Path Loss component and the Excess Path Loss based upon the diffraction loss over the obstacles that cut the Fresnel zone number 0.6. The Total Path Loss and System Gain Margin are also given.
+
+  **Lowest Mode Availability (%)**: This is the availability of basic link operation. This is equivalent to the availability of the most robust modulation in both directions.
+  
+  **System Gain Margin (dB)**: This is the margin in dB above which the ratio of (mean wanted receive level) to (mean interference plus thermal noise), or "C to (I+N)", for the worst link direction is above the level required for basic link operation for the most robust modulation.
+
+  **Free Space Path Loss (dB)**: The amount that the signal would be attenuated if travelling through a vaccuum.
+
+  **Gaseous Absorption Loss (dB)**: The amount of attenuation due to oxygen and water in the atmosphere.
+
+  **Excess Path Loss (dB)**: The amount of attenuation due to obstructions in the path. If the path is completely line-of-sight, this will be zero.
+
+  **Total Path Loss (dB)**: The sum of Free Space, Gaseous Absorption and Excess Path Loss.
+  
+.. index::
+   single: ITU-R P530-17
+   single: Vigants - Barnett
+   single: Refractivity Gradient
+   single: Area Roughness
+   single: Geoclimatic Factor
+   single: Fade Occurrence Factor
+   single: Climatic Factor
+   single: Terrain Roughness
+   single: Rain
+   single: 1-way Availability
+   single: 2-Way Availability
+   single: Worst Earth Curvature
+
+
+Link Summary additional information
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Select the |icon_info| information icon to view a new window showing a detailed breakdown of the availability calculations.
+
+.. _availability_detail_ITU_mesh:
+.. figure:: availability_detail_ITU_mesh.png
+
+ Detailed Availability Information for a Mesh Link (ITU Model)
+ 
+This window shows detailed information for Link Availability for Lowest Mode Availability. When the ITU prediction model has been selected, see :doc:`availability`, the parameters are as displayed in :ref:`availability_detail_ITU_mesh` and described below:
+
+**dN/dH not exceeded for 1% of time**: Point refractivity gradient in the lowest 65m of the atmosphere not exceeded for 1% of an average year. This data is provided in 1.5 degree grid form by the ITU and the value is a bilinear interpolation for the mid point of the path.
+
+**Area roughness 110 x 110 km**:  the standard deviation of terrain heights (m) within a 110 x 110 km area. If using the ITU-R P.530-17 model this data is provided in 0.5 x 0.5 degree grid form by the ITU and the value is a bilinear interpolation for the mid point of the path.
+
+**Geoclimatic Factor**: Calculated from the point refractivity gradient and area roughness according to the selected ITU-R P.530 model.
+
+**Fade Occurrence Factor (P0)**: The intercept of the deep-fading distribution with the percentage of time-axis for multipath fading. This parameter is dependent on the Geoclimatic Factor, path length, path inclination, frequency and altitude of lower antenna, calculated as given in the selected ITU-R P530 model.
+
+**Path Inclination**: Absolute difference in antenna height above mean sea level (m) divided by path length (km), given in mrad.
+
+**Value of K Exceeded for 99.9% (ke)**: This value is taken from ITU-R P.530 Figure 2, the value of ke exceeded for approximately 99.9% of the worst month in a continental temperature climate and is often referred to as "Worst Earth Curvature". The impact of this value on the terrain height is shown by the grey line on the path profile (:ref:`profile_with_clutter_and_obstructions`).
+
+**Excess Path Loss at K = ke**: This value shows the amount of excess loss that will occur on the link during the time when the K value drops to that shown above. This may occur for up to 0.1% of the time, but is not taken into account in the availability calculations. Links which require at least 99.9% availability should ensure that this value is 0 dB, by selecting appropriate antenna heights to give sufficient clearance.
+
+**0.01% Rain rate**: Calculated using ITU-R P837, which uses a matrix of rain values for the globe with a 1.25 degree resolution. These values are bi-linearly interpolated for the Latitude and Longitude of the center of the path.
+
+**Rain Attenuation**: The attenuation in dB/km for the given rain rate and polarization. 60 GHz cnWave uses vertical polarization.
+
+**Rain Availability**: The availability of the given rain rate with the system gain margin calculated using ITU-R P530.
+
+**Rain Unavailability**: The amount of time the link is predicted to be unavailable due to rain.
+
+When using the Vigants - Barnett prediction model the first five parameters are replaced by the following terms, for further information on the Vigants - Barnett model see :doc:`availability` :
+
+**Terrain Roughness**: Standard deviation of terrain height along the path profile, excluding the ends of the path.
+
+**Climatic Factor**: Derived from the atmospheric conditions maps for the mid point of the path.
+
+**C Factor**: Calculated from the Terrain Roughness and the Climatic Factor.
+
+**Temperature**: The temperature is taken from the ESATEMP data. This data is provided in 1.5 deg grid form by the ITU and the value is a bilinear interpolation for the mid point of the path.
+
+.. index::
+   single: Details
+   single: Performance Details
+   single: Performance
+
+Performance Details
+--------------------------
+
+This section contains more detail about the predicted performance of the link. 
+
+.. _mesh_link_performance_details:
+.. figure:: mesh_link_performance_details.png
+
+   Mesh Link Performance Details
+
+Common Details
+~~~~~~~~~~~~~~~~
+
+**MCS**: The Modulation Coding Scheme Number
+
+**Mode**: The modulation technique used.
+
+**Code Rate**: The code rate for the specified mode.
+
+
+
+Performance to each end 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+       
+**Max IP Throughput (Gbps)**: The maximum user throughput achievable in the given direction. 
+
+**Fade Margin (dB)**: The margin available to each end in the specified Mode.
+
+**Mode Availability(%)**: The percentage of time that the modulation mode for each end is predicted to be available.
+
+**Receive Time in Mode(%)**: The percentage of time the specified mode is predicted to be used to receive data.
+
+
+   
+.. |table_add| image:: table_add.png
+.. |note| image:: note.jpg   
+.. |icon_delete_detailspage| image:: icon_delete_detailspage.png
+.. |icon_undo_changes| image:: icon_undo_changes.png
+.. |icon_locate| image:: icon_locate_on_map.png
+.. |table_delete| image:: table_delete.png
+.. |list_delete| image:: list_delete.png
+.. |table_download_csv| image:: table_download_csv.png
+.. |save_page| image:: save_page.png
+.. |icon_add| image:: icon_add_button.png
+.. |icon_next| image:: icon_next.png
+.. |ok| image:: icon_ok.png
+.. |icon_table| image:: icon_table_view.png
+.. |icon_revert| image:: icon_revert.png
+.. |icon_mesh_link| image:: icon_menu_mesh_link.png
+.. |icon_info| image:: icon_info.png
+
+
+

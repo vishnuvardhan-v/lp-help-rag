@@ -1,0 +1,90 @@
+.. index::
+   single: CSV files
+   single: KML files
+   single: Copying
+   single: Copying Sites
+   single: Importing
+   single: Importing Sites
+   
+Importing Sites
+====================
+
+Site data can be brought into LINKPlanner from Google Earth(TM) (.KML) or from comma-separated files (.CSV). Before importing sites, ensure that the correct project is open in LINKPlanner.
+
+.. index::
+   single: Importing sites from Spreadsheets
+   single: Spreadsheets
+
+Preparing Sites for Import from Google Earth (TM) (.KML)
+----------------------------------------------------------------
+
+Site details can be copied or imported from Google Earth(TM). Locate the sites in Google Earth(TM) using address or zip code, then insert placemarks.
+
+|note|
+
+        When a site is located using address or zip code, Google Earth(TM) inserts the placemark in the street adjacent to the building. To obtain precise latitude and longitude, move the placemark to the building where the antenna is mounted.
+
+In Google Earth, create a folder and add all required placemarks to that folder.
+
+
+Preparing Sites for Import from a Spreadsheet
+----------------------------------------------------------------
+
+Use this method when site information is in a spreadsheet. The required fields for each site are Name, Latitude and Longitude. The optional fields are Maximum Antenna Height and Description. Save the spreadsheet as a CSV (comma separated) file
+
+Importing Sites from Google Earth (TM) (.KML) or a Spreadsheet
+-----------------------------------------------------------------------
+
+The procedure is the same for both Network and Subscriber Sites
+
+1. Click **Import** in top menu bar. Then click either the **Network Sites** or **Subscriber Sites** option.
+
+   .. _import_sites_menu_bar:
+   .. figure:: import_sites_menu_bar.png
+
+      Import Menu
+
+2. The :ref:`import_csv_2` is presented: 
+
+   .. _import_csv_2:
+   .. figure:: import_csv_2.png
+
+      Import Wizard
+
+
+3. To see an example of the csv file format select **here** in Step 2, otherwise to select a file either click on **Browse** and navigate to the required file, or drag and drop the file into the Browse area, then click on **Next**.
+
+4. The :ref:`import_csv_3` is presented. This includes a preview of the first 20 rows in the file and a count of the number of sites in the file for sanity checking.
+
+
+   .. _import_csv_3:
+   .. figure:: import_csv_3.png
+
+      Table Import View
+      
+3. Correct any values that cannot be imported: 
+
+   If LINKPlanner cannot interpret any of the values (for example, if a latitude or longitude is not formatted correctly), the cell is highlighted in red. Correct the file and re-start the import. 
+   
+   If site coordinates match (1m tolerance) site locations in the current project file then the matching cells will highlight in yellow and a warning will appear. It is still possible to import the data, but it will result in duplicate sites in the project file.
+   
+   Just above the table is a count of how many sites have errors and how many have warnings. A preview of the top 20 sites with errors and/or warnings is displayed.
+
+   .. _import_csv_4:
+   .. figure:: import_csv_4.png
+
+      Value Cannot be Interpreted
+
+
+
+4. Set the Height unit to match the values in the Maximum Height column and click on **Create Sites**. To zoom the map view into the new sites click on |icon_zoom_to_fit|
+
+
+Accessing Imported Sites
+---------------------------
+
+When sites have been imported, access them from the Sites node in the navigation tree, as described in :doc:`project_navigation_tree`.
+
+.. |note| image:: note.jpg
+.. |icon_import_sites| image:: icon_import_sites.png
+.. |icon_zoom_to_fit| image:: icon_zoom_to_fit.png

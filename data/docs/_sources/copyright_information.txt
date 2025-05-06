@@ -1,0 +1,53 @@
+Cambium PTP LINKPlanner
+=======================
+
+Accuracy
+------------
+
+While reasonable efforts have been made to assure the accuracy of this document, Cambium Networks assumes no liability resulting from any inaccuracies or omissions in this document, or from use of the information obtained herein. Cambium reserves the right to make changes to any products described herein to improve reliability, function, or design, and reserves the right to revise this document and to make changes from time to time in content hereof with no obligation to notify any person of revisions or changes. Cambium does not assume any liability arising out of the application or use of any product, software, or circuit described herein; neither does it convey license under its patent rights or the rights of others. It is possible that this publication may contain references to, or information about Cambium products (machines and programs), programming, or services that are not announced in your country. Such references or information must not be construed to mean that Cambium intends to announce such Cambium products, programming, or services in your country. 
+
+Copyrights
+------------
+
+This document, Cambium products, and 3rd Party Software products described in this document may include or describe copyrighted Cambium and other 3rd Party supplied computer programs stored in semiconductor memories or other media. Laws in the United States and other countries preserve for Cambium, its licensors, and other 3rd Party supplied software certain exclusive rights for copyrighted material, including the exclusive right to copy, reproduce in any form, distribute and make derivative works of the copyrighted material. Accordingly, any copyrighted material of Cambium, its licensors, or the 3rd Party software supplied material contained in the Cambium products described in this document may not be copied, reproduced, reverse engineered, distributed, merged or modified in any manner without the express written permission of Cambium. Furthermore, the purchase of Cambium products shall not be deemed to grant either directly or by implication, estoppel, or otherwise, any license under the copyrights, patents or patent applications of Cambium or other 3rd Party supplied software, except for the normal non-exclusive, royalty free license to use that arises by operation of law in the sale of a product. 
+
+Restrictions
+------------
+
+Software and documentation are copyrighted materials. Making unauthorized copies is prohibited by law. No part of the software or documentation may be reproduced, transmitted, transcribed, stored in a retrieval system, or translated into any language or computer language, in any form or by any means, without prior written permission of Cambium.
+
+License Agreements
+----------------------
+
+The software described in this document is the property of Cambium and its licensors. It is furnished by express license agreement only and may be used only in accordance with the terms of such an agreement.
+
+High Risk Materials
+--------------------
+
+Cambium and its supplier(s) specifically disclaim any express or implied warranty of fitness for any high risk activities or uses of its products including, but not limited to, the operation of nuclear facilities, aircraft navigation or aircraft communication systems, air traffic control, life support, or weapons systems (High Risk Use). Any High Risk is unauthorized, is made at your own risk and you shall be responsible for any and all losses, damage or claims arising out of any High Risk Use.
+
+Trademarks
+------------
+
+|cambium_logo|
+
+| All product or service names are the property of their respective owners.
+
+
+Disclaimer
+----------
+
+Cambium Networks assumes no responsibility for the accuracy of 
+the information produced by the Cambium PTP LINKPlanner. Reference to products 
+or services which are not provided by Cambium Networks is for information
+purposes only and constitutes neither an endorsement nor a recommendation. All 
+information provided by the Cambium PTP LINKPlanner is provided without 
+warranty of any kind, either expressed or implied.
+
+---
+
+.. image:: logo_s.jpg
+    :align: right
+
+
+.. |cambium_logo| image:: logo_s.jpg

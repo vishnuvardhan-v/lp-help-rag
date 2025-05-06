@@ -1,0 +1,140 @@
+.. index::
+   single: Navigation Tree
+   single: Search
+   single: Project Navigation
+
+Project Navigation
+===================
+
+When a project is open, navigate between sites, PTP Links, PMP Network Devices, Mesh Links and PMP links using the menu options in the left hand panel. The following example shows one open project, with several sites, PTP Links, Network Devices, Mesh Links and PMP Links (:ref:`navigation_tree`):
+
+.. _navigation_tree:
+.. figure:: navigation_tree.png
+
+   Navigation Tree
+
+To return to the full map view at any time click on |icon_map| at the top of the left hand panel
+
+To search for sites, PTP Links, Network Devices, Mesh Links or PMP Links, enter the search string in the search box
+
+.. _menu_search:
+.. figure:: menu_search.png
+
+   Menu Search Option
+   
+Click on an entry in the search results to go to that item.
+
+To adjust the left menu panel, click on the vertical line of the panel, then move it right or left to change the width.
+
+To collapse the panel, move the vertical line of the panel to the extreme left, which will reduce the menu names to icons as shown in the table below:
+
+To expand the panel, click on the double right arrow at the bottom, |icon_right_arrows|
+
++-----------------------+-------------------------+
+| Icon                  | Menu Name               |
++=======================+=========================+
+| |icon_project|        | |menu_project|          |
++-----------------------+-------------------------+
+| |icon_network_site|   | |menu_network_site|     |
++-----------------------+-------------------------+
+| |icon_sub_site|       | |menu_sub_site|         |
++-----------------------+-------------------------+
+| |icon_ptp_link|       | |menu_ptp_link|         |
++-----------------------+-------------------------+
+| |icon_pmp_nd|         | |menu_pmp_nd|           |
++-----------------------+-------------------------+
+| |icon_bom|            | |menu_bom|              |
++-----------------------+-------------------------+
+| |icon_antenna|        | |menu_antenna|          |
++-----------------------+-------------------------+
+| |icon_best_server|    | |menu_best_server|      |
++-----------------------+-------------------------+
+| |icon_menu_tp|	| |menu_tp_expand|	  |
++-----------------------+-------------------------+
+
+Click on a menu option to open it for viewing and updating. 
+
+.. index::
+   single: Projects
+
+Project
+----------
+
+To display the Project page, click on **Project**. See :doc:`project_page`. 
+
+When a project has been changed the |save_project| symbol in the top menu bar will be shown in red. To save a project, click |save_project| and it will turn black when there are no changes in the project. To discard all changes made to a project, click the |discard| symbol in the top menu bar. This is shown in red when there are changes to be discarded and will turn black when there are no unsaved changes in the project.
+
+
+
+.. index::
+   single: Sites
+
+Sites
+--------
+
+To display the list of all network sites within the project, click on the "Network Sites" menu option. To display the list of all subscriber sites within the project, click on the "Subscriber Sites" menu option. For either site list, see :doc:`displaying_the_sites_list`. The total number of network or subscriber sites is shown in the box by the side of each name.
+
+PTP Links
+----------------------------
+
+To display the list of all the PTP Links click on the "PTP Links" menu option. The total number of PTP Links in the project is shown in the box by the side of the name.
+
+
+PMP
+----------------------------
+
+To display the list of all PMP Network Devices and associated PMP links and Mesh links, click on the "PMP" menu option. The total number of PMP Network Devices in the project is shown in the box by the side of the name.
+
+
+Bill of Materials
+----------------------
+
+To view the Bill of Materials (BOM) for the whole project, click on the "Bill of Materials" menu option. For attribute descriptions, see :doc:`bill_of_materials_for_project`.
+
+Antennas
+----------------
+
+To see the available antennas and to create, edit and delete custom antennas for Unlicensed PTP and Subscriber Modules, click on the "Antennas" menu option. See :doc:`antennas`.
+
+Best Server
+----------------
+
+To automatically determine which ND is the best option for all subscriber sites, click on the "Best Server" menu option. This requires the PMP Network Device to be created prior to running. See :doc:`best_server_analysis`.
+
+
+Terragraph Planner
+----------------------
+
+To automatically design a cnWave 60 GHz network for either a distributed network or mesh only, click on the "Terragraph Planner" menu option. This requires the relevant sites to be added to the project and lidar data for the area. See :doc:`terragraph_planner`.
+
+
+.. |save_project| image:: save_project_icon.png
+.. |discard| image:: discard_changes.png
+.. |icon_map| image:: icon_menu_map.png
+.. |icon_project| image:: icon_menu_project.png
+.. |menu_project| image:: icon_menu_project_expand.png
+.. |icon_network_site| image:: icon_menu_network_site.png
+.. |menu_network_site| image:: icon_menu_network_site_expand.png
+.. |icon_sub_site| image:: icon_menu_subscriber_site.png
+.. |menu_sub_site| image:: icon_menu_subscriber_site_expand.png
+.. |icon_pmp_nd| image:: icon_menu_PMP_Network_devices.png
+.. |menu_pmp_nd| image:: icon_menu_PMP_Network_devices_expand.png
+.. |icon_pmp_link| image:: icon_menu_pmp_link.png
+.. |menu_pmp_link| image:: icon_menu_pmp_link_expand.png
+.. |icon_bom| image:: icon_menu_bom.png
+.. |menu_bom| image:: icon_menu_bom_expand.png
+.. |icon_best_server| image:: icon_menu_best_server.png
+.. |menu_best_server| image:: icon_menu_best_server_expand.png
+.. |icon_right_arrows| image:: icon_right_toolbar_arrows.png
+.. |menu_mesh_link| image:: icon_menu_mesh_link_expand.png
+.. |icon_mesh_link| image:: icon_menu_mesh_link.png
+.. |icon_ptp_link| image:: icon_menu_ptp_link.png
+.. |menu_ptp_link| image:: icon_menu_ptp_link_expand.png
+.. |menu_tp_expand| image:: icon_menu_terragraph_expand.png
+.. |icon_menu_tp| image:: icon_menu_terragraph.png
+.. |icon_antenna| image:: icon_antenna.png
+.. |menu_antenna| image:: menu_antenna.png
+
+
+
+

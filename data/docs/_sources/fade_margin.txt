@@ -1,0 +1,21 @@
+.. index::
+   single: Fade Margin
+   single: LoS Fading
+   single: NLoS fading
+
+Fade Margin
+===========
+
+A Fade Margin needs to be applied to the link budget to take into account
+changes in the radio path caused by changes in objects surrounding or in
+the path, for example moving objects such as traffic or the changes in
+foliage brought on by seasonal change. The Fade Margin for NLoS links used
+in the calculation is a function of excess path loss, and is taken from
+the following graph:  
+
+.. _fade_margin:
+.. figure:: fade_margin.jpg
+
+   Fade Margin vs Excess Path Loss for 99.99% Link Availability
+
+The Fade Margin for LoS links is a function of location, path length, antenna heights, and spatial diversity, and it is computed using ITU-R P.530-12 or ITU-R P.530-17. The estimation tool adds together the probabilities for the NLoS fading and the LoS fading.

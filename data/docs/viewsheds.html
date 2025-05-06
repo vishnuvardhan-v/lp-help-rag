@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Viewsheds &#8212; Cambium LINKPlanner Online Help (6.3.3)</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/default.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Bill of Materials for Project" href="bill_of_materials_for_project.html" />
+    <link rel="prev" title="Verifying a High Point Using a Survey" href="verifying_a_high_point_using_a_survey.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="bill_of_materials_for_project.html" title="Bill of Materials for Project"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="verifying_a_high_point_using_a_survey.html" title="Verifying a High Point Using a Survey"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="using_linkplanner.html" accesskey="U">Using LINKPlanner</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Viewsheds</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="viewsheds">
+<span id="index-0"></span><h1>Viewsheds<a class="headerlink" href="#viewsheds" title="Permalink to this headline">¶</a></h1>
+<p>Viewsheds indicate all the locations in the area surrounding a chosen place that are considered to be Line-of-Sight for a given tower height and subscriber height.</p>
+<figure class="align-default" id="id3">
+<span id="a-viewshed-on-the-map"></span><img alt="_images/A_viewshed_on_the_map.png" src="_images/A_viewshed_on_the_map.png" />
+<figcaption>
+<p><span class="caption-text">A viewshed on the map</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<section id="creating-a-viewshed">
+<h2>Creating a viewshed<a class="headerlink" href="#creating-a-viewshed" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>Click <img alt="viewshed" src="_images/icon_right_menu_viewshed.png" /> on the right hand side menu.</p></li>
+<li><p>The Viewshed Mode window opens (<a class="reference internal" href="#viewshed-map-menu"><span class="std std-ref">Viewshed Map Menu</span></a>), click <img alt="create_viewshed" src="_images/icon_create_viewsheds.png" />. See <a class="reference internal" href="#viewshed-calculation"><span class="std std-ref">Viewshed Calculation</span></a> for details on Optical and Radio LOS.</p>
+<blockquote>
+<div><p>The <a class="reference internal" href="#viewshed-configuration-dialog"><span class="std std-ref">Viewshed Configuration Dialog</span></a> is displayed</p>
+</div></blockquote>
+</li>
+<li><p>Configure the options in the <a class="reference internal" href="#viewshed-configuration-dialog"><span class="std std-ref">Viewshed Configuration Dialog</span></a>.</p>
+<p>See <a class="reference internal" href="#viewshed-configuration"><span class="std std-ref">Viewshed Configuration</span></a> for information about the options in this dialog.</p>
+</li>
+<li><p>Click <img alt="create_viewshed_window" src="_images/icon_create_viewshed_window.png" /> to start the calculation.</p></li>
+</ol>
+<p>After starting the calculation, a progress notification will be displayed. Multiple calculated viewsheds may be displayed on the map at the same time.</p>
+<figure class="align-default" id="id4">
+<span id="viewshed-progress-bar"></span><img alt="_images/Viewshed_Progress_Bar.png" src="_images/Viewshed_Progress_Bar.png" />
+<figcaption>
+<p><span class="caption-text">Viewshed Progress Notification</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Once the calculation has finished, the menu in the <a class="reference internal" href="#viewshed-map-menu"><span class="std std-ref">Viewshed Map Menu</span></a> will be populated with an entry for each viewshed created. This menu contains a list of viewsheds that have been previously calculated. Use the radio button <img alt="show_viewshed" src="_images/icon_show_viewshed.png" /> to display the desired viewshed image or select <img alt="hide_viewshed" src="_images/icon_hide_viewshed.png" /> to show no image.</p>
+<p>For each viewshed entry in the list, the following information is shown:</p>
+<ol class="arabic">
+<li><p>Tower Height</p></li>
+<li><p>Subscriber Height</p>
+<p>Depending on the configuration of the subscriber height, either one or two heights will be shown. One height will be shown for “Use height above ground” and “Use height above clutter” and two will be shown for “Use min height above clutter”.</p>
+<p>The subscriber heights are followed by an acronym indicating how the subscriber height is used by LINKPlanner.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>AC</strong> - Above Clutter: This height value will always be added on top of the height of the clutter at any given point.</p></li>
+<li><p><strong>AGL</strong> - Above Ground Level: This height value will always be added on top of the ground at any given point, regardless of whether clutter is present.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Viewshed Radius</p></li>
+<li><p>Frequency (for <a class="reference internal" href="#viewshed-calculation"><span class="std std-ref">Radio LOS Viewsheds</span></a> only.)</p></li>
+<li><p>Clutter (indicates whether clutter was included in the calculation)</p></li>
+<li><p>The color of the Viewshed</p></li>
+</ol>
+<p>Click the <img alt="copy_viewshed_config" src="_images/icon_create_viewshed_same_configuration.png" /> next to the viewshed configuration in the list to create a new viewshed using same configuration.</p>
+<p>Click the <img alt="delete" src="_images/icon_delete.png" /> next to a viewshed in the list to delete it.</p>
+<figure class="align-default" id="id5">
+<span id="viewshed-map-menu"></span><img alt="_images/Viewshed_Map_Menu.png" src="_images/Viewshed_Map_Menu.png" />
+<figcaption>
+<p><span class="caption-text">Viewshed Map Menu</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Click the <img alt="hide_all_viewshed" src="_images/icon_hide_all_viewsheds.png" /> button to hide viewsheds for all sites which are currently displaying any.
+Click the <img alt="show_all_viewshed" src="_images/icon_show_all_viewsheds.png" /> button to show viewsheds for all sites if there are no viewsheds being shown.</p>
+</section>
+<section id="viewshed-configuration">
+<span id="id1"></span><h2>Viewshed Configuration<a class="headerlink" href="#viewshed-configuration" title="Permalink to this headline">¶</a></h2>
+<figure class="align-default" id="id6">
+<span id="viewshed-configuration-dialog"></span><img alt="_images/Viewshed_Configuration_Dialog.png" src="_images/Viewshed_Configuration_Dialog.png" />
+<figcaption>
+<p><span class="caption-text">Viewshed Configuration Dialog</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>The first section of the viewshed dialog is concerned with the network sites to be chosen (select from the list) or you can select locations on the map, by clicking on <strong>Select locations in map</strong> and then clicking on the map, which will add new network sites to the map.</p>
+<p>The second section of the viewshed dialog is concerned with the general characteristics of the viewshed. In the Tower Height section choose between <strong>Use site Maximum Height?</strong> which takes the site height configured in the network sites list and <strong>Use Tower Height?</strong> which uses a fixed height above ground. For High Resolution Viewsheds there is an additional option for <strong>Use Tower Height Above Clutter?</strong> which takes a fixed height above the surface (ground + clutter)</p>
+<table class="docutils align-default" id="id7">
+<caption><span class="caption-text">Viewshed Configuration</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Create High Resolution Viewshed</p></td>
+<td><p>Tick this box to create a High Resolution Viewshed for 60 GHz. This requires Lidar data to be available for the area.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Site Max. Height</p></td>
+<td><p>The maximum height of the network site above ground. This does not include clutter.</p></td>
+</tr>
+<tr class="row-even"><td><p>Tower Height above Ground</p></td>
+<td><p>The height of the tower above ground. This does not include clutter.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tower Height above Clutter</p></td>
+<td><p>The height of the tower above clutter. This does include ground+clutter.</p></td>
+</tr>
+<tr class="row-even"><td><p>Radius</p></td>
+<td><p>The maximum distance of a Subscriber away from the ND that the calculation will consider.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Radio LOS</p></td>
+<td><p>Tick this option to include Frequency Band in the calculation.</p></td>
+</tr>
+<tr class="row-even"><td><p>Band</p></td>
+<td><p>The frequency to use. This is only available for <a class="reference internal" href="#viewshed-calculation"><span class="std std-ref">Radio LOS Viewsheds</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Color</p></td>
+<td><p>The display color of the viewshed. The color is only used to differentiate between multiple viewsheds.</p></td>
+</tr>
+<tr class="row-even"><td><p>Use Clutter?</p></td>
+<td><p>Tick this to include clutter heights in the calculation. The heights will be taken from the project file.</p></td>
+</tr>
+</tbody>
+</table>
+<p>The third section is concerned with how the heights of the subscribers are used.</p>
+<table class="docutils align-default" id="id8">
+<caption><span class="caption-text">Subscriber Configuration</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Use height above ground?</p></td>
+<td><p>Consider the height of the Subscriber to always be the height above ground level, using the Height Above Ground value above.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Use height above clutter?</p></td>
+<td><p>Consider the height of the Subscriber to always be the height above clutter, using the Height Above Clutter value above.</p></td>
+</tr>
+<tr class="row-even"><td><p>Use min height above clutter?</p></td>
+<td><p>Consider the height of the Subscriber to be the minimal value which exceeds the clutter height at any given point using both of the Subscriber height values above. This is calculated as the maximum value of the Height Above Ground or the clutter height at that point added to the Height Above Clutter.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Height Above Ground</p></td>
+<td><p>The height of the Subscriber above ground level.</p></td>
+</tr>
+<tr class="row-even"><td><p>Height Above Clutter</p></td>
+<td><p>The height of the Subscriber above ground level plus clutter height.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="viewshed-calculation">
+<span id="id2"></span><h2>Viewshed Calculation<a class="headerlink" href="#viewshed-calculation" title="Permalink to this headline">¶</a></h2>
+<p id="index-1">Optical LOS Viewsheds are calculated by only considering the antenna and tower heights at each end and the ground heights and clutter heights (if included) throughout the entire profile. The tower height (ND) is always the height above ground and the SM height is above ground when clutter is not included and above clutter when it is included. These are typically faster to calculate but will result in more optimistic coverage.</p>
+<p>Radio LOS Viewsheds will consider the same information as Optical, but determine Line-of-Sight based on a calculated Fresnel zone for each location. Any intersection between terrain, clutter and the Fresnel zone is considered to be Non Line-of-Sight so viewsheds will be pessimistic in Near Line-of-Sight cases and may differ from LINKPlanner profile results.</p>
+</section>
+<section id="viewshed-information">
+<h2>Viewshed Information<a class="headerlink" href="#viewshed-information" title="Permalink to this headline">¶</a></h2>
+<p>Due to performance reasons, the viewshed calculation will sample the terrain at slightly different locations to the individual LINKPlanner path profiles which may lead to differences between the two results, for example some areas may be shown as non line-of-sight in the viewshed region but could still yield a viable link or vice versa.</p>
+<p>The underlying terrain and clutter data used to calculate the viewsheds is the same as the individual path profiles, see <a class="reference internal" href="path_profiles.html"><span class="doc">Path Profiles</span></a>. The data is sampled at approximately 30 meter intervals but may be sampled in slightly different locations to the individual path profiles. Where the data resolution exceeds 30 meters, it is resampled to 30 meters but is not any more accurate (this is notably the case for clutter data in Europe and non-US areas). Missing data values are considered to be 0 meters.</p>
+<p>At certain zoom levels on the map, parts of the viewshed may appear out of focus - this is due to limitations with the browser scaling the viewshed images, but locations roughly within the 30 meter block of the colored area will be Line-of-Sight.</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="list_of_figures.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_this_user_guide.html">About This User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="using_linkplanner.html">Using LINKPlanner</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="starting_the_application.html">Starting the Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_interface_tips.html">User Interface Tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="projects.html">Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sites.html">Sites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profiles.html">Profiles</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Viewsheds</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#creating-a-viewshed">Creating a viewshed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viewshed-configuration">Viewshed Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viewshed-calculation">Viewshed Calculation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viewshed-information">Viewshed Information</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bill_of_materials_for_project.html">Bill of Materials for Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project_configuration.html">Advanced Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exporting_and_reporting.html">Exporting and Reporting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="planning_ptp_links.html">Planning PTP links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_pmp_links.html">Planning PMP networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background_information.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notices.html">Legal Notices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes_to_linkplanner.html">Changes to LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="bill_of_materials_for_project.html" title="Bill of Materials for Project"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="verifying_a_high_point_using_a_survey.html" title="Verifying a High Point Using a Survey"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="using_linkplanner.html" >Using LINKPlanner</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Viewsheds</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2025, Cambium Networks.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

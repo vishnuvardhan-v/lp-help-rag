@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Setting Diversity &#8212; Cambium LINKPlanner Online Help (6.3.3)</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/default.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Setting 2+0 Single Antenna" href="setting_single_antenna.html" />
+    <link rel="prev" title="Optimizing E1 or T1 Latency" href="optimizing_e1_or_t1_latency.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="setting_single_antenna.html" title="Setting 2+0 Single Antenna"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="optimizing_e1_or_t1_latency.html" title="Optimizing E1 or T1 Latency"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="planning_ptp_links.html" >Planning PTP links</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="advanced_features.html" accesskey="U">Advanced Features</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Setting Diversity</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="setting-diversity">
+<span id="index-0"></span><h1>Setting Diversity<a class="headerlink" href="#setting-diversity" title="Permalink to this headline">¶</a></h1>
+<p>Diversity is a method where the same digital information is sent or received over more than one path between the transmitting site and the receiving site, in order to reduce outages and hence achieve better performance of the link. There are several methods to achieve diverse paths and the Cambium PTP 670 products use space diversity.</p>
+<section id="space-diversity">
+<h2>Space Diversity<a class="headerlink" href="#space-diversity" title="Permalink to this headline">¶</a></h2>
+<p>In some cases it is necessary to add a second (diverse) antenna to improve the long term performance of the link. Diverse antennas are used to solve two different phenomena, which both cause reflections to be experienced at the antenna. The placement of the second antenna should be such that when one antenna is experiencing a null or faded signal, the other antenna is experiencing a good signal. The choice of antenna separation distance (which is always a vertical separation) is dependent on the mechanism which is causing the reflections.</p>
+<ul class="simple">
+<li><p><strong>Tropospheric Multipath</strong> (one example of which is ducting) is where there are many reflections arriving at the antenna and the angles are not constant over time. In this case larger separations are preferred and the availability calculation will show the improvement which can be achieved for a given antenna separation. In general increasing the separation will improve the availability and decreasing the separation will reduce the availability. This will be more obvious in geographic locations which are prone to high levels of tropospheric multipath, in more benign areas the amount of antenna separation has little impact on the amount of diversity gain. The separation distance recommended by the LINKPlanner reflection editor is not for use in combating tropospheric multipath.</p></li>
+<li><p><strong>Reflection mitigation</strong> Two separate antennas are also used to protect against reflections from objects, most commonly those over water. In this instance the reflections follow the laws of geometry and specific separation distances are required to overcome them. It is therefore important in this case to ensure that the antennas use the separation distances recommended by the LINKPlanner reflection editor, see <a class="reference internal" href="#reflection-editor"><span class="std std-ref">Unlicensed Band Reflection Editor</span></a>.</p></li>
+</ul>
+<p>Some links may require spatial diversity to combat tropospheric multipath and provide protection from reflections over water. In this case use the multiplier factor to increase the separation to suit the spatial diversity requirements, but at the same time maintain the required geometrical separation.</p>
+<section id="reflections-over-water">
+<span id="index-1"></span><h3>Reflections over Water<a class="headerlink" href="#reflections-over-water" title="Permalink to this headline">¶</a></h3>
+<p>If the path is over water, it is necessary to detect whether mitigation techniques are necessary, and if they are, to calculate the optimum vertical separation for the diversity antennas. To do this, select the link and the path profile section. Tick the <strong>Enable Reflection Mitigation</strong> box on the path profile (<a class="reference internal" href="#reflection-editor"><span class="std std-ref">Unlicensed Band Reflection Editor</span></a> or <a class="reference internal" href="#reflection-editor-licensed"><span class="std std-ref">Licensed Band Reflection Editor</span></a>) to enable the calculation and display a visualization of the reflection on the Profile chart. The Reflection Surface Height (blue line with gray ends) will normally be aligned with the height of the reflecting surface, if it isn’t adjust the Reflection Surface Height until the line aligns with the height of the reflecting surface.</p>
+<figure class="align-default" id="id1">
+<span id="profile-with-reflection-visible"></span><img alt="_images/profile_with_reflection_visible.png" src="_images/profile_with_reflection_visible.png" />
+<figcaption>
+<p><span class="caption-text">Profile with Reflection Visible</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>If the reflected paths have an unobstructed route to both ends of the link, as shown in <a class="reference internal" href="#profile-with-reflection-visible"><span class="std std-ref">Profile with Reflection Visible</span></a> then mitigation techniques are required. The simplest technique is to obstruct the reflected path, on this link the path can be obstructed by lowering the Caddoa antenna (<a class="reference internal" href="#profile-with-reflection-obscured"><span class="std std-ref">Profile with Reflection Obscured</span></a>). This makes diversity spacing unnecessary for reflection mitigation, because the reflection path is obscured by the hill in front of the Caddoa antenna.</p>
+<figure class="align-default" id="id2">
+<span id="profile-with-reflection-obscured"></span><img alt="_images/profile_with_reflection_obscured.png" src="_images/profile_with_reflection_obscured.png" />
+<figcaption>
+<p><span class="caption-text">Profile with Reflection Obscured</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>If the reflected path cannot be easily obstructed then spatial diversity will be required.</p>
+<p><img alt="caution" src="_images/caution.jpg" /></p>
+<blockquote>
+<div><p><strong>LINKPlanner does not adjust the reliability of the link based upon the possible reflection, but a link that suffers reflection can
+have very bad performance if the mitigation has not been applied.</strong></p>
+</div></blockquote>
+<figure class="align-default" id="id3">
+<span id="reflection-editor"></span><img alt="_images/reflection_editor.png" src="_images/reflection_editor.png" />
+<figcaption>
+<p><span class="caption-text">Unlicensed Band Reflection Editor</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Unlicensed products use both Tx and Rx diversity and therefore diversity should only be applied at one end of the link. The diversity separation ensures that both antennas are not fading simulataneously, however this means that it is only the single payload modes which have full protection against reflections.</p>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<p><strong>LINKPlanner will only guarantee the performance of single payload modes in the presence of reflections.</strong> When the reflection mitigation option is ticked the Performance Summary and Performance Details will only consider the single payload modulation modes.</p>
+<p>The reflection editor shows the <strong>Optimum Spacing</strong> at each end, see <a class="reference internal" href="#reflection-editor"><span class="std std-ref">Unlicensed Band Reflection Editor</span></a>. The optimum spacing may be different for each end of the link. Choose the end of the link to apply the diversity spacing based on the physical constraints of the towers.</p>
+<p>The optimum spacing is the smallest spacing that will cancel the reflection, however it may not be possible to install the antennas at this separation, depending on the size of antennas selected and mounting points available. If a larger separation is required choose a <strong>Multiplier</strong> from the pull down list to give a suitable spacing shown as the <strong>Selected Spacing</strong>. In the example above, the Multiplier is set to 3 to give a spacing of 11.09 meters, which is easily achievable without much cable loss.</p>
+<p>The unlicensed band radios are mounted to external antennas to provide diversity spacing. The <strong>Optimum Spacing</strong> requires the minimum cable length and hence the minimum additional loss from the single radio unit to both antennas. When using a larger multiplier the antennas are further apart and require longer cables to connect from the radio to the two antennas, increasing the additional loss.</p>
+<p>For unlicensed products set the Multiplier, then transfer the resulting Spacing value to the Configuration Diversity Spacing and tick the Reflection Mitigation box, as described in <a class="reference internal" href="configuration_at_each_end.html"><span class="doc">Configuration at Each End</span></a>.  If diversity is to be applied at both ends of the link, the Diversity Spacing at each end of the link should be entered as half the value given for each end by the Reflection Editor.</p>
+<p>Licensed band products only use Rx diversity and therefore diversity must be applied at both ends of the link using the full diversity spacing values given, see <a class="reference internal" href="#reflection-editor-licensed"><span class="std std-ref">Licensed Band Reflection Editor</span></a>. Licensed band products have a radio for each antenna which can be directly mounted to the antenna, hence there is no difference in performance if a larger separation is required. If a Multiplier is to be used, select the value from the pull down list to give a suitable <strong>Required Spacing</strong> at each end of the link. Subtract the diversity spacing from the Primary antenna height to give the height required for the Secondary antenna.</p>
+<figure class="align-default" id="id4">
+<span id="reflection-editor-licensed"></span><img alt="_images/reflection_editor_licensed.png" src="_images/reflection_editor_licensed.png" />
+<figcaption>
+<p><span class="caption-text">Licensed Band Reflection Editor</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>For more information about reflections, see <a class="reference internal" href="paths_over_sea_or_very_flat_ground.html"><span class="doc">Paths Over Sea or Very Flat Ground</span></a>.</p>
+</section>
+<section id="multipath-reflections">
+<h3>Multipath Reflections<a class="headerlink" href="#multipath-reflections" title="Permalink to this headline">¶</a></h3>
+<p>The problem is not easily solved deterministically for reflections due to multipath, because there are a very large number of reflections. LINKPlanner shows the improvement in availability when you select a second antenna and define a separation between the two. If you increase the spacing, the availability increases. If you decrease the spacing, the availability decreases. Adjust the combination of antenna size, antenna height, and antenna spacing to meet the availability requirements.</p>
+<p>The unlicensed products incorporate two transmitters and receivers, however both of these are used under normal conditions to provide dual payload throughput. When a diverse antenna is added the two polarizations are split between the two antennas, but there are no additional receive chains to apply protection to the individual polarizations. A licensed band link that supports spatial diversity, as a minimum, includes an extra receive chain to receive the same data from both antennas. In the unlicensed band the dual polarizations are used to provide additional robustness to the single payload modes, which can be at the expense of the dual payload modes.</p>
+<p>Splitting the paths between two antennas improves the probability that both will not fade simultaneously, but it also doubles the probability that one of them will have a fade, which reduces the availability of the dual payload modes. It is therefore common to see a link which shows better availability in the dual payload modes without diversity compared with when diversity is enabled. Links which are mostly using dual payload are likely to see a reduction in throughput when diversity is added, however the probability of the link dropping out completely is reduced with diversity.</p>
+</section>
+</section>
+<section id="configuring-spatial-diversity-in-linkplanner">
+<h2>Configuring Spatial Diversity in LINKPlanner<a class="headerlink" href="#configuring-spatial-diversity-in-linkplanner" title="Permalink to this headline">¶</a></h2>
+<p>The PTP equipment operates differently depending upon the product and this affects the way in which the equipment may be deployed for space diversity.</p>
+<section id="ptp-670">
+<h3>PTP 670<a class="headerlink" href="#ptp-670" title="Permalink to this headline">¶</a></h3>
+<p>The PTP 670 equipment uses two transmit chains for all configurations and hence when two spatially separated antennas are used one antenna is transmitting and receiving on the vertical polarization and the other antenna is transmitting and receiving on the horizontal polarization. This means that spatial diversity improvement gain is achieved in both directions of a link by deploying separate antennas at just one end of the link. For the PTP 670 the spatial diversity is designed to protect the performance in the single payload modes, but will also offer improvement in dual payload modes when the receive levels on both paths are less than 7 dB apart, however in deeper fades the products will revert to single payload.</p>
+<figure class="align-default" id="id5">
+<span id="space-diversity-unlicensed"></span><img alt="_images/space_diversity_unlicensed.png" src="_images/space_diversity_unlicensed.png" />
+<figcaption>
+<p><span class="caption-text">Space Diversity Deployment (PTP 670)</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>On the PTP 670 spatial diversity is automatically applied when a single polarity antenna is selected and can be chosen to be enabled with dual polarity antennas. The default spacing is set to 5m (16.4 ft), this can be adjusted to suit the local conditions and the availability requirements. If the diversity spacing is set to 0, no additional benefit will be added to the availability. When spatial diversity is selected, a quantity of two antennas per end is included in the BOM. If using single polarity antennas, the two antennas at the same end of the link need to be installed on opposite polarities to match the dual polarity unit at the opposite end of the link. If the spatial diversity is required to overcome reflections then tick the Reflection Mitigation box.</p>
+<figure class="align-default" id="id6">
+<span id="unlicensed-space-diversity-config"></span><img alt="_images/unlicensed_space_diversity_config.png" src="_images/unlicensed_space_diversity_config.png" />
+<figcaption>
+<p><span class="caption-text">Configuration of Space Diversity (PTP 670)</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="height-clearance">
+<h2>Height Clearance<a class="headerlink" href="#height-clearance" title="Permalink to this headline">¶</a></h2>
+<p>When planning a diversity link it is important to ensure that all paths have sufficient clearance. For licensed band links all paths must be Line of Sight and it is advisable even for PTP 670 links. Any additional path loss on the diverse path will not be taken into account in the availability calculations, therefore if some paths are not LoS the predicted availability will be optimistic.</p>
+<p>In addition to ensuring LoS, the path between the two main antennas should give clearance over the Worst Earth curvature (grey line), however other paths may allow some penetration of this area into the Fresnel zone.</p>
+<figure class="align-default" id="id7">
+<span id="space-diversity-main-main"></span><img alt="_images/space_diversity_main_main.png" src="_images/space_diversity_main_main.png" />
+<figcaption>
+<p><span class="caption-text">Height Clearance between main antennas</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id8">
+<span id="space-diversity-main-diverse"></span><img alt="_images/space_diversity_main_diverse.png" src="_images/space_diversity_main_diverse.png" />
+<figcaption>
+<p><span class="caption-text">Height Clearance between main and diverse antennas</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<span class="target" id="index-2"></span></section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="list_of_figures.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_this_user_guide.html">About This User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_linkplanner.html">Using LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_ptp_links.html">Planning PTP links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_pmp_links.html">Planning PMP networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background_information.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notices.html">Legal Notices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes_to_linkplanner.html">Changes to LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="setting_single_antenna.html" title="Setting 2+0 Single Antenna"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="optimizing_e1_or_t1_latency.html" title="Optimizing E1 or T1 Latency"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="planning_ptp_links.html" >Planning PTP links</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="advanced_features.html" >Advanced Features</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Setting Diversity</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2025, Cambium Networks.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

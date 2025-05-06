@@ -1,0 +1,51 @@
+.. index::
+   single: Help
+
+   
+Help
+=====================
+
+To access the User Guide, Release Notes or Support, click on the **Help** in the top menu bar
+
+.. _help_menu:
+.. figure:: help_menu.png
+
+   Help Menu
+
+.. index::
+   single: User Guide
+
+User Guide
+--------------------
+
+Select User Guide to access an online version of the User Guide
+
+.. index::
+   single: Support
+
+Support
+-------
+
+Select Support to go to the Cambium Networks Support Center.
+
+.. index::
+   single: Release Notes
+
+Release Notes
+------------------
+
+Select Release Notes to see the latest Release Notes for the current version and the history of changes in previous releases.
+
+
+.. index::
+   single: About
+
+About
+------------------
+
+Select About to see background information on LINKPlanner and for links to contact the LINKPlanner team or the Cambium Community Forum
+
+
+
+
+.. |help| image:: icon_help.png

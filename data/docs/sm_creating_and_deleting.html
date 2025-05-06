@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Creating and Deleting Subscriber Modules &#8212; Cambium LINKPlanner Online Help (6.3.3)</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/default.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Subscriber Module Description and Equipment" href="sm_description_and_equipment.html" />
+    <link rel="prev" title="Subscriber Modules" href="subscriber_modules.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="sm_description_and_equipment.html" title="Subscriber Module Description and Equipment"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="subscriber_modules.html" title="Subscriber Modules"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="planning_pmp_links.html" >Planning PMP networks</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="subscriber_modules.html" accesskey="U">Subscriber Modules</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Creating and Deleting Subscriber Modules</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="creating-and-deleting-subscriber-modules">
+<span id="index-0"></span><h1>Creating and Deleting Subscriber Modules<a class="headerlink" href="#creating-and-deleting-subscriber-modules" title="Permalink to this headline">¶</a></h1>
+<p>The Network Device connects to one or more Subscriber Sites to create links to Subscriber Modules.</p>
+<section id="creating-subscriber-modules-pmp-links">
+<h2>Creating Subscriber Modules / PMP Links<a class="headerlink" href="#creating-subscriber-modules-pmp-links" title="Permalink to this headline">¶</a></h2>
+<p>PMP Links can be created from either a Network Device or from the map view.</p>
+<p>To create a new PMP Link to a Subscriber Site from a Network Device, click <img alt="table_add" src="_images/table_add.png" /> from the <strong>Links to Subscriber Modules</strong> table and the Attach Subscribers page is displayed.</p>
+<blockquote>
+<div><figure class="align-default" id="id1">
+<span id="new-sm-page"></span><img alt="_images/new_sm_page.png" src="_images/new_sm_page.png" />
+<figcaption>
+<p><span class="caption-text">Attach Subscribers Page</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<p>This page shows the list of available Subscriber Sites within the coverage area of the Network Device. Select one or more Subscriber Sites and hit OK. The filter field narrows the choice when there is a large number of Subscriber Sites in the list.</p>
+<p>To create a new PMP Link from the map to a Network Device, click <img alt="icon_right_menu_pmp_link" src="_images/icon_right_menu_pmp_link.png" />. This displays the PMP Link Mode menu.</p>
+<blockquote>
+<div><figure class="align-default" id="id2">
+<span id="pmp-link-mode"></span><img alt="_images/pmp_link_mode.png" src="_images/pmp_link_mode.png" />
+<figcaption>
+<p><span class="caption-text">New PMP Link Mode from Map</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<p>To use the subscriber site height for the Subscriber Module, tick the <strong>Use the site Maximum Height?</strong> box. To use a different height ensure the <strong>Use the site Maximum Height?</strong> box is not ticked and enter the required height. To create a link from an existing Subscriber Site click on the Subscriber Site in the map. To create both a new link and Subscriber Site click within the coverage area of a Network Device.</p>
+<p>If the site is covered by more than one Network Device the link is created to the Network Device which gives the strongest receive level at the Subscriber Site.</p>
+<p>Multiple links are created by continuing to click on the map, to stop creating PMP Links select <strong>Esc</strong> or click again on <img alt="icon_right_menu_pmp_link" src="_images/icon_right_menu_pmp_link.png" /> or click on <img alt="icon_right_menu_pointer" src="_images/icon_right_menu_pointer.png" />.</p>
+<p>In all cases the selection options only include Subscriber Sites where the Subscriber Site is within the SM Range defined for the Network Device. The list is further constrained by the sector coverage and Azimuth bearing of the Network Device antenna. Use the Network Device <strong>Modeled Beamwidth</strong> value to set the sector coverage of the antenna.</p>
+</section>
+<section id="displaying-pmp-links">
+<span id="pmp-links-table-view"></span><h2>Displaying PMP Links<a class="headerlink" href="#displaying-pmp-links" title="Permalink to this headline">¶</a></h2>
+<p>The Subscriber Modules are then created and listed under the <strong>Network Devices</strong> in the <strong>PMP</strong> menu. Click <img alt="icon_expand_tree" src="_images/icon_expand_tree.png" /> of the Network Device under the <strong>PMP</strong> menu in the left hand tool bar. To change to the table view, click on the <strong>PMP</strong> menu in the left hand tool bar and then select the <strong>PMP Links</strong> tab. To manage the table view see <a class="reference internal" href="user_interface_tips.html"><span class="doc">User Interface Tips</span></a>.</p>
+<dl class="simple">
+<dt><img alt="note" src="_images/note.jpg" /></dt><dd><p>To locate the PMP links in the map view from the PMP Links details page, click the <img alt="icon_locate" src="_images/icon_locate_on_map.png" /> icon, which is displayed next to the <img alt="icon_delete_detailspage" src="_images/icon_delete_detailspage.png" /> icon at the top.</p>
+</dd>
+</dl>
+</section>
+<section id="deleting-subscriber-modules">
+<h2>Deleting Subscriber Modules<a class="headerlink" href="#deleting-subscriber-modules" title="Permalink to this headline">¶</a></h2>
+<p>To delete a Subscriber Module, hover over the Subscriber Module in the <strong>PMP</strong> tree view and click <img alt="list_delete" src="_images/list_delete.png" />, click <img alt="icon_delete_detailspage" src="_images/icon_delete_detailspage.png" /> on the details page, select rows and click <img alt="table_delete" src="_images/table_delete.png" /> in the table view, or right-click on the PMP Link in the map view and select Delete from the pop-up menu.</p>
+<dl class="simple">
+<dt><img alt="note" src="_images/note.jpg" /></dt><dd><p>To revert the changes made, click the <img alt="icon_undo_changes" src="_images/icon_undo_changes.png" /> icon in the details page, which is displayed next to the Apply button. This icon is only displayed when there are changes to the parameters, replacing the <img alt="icon_delete_detailspage" src="_images/icon_delete_detailspage.png" /> icon.</p>
+</dd>
+</dl>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="list_of_figures.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_this_user_guide.html">About This User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_linkplanner.html">Using LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_ptp_links.html">Planning PTP links</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="planning_pmp_links.html">Planning PMP networks</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="network_devices.html">PMP Network Devices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mesh_links.html">Mesh Links</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="subscriber_modules.html">Subscriber Modules</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Creating and Deleting Subscriber Modules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#creating-subscriber-modules-pmp-links">Creating Subscriber Modules / PMP Links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#displaying-pmp-links">Displaying PMP Links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#deleting-subscriber-modules">Deleting Subscriber Modules</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sm_description_and_equipment.html">Subscriber Module Description and Equipment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sm_profile.html">Profile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sm_performance_summary.html">Performance Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sm_performance_details.html">Performance Details</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sm_bill_of_materials_for_link.html">Bill of Materials for Subscriber Module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="background_information.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notices.html">Legal Notices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes_to_linkplanner.html">Changes to LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="sm_description_and_equipment.html" title="Subscriber Module Description and Equipment"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="subscriber_modules.html" title="Subscriber Modules"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="planning_pmp_links.html" >Planning PMP networks</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="subscriber_modules.html" >Subscriber Modules</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Creating and Deleting Subscriber Modules</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2025, Cambium Networks.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

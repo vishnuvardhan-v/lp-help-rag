@@ -1,0 +1,38 @@
+.. index::
+   single: Building a Project
+   single: Projects
+   
+Projects
+========
+
+A project is a set of data about a wireless network. A project can contain two or more sites and PMP links between those sites. Projects are saved to the Cambium cloud.
+
+To import an existing desktop LINKPlanner project file, click on |import_lp| in the **Project list** page or click **Projects** then |icon_import_topmenu| in the top menu bar and the import wizard is shown:
+
+   .. _import_lp_project:
+   .. figure:: import_lp_project.png
+
+      Import Desktop LINKPlanner project
+      
+Click on **Select LINKPlanner file**, browse to the file location then select the file and click |ok|. The file is imported and displayed in the map window.
+
+**Building a New Project**
+
+To build a project to model a network, follow this process:
+
+1. Create the project. See :doc:`creating_saving_and_viewing_projects`.
+2. Enter project defaults. See :doc:`project_page`.
+
+
+
+.. toctree::
+
+   creating_saving_and_viewing_projects
+   project_page
+   map_window
+
+
+
+.. |import_lp| image:: icon_import_lp_project.png
+.. |ok| image:: icon_ok.png
+.. |icon_import_topmenu| image:: icon_import_topmenu.png

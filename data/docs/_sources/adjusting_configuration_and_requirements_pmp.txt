@@ -1,0 +1,79 @@
+.. index::
+   single: Reviewing Performance and Adjusting Configuration
+   single: Configuration of Links
+   single: Tutorial
+   
+Reviewing Performance and Adjusting Configuration (PMP)
+========================================================
+
+Review the performance of the link and adjust the antenna at the Subscriber Module, confirm that the selected equipment meets the performance objectives:
+
+Click |icon_expand_tree| which is left side of the |menu_pmp_nd| in the left panel of the page.
+
+This displays the PMP Links added to the project.
+
+Click on |icon_expand_tree| which is left side of the **Golf Club : 090** PMP Network Device. This lists all the Subscriber Module attached to the Network Device.
+    
+Click on **Billing Street**. This displays all the properties of the Subscriber Module. 
+
+The right hand side of the window shows the Profile, Performance Summary and Performance Details section in this page.
+
+
+1. View the performance of the link between the Network Device and the Subscriber Module. 
+
+2. Insert the required performance objective of x6 (64QAM MIMO-B) at both ends of the link, using the Min Mod Mode Required field.
+
+3. Set the Min Availability Required to 99.9% at both ends of the link
+    
+|note|
+
+        The results shown are using the ITU-R P.530-17 propagation model
+        
+Observe that the Max Usable Mode values and Predicted Availability are now red because they are less than the required values.
+
+   .. _Performance_Unacceptable_at_Both_Ends_of_PMP_Link:
+   .. figure:: Performance_Unacceptable_at_Both_Ends_of_PMP_Link.png
+
+      Performance Unacceptable at Both Ends of PMP Link
+
+Adjust the configuration to make the performance at both ends acceptable.
+
+1. Change the Antenna Height of Billings Street SM to 23 meters.
+
+    Click |save|
+    
+|note|
+
+        If any properties of the SM are changed, |save| the configuration to update the calculated results.
+
+   .. _Adjust_Both_Ends_of_PMP_Link:
+   .. figure:: Adjust_Both_Ends_of_PMP_Link.png
+
+      Adjust Both Ends of PMP Link
+      
+
+2. Confirm that the predicted values meet performance objectives. 
+
+   .. _Performance_Acceptable_at_Both_Ends_of_PMP_Link:
+   .. figure:: Performance_Acceptable_at_Both_Ends_of_PMP_Link.png
+
+      Performance Acceptable at Both Ends of PMP Link
+
+
+5. Confirm the detailed performance parameters at each mode.
+ 
+   .. _Detailed_Performance_at_Both_Ends_of_PMP_Link:
+   .. figure:: Detailed_Performance_at_Both_Ends_of_PMP_Link.png
+
+      Detailed Performance at Both Ends of PMP Link
+
+
+6. Click **Projects** in the top menu bar and then click **Save** |save_project|
+
+ .. |save_project| image:: save_project_icon.png
+ .. |note| image:: note.jpg
+ .. |icon_pmp_link| image:: icon_menu_pmp_link.png
+ .. |menu_pmp_link| image:: icon_menu_pmp_link_expand.png
+ .. |save| image:: icon_apply.png
+ .. |icon_expand_tree| image:: icon_expand_tree.png
+ .. |menu_pmp_nd| image:: icon_menu_PMP_Network_devices_expand.png

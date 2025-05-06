@@ -1,0 +1,38 @@
+.. index::
+   single: Adjusting profiles
+   single: Obstructions
+   single: Reflections
+   single: adjusting
+
+Adjusting Link Profiles
+=======================
+
+Link planners need to verify and adjust link profiles for the following
+reasons:
+
+* To enter accurate estimates of antenna heights.
+* To correct the average terrain heights provided by the Path Profiler.
+* To verify the clutter type (if used) provided by the Path Profiler 
+* To allow for obstructions in the link path (usually trees) when working without clutter.
+* To add additional height to clutter where the default height is not sufficient for the local area.
+* To allow for the effect of reflection when the link path is over water.
+
+The process for each link is:
+
+1. View the link in the Google Earth(TM) aerial photograph (if it is available), as described in :doc:`using_google_earth`.                 
+
+2. Obtain the most accurate possible data at the two ends of the link, as described in :doc:`verifying_link_ends`.                      
+
+3. Obtain the most accurate possible data at the high points, as described in :doc:`verifying_high_points`.                             
+
+4. Update the profiles as described in :doc:`updating_link_profiles`. 
+
+For examples of how Cambium link planners use a map, Google Earth and surveys to adjust link profiles, see :doc:`link_profile_adjustment_examples`.
+
+
+.. toctree::
+
+   using_google_earth
+   verifying_link_ends
+   verifying_high_points
+   updating_link_profiles

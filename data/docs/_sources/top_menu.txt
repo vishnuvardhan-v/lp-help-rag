@@ -1,0 +1,53 @@
+.. index::
+   single: Settings
+   single: Options
+   single: Top Menu
+
+   
+Top Menu
+=====================
+
+The top menu provides quick access to key functions, including Save, Discard, Reports, Import, Export, Preferences and Help.
+
+
+.. _top_menu:
+.. figure:: top_menu.png
+
+   Top Menu
+
+Projects
+------------------------------------
+
+Under the **Projects** menu, find the options to import an existing LINKPlanner project, create a new project, save the current project, or discard changes. See :doc:`projects`.
+
+Reports
+------------------------------------
+
+Different reports can be generated for the projects. To generate project reports click **Reports** menu. See :doc:`reports`.
+
+Import
+------------------------------------
+
+To import Network Sites and Subscriber Sites from a CSV or KML file click **Import** menu. See :doc:`importing_sites`.
+
+Export
+------------------------------------
+
+To export the current project as a LINKPlanner project file or a Google Earth file click **Export** menu. See :doc:`export_menu`.
+
+Preferences
+------------------------------------
+
+To set the user account preferences click **Preferences** menu. See :doc:`preferences`.
+
+Help
+------------------------------------
+
+To access the User Guide, Release Notes or Support, click on the **Help** menu. See :doc:`help`.
+   
+
+
+
+.. |privacy| replace:: http://www.cambiumnetworks.com/privacy
+.. |caution| image:: caution.jpg
+.. |note| image:: note.jpg

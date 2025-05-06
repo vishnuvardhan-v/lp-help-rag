@@ -1,0 +1,72 @@
+.. index::
+   single: Creating Subscriber Modules
+   single: Sector Coverage
+
+
+Creating and Deleting Subscriber Modules
+=========================================
+
+The Network Device connects to one or more Subscriber Sites to create links to Subscriber Modules. 
+
+
+Creating Subscriber Modules / PMP Links
+----------------------------------------
+
+PMP Links can be created from either a Network Device or from the map view.
+
+To create a new PMP Link to a Subscriber Site from a Network Device, click |table_add| from the **Links to Subscriber Modules** table and the Attach Subscribers page is displayed.
+
+  .. _new_sm_page:
+  .. figure:: new_sm_page.png
+
+     Attach Subscribers Page 
+
+This page shows the list of available Subscriber Sites within the coverage area of the Network Device. Select one or more Subscriber Sites and hit OK. The filter field narrows the choice when there is a large number of Subscriber Sites in the list.
+
+To create a new PMP Link from the map to a Network Device, click |icon_right_menu_pmp_link|. This displays the PMP Link Mode menu.
+
+  .. _pmp_link_mode:
+  .. figure:: pmp_link_mode.png
+
+     New PMP Link Mode from Map
+     
+To use the subscriber site height for the Subscriber Module, tick the **Use the site Maximum Height?** box. To use a different height ensure the **Use the site Maximum Height?** box is not ticked and enter the required height. To create a link from an existing Subscriber Site click on the Subscriber Site in the map. To create both a new link and Subscriber Site click within the coverage area of a Network Device. 
+
+If the site is covered by more than one Network Device the link is created to the Network Device which gives the strongest receive level at the Subscriber Site.
+
+Multiple links are created by continuing to click on the map, to stop creating PMP Links select **Esc** or click again on |icon_right_menu_pmp_link| or click on |icon_right_menu_pointer|.
+
+In all cases the selection options only include Subscriber Sites where the Subscriber Site is within the SM Range defined for the Network Device. The list is further constrained by the sector coverage and Azimuth bearing of the Network Device antenna. Use the Network Device **Modeled Beamwidth** value to set the sector coverage of the antenna.
+
+.. _pmp_links_table_view:
+
+Displaying PMP Links
+----------------------------------
+
+The Subscriber Modules are then created and listed under the **Network Devices** in the **PMP** menu. Click |icon_expand_tree| of the Network Device under the **PMP** menu in the left hand tool bar. To change to the table view, click on the **PMP** menu in the left hand tool bar and then select the **PMP Links** tab. To manage the table view see :doc:`user_interface_tips`.
+
+|note|
+    To locate the PMP links in the map view from the PMP Links details page, click the |icon_locate| icon, which is displayed next to the |icon_delete_detailspage| icon at the top.
+
+Deleting Subscriber Modules
+----------------------------
+
+To delete a Subscriber Module, hover over the Subscriber Module in the **PMP** tree view and click |list_delete|, click |icon_delete_detailspage| on the details page, select rows and click |table_delete| in the table view, or right-click on the PMP Link in the map view and select Delete from the pop-up menu.
+
+|note|
+    To revert the changes made, click the |icon_undo_changes| icon in the details page, which is displayed next to the Apply button. This icon is only displayed when there are changes to the parameters, replacing the |icon_delete_detailspage| icon.
+        
+
+.. |table_add| image:: table_add.png
+.. |icon_right_menu_pmp_link| image:: icon_right_menu_pmp_link.png
+.. |icon_right_menu_pointer| image:: icon_right_menu_pointer.png
+.. |table_delete| image:: table_delete.png
+.. |list_delete| image:: list_delete.png
+.. |icon_pmp_link| image:: icon_menu_pmp_link.png
+.. |icon_table| image:: icon_table_view.png
+.. |icon_expand_tree| image:: icon_expand_tree.png
+.. |icon_delete_detailspage| image:: icon_delete_detailspage.png
+.. |icon_undo_changes| image:: icon_undo_changes.png
+.. |icon_locate| image:: icon_locate_on_map.png
+.. |note| image:: note.jpg   
+

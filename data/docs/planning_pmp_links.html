@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Planning PMP networks &#8212; Cambium LINKPlanner Online Help (6.3.3)</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/default.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="PMP Network Devices" href="network_devices.html" />
+    <link rel="prev" title="Setting Hot Standby Protection (1+1)" href="setting_hot_standby_protection.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="network_devices.html" title="PMP Network Devices"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="setting_hot_standby_protection.html" title="Setting Hot Standby Protection (1+1)"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Planning PMP networks</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="planning-pmp-networks">
+<span id="index-0"></span><h1>Planning PMP networks<a class="headerlink" href="#planning-pmp-networks" title="Permalink to this headline">¶</a></h1>
+<p>The goal of PMP network planning is to ensure that the Subscribers are connected to the appropriate Network Device and will perform to an acceptable level, measured by the Predicted Receive Power and Max Usable Mode values in the <a class="reference internal" href="sm_performance_summary.html"><span class="doc">Performance Summary</span></a> section of the <a class="reference internal" href="subscriber_modules.html"><span class="doc">Subscriber Modules</span></a>. To allow LINKPlanner to predict the Receive Power and Max Usable Mode, the planner must enter the variables that affect link performance, such as: band, region, equipment, antenna, height, terrain and obstructions.</p>
+<p>To achieve this goal, follow this process:</p>
+<ol class="arabic simple">
+<li><p>Start the application and set options. See <a class="reference internal" href="starting_the_application.html"><span class="doc">Starting the Application</span></a>.</p></li>
+<li><p>Build a project to model a PMP network. See <a class="reference internal" href="projects.html"><span class="doc">Projects</span></a>.</p></li>
+<li><p>Enter details of all sites in the project. See <a class="reference internal" href="sites.html"><span class="doc">Sites</span></a>.</p></li>
+<li><p>Create the PMP Network Devices. See <a class="reference internal" href="network_devices.html"><span class="doc">PMP Network Devices</span></a>.</p></li>
+<li><p>Create Mesh Links (only for 60 GHz cnWave Networks). See <a class="reference internal" href="mesh_links.html"><span class="doc">Mesh Links</span></a>.</p></li>
+<li><p>Connect Subscriber Sites to a PMP Network Device and create profiles of those links. See <a class="reference internal" href="subscriber_modules.html"><span class="doc">Subscriber Modules</span></a>.</p></li>
+<li><p>Confirm that the link will perform to an acceptable level, measured by the Receive Power and Max Usable Mode values in the <a class="reference internal" href="sm_performance_summary.html"><span class="doc">Performance Summary</span></a> section of the <a class="reference internal" href="subscriber_modules.html"><span class="doc">Subscriber Modules</span></a>.</p></li>
+<li><p>Export and report project, site and link data. See <a class="reference internal" href="exporting_and_reporting.html"><span class="doc">Exporting and Reporting</span></a></p></li>
+</ol>
+<p><img alt="note" src="_images/note.jpg" /></p>
+<blockquote>
+<div><p>The <a class="reference internal" href="best_server_analysis.html"><span class="doc">Best Server Analysis</span></a> feature can be used to automatically connect subscriber sites to the network devices in a project.</p>
+</div></blockquote>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="network_devices.html">PMP Network Devices</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="network_devices.html#creating-network-devices">Creating Network Devices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network_devices.html#displaying-pmp-network-devices">Displaying PMP Network Devices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network_devices.html#deleting-a-network-device">Deleting a Network Device</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network_devices.html#pmp-network-device-page">PMP Network Device Page</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="network_devices.html#general">General</a></li>
+<li class="toctree-l3"><a class="reference internal" href="network_devices.html#equipment">Equipment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="network_devices.html#product-configuration">Product Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="network_devices.html#antenna-configuration">Antenna Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="network_devices.html#power-panel">Power Panel</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="network_devices.html#calculating-tilt-angle">Calculating Tilt Angle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network_devices.html#component-carriers">Component Carriers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network_devices.html#mesh-links">Mesh Links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network_devices.html#links-to-subscriber-modules">Links to Subscriber Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network_devices.html#performance-summary">Performance Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network_devices.html#bill-of-materials">Bill of Materials</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="network_devices.html#bill-of-materials-for-pmp-network-device">Bill of Materials for PMP Network Device</a></li>
+<li class="toctree-l3"><a class="reference internal" href="network_devices.html#bill-of-materials-for-subscriber-modules">Bill of Materials for Subscriber Modules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="network_devices.html#viewing-saving-the-bom-file-in-ms-excel">Viewing &amp; saving the BOM file in MS Excel</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mesh_links.html">Mesh Links</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="mesh_links.html#creating-mesh-links">Creating Mesh Links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mesh_links.html#displaying-mesh-links">Displaying Mesh Links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mesh_links.html#deleting-mesh-links">Deleting Mesh Links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mesh_links.html#mesh-link-page">Mesh Link Page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mesh_links.html#equipment-summary">Equipment Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mesh_links.html#profile">Profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mesh_links.html#performance-summary">Performance Summary</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="mesh_links.html#performance-to-devices">Performance to Devices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_links.html#link-summary">Link Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_links.html#link-summary-additional-information">Link Summary additional information</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="mesh_links.html#performance-details">Performance Details</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="mesh_links.html#common-details">Common Details</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_links.html#performance-to-each-end">Performance to each end</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="subscriber_modules.html">Subscriber Modules</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sm_creating_and_deleting.html">Creating and Deleting Subscriber Modules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sm_creating_and_deleting.html#creating-subscriber-modules-pmp-links">Creating Subscriber Modules / PMP Links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sm_creating_and_deleting.html#displaying-pmp-links">Displaying PMP Links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sm_creating_and_deleting.html#deleting-subscriber-modules">Deleting Subscriber Modules</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sm_description_and_equipment.html">Subscriber Module Description and Equipment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sm_description_and_equipment.html#general">General</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sm_description_and_equipment.html#equipment">Equipment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sm_description_and_equipment.html#product-configuration">Product Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sm_description_and_equipment.html#antenna-configuration">Antenna Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sm_description_and_equipment.html#power">Power</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sm_description_and_equipment.html#component-carrier">Component Carrier</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sm_profile.html">Profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sm_performance_summary.html">Performance Summary</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sm_performance_summary.html#performance-to-network-device-and-subscriber-module">Performance to Network Device and Subscriber Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sm_performance_summary.html#link-summary">Link Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sm_performance_details.html">Performance Details</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sm_performance_details.html#common-details-450-family">Common Details - 450 family</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sm_performance_details.html#common-details-epmp">Common Details - ePMP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sm_performance_details.html#common-details-cnwave-5g-fixed">Common Details - cnWave 5G Fixed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sm_performance_details.html#common-details-60-ghz-cnwave">Common Details - 60 GHz cnWave</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sm_performance_details.html#common-details-ptp-670-and-700-hcmp">Common Details - PTP 670 and 700 HCMP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sm_performance_details.html#performance-to-each-end-network-device-and-subscriber-module">Performance to each end (Network Device and Subscriber Module)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sm_bill_of_materials_for_link.html">Bill of Materials for Subscriber Module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sm_bill_of_materials_for_link.html#viewing-saving-the-subscriber-module-bom-file-in-ms-excel">Viewing &amp; saving the Subscriber Module BOM file in MS Excel</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="list_of_figures.html">List of Figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_this_user_guide.html">About This User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_linkplanner.html">Using LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planning_ptp_links.html">Planning PTP links</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Planning PMP networks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="network_devices.html">PMP Network Devices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mesh_links.html">Mesh Links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="subscriber_modules.html">Subscriber Modules</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="background_information.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notices.html">Legal Notices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes_to_linkplanner.html">Changes to LINKPlanner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="network_devices.html" title="PMP Network Devices"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="setting_hot_standby_protection.html" title="Setting Hot Standby Protection (1+1)"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Cambium LINKPlanner Online Help (6.3.3)</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Planning PMP networks</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2025, Cambium Networks.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

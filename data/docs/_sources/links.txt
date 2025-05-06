@@ -1,0 +1,26 @@
+.. index::
+   single: Link Profiles
+   single: Links
+   single: Links List
+   single: New Links
+   single: Viewing and Updating Links
+
+Links
+=====
+
+Define the links between sites, obtain profiles of those links and enter link details. The process for each link is:
+
+1. Create a new link by connecting existing sites as described in :doc:`creating_links`. 
+
+2. Display the list of links in the project and open the new link, as  described in :doc:`displaying_link`.                                  
+
+3. Enter the variables that affect performance, such as band, region, equipment, antenna and height. See :doc:`link_page`.        
+
+
+.. toctree::
+
+   creating_links
+   displaying_link
+
+
+   

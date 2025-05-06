@@ -1,0 +1,129 @@
+.. index::
+   single: Altitude
+   single: Antenna height
+   single: Link end
+   single: Obstructions
+   single: GPS
+   single: High Points
+   single: Obstructions
+   single: Ruler
+   single: Survey
+   single: Terrain height
+   
+Verifying a Link End Using a Survey
+===================================
+
+This is an example to show how Cambium link planners use a site
+survey to refine their estimates of the terrain and obstructions near
+one end of a test link. This builds on the previous example
+:doc:`verifying_a_link_end_using_a_map_and_google_earth`.
+
+We use the following survey aids:
+
+* Map, path profile, Google Earth(TM) aerial photo
+* Barometric GPS receiver
+* Clear plastic ruler
+* Surveyor's tape measure
+* Pocket calculator
+* Binoculars
+
+We follow these steps:
+
+1. We use the barometric GPS receiver to verify terrain height. 
+
+   Because air pressure may change frequently, the GPS receiver must be
+   recalibrated near every survey site, at a point with a known altitude. The
+   map shows a suitable point for calibration, where the road crosses the
+   160m contour near the site, as annotated on this Google Earth photograph:
+
+   .. _gps_calibration_point:
+   .. figure:: gps_calibration_point.jpg
+
+      GPS Calibration Point
+
+   We calibrate the GPS at this point.
+
+2. We go to the antenna site. 
+
+   Standing at the foot of the antenna (or of the building on which
+   the antenna is mounted), we record the terrain height from the GPS:
+   155m.
+
+3. We estimate the height of the antenna above ground level. The antenna height used in LINKPlanner is to the center line of the antenna, therefore the radius of the antenna should be taken into account.
+
+   The following height estimation methods can be used:
+
+   **Method 1**: If it is safe (and permissible) to do so, go to the
+   highest accessible point on the antenna and measure its height
+   using the GPS receiver.
+
+   **Method 2**: If the antenna is on a building, estimate the height of each
+   storey and count the number of storeys from the ground to the antenna.
+
+   **Method 3**: Ask a colleague to stand under the antenna and
+   estimate the number of times the colleague's height would be needed
+   to reach the antenna height.
+
+   **Method 4**: Stand a measured distance away from the antenna (d2),
+   hold the ruler at eye level and arms length (d1), measure the
+   height above ground of the antenna as viewed through the ruler
+   (h1), then calculate the height of the antenna (h2) using this
+   formula (see illustration):
+
+     `h2 = h1 * (d2/d1)`
+
+   .. _using_a_ruler_to_estimate_height:
+   .. figure:: using_a_ruler_to_estimate_height.jpg
+
+      Using a ruler to estimate height
+
+   We record the estimated antenna height: 10m.
+
+   |note|
+
+            This method can also be used to estimate the height of trees and other potential obstructions. If it is not possible to measure the distance d2, use the map to estimate it.
+
+4. We examine the potential obstructions and high points that were    
+   found on the air photograph:                                       
+
+   A building and some bushes immediately in front of the antenna: The
+   building proves to be just clear of the link path and is not
+   recorded as an obstruction. The bushes are on the link path, so we
+   use the ruler method to estimate and record their height: 5 m.
+
+   Higher ground at 0.088 km from the antenna: We go as near to this
+   higher ground as we can and take the GPS reading: 161.4 m.
+
+   A row of trees at 0.1 km from the antenna: This row of trees cuts
+   through the link path. We identify the tree that is on the path and
+   use the ruler method to estimate and record its height: 7 m.
+
+   These obstructions and the higher ground are annotated in this Google
+   Earth photograph:
+
+   .. _results_of_site_survey_at_addislade:
+   .. figure:: results_of_site_survey_at_addislade.jpg
+
+      Results of site survey at Addislade
+
+   |caution|
+
+      Link planners must allow for the possibility that tree growth or
+      new buildings may cause new obstructions in the future. If the
+      potential obstructions are deciduous trees, allow for seasonal
+      changes in foliage.
+
+5. When we return to the office, we update the profile with these     
+   results:                                                           
+
+   .. _profile_updated_with_site_survey_results:
+   .. figure:: profile_updated_with_site_survey_results.png
+
+      Profile updated with site survey results
+
+We now have a more accurate profile of the link end. This will help us to
+optimize the link and achieve acceptable data throughput.
+
+
+.. |caution| image:: caution.jpg
+.. |note| image:: note.jpg

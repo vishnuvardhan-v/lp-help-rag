@@ -1,0 +1,21 @@
+.. index::
+   single: Antenna
+   single: Obstructions
+   single: Terrain height
+   single: Verifying
+   single: Verifying Link Ends
+   
+Verifying Link Ends
+===================
+
+As the Fresnel zone is smaller near the transceivers, obstructions near the ends of the link have a greater impact on performance than obstructions near the center of the link.  It is therefore vital to obtain
+the most accurate possible survey data at the two ends of the link. The planner needs to answer the following questions:
+
+* Does the path profile (from the Path Profiler) show the correct ground height near the ends of the link path?
+* Are there any obstructions near the ends of the link path?
+* How high is the antenna?
+
+To obtain approximate answers, use a map and Google Earth(TM): an example is described in :doc:`verifying_a_link_end_using_a_map_and_google_earth`.
+
+To obtain more reliable answers, visit the site and survey the end of the link: an example is described in :doc:`verifying_a_link_end_using_a_survey`.
+

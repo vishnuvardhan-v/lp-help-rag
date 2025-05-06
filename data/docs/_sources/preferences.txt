@@ -1,0 +1,53 @@
+.. index::
+   single: Settings
+   single: Options
+   single: Preferences
+
+   
+Preferences
+=====================
+
+Once the project is created or opened, use the Preferences page to enter personal information, select units and choose Bill of Materials settings.
+
+To open the Preferences page, click on **Preferences** in the top menu bar.
+
+
+
+.. _preferences:
+.. figure:: preferences.png
+
+   Account and Preferences Page
+
+.. index::
+   single: Personal Information
+
+
+Personal Information
+--------------------
+
+Enter contact details for the person who prepares link plans on behalf of the customer. Tick or untick the box to opt-out or opt-in to marketing to support LINKPlanner functionalities.
+Tick or untick the box to view detailed help pop-up messages for the LINKPlanner features.
+
+.. index::
+   single: Units
+
+Units
+-------
+
+Select the required units for Height, Length, Latitude and Longitude and the display format for the MAC Address. Enter the MAC Address either as 12 characters without any delimiters, or using any of the delimited formats.
+
+
+Bill of Materials
+------------------
+
+Select the default region options for power leads and product kits. Priority is given to the highest ticked country in the list that is available for the selected product. Leave all boxes unticked to allow LINKPlanner to choose the default option for the country selected or to get an option with no power lead.
+
+
+.. index::
+   single: Bill of Materials Settings
+
+
+
+.. |privacy| replace:: http://www.cambiumnetworks.com/privacy
+.. |caution| image:: caution.jpg
+.. |note| image:: note.jpg

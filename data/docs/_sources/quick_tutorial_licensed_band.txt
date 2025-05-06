@@ -1,0 +1,26 @@
+.. index::
+   single: Getting started
+   single: Quick Tutorial
+   single: Tutorial
+
+Quick Tutorial - PTP Licensed Band
+====================================
+
+This section is a quick tutorial to plan a simple PTP link. It describes how to create a project to analyze the performance of a single
+PTP link operating in a licensed frequency band (above 6 GHz) between two sites. For 60 GHz please see :doc:`quick_tutorial`.
+
+Before starting this tutorial, complete the following steps:
+
+1. Login to LINKPlanner, see :doc:`starting_the_application`.
+2. Enter the correct details in the Preferences page. See :doc:`preferences`.
+
+There are two parts to this tutorial:
+
+1. Create a project with two sites and one link. See :doc:`creating_project_sites_and_link_licensed`.
+2. Adjust the antennas at both ends of the link and confirm that the selected equipment meets the performance requirements. See :doc:`adjusting_configuration_and_requirements_licensed`.
+
+
+.. toctree::
+
+   creating_project_sites_and_link_licensed
+   adjusting_configuration_and_requirements_licensed
