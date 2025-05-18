@@ -14,7 +14,7 @@ app.post("/search", async (req, res) => {
 
   // Simulate a customer query
   const queryEmbedding = await embedTexts([query]);
-  const queryVector = queryEmbedding.arraySync()[0];
+  const queryVector = queryEmbedding[0];
   console.log("Query vector:", queryVector);
   const client = new ChromaClient({ apiUrl: "http://localhost:8000" });
   const collection = await client.getCollection({

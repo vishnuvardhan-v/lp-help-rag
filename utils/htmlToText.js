@@ -1,3 +1,4 @@
+const tokenizer = require("sbd");
 const { JSDOM } = require("jsdom");
 
 function extractTextFromHTML(htmlContent) {
@@ -6,15 +7,43 @@ function extractTextFromHTML(htmlContent) {
   return document.body.textContent.trim();
 }
 
-function chunkText(text, maxWords = 250) {
-  const words = text.split(/\s+/);
-  const chunks = [];
+function semanticChunkWithOverlap(text, chunkSize = 100, overlapSize = 20) {
+  const sentences = tokenizer.sentences(text, {
+    newline_boundaries: true,
+    sanitize: true,
+  });
 
-  for (let i = 0; i < words.length; i += maxWords) {
-    const chunk = words.slice(i, i + maxWords).join(" ");
-    chunks.push(chunk);
+  const chunks = [];
+  let currentChunk = [];
+  let currentTokenCount = 0;
+
+  for (let i = 0; i < sentences.length; i++) {
+    const sentence = sentences[i];
+    const tokenCount = sentence.split(/\s+/).length;
+
+    if (currentTokenCount + tokenCount > chunkSize && currentChunk.length > 0) {
+      // Save chunk
+      chunks.push(currentChunk.join(" "));
+
+      // Start new chunk with overlap
+      const overlapTokens = currentChunk
+        .join(" ")
+        .split(/\s+/)
+        .slice(-overlapSize)
+        .join(" ");
+      currentChunk = [overlapTokens];
+      currentTokenCount = overlapTokens.split(/\s+/).length;
+    }
+
+    currentChunk.push(sentence);
+    currentTokenCount += tokenCount;
+  }
+
+  // Push final chunk
+  if (currentChunk.length > 0) {
+    chunks.push(currentChunk.join(" "));
   }
 
   return chunks;
 }
-module.exports = { extractTextFromHTML, chunkText };
+module.exports = { extractTextFromHTML, semanticChunkWithOverlap };

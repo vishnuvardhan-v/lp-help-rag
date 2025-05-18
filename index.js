@@ -1,22 +1,35 @@
-require("@tensorflow/tfjs");
+//require("@tensorflow/tfjs");
+//const { pipeline } = import from "@xenova/transformers";
 const fs = require("fs");
 const path = require("path");
-const use = require("@tensorflow-models/universal-sentence-encoder");
-const { extractTextFromHTML, chunkText } = require("./utils/htmlToText");
+//const use = require("@tensorflow-models/universal-sentence-encoder");
+const {
+  extractTextFromHTML,
+  semanticChunkWithOverlap,
+} = require("./utils/htmlToText");
 const { ChromaClient } = require("chromadb");
 
 let model;
 let collection;
 async function loadModel() {
   if (!model) {
-    model = await use.load();
-    console.log("USE model loaded");
+    const { pipeline } = await import("@xenova/transformers");
+    model = await pipeline("feature-extraction", "Xenova/bge-base-en");
+    console.log("BGE model loaded");
   }
 }
 
 async function embedTexts(texts) {
   await loadModel();
-  const embeddings = await model.embed(texts);
+  //const embeddings = await model.embed(texts);
+  const embeddings = [];
+  for (const text of texts) {
+    const result = await model(text, {
+      pooling: "mean", // average token embeddings
+      normalize: true, // cosine similarity ready
+    });
+    embeddings.push(result.data);
+  }
   return embeddings;
 }
 
@@ -33,7 +46,7 @@ async function main() {
     const filePath = path.join(docsDir, file);
     const content = fs.readFileSync(filePath, "utf-8");
     const fullText = extractTextFromHTML(content);
-    const chunks = chunkText(fullText);
+    const chunks = semanticChunkWithOverlap(fullText);
 
     for (let i = 0; i < chunks.length; i++) {
       documents.push({
@@ -57,7 +70,7 @@ async function main() {
 
   // Batch add
   const ids = documents.map((doc) => doc.id);
-  const embeddingsArray = embeddings.arraySync();
+  const embeddingsArray = embeddings;
   const metadatas = documents.map((doc) => doc.metadata);
   console.log(texts);
   await collection.add({
@@ -69,7 +82,6 @@ async function main() {
 
   console.log("All documents indexed.");
 }
-
 //main();
 async function search(query) {
   //const customerQuery = "How do I reset my password?";
