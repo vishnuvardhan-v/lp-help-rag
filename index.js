@@ -86,6 +86,6 @@ async function main() {
 async function search(query) {
   //const customerQuery = "How do I reset my password?";
 }
-main().catch(console.error);
+//main().catch(console.error);
 //search("how to create a network site?");
 module.exports = { embedTexts, loadModel, main, search };

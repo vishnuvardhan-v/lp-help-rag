@@ -4,7 +4,11 @@ import axios from "axios";
 export default function ChatComponent() {
   const [query, setQuery] = useState("");
   const [messages, setMessages] = useState([
-    { sender: "bot", text: "Hi! Ask me anything about the content." },
+    {
+      sender: "bot",
+      type: "text",
+      text: "Hi! Ask me anything about the content.",
+    },
   ]);
   const [loading, setLoading] = useState(false);
   const messagesEndRef = useRef(null);
@@ -18,22 +22,37 @@ export default function ChatComponent() {
   const handleSearch = async () => {
     if (!query.trim()) return;
 
-    const newMessages = [...messages, { sender: "user", text: query }];
+    const newMessages = [
+      ...messages,
+      { sender: "user", type: "text", text: query },
+    ];
     setMessages(newMessages);
     setQuery("");
     setLoading(true);
 
     try {
       const res = await axios.post("http://localhost:3000/search", { query });
-      const botReply = res.data.url
-        ? `Here's your document: [Click here](${res.data.url})`
-        : "Sorry, no match found.";
-      setMessages([...newMessages, { sender: "bot", text: botReply }]);
+
+      const botReply =
+        res.data && res.data.summary
+          ? {
+              sender: "bot",
+              type: "summary",
+              summary: res.data.summary,
+              url: res.data.url,
+            }
+          : {
+              sender: "bot",
+              type: "text",
+              text: "Sorry, no match found.",
+            };
+
+      setMessages([...newMessages, botReply]);
     } catch (err) {
       console.error(err);
       setMessages([
         ...newMessages,
-        { sender: "bot", text: "Oops! Something went wrong." },
+        { sender: "bot", type: "text", text: "Oops! Something went wrong." },
       ]);
     } finally {
       setLoading(false);
@@ -64,23 +83,27 @@ export default function ChatComponent() {
             }`}
           >
             <div
-              className={`max-w-xs whitespace-pre-wrap px-4 py-2 rounded-lg shadow-md text-sm ${
+              className={`max-w-md whitespace-pre-wrap px-4 py-3 rounded-lg shadow-md text-sm ${
                 msg.sender === "user"
                   ? "bg-blue-600 text-white"
                   : "bg-white text-gray-800"
               }`}
             >
-              {msg.text.includes("[Click here]") ? (
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: msg.text.replace(
-                      /\[Click here\]\((.*?)\)/g,
-                      `<a href="$1" target="_blank" class="underline text-blue-500">Click here</a>`
-                    ),
-                  }}
-                />
-              ) : (
-                msg.text
+              {msg.type === "text" && msg.text}
+              {msg.type === "summary" && (
+                <>
+                  <div>{msg.summary}</div>
+                  <div className="mt-2">
+                    <a
+                      href={msg.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-500 underline text-xs"
+                    >
+                      Read more
+                    </a>
+                  </div>
+                </>
               )}
             </div>
           </div>
